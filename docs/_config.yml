@@ -1,16 +1,14 @@
-title: "MedCom on FHIR"
+title: "MedCom on EHMI"
 logo: /assets/images/MedCom+HL7FHIR_4.png
-description: "MedCom standards based on HL7 FHIR"
+description: "Enhanced Healthcare Messaging Infrastructure"
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
-version: "Version 1.0.2"
-fhir_version: "FHIR®© R4"
-releasenote: https://github.com/medcomdk/MedComLandingPage/releases
-thisurl: https://medcomdk.github.io/MedComLandingPage/
+version: "Version 0.0.1"
+fhir_version: "EHMI"
+releasenote: https://github.com/medcomdk/ehmi/releases
+thisurl: https://medcomdk.github.io/https://medcomdk.github.io/ehmi//
 menuurl_item1: https://medcomdk.github.io/MedComLandingPage/
-menutxt_item1: MedCom FHIR®© LandingPage
-menuurl_item2: https://medcomdk.github.io/MedCom-FHIR-Communication/#network-layer
-menutxt_item2: MedCom FHIR®© Governance
+menutxt_item2: EHMI Governance
 # menuurl_item3: https://medcomdk.github.io/MedCom-FHIR-Communication/#About
 # menutxt_item3: About MedCom FHIR®© Governance
