@@ -1,0 +1,1 @@
+# Forsendelsesstatus for EHMI
