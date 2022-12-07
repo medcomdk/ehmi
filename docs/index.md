@@ -2,5 +2,9 @@
 
 **Table of contents**
 
-- [Exchange Header Envelope (XHE)](/assets/documents/eDelivery/XHE/index.md)
-- [Service Metadata Publisher (SMP)](/assets/documents/eDelivery/SMP/index.md)
+- [eDelivery](/assets/documents/eDelivery/index.md)
+  [Sundhedsadressering](/assets/documents/eDelivery/index.md)
+  - TBD
+- Forsendelsesstatus
+  - TBD
+- [Governance](/assets/documents/Governance/index.md)
