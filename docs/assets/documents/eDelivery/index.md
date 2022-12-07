@@ -1,7 +1,7 @@
-# edelivery for EHMI
+# eDelivery for EHMI
 
 **Table of contents**
 
-- [Exchange Header Envelope (XHE)](/assets/documents/eDelivery/XHE/index.md)
-- [Service Metadata Publisher (SMP)](/assets/documents/eDelivery/SMP/index.md)
-- [Forsendelsesstatus)](/assets/documents/eDelivery/forsendelsesstatus/index.md)
+- [Exchange Header Envelope (XHE)](/XHE/index.md)
+- [Service Metadata Publisher (SMP)](/SMP/index.md)
+- [Forsendelsesstatus)](/forsendelsesstatus/index.md)
