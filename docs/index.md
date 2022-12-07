@@ -1,4 +1,6 @@
 # Welcome to EHMI - MedCom's Enhanced Healthcare Messaging Infrastructure
 
 **Table of contents**
-- [Exchange Header Envelope (XHE) Version 1.0](/assets/documents/eDelivery/XHE/index.md)
+
+- [Exchange Header Envelope (XHE)](/assets/documents/eDelivery/XHE/index.md)
+- [Service Metadata Publisher (SMP)](/assets/documents/eDelivery/SMP/index.md)
