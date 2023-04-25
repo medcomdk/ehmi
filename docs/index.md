@@ -5,7 +5,7 @@
 - EHMI eDelivery
   - [eDelivery](/assets/documents/eDelivery/index.md)
 - EHMI Sundhedsadressering
-  - [Sundhedsadressering](/assets/documents/eDelivery/index.md)
+  - [Sundhedsadressering](/assets/documents/sundhedsadressering/index.md)
 - EHMI Governance
   - [Governance](/assets/documents/governance/index.md)
 - EHMI Postkasseregister
