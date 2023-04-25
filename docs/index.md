@@ -7,8 +7,8 @@
 - EHMI Sundhedsadressering
   - [Sundhedsadressering](/assets/documents/eDelivery/index.md)
 - EHMI Governance
-  - [Governance](/assets/documents/Governance/index.md)
+  - [Governance](/assets/documents/governance/index.md)
 - EHMI Postkasseregister
-  - TBD
+  - [Postkasseregister](/assets/documents/postkasseregister/index.md)
 - EHMI Forsendelsesstatus
   - TBD
