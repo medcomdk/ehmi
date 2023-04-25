@@ -2,9 +2,13 @@
 
 **Table of contents**
 
-- [eDelivery](/assets/documents/eDelivery/index.md)
-  [Sundhedsadressering](/assets/documents/eDelivery/index.md)
+- EHMI eDelivery
+  - [eDelivery](/assets/documents/eDelivery/index.md)
+- EHMI Sundhedsadressering
+  - [Sundhedsadressering](/assets/documents/eDelivery/index.md)
+- EHMI Governance
+  - [Governance](/assets/documents/Governance/index.md)
+- EHMI Postkasseregister
   - TBD
-- Forsendelsesstatus
+- EHMI Forsendelsesstatus
   - TBD
-- [Governance](/assets/documents/Governance/index.md)
