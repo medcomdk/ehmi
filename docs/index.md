@@ -9,6 +9,6 @@
 - EHMI Governance
   - [Governance](/assets/documents/governance/index.md)
 - EHMI Postkasseregister
-  - [Postkasseregister](/assets/documents/postkasseregister/index.md)
+  - [Postkasseregister](/assets/documents/Postkasseregister/index.md)
 - EHMI Forsendelsesstatus
   - TBD
