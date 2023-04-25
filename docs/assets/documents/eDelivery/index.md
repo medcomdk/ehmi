@@ -4,4 +4,4 @@
 
 - [Exchange Header Envelope (XHE)](/XHE/index.md)
 - [Service Metadata Publisher (SMP)](/SMP/index.md)
-- [Forsendelsesstatus)](/forsendelsesstatus/index.md)
+- [Forsendelsesstatus](/forsendelsesstatus/index.md)
