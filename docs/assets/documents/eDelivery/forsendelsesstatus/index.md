@@ -1,3 +1,3 @@
 # Forsendelsesstatus for EHMI
 
-![Forsendelsesstatus](2_EHMI_Forsendelsesstatus.png)
+![Forsendelsesstatus](/docs/assets/images/2_EHMI_Forsendelsesstatus.png)
