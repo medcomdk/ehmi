@@ -1,3 +1,3 @@
 # Sundhedsadressering for EHMI
 
-![Sundhedsadresseringsservice](/docs/assets/images/3_EHMI_Sundhedsadresseringsservice.png)
+![Sundhedsadresseringsservice](../images/3_EHMI_Sundhedsadresseringsservice.png)
