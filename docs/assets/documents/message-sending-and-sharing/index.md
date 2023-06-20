@@ -3,7 +3,6 @@
 **Table of contents**
 
 - [Standard Business Document Header (SBDH)](/SBDH-envelope/index.md)
-- [Exchange Header Envelope (XHE)](/XHE/index.md)
 - [Service Metadata Publisher (SMP)](/SMP/index.md)
 - [Forsendelsesstatus](/forsendelsesstatus/index.md)
 
