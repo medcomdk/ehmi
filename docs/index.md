@@ -11,5 +11,3 @@
   - [Sundhedsadressering](/assets/documents/sundhedsadressering/index.md)
 - EHMI Governance
   - [Governance](/assets/documents/governance/index.md)
-- EHMI Forsendelsesstatus
-  - TBD
