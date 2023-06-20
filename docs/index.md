@@ -2,7 +2,8 @@
 
 **Table of contents**
 
-- EHMI eDelivery
+- EHMI 
+  - [Message sending and sharing](/assets/documents/message-sending-and-sharing/index.md)
   - [eDelivery](/assets/documents/eDelivery/index.md)
 - EHMI Postkasseregister
   - [Postkasseregister](/assets/documents/postkasseregister/index.md)
