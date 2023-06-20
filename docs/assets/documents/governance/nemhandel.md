@@ -1,71 +1,65 @@
 EHMI - Logo
 
-Aftalevilkår
-Nyheder og releases
-Om EHMI
-Vejledninger og guides
-
-Forside
-Aftalevilkår
 EHMI Aftalevilkår
+
 'EHMI Aftalevilkår' regulerer anvendelsen af EHMI til udveksling af forretningsdokumenter over ét eller flere netværk, herunder Internettet.
 
-# 1. Definitioner
+### 1. Definitioner
 Nedenstående definitioner finder anvendelse i det omfang de pågældende ord og begreber anvendes i de Generelle Betingelser eller tilhørende tekniske specifikationer og bilag.
 
-Ved Arbejdsdage forstås mandag til fredag, bortset fra helligdage, juleaftensdag, nytårsaftensdag og grundlovsdag.
+- Ved Arbejdsdage forstås mandag til fredag, bortset fra helligdage, juleaftensdag, nytårsaftensdag og grundlovsdag.
 
-Ved Brugere forstås Serviceudbydere og/eller Serviceaftagere, som har tiltrådt de Generelle Betingelser både i forhold til MedCom og øvrige Brugere, og som benytter EHMI-Infrastrukturen til at udveksle Forretningsdokumenter samt, efter sammenhængen, Individuelle Brugere.
+- Ved Brugere forstås Serviceudbydere og/eller Serviceaftagere, som har tiltrådt de Generelle Betingelser både i forhold til MedCom og øvrige Brugere, og som benytter EHMI-Infrastrukturen til at udveksle Forretningsdokumenter samt, efter sammenhængen, Individuelle Brugere.
 
-Ved Dage forstås kalenderdage.
+- Ved Dage forstås kalenderdage.
 
-Ved Forretningsdokumenter forstås fakturaer, ordrer, kataloger og andre dokumenter, som udveksles i den offentlige og den private sektor.
+- Ved Forretningsdokumenter forstås fakturaer, ordrer, kataloger og andre dokumenter, som udveksles i den offentlige og den private sektor.
 
-Ved Individuelle Brugere forstås ansatte eller andre repræsentanter for en Bruger, der på Brugerens vegne registrerer sig i EHMI-Infrastrukturen.
+- Ved Individuelle Brugere forstås ansatte eller andre repræsentanter for en Bruger, der på Brugerens vegne registrerer sig i EHMI-Infrastrukturen.
 
-Ved Interoperabilitetsprofil forstås en beskrivelse af, hvilke web-servicestandarder, som skal benyttes i udvekslingen af forskellige Forretningsdokumenter mellem Serviceudbyder og Serviceaftager.
+- Ved Interoperabilitetsprofil forstås en beskrivelse af, hvilke web-servicestandarder, som skal benyttes i udvekslingen af forskellige Forretningsdokumenter mellem Serviceudbyder og Serviceaftager.
 
-Ved MedCom forstås Erhvervsstyrelsen og/eller en af MedCom udpeget administrator og driftsoperatør af EHMI Registret, efter sammenhængen.
+- Ved MedCom forstås MedCom og/eller en af MedCom udpeget administrator og driftsoperatør af EHMI Registret, efter sammenhængen.
 
-Ved EHMI eller blot EHMI-Infrastrukturen forstås det, som fremgår af punkt 4.2.
+- Ved EHMI eller blot EHMI-Infrastrukturen forstås det, som fremgår af punkt 4.2.
 
-Ved Part eller Parterne forstås Serviceudbyder og/eller Serviceaftager og/eller MedCom, alt efter sammenhængen.
+- Ved Part eller Parterne forstås Serviceudbyder og/eller Serviceaftager og/eller MedCom, alt efter sammenhængen.
 
-Ved Privat Udbyder forstås en Part, som udbyder en tjeneste, der indgår i EHMI, herunder Replikerede EHMI-Registre.
+- Ved Privat Udbyder forstås en Part, som udbyder en tjeneste, der indgår i EHMI, herunder Replikerede EHMI-Registre.
 
-Ved Replikerede EHMI-Registre forstås en kopi af EHMI Registret, som stilles til rådighed af Private Udbydere eller MedCom.
+- Ved Replikerede EHMI-Registre forstås en kopi af EHMI Registret, som stilles til rådighed af Private Udbydere eller MedCom.
 
-Ved Serviceaftager forstås en Bruger, som i medfør af denne Aftale anvender Web-services Tilgængeliggjort af Serviceudbyder som led i datakommunikation med Serviceudbyder.
+- Ved Serviceaftager forstås en Bruger, som i medfør af denne Aftale anvender Web-services Tilgængeliggjort af Serviceudbyder som led i datakommunikation med Serviceudbyder.
 
-Ved Serviceudbyder forstås en Bruger, som i medfør af denne Aftale Tilgængeliggør Web-services som led i datakommunikation med Serviceaftager.
+- Ved Serviceudbyder forstås en Bruger, som i medfør af denne Aftale Tilgængeliggør Web-services som led i datakommunikation med Serviceaftager.
 
-Ved Tilgængeliggørelse eller Tilgængelig forstås det tidspunkt, hvor en Serviceudbyder stiller en Web-service til rådighed for Serviceaftagerne, der lever op til specifikationerne for den pågældende Web-service.
+- Ved Tilgængeliggørelse eller Tilgængelig forstås det tidspunkt, hvor en Serviceudbyder stiller en Web-service til rådighed for Serviceaftagerne, der lever op til specifikationerne for den pågældende Web-service.
 
-Ved EHMI Registret forstås en adresseringsmekanisme baseret på et register, som stilles til rådighed af Erhvervsstyrelsen. EHMI Registret udstiller en række snitflader ved hjælp af Web-services, som tillader, at udbydere af services (fx modtagelse af en elektronisk faktura) kan informere serviceaftager om, hvor og hvordan disse services kan tilgås.
+- Ved EHMI Registret forstås en adresseringsmekanisme baseret på et register, som stilles til rådighed af MedCom. EHMI Registret udstiller en række snitflader ved hjælp af Web-services, som tillader, at udbydere af services (fx modtagelse af en elektronisk faktura) kan informere serviceaftager om, hvor og hvordan disse services kan tilgås.
 
-Ved Ny Version forstås en version af den pågældende Web-service, der gøres Tilgængelig for Aftageren, og som indeholder væsentlige ændringer eller væsentlige opdateringer i forhold hertil.
+- Ved Ny Version forstås en version af den pågældende Web-service, der gøres Tilgængelig for Aftageren, og som indeholder væsentlige ændringer eller væsentlige opdateringer i forhold hertil.
 
-Ved W3C XML-Schema forstås et W3C XML Schema, der overholder W3Cs XML Schema anbefaling.
+- Ved W3C XML-Schema forstås et W3C XML Schema, der overholder W3Cs XML Schema anbefaling.
 
-Ved XML forstås en standard for datakommunikation via Internettet, som er udviklet af The World Wide Web Consortium (W3C). (XML står for ”eXtensible Markup Language”).
+- Ved XML forstås en standard for datakommunikation via Internettet, som er udviklet af The World Wide Web Consortium (W3C). (XML står for ”eXtensible Markup Language”).
 
-Ved Web-services forstås en Tilgængeliggørelse af et it-systems applikationer med data og/eller Funktionalitet ved brug af internetteknologier.
+- Ved Web-services forstås en Tilgængeliggørelse af et it-systems applikationer med data og/eller Funktionalitet ved brug af internetteknologier.
 
-# 2. Anvendelsesområde
+### 2. Anvendelsesområde
 
 2.1 Nedenstående Generelle Betingelser regulerer anvendelsen af EHMI til udveksling af Forretningsdokumenter over ét eller flere netværk, herunder Internettet.
 
-2.2 Afsnit I - 'Vilkår for anvendelse af EHMI' indeholder de vilkår, hvorunder Erhvervsstyrelsen (MedCom) stiller EHMI til rådighed for Brugerne.
+2.2 
 
-Afsnit II - 'Vilkår for dataudveksling mellem brugerne' regulerer Brugernes dataudveksling ved hjælp af EHMI-Infrastrukturen.
+- Afsnit I - 'Vilkår for anvendelse af EHMI' indeholder de vilkår, hvorunder MedCom (MedCom) stiller EHMI til rådighed for Brugerne.
 
-Afsnit III - 'Afsluttende bestemmelser' indeholder fælles afsluttende bestemmelser.
+- Afsnit II - 'Vilkår for dataudveksling mellem brugerne' regulerer Brugernes dataudveksling ved hjælp af EHMI-Infrastrukturen.
 
-2.3 Definerede termer, 
+- Afsnit III - 'Afsluttende bestemmelser' indeholder fælles afsluttende bestemmelser.
 
-jf. pkt. 1, er skrevet med store begyndelsesbogstaver.
+2.3 Definerede termer, jf. afsnit 1, er skrevet med store begyndelsesbogstaver.
 
-# 3. Accept af Generelle Betingelser
+### 3. Accept af Generelle Betingelser
 
 3.1 EHMI-Infrastrukturen er etableret af MedCom og kan i henhold til disse Generelle Betingelser anvendes af offentlige myndigheder, virksomheder og andre til udveksling af Forretningsdokumenter.
 
@@ -81,7 +75,7 @@ Ved Individuelle Brugeres registrering i EHMI Registret skal den Individuelle Br
 
 **Afsnit I - VILKÅR FOR ANVENDELSE AF EHMI**
 
-# 4. EHMI
+### 4. EHMI
 
 4.1. EHMI har til formål at gøre det muligt at udveksle Forretningsdokumenter over ét eller flere netværk, herunder Internettet.
 
@@ -98,7 +92,7 @@ web-service standarder, som skal benyttes i udvekslingen af forskellige Forretni
 
 4.3. Opdateringer og ændringer af EHMI Registret, Interoperabilitetsprofilerne eller tool-kit/referenceimplementeringen varsles af MedCom i henhold til bestemmelserne nedenfor i punkt 6.
 
-# 5. Adgang til EHMI
+### 5. Adgang til EHMI
 
 5.1. Offentlige myndigheder og andre organisationer opnår adgang til at benytte EHMI-Infrastrukturen til, som Serviceudbydere, at modtage Forretningsdokumenter via Web-services, når de er registreret i EHMI Registret.
 
@@ -106,7 +100,7 @@ web-service standarder, som skal benyttes i udvekslingen af forskellige Forretni
 
 5.3. Det er Brugernes eget ansvar at sikre, at deres it-systemer er konfigureret og eventuelt tilrettet i nødvendigt omfang til at kunne anvende EHMI-Infrastrukturen.
 
-# 6. Ændringer og opdateringer
+### 6. Ændringer og opdateringer
 
 6.1. MedCom vil løbende opdatere og videreudvikle EHMI-Infrastrukturen. Oplysninger herom vil blive offentliggjort på Digitaliser.dk.
 
@@ -114,7 +108,7 @@ web-service standarder, som skal benyttes i udvekslingen af forskellige Forretni
 
 6.3. Ændringer i EHMI-Infrastrukturen, som af MedCom skønnes at kunne have betydning for Brugernes udveksling af Forretningsdokumenter, vil blive varslet mindst 3 måneder i forvejen i relevante fora på Digitaliser.dk. Dette gælder dog ikke, hvis det fx på grund af lov- eller myndighedskrav ikke er muligt at overholde dette varsel.
 
-# 7. Servicemål for drift og support
+### 7. Servicemål for drift og support
 
 7.1. Som et element i EHMI indgår, at Serviceaftagere anvender Replikerede EHMI-Registre, som stilles til rådighed af Private Udbydere. Den enkelte Private Udbyder har ansvaret for de Replikerede EHMI-Registre, de udbyder. Alle henvendelser vedrørende adgang,
 nedbrud, forstyrrelser eller fejl m.v. i Replikerede EHMI-Registre, der ikke drives af MedCom, skal dermed rettes til den pågældende Private Udbyder. MedCom er således udelukkende ansvarlig for driften af EHMI-Registret og har intet ansvar for Replikerede EHMI-Registre, der drives af Private Udbydere.
@@ -125,13 +119,13 @@ nedbrud, forstyrrelser eller fejl m.v. i Replikerede EHMI-Registre, der ikke dri
 
 7.4. Spørgsmål og indrapportering af fejl kan ske på følgende e-mailadresse support@EHMI.dk. Alternativt kan der ringes til EHMI Support på telefon 70265676 mandag – torsdag ml. kl. 08:30 – 14:00 og fredag ml. kl. 09:00 – 14:00.
 
-# 8. Sikkerhed og lovkrav
+### 8. Sikkerhed og lovkrav
 
 8.1. Brugerne skal sikre, at der er knyttet forsvarlige sikkerhedsforanstaltninger til de applikationer og systemer disse benytter for at kunne anvende EHMI-Infrastrukturen. Offentlige myndigheder skal ved brugen af EHMI-Infrastrukturen opfylde ISO 27001.
 
 8.2. Ligeledes påhviler det Brugerne at sikre, at behandling og opbevaring af Forretningsdokumenter, der udveksles via EHMI-Infrastrukturen, sker under overholdelse af gældende lovgivning og myndighedsforskrifter. Navnlig skal Brugerne sikre, at eventuel udveksling og anden behandling af Forretningsmeddelelser, sker i henhold til databeskyttelsesloven (lov nr. 502 af 23. maj 2018) og bogføringsloven (lovbekendtgørelse nr. 648 af 15. juni 2006).
 
-# 9. Ansvarsfraskrivelse
+### 9. Ansvarsfraskrivelse
 
 9.1. EHMI-Infrastrukturen kan benyttes til udveksling af Forretningsdokumenter, jf. Afsnit II nedenfor. Bortset fra tilfælde, hvor MedCom selv er Serviceudbyder eller Serviceaftager, er MedCom ikke part i dataudvekslingen. Aftaleforholdet mellem Brugerne er derfor MedCom uvedkommende.
 
@@ -139,7 +133,7 @@ nedbrud, forstyrrelser eller fejl m.v. i Replikerede EHMI-Registre, der ikke dri
 
 9.3. MedCom har intet erstatnings- eller produktansvar over for Brugerne for hverken direkte eller indirekte tab.
 
-# 10. Rettigheder til EHMI
+### 10. Rettigheder til EHMI
 
 10.1. Rettighederne til ophavsretligt beskyttede dele af EHMI-Infrastrukturen tilhører MedCom. EHMI-Infrastrukturen stilles delvist til rådighed på en Open Source licens, som Brugeren herved forpligter sig til at respektere. For ophavsretligt beskyttede dele af EHMI-
 Infrastrukturen, der ikke omfattes af en Open Source licens, opnår Brugeren en brugsret i henhold til disse Generelle Betingelser og eventuelle særskilte licensvilkår for sådanne dele. Information om Open Source licensvilkår, eventuelle øvrige licensvilkår og hvilken del af EHMI-Infrastrukturen, de omfatter, kan læses på Digitaliser.dk.
@@ -148,7 +142,7 @@ Infrastrukturen, der ikke omfattes af en Open Source licens, opnår Brugeren en 
 
 **Afsnit II - VILKÅR FOR DATAUDVEKSLING MELLEM BRUGERNE**
 
-# 11. Anvendelsesområde
+### 11. Anvendelsesområde
 
 11.1. Nedenstående afsnit II af de Generelle Betingelser regulerer Serviceudbyder og Serviceaftagers udveksling af Forretningsdokumenter ved hjælp af EHMI-Infrastrukturen. Brugeroprettelse sker som angivet i punkt 5.
 
@@ -160,7 +154,7 @@ Infrastrukturen, der ikke omfattes af en Open Source licens, opnår Brugeren en 
 
 11.5. Supplerende vilkår for dataudvekslingen kan være individuelt aftalt mellem Parterne.
 
-# 12. Dataudveksling
+### 12. Dataudveksling
 
 12.1. Parterne forpligter sig til ved dataudveksling med offentlige myndigheder at anvende og overholde de til enhver tid gældende og af MedCom offentliggjorte offentlige standarder, protokoller, regelsamlinger og tekniske specifikationer for de Web-services, der anvendes i EHMI-Infrastrukturen, hvis dette er nødvendigt for dataudvekslingen. Opdatering og ændringer af sådanne standarder m.v. varsles af MedCom i henhold til punkt 5.
 
@@ -173,7 +167,7 @@ uoverensstemmelser vedrørende modtagelse eller afsendelse, skal indholdet af re
 
 12.5. Det fremgår af Interoperabilitetsprofilen, hvad der sker, hvis en meddelelse er blevet kompromitteret, eller signering er sket med invalidt certifikat.
 
-# 13. Opdateringer og Nye Versioner
+### 13. Opdateringer og Nye Versioner
 
 13.1. Ændringer af Serviceudbyderens snitflader og Web-services sker i form af en ændring i EHMI Registret. Efter opdateringen af EHMI Registret, vil Serviceaftageren ved opslag automatisk blive ledt til den Nye Version af Serviceudbyderens Web-service.
 
@@ -183,7 +177,7 @@ uoverensstemmelser vedrørende modtagelse eller afsendelse, skal indholdet af re
 
 13.4. Ved Tilgængeliggørelse af Nye Versioner, jf. ovenfor, kan Serviceudbyderen ophøre med Tilgængeliggørelsen af tidligere versioner med et skriftligt varsel på 60 Arbejdsdage til udgangen af en kalendermåned regnet fra Tilgængeliggørelsen af den seneste version. Varslet kan dog være kortere, hvis det på grund af lov- eller myndighedskrav ikke er muligt at overholde varslingsfristen.
 
-# 14. Sikkerhed og fortrolighed
+### 14. Sikkerhed og fortrolighed
 
 14.1. Parterne skal etablere og opretholde fornødne sikkerhedsmæssige tiltag til sikring af, at Forretningsdokumenter, der udveksles via EHMI-Infrastrukturen ved hjælp af Web-services, ikke kommer til uvedkommendes kendskab, forvanskes eller går til grunde.
 
@@ -195,7 +189,7 @@ uoverensstemmelser vedrørende modtagelse eller afsendelse, skal indholdet af re
 
 14.5. Herudover skal Parterne til stadighed overholde god it-sikkerhedsskik, som fastlagt ved sædvane eller gældende standarder.
 
-# 15. Personoplysninger
+### 15. Personoplysninger
 
 15.1. Brugerne er gensidigt ansvarlige for at eventuelle personoplysninger, som indgår i udvekslede Web-services, lovligt kan udveksles med den anden Part i henhold til databeskyttelsesloven og anden relevant lovgivning.
 
@@ -203,7 +197,7 @@ uoverensstemmelser vedrørende modtagelse eller afsendelse, skal indholdet af re
 
 15.3. Personhenførbare oplysninger kan alene udveksles med eller opbevares i lande uden for EU, såfremt der foreligger et gyldigt overførselsgrundlag i henhold til de i persondataforordningen fastsatte regler herom, medmindre der er tale om overførsel til et ”sikkert” tredjeland, således som dette er defineret af EU-Kommissionen.
 
-# 16. Ansvar
+### 16. Ansvar
 
 16.1. Ved misligholdelse af disse Generelle Betingelser er Brugerne ansvarlige efter dansk rets almindelige regler. Ingen af Parterne er dog ansvarlige overfor en anden Part for indirekte tab eller følgeskader ved en sådan misligholdelse. Udgifter til reproduktion eller genskabelse af data anses for direkte tab.
 
@@ -211,7 +205,7 @@ uoverensstemmelser vedrørende modtagelse eller afsendelse, skal indholdet af re
 
 16.3. En evt. databehandler, driftsleverandør eller anden mellemmand skal sikre sig tilladelse til at agere på kundens vegne i forbindelse med udveksling af forretningsdokumenter via EHMI-infrastrukturen.
 
-# 17. Opbevaring af Forretningsdokumenter
+### 17. Opbevaring af Forretningsdokumenter
 
 17.1. Logfiler og udskrifter af Forretningsdokumenter udvekslet via EHMI-Infrastrukturen kan anvendes som dokumentation i tvister mellem Parterne og udgør bevis for de kendsgerninger, de vedrører, medmindre der fremføres bevis for det modsatte.
 
@@ -221,7 +215,7 @@ uoverensstemmelser vedrørende modtagelse eller afsendelse, skal indholdet af re
 
 **Afsnit III - AFSLUTTENDE BESTEMMELSER**
 
-# 18. Opsigelse
+### 18. Opsigelse
 
 18.1. MedCom kan overfor en, flere eller alle Brugere opsige retten til brug af EHMI-Infrastrukturen med et skriftligt varsel på 2 år regnet fra datoen, hvor varslet gives. En opsigelse
 vil blive varslet i relevante fora på www.Digitaliser.dk, idet opsigelsen skal anses for bindende for Brugeren og dennes Individuelle Brugere, såfremt den er kommet frem til blot én Individuel Bruger.
@@ -234,27 +228,27 @@ vil blive varslet i relevante fora på www.Digitaliser.dk, idet opsigelsen skal 
 
 18.5. Ovenstående opsigelsesbestemmelser gælder ikke i det omfang, en sådan opsigelsesadgang strider mod eventuel ufravigelig lovgivning, bekendtgørelser eller myndighedskrav vedrørende obligatorisk anvendelse af EHMI-Infrastrukturen til Udveksling af Forretningsdokumenter.
 
-# 19. Virkninger af ophør
+### 19. Virkninger af ophør
 
 19.1. Ved ophør af dataudveksling via EHMI-Infrastrukturen skal Serviceudbyder og Serviceaftager samarbejde loyalt om en hurtig og effektiv afvikling, så afbrydelser eller forstyrrelser i Parternes it-drift så vidt muligt undgås.
 
 19.2. Såfremt en Part, som led i brug af EHMI-Infrastrukturen fra en anden Part har fået udleveret manualer, specifikationer, programmel eller andet materiale, skal sådant materiale omgående tilbageleveres eller tilintetgøres på anmodning fra den udleverende Part. Det gælder tilsvarende specifikationer for brugerautorisationer, kopi af systemdokumentation og data. Endvidere kan Serviceudbyderen i 12 måneder efter ophør af aftalen om dataudveksling kræve at få udleveret kopier fra Serviceaftagerens logfil af Forretningsdokumenter udvekslet i aftalens løbetid, dog højst 5 år før aftalens ophør.
 
-# 20. E-mail kommunikation og skriftlighed
+### 20. E-mail kommunikation og skriftlighed
 
 20.1. Ethvert krav om skriftlighed skal anses for opfyldt i relation til e-mail kommunikation og dataudveksling via Web-services, medmindre andet følger af ufravigelig lovgivning eller ufravigelige forskrifter.
 
 20.2. E-mails anses for at være afsendt, når meddelelsen er afsendt fra det IT-system, hvortil afsenderens e-mail-adresse er knyttet. E-mails anses for at være kommet frem, når meddelelsen er modtaget i det IT-system, hvortil modtagerens e-mail-adresse er knyttet.
 
-# 21. Ændringer
+### 21. Ændringer
 
 21.1. MedCom kan ændre de Generelle Betingelser over for alle øvrige Parter med 20 Arbejdsdages varsel til udgangen af en måned ved offentliggørelse af en ny version heraf på www.digitaliser.dk.
 
-# 22. Ugyldighed
+### 22. Ugyldighed
 
 22.1. Hvis nogen del af disse Generelle Betingelser eller Parternes aftaler i medfør heraf skulle blive anset for retsstridig og ugyldig og dermed ikke kan håndhæves, påvirker dette ikke gyldigheden og håndhævelsen af den resterende del af de Generelle Betingelser.
 
-# 23. Tvistigheder
+### 23. Tvistigheder
 
 23.1. Såfremt der opstår en uoverensstemmelse mellem Parterne i forbindelse med EHMI-Infrastrukturen, skal de pågældende Parter med en positiv, samarbejdende og ansvarlig holdning søge at indlede forhandlinger med henblik på at løse tvisten. Om nødvendigt skal forhandlingerne søges løftet op på højere plan i de pågældende Parters organisationer. Såfremt der ej heller herved opnås nogen løsning, skal Parterne søge at opnå enighed om i fællesskab at udpege en uafhængig og sagkyndig mægler, der kan mægle og komme med ikke-bindende forslag til tvistens løsning.
 
