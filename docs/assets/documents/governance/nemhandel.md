@@ -1,8 +1,6 @@
-EHMI - Logo
+# EHMI Aftalevilkår
 
-EHMI Aftalevilkår
-
-'EHMI Aftalevilkår' regulerer anvendelsen af EHMI til udveksling af forretningsdokumenter over ét eller flere netværk, herunder Internettet.
+**'EHMI Aftalevilkår' regulerer anvendelsen af EHMI til udveksling af forretningsdokumenter over ét eller flere netværk, herunder Internettet.**
 
 ### 1. Definitioner
 Nedenstående definitioner finder anvendelse i det omfang de pågældende ord og begreber anvendes i de Generelle Betingelser eller tilhørende tekniske specifikationer og bilag.
