@@ -58,7 +58,7 @@ meddelelseskommunikationen i dette målbillede, og der allerede i forbindelse me
 Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følger:
 
 
-<table style="border:1px, solid, black">
+<table style="border:1px solid black">
 <thead>
 <tr class="header">
 <th>Aftale</th>
