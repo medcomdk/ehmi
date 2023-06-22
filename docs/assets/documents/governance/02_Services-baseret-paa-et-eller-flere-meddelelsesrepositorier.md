@@ -55,6 +55,58 @@ meddelelseskommunikationen i dette målbillede, og der allerede i forbindelse me
 
 Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følger:
 
+**Aftale** 
+
+Tilslutningsaftale for access-punkt 
+
+**Beskrivelse**
+
+- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
+- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil |
+
+**Aftale** 
+
+Domænetilslutningsaftale for repositorie/service
+
+**Beskrivelse**
+
+- Supportfunktion (kontaktdata, åbningstid, responstid,
+etc.)
+- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+- miljøer
+- varslingsfrister for ændringer
+- krav om passus om konstruktivt supportsamarbejde imellem access-punkt og repositorie når nødvendigt
+- krav om passus om kommunikationsprotokol og sikkerhed i forhold til kommunikation imellem repositorie
+og access-punkt 
+- krav om passus om tilslutningsaftale for anvendersystem til service
+
+**Aftale** 
+
+Access-punkttilslutningsaftale for repositorie/service
+
+**Beskrivelse**
+
+- Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
+- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+- miljøer
+- varslingsfrister for ændringer
+- konstruktivt supportsamarbejde imellem accesspunkt og repositorie når nødvendigt
+- protokol for kommunikation af opsamlede data imellem access-punkt og repositorie
+- sikkerhedsmæssige aspekter (kryptering og autentifikation) ved kommunikationen imellem accesspunkt og repositorie
+
+**Aftale** 
+
+Tilslutningsaftale for anvendersystem
+
+**Beskrivelse**
+
+- Supportfunktion (kontaktdata, åbningstid, responstid,
+etc.)
+- miljøer
+- varslingsfrister for ændringer
+- brugeradministration i anvendersystem
+- håndtering af de hentede data herunder personhenførbare data
+
 |:--|:--|
 | Aftale | Beskrivelse |
 | Tilslutningsaftale for access-punkt | - Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
