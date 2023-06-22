@@ -66,11 +66,11 @@ Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følge
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>
+<tr class="odd" style="border:1px solid black">
+<td style="border:1px solid black">
 Tilslutningsaftale for access-punkt
 </td>
-<td>
+<td style="border:1px solid black">
 <ul>
 <li>
 Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
@@ -81,102 +81,94 @@ krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige as
 </ul>
 </td>
 </tr>
-<tr class="even">
-<td>
-Domænetilslutningsaftale for repositorie/service
-</td>
-<td>
-<ul>
-<li>
-Supportfunktion (kontaktdata, åbningstid, responstid,
-etc.)
-</li>
-<li>
-SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
-</li>
-<li>
-miljøer
-</li>
-<li>
-varslingsfrister for ændringer
-</li>
-<li>
-krav om passus om konstruktivt supportsamarbejde imellem access-punkt og repositorie når nødvendigt
-</li>
-<li>
-krav om passus om kommunikationsprotokol og sikkerhed i forhold til kommunikation imellem repositorie
-og access-punkt 
-</li>
-<li>
-krav om passus om tilslutningsaftale for anvendersystem til service
-</li>
-</ul>
-</td>
+<tr class="even" style="border:1px solid black">
+    <td style="border:1px solid black">
+    Domænetilslutningsaftale for repositorie/service
+    </td>
+    <td style="border:1px solid black">
+        <ul>
+        <li>
+        Supportfunktion (kontaktdata, åbningstid, responstid,
+        etc.)
+        </li>
+        <li>
+        SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+        </li>
+        <li>
+        miljøer
+        </li>
+        <li>
+        varslingsfrister for ændringer
+        </li>
+        <li>
+        krav om passus om konstruktivt supportsamarbejde imellem access-punkt og repositorie når nødvendigt
+        </li>
+        <li>
+        krav om passus om kommunikationsprotokol og sikkerhed i forhold til kommunikation imellem repositorie
+        og access-punkt 
+        </li>
+        <li>
+        krav om passus om tilslutningsaftale for anvendersystem til service
+        </li>
+        </ul>
+    </td>
 </tr>
-<tr class="odd">
-<td>
-Access-punkttilslutningsaftale for repositorie/service
-</td>
-<td>
-<ul>
-<li>
-- Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
-</li>
-<li>
-- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
-</li>
-<li>
-- miljøer
-</li>
-<li>
-- varslingsfrister for ændringer
-</li>
-<li>
-- konstruktivt supportsamarbejde imellem accesspunkt og repositorie når nødvendigt
-</li>
-<li>
-- protokol for kommunikation af opsamlede data imellem access-punkt og repositorie
-</li>
-<li>
-- sikkerhedsmæssige aspekter (kryptering og autentifikation) ved kommunikationen imellem accesspunkt og repositorie
-</li>
-</ul>
-
-</td>
+<tr class="odd" style="border:1px solid black">
+    <td style="border:1px solid black">
+    Access-punkttilslutningsaftale for repositorie/service
+    </td>
+    <td style="border:1px solid black">
+        <ul>
+        <li>
+        Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
+        </li>
+        <li>
+        SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+        </li>
+        <li>
+        miljøer
+        </li>
+        <li>
+        varslingsfrister for ændringer
+        </li>
+        <li>
+        konstruktivt supportsamarbejde imellem accesspunkt og repositorie når nødvendigt
+        </li>
+        <li>
+        protokol for kommunikation af opsamlede data imellem access-punkt og repositorie
+        </li>
+        <li>
+        sikkerhedsmæssige aspekter (kryptering og autentifikation) ved kommunikationen imellem accesspunkt og repositorie
+        </li>
+        </ul>
+    </td>
+</tr>
+<tr class="even" style="border:1px solid black">
+    <td style="border:1px solid black">
+    Tilslutningsaftale for anvendersystem
+    </td>
+    <td style="border:1px solid black">
+        <ul>
+        <li>
+        Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
+        </li>
+        <li>
+        SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+        </li>
+        <li>
+        miljøer
+        </li>
+        <li>
+        varslingsfrister for ændringer
+        </li>
+        <li>
+        brugeradministration i anvendersystem
+        </li>
+        <li>
+        håndtering af de hentede data herunder personhenførbare data
+        </li>
+        </ul>
+    </td>
 </tr>
 </tbody>
 </table>
-
-|:--|:--|
-| **Aftale:** | Tilslutningsaftale for anvendersystem |
-
-| **Beskrivelse** | - Supportfunktion (kontaktdata, åbningstid, responstid,
-etc.) - miljøer - varslingsfrister for ændringer - brugeradministration i anvendersystem - håndtering af de hentede data herunder personhenførbare data |
-
-
-|:--|:--|
-| Aftale | Beskrivelse |
-| Tilslutningsaftale for access-punkt | - Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
-- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil |
-| Domænetilslutningsaftale for repositorie/service | - Supportfunktion (kontaktdata, åbningstid, responstid,
-etc.)
-- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
-- miljøer
-- varslingsfrister for ændringer
-- krav om passus om konstruktivt supportsamarbejde imellem access-punkt og repositorie når nødvendigt
-- krav om passus om kommunikationsprotokol og sikkerhed i forhold til kommunikation imellem repositorie
-og access-punkt 
-- krav om passus om tilslutningsaftale for anvendersystem til service |
-| Access-punkttilslutningsaftale for repositorie/service | - Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
-- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
-- miljøer
-- varslingsfrister for ændringer
-- konstruktivt supportsamarbejde imellem accesspunkt og repositorie når nødvendigt
-- protokol for kommunikation af opsamlede data imellem access-punkt og repositorie
-- sikkerhedsmæssige aspekter (kryptering og autentifikation) ved kommunikationen imellem accesspunkt og repositorie |
-| Tilslutningsaftale for anvendersystem | - Supportfunktion (kontaktdata, åbningstid, responstid,
-etc.)
-- miljøer
-- varslingsfrister for ændringer
-- brugeradministration i anvendersystem
-- håndtering af de hentede data herunder personhenførbare data |
