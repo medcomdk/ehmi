@@ -52,7 +52,8 @@ Præcis hvordan sammensætningen af disse fora skal være og hvilke sammenhænge
 Der er mange temaer under governance som tydeligt illustreret i følgende figur, der stammer fra [EDELDIGSTANRAP]:
 
 ![Figur 21: Forskellige governance temaer og deres gruppering.](/ehmi/assets/images/MB_Figur-21-forskellige-governance-temaer-og-deres-gruppering.png)
-Figur 21: Forskellige governance temaer og deres gruppering.
+
+_Figur 21: Forskellige governance temaer og deres gruppering._
 
 Temaerne kan inddeles i tre grupper under overskrifterne strategi og udvikling, systemforvaltning, og brugersupport og –dialog. Det ses at temaerne ikke udelukkende handler om kontrol
 og forvaltning. Selvom dette naturligvis er en meget vigtig og central del af governance, er det også vigtigt at denne ikke er så rigid, at det gør udvikling af infrastrukturen for meddelelseskommunikation for langsommelig.
@@ -74,14 +75,14 @@ Der er også mange processer omkring temaerne under governance. I følgende tabe
 <table style="border:1px solid black">
 <thead style="border:1px solid black">
 <tr class="header" style="border:1px solid black align:top">
-    <th style="border:1px solid black">>Proces</th>
-    <th style="border:1px solid black">>Beskrivelse</th>
+    <th style="border:1px solid black">Proces</th>
+    <th style="border:1px solid black">Beskrivelse</th>
 </tr>
 </thead>
 <tbody style="border:1px solid black align:top">
 <tr class="odd" style="border:1px solid black">
     <td style="border:1px solid black align:top">
-    Tilslutning 
+        Tilslutning 
     </td>
     <td style="border:1px solid black">
         Dette foregår mellem flere niveauer. Der er tilslutning af et system til et access-punkt, tilslutning af et domæne (eksempelvis relevant i vores kontekst
@@ -94,7 +95,7 @@ Der er også mange processer omkring temaerne under governance. I følgende tabe
 </tr>
 <tr class="even" style="border:1px solid black">
     <td style="border:1px solid black">
-    Certificering
+        Certificering
     </td>
     <td style="border:1px solid black">
         Dette foregår på sundhedsdomæne niveau og er en forudsætning for, at
@@ -126,6 +127,7 @@ Der er også mange processer omkring temaerne under governance. I følgende tabe
     </td>
     <td style="border:1px solid black">
         De fælles eDelivery standarder styres af EU og processerne omkring disse er derfor ikke en del af dette målbillede.
+        
         Standarderne for meddelelserne på sundhedsområdet inklusive disses konvolutter ejes og vedligeholdes på sundhedsdomæne niveau, og der er derfor en standardejer og en standardforvalter/vedligeholder rolle for disse sundhedsmeddelelsesstandarder – begge roller eksisterer allerede i dag og spilles af MedCom.
 
         Den overordnede proces for standarder for nye typer af meddelelser på sundhedsområdet vil fortsætte som i dag. Forslag til nye typer af meddelelser er behovsdrevet og kan fremsættes af enhver part (eller projekt) på sundhedsområdet. Standardforvalteren udarbejder detaljer for den nye standard i samarbejde med parterne, der ønsker den nye meddelelsestype.
@@ -135,7 +137,7 @@ Der er også mange processer omkring temaerne under governance. I følgende tabe
 </tr>
 <tr class="even" style="border:1px solid black">
     <td style="border:1px solid black">
-        ”De klassiske ITIL inspirerede processer” om incident, problem, og change håndtering
+        Incident, problem, og change håndtering (”De klassiske ITIL inspirerede processer”)
     </td>
     <td style="border:1px solid black">
         På de enkelte niveauer håndteres, som nævnt i afsnit 7.1.3, de komponenter, hvis ansvar ligger på det pågældende niveau.
@@ -163,6 +165,7 @@ Der er også mange processer omkring temaerne under governance. I følgende tabe
     </td>
     <td style="border:1px solid black">
         Monitorering, opfølgning, og afrapportering i forhold til SLA eksisterer også på flere niveauer.
+        
         Hvor detaljeret der skal monitoreres og hvor ofte, der skal følges op og afrapporteres er igen en del af de tilslutningsaftaler, der indgås på det givne niveau.
     </td>
 </tr>
@@ -196,8 +199,8 @@ Der kan også være overordnede krav, der gør sig gældende på alle niveauer, 
 <table style="border:1px solid black">
 <thead style="border:1px solid black">
 <tr class="header" style="border:1px solid black align:top">
-    <th style="border:1px solid black">>Aftale</th>
-    <th style="border:1px solid black">>Beskrivelse</th>
+    <th style="border:1px solid black">Aftale</th>
+    <th style="border:1px solid black">Beskrivelse</th>
 </tr>
 </thead>
 <tbody style="border:1px solid black align:top">
