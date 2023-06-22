@@ -86,7 +86,7 @@ krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige as
 Domænetilslutningsaftale for repositorie/service
 </td>
 <td>
-<ol>
+<ul>
 <li>
 Supportfunktion (kontaktdata, åbningstid, responstid,
 etc.)
@@ -110,52 +110,42 @@ og access-punkt
 <li>
 krav om passus om tilslutningsaftale for anvendersystem til service
 </li>
-</ol>
+</ul>
 </td>
 </tr>
 <tr class="odd">
 <td>
-Tilslutningsaftale for access-punkt
+Access-punkttilslutningsaftale for repositorie/service
 </td>
 <td>
-- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
-- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
-</td>
-</tr>
-<tr class="even">
-<td>
-Tilslutningsaftale for access-punkt
-</td>
-<td>
-- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
-- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
-</td>
-</tr>
-<tr class="odd">
-<td>
-Tilslutningsaftale for access-punkt
-</td>
-<td>
-- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
-- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
+<ul>
+<li>
+- Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
+</li>
+<li>
+- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+</li>
+<li>
+- miljøer
+</li>
+<li>
+- varslingsfrister for ændringer
+</li>
+<li>
+- konstruktivt supportsamarbejde imellem accesspunkt og repositorie når nødvendigt
+</li>
+<li>
+- protokol for kommunikation af opsamlede data imellem access-punkt og repositorie
+</li>
+<li>
+- sikkerhedsmæssige aspekter (kryptering og autentifikation) ved kommunikationen imellem accesspunkt og repositorie
+</li>
+</ul>
+
 </td>
 </tr>
 </tbody>
 </table>
-
-
-**Aftale:** Access-punkttilslutningsaftale for repositorie/service
-
-**Beskrivelse**
-
-- Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
-- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
-- miljøer
-- varslingsfrister for ændringer
-- konstruktivt supportsamarbejde imellem accesspunkt og repositorie når nødvendigt
-- protokol for kommunikation af opsamlede data imellem access-punkt og repositorie
-- sikkerhedsmæssige aspekter (kryptering og autentifikation) ved kommunikationen imellem accesspunkt og repositorie
-
 
 |:--|:--|
 | **Aftale:** | Tilslutningsaftale for anvendersystem |
