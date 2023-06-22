@@ -55,7 +55,7 @@ Figur 23: Governance aftaler imellem de forskellige niveauer for deling af medde
 Da deling af meddelelser og forsendelsesstatus på sundhedsområdet er en integreret del af meddelelseskommunikation på sundhedsområdet og hører tæt sammen med punkt til punkt
 meddelelseskommunikationen i dette målbillede, og der allerede i forbindelse med punkt til punkt meddelelseskommunikationen via eDelivery er blevet identificeret en domænetilslutningsaftale imellem sundhedsdomænet og access-punktet, er tilslutningsaftalen for accesspunkt i Figur 23 en del af denne domænetilslutningsaftale fremfor en selvstående aftale. I det følgende er det derfor kun det relateret til opsamling af meddelelser/forsendelsesstatus i denne tilslutningsaftale, der omtales. Tilslutningsaftalen for anvendersystemet vil være meget lig tilsvarende aftaler for anvendersystemer af andre nationale services på sundhedsområdet.
 
-Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følger:
+**Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følger:**
 
 
 <table style="border:1px solid black">
