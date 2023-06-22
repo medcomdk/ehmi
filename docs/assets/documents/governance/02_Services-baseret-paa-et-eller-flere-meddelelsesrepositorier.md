@@ -54,3 +54,30 @@ Da deling af meddelelser og forsendelsesstatus på sundhedsområdet er en integr
 meddelelseskommunikationen i dette målbillede, og der allerede i forbindelse med punkt til punkt meddelelseskommunikationen via eDelivery er blevet identificeret en domænetilslutningsaftale imellem sundhedsdomænet og access-punktet, er tilslutningsaftalen for accesspunkt i Figur 23 en del af denne domænetilslutningsaftale fremfor en selvstående aftale. I det følgende er det derfor kun det relateret til opsamling af meddelelser/forsendelsesstatus i denne tilslutningsaftale, der omtales. Tilslutningsaftalen for anvendersystemet vil være meget lig tilsvarende aftaler for anvendersystemer af andre nationale services på sundhedsområdet.
 
 Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følger:
+
+|:--|:--|
+| Aftale | Beskrivelse |
+| Tilslutningsaftale for access-punkt | - Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
+- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil |
+| Domænetilslutningsaftale for repositorie/service | - Supportfunktion (kontaktdata, åbningstid, responstid,
+etc.)
+- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+- miljøer
+- varslingsfrister for ændringer
+- krav om passus om konstruktivt supportsamarbejde imellem access-punkt og repositorie når nødvendigt
+- krav om passus om kommunikationsprotokol og sikkerhed i forhold til kommunikation imellem repositorie
+og access-punkt 
+- krav om passus om tilslutningsaftale for anvendersystem til service |
+| Access-punkttilslutningsaftale for repositorie/service | - Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
+- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+- miljøer
+- varslingsfrister for ændringer
+- konstruktivt supportsamarbejde imellem accesspunkt og repositorie når nødvendigt
+- protokol for kommunikation af opsamlede data imellem access-punkt og repositorie
+- sikkerhedsmæssige aspekter (kryptering og autentifikation) ved kommunikationen imellem accesspunkt og repositorie |
+| Tilslutningsaftale for anvendersystem | - Supportfunktion (kontaktdata, åbningstid, responstid,
+etc.)
+- miljøer
+- varslingsfrister for ændringer
+- brugeradministration i anvendersystem
+- håndtering af de hentede data herunder personhenførbare data |
