@@ -57,18 +57,16 @@ meddelelseskommunikationen i dette målbillede, og der allerede i forbindelse me
 
 Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følger:
 
-**Aftale** 
 
-Tilslutningsaftale for access-punkt 
+**Aftale:** Tilslutningsaftale for access-punkt 
 
 **Beskrivelse**
 
 - Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
 - krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
 
-**Aftale** 
 
-Domænetilslutningsaftale for repositorie/service
+**Aftale:** Domænetilslutningsaftale for repositorie/service
 
 **Beskrivelse**
 
@@ -82,9 +80,8 @@ etc.)
 og access-punkt 
 - krav om passus om tilslutningsaftale for anvendersystem til service
 
-**Aftale** 
 
-Access-punkttilslutningsaftale for repositorie/service
+**Aftale:** Access-punkttilslutningsaftale for repositorie/service
 
 **Beskrivelse**
 
@@ -96,18 +93,13 @@ Access-punkttilslutningsaftale for repositorie/service
 - protokol for kommunikation af opsamlede data imellem access-punkt og repositorie
 - sikkerhedsmæssige aspekter (kryptering og autentifikation) ved kommunikationen imellem accesspunkt og repositorie
 
-**Aftale** 
 
-Tilslutningsaftale for anvendersystem
+|:--|:--|
+| **Aftale:** | Tilslutningsaftale for anvendersystem |
 
-**Beskrivelse**
+| **Beskrivelse** | - Supportfunktion (kontaktdata, åbningstid, responstid,
+etc.) - miljøer - varslingsfrister for ændringer - brugeradministration i anvendersystem - håndtering af de hentede data herunder personhenførbare data |
 
-- Supportfunktion (kontaktdata, åbningstid, responstid,
-etc.)
-- miljøer
-- varslingsfrister for ændringer
-- brugeradministration i anvendersystem
-- håndtering af de hentede data herunder personhenførbare data
 
 |:--|:--|
 | Aftale | Beskrivelse |
