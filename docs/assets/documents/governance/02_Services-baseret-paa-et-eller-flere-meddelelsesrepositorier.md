@@ -60,14 +60,14 @@ Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følge
 
 <table style="border:1px solid black">
 <thead style="border:1px solid black">
-<tr class="header" style="border:1px solid black">
-    <th>Aftale</th>
-    <th>Beskrivelse</th>
+<tr class="header" style="border:1px solid black align:top">
+    <th style="border:1px solid black">>Aftale</th>
+    <th style="border:1px solid black">>Beskrivelse</th>
 </tr>
 </thead>
-<tbody style="border:1px solid black">
-<tr class="odd" style="border:1px solid black align:top">
-    <td style="border:1px solid black">
+<tbody style="border:1px solid black align:top">
+<tr class="odd" style="border:1px solid black">
+    <td style="border:1px solid black align:top">
     Tilslutningsaftale for access-punkt
     </td>
     <td style="border:1px solid black">
