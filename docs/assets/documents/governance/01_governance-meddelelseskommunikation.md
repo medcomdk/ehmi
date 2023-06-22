@@ -135,10 +135,35 @@ Der er også mange processer omkring temaerne under governance. I følgende tabe
 </tr>
 <tr class="even" style="border:1px solid black">
     <td style="border:1px solid black">
-    Domænetilslutningsaftale for repositorie/service
+        ”De klassiske ITIL inspirerede processer” om incident, problem, og change håndtering
     </td>
     <td style="border:1px solid black">
+        På de enkelte niveauer håndteres, som nævnt i afsnit 7.1.3, de komponenter, hvis ansvar ligger på det pågældende niveau.
 
+        Derudover er man ansvarlig for at holde de interessenter på andre niveauer, der er afhængige af den pågældende komponent, orienteret, så f.eks. skal sundhedsdomænet orientere systemerne (C1/C4 i bred forstand) angående sundhedsadresseringsservicen, og eDelivery netværket skal orientere sundhedsdomænet og access-punkterne (C2/C3) om SMP og SML.
+
+        Derudover er det vigtigt, at sundhedsdomæne niveauet er eskaleringspunkt ved tvister systemer imellem angående indhold af meddelelser, og eDelivery netværk niveauet er tilsvarende eskaleringspunkt for tvister angående forbindelse imellem access-punkter.
+    </td>
+</tr>
+<tr class="odd" style="border:1px solid black">
+    <td style="border:1px solid black align:top">
+        Sikkerhedshåndtering
+    </td>
+    <td style="border:1px solid black">
+        Dette foregår på flere niveauer og på et givet niveau (igen) for de komponenter niveauet har ansvar for.
+
+        Hvor ofte sikkerhedsaudits skal foretages er en del af de tilslutningsaftaler, der indgås på det pågældende niveau, og resultatet af en audit skal afrapporteres til det andet niveau tilslutningsaftalen er indgået med.
+
+        Endvidere er det naturligvis vigtigt, at relevant lovgivning, som eksempelvis NIS2 direktivet, overholdes.
+    </td>
+</tr>
+<tr class="even" style="border:1px solid black">
+    <td style="border:1px solid black">
+        SLA
+    </td>
+    <td style="border:1px solid black">
+        Monitorering, opfølgning, og afrapportering i forhold til SLA eksisterer også på flere niveauer.
+        Hvor detaljeret der skal monitoreres og hvor ofte, der skal følges op og afrapporteres er igen en del af de tilslutningsaftaler, der indgås på det givne niveau.
     </td>
 </tr>
 </tbody>
