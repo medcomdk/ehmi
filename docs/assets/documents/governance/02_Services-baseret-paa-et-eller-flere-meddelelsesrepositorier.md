@@ -71,10 +71,14 @@ Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følge
 Tilslutningsaftale for access-punkt
 </td>
 <td>
-- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
-
-- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
-
+<ul>
+<li>
+Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
+</li>
+<li>
+krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
+</li>
+</ul>
 </td>
 </tr>
 <tr class="even">
@@ -82,22 +86,31 @@ Tilslutningsaftale for access-punkt
 Domænetilslutningsaftale for repositorie/service
 </td>
 <td>
-- Supportfunktion (kontaktdata, åbningstid, responstid,
+<ol>
+<li>
+Supportfunktion (kontaktdata, åbningstid, responstid,
 etc.)
-
-- SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
-
-- miljøer
-
-- varslingsfrister for ændringer
-
-- krav om passus om konstruktivt supportsamarbejde imellem access-punkt og repositorie når nødvendigt
-
-- krav om passus om kommunikationsprotokol og sikkerhed i forhold til kommunikation imellem repositorie
+</li>
+<li>
+SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+</li>
+<li>
+miljøer
+</li>
+<li>
+varslingsfrister for ændringer
+</li>
+<li>
+krav om passus om konstruktivt supportsamarbejde imellem access-punkt og repositorie når nødvendigt
+</li>
+<li>
+krav om passus om kommunikationsprotokol og sikkerhed i forhold til kommunikation imellem repositorie
 og access-punkt 
-
-- krav om passus om tilslutningsaftale for anvendersystem til service
-
+</li>
+<li>
+krav om passus om tilslutningsaftale for anvendersystem til service
+</li>
+</ol>
 </td>
 </tr>
 <tr class="odd">
