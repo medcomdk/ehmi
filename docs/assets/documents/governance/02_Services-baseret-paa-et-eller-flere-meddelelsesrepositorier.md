@@ -58,6 +58,62 @@ meddelelseskommunikationen i dette målbillede, og der allerede i forbindelse me
 Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følger:
 
 
+<table>
+<thead>
+<tr class="header">
+<th>Aftale</th>
+<th>Beskrivelse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+Tilslutningsaftale for access-punkt
+</td>
+<td>
+- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
+- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
+</td>
+</tr>
+<tr class="even">
+<td>
+Tilslutningsaftale for access-punkt
+</td>
+<td>
+- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
+- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
+</td>
+</tr>
+<tr class="odd">
+<td>
+Tilslutningsaftale for access-punkt
+</td>
+<td>
+- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
+- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
+</td>
+</tr>
+<tr class="even">
+<td>
+Tilslutningsaftale for access-punkt
+</td>
+<td>
+- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
+- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
+</td>
+</tr>
+<tr class="odd">
+<td>
+Tilslutningsaftale for access-punkt
+</td>
+<td>
+- Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
+- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
+</td>
+</tr>
+</tbody>
+</table>
+
 **Aftale:** Tilslutningsaftale for access-punkt 
 
 **Beskrivelse**
