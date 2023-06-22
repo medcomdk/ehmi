@@ -48,6 +48,8 @@ SLA: Monitorering, opfølgning, og afrapportering i forhold til SLA eksisterer o
 
 Aftalestrukturen i forhold til deling af meddelelser og forsendelsesstatus kan illustreres ved:
 
+![Figur 23: Governance aftaler imellem de forskellige niveauer for deling af meddelelser og forsendelsesstatus](MB_Figur-23-Governance-aftaler-imellem-de-forskellige-niveauer-for-deling-af-meddelelser-og-forsendelsesstatus.png)
+
 Figur 23: Governance aftaler imellem de forskellige niveauer for deling af meddelelser og forsendelsesstatus.
 
 Da deling af meddelelser og forsendelsesstatus på sundhedsområdet er en integreret del af meddelelseskommunikation på sundhedsområdet og hører tæt sammen med punkt til punkt
@@ -62,7 +64,7 @@ Tilslutningsaftale for access-punkt
 **Beskrivelse**
 
 - Krav om opsamling af meddelelse til repositorie og sikkerhedsmæssige aspekter hertil
-- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil |
+- krav om opsamling af forsendelsesstatus til repositorie og sikkerhedsmæssige aspekter hertil
 
 **Aftale** 
 
