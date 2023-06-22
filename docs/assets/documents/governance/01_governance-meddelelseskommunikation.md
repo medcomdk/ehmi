@@ -71,6 +71,80 @@ på niveauet (f.eks. system (C1/C4 i bred forstand) for systemet, access-punkt (
 
 Der er også mange processer omkring temaerne under governance. I følgende tabel er de vigtigste af disse og deres væsentligste indhold præsenteret summarisk:
 
+<table style="border:1px solid black">
+<thead style="border:1px solid black">
+<tr class="header" style="border:1px solid black align:top">
+    <th style="border:1px solid black">>Proces</th>
+    <th style="border:1px solid black">>Beskrivelse</th>
+</tr>
+</thead>
+<tbody style="border:1px solid black align:top">
+<tr class="odd" style="border:1px solid black">
+    <td style="border:1px solid black align:top">
+    Tilslutning 
+    </td>
+    <td style="border:1px solid black">
+        Dette foregår mellem flere niveauer. Der er tilslutning af et system til et access-punkt, tilslutning af et domæne (eksempelvis relevant i vores kontekst
+        sundhedsdomænet) til eDelivery netværket, og tilslutning af accesspunkt til både eDelivery netværket og sundhedsdomænet.
+        Disse tilslutninger styres af tilsvarende aftaler, som beskrevet i følgende afsnit 7.1.5. Som hjælp til tilslutningen af access-punkter stiller eDelivery
+        netværket en startpakke (”getting started”) til rådighed, og denne suppleres med en domænestartpakke fra sundhedsdomænet i forhold til de yderligere
+        krav fra sundhedsdomænet. Endvidere vil der på sundhedsdomænet blive udarbejdet vejledninger til korrekt anvendelse, herunder f.eks. i korrekt anvendelse af kvitteringer og fejlhåndtering. 
+        Endelig stiller eDelivery netværket et onboardingmiljø til rådighed, hvor det for et access-punkt er muligt at afprøve eDelivery meddelelseskommunikation og foretage basal connectivity og conformance test.
+    </td>
+</tr>
+<tr class="even" style="border:1px solid black">
+    <td style="border:1px solid black">
+    Certificering
+    </td>
+    <td style="border:1px solid black">
+        Dette foregår på sundhedsdomæne niveau og er en forudsætning for, at
+        et access-punkt agerende for et system kan blive tilsluttet sundhedsdomænet,
+        og certificeringsprocessen kan derfor betragtes som værende relateret
+        til tilslutningsprocessen.
+
+        Certificering dækker eksplicit både korrekt anvendelse af standarderne for
+        meddelelserne på sundhedsområdet og korrekte kvitteringsflows (både
+        imellem C3-C2 og imellem C4-C1) og fejlhåndtering og dermed også implicit
+        korrekt anvendelse af de underliggende eDelivery standarder.
+
+        For at smidiggøre og lette certificeringsprocessen skal certificeringsinstansen,
+        på samme måde som, og inspireret af, forberedelsesprocessen til IHE
+        connectathons, stille en hjemmetestpakke til rådighed for systemer med
+        agerende access-punkter, som skal dokumenteres passeret for at kvalificere
+        sig til selve certificeringsprocessen med certificeringsinstansen.
+
+        Certificeringsprocessen er yderst vigtig, da den sikrer både, at to parter,
+        der kommunikerer med hinanden via punkt til punkt meddelelseskommunikation
+        følger de samme standarder, og dernæst at alle, som efterfølgende
+        henter meddelelserne via delingsservicen for meddelelser er sikret,
+        at de hentede meddelelser følger de rette standarder.
+    </td>
+</tr>
+<tr class="odd" style="border:1px solid black">
+    <td style="border:1px solid black align:top">
+    Standardisering
+    </td>
+    <td style="border:1px solid black">
+        De fælles eDelivery standarder styres af EU og processerne omkring disse er derfor ikke en del af dette målbillede.
+        Standarderne for meddelelserne på sundhedsområdet inklusive disses konvolutter ejes og vedligeholdes på sundhedsdomæne niveau, og der er derfor en standardejer og en standardforvalter/vedligeholder rolle for disse sundhedsmeddelelsesstandarder – begge roller eksisterer allerede i dag og spilles af MedCom.
+
+        Den overordnede proces for standarder for nye typer af meddelelser på sundhedsområdet vil fortsætte som i dag. Forslag til nye typer af meddelelser er behovsdrevet og kan fremsættes af enhver part (eller projekt) på sundhedsområdet. Standardforvalteren udarbejder detaljer for den nye standard i samarbejde med parterne, der ønsker den nye meddelelsestype.
+
+        Afslutningsvis godkendes standarden for den nye type af meddelelse af RUSA.    
+    </td>
+</tr>
+<tr class="even" style="border:1px solid black">
+    <td style="border:1px solid black">
+    Domænetilslutningsaftale for repositorie/service
+    </td>
+    <td style="border:1px solid black">
+
+    </td>
+</tr>
+</tbody>
+</table>
+
+
 
 ## 7.1.5 Aftaler
 
