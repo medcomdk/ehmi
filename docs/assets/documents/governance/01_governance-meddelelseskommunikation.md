@@ -90,10 +90,9 @@ Nogle dele af en aftale vedrører alene de to niveauer aftalen er indgået melle
 
 Der kan også være overordnede krav, der gør sig gældende på alle niveauer, som f.eks. at der på et givet niveau skal eksistere en supportfunktion med en nærmere specificeret minimumsåbningstid for henvendelser. Disse overordnede krav kan med fordel formuleres som politikker, så man i tilslutningsaftalerne kan skrive at den pågældende politik skal overholdes/implementeres – på denne måde behøver man ikke gentage den samme lange tekst i alle aftalerne, og såfremt der kommer ændringer skal man kun ændre et sted (nemlig i politikken) fremfor i samtlige aftaler.
 
-Hovedoverskrifterne for de fire tilslutningsaftaler er som følger, hvor dog specielt netværkstilslutningsaftalen for access-punktet kun er indikativ, da indholdet af dette ikke er noget et målbillede på sundhedsområdet kan diktere:
 
 **Indholdet af de fire tilslutningsaftaler på hovedoverskriftniveau er som følger:**
-
+(hvor dog specielt netværkstilslutningsaftalen for access-punktet kun er indikativ, da indholdet af dette ikke er noget, et målbillede på sundhedsområdet kan diktere)
 
 <table style="border:1px solid black">
 <thead style="border:1px solid black">
@@ -207,72 +206,139 @@ Hovedoverskrifterne for de fire tilslutningsaftaler er som følger, hvor dog spe
         </ul>
     </td>
 </tr>
+<tr class="even" style="border:1px solid black">
+    <td style="border:1px solid black">
+    Tilslutningsaftale for domæne
+    </td>
+    <td style="border:1px solid black">
+        <ul>
+        <li>
+        Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
+        </li>
+        <li>
+        SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+        </li>
+        <li>
+        miljøer
+        </li>
+        <li>
+        varslingsfrister for ændringer
+        </li>
+        <li>
+        Vedligehold af meddelelsestyper inden for domæne vedligehold af standarder for meddelelser inden for domæne
+        </li>
+        <li>
+        eksistens af domænestartpakke
+        </li>
+        <li>
+        domænekrav over for access-punkter formuleret (SLA, sikkerhed, supportfunktion, etc.)
+        </li>
+        </ul>
+    </td>
+</tr>
+<tr class="even" style="border:1px solid black">
+    <td style="border:1px solid black">
+    Netværkstilslutningsaftale for access-punkt
+    </td>
+    <td style="border:1px solid black">
+        <ul>
+        <li>
+        Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
+        </li>
+        <li>
+        SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+        </li>
+        <li>
+        miljøer
+        </li>
+        <li>
+        varslingsfrister for ændringer
+        </li>
+        <li>
+        basale eDelivery meddelelseskommunikationskrav
+        </li>
+        <li>
+        basale eDelivery sikkerhedskrav
+        </li>
+        <li>
+        konstruktivt supportsamarbejde imellem accesspunkter når nødvendigt
+        </li>
+        <li>
+        krav om passus angående konstruktivt supportsamarbejde imellem access-punkt og system når nødvendigt indgår i tilslutningsaftale for system
+        </li>
+        </ul>
+    </td>
+</tr>
+<tr class="even" style="border:1px solid black">
+    <td style="border:1px solid black">
+    Domænetilslutningsaftale for access-punkt
+    </td>
+    <td style="border:1px solid black">
+        <ul>
+        <li>
+        Domænespecifikke krav til supportfunktion (kontaktdata, åbningstid, responstid, etc.)
+        </li>
+        <li>
+        SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+        </li>
+        <li>
+        domænespecifikke krav til miljøer
+        </li>
+        <li>
+        varslingsfrister for ændringer
+        </li>
+        <li>
+        krav om passus angående supporterede meddelelsestyper indgår i tilslutningsaftale for system
+        </li>
+        <li>
+        pålidelig meddelelseskommunikation
+        </li>
+        <li>
+        supplerende domænespecifikke krav til sikkerhed og performance
+        </li>
+        <li>
+        sikkerhedsaudit
+        </li>
+        </ul>
+    </td>
+</tr>
+<tr class="even" style="border:1px solid black">
+    <td style="border:1px solid black">
+    Tilslutningsaftale for system 
+    </td>
+    <td style="border:1px solid black">
+        <ul>
+        <li>
+        Supportfunktion (kontaktdata, åbningstid, responstid, etc.)
+        </li>
+        <li>
+        SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid, servicevinduer, transaktionsmængder)
+        </li>
+        <li>
+        miljøer
+        </li>
+        <li>
+        varslingsfrister for ændringer
+        </li>
+        <li>
+        konstruktivt supportsamarbejde imellem accesspunkt og system når nødvendigt
+        </li>
+        <li>
+        supporterede meddelelsestyper
+        </li>
+        <li>
+        sikkerhedsmæssige aspekter (kryptering og autentifikation) ved kommunikationen imellem access-punkt og system
+        </li>
+        <li>
+        håndtering af opsamling af forsendelsesstatus for meddelelser i system
+        </li>
+        </ul>
+    </td>
+</tr>
 </tbody>
 </table>
 
-
-Aftale Beskrivelse
-Tilslutningsaftale for domæne Vedligehold af meddelelsestyper inden for domæne
-vedligehold af standarder for meddelelser inden for
-domæne
-supportfunktion (kontaktdata, åbningstid, responstid,
-etc.)
-SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid,
-servicevinduer, transaktionsmængder)
-miljøer
-varslingsfrister for ændringer
-eksistens af domænestartpakke
-domænekrav over for access-punkter formuleret
-(SLA, sikkerhed, supportfunktion, etc.)
-Netværkstilslutningsaftale for
-access-punkt
-Supportfunktion (kontaktdata, åbningstid, responstid,
-etc.)
-SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid,
-servicevinduer, transaktionsmængder)
-miljøer
-varslingsfrister for ændringer
-basale eDelivery meddelelseskommunikationskrav
-basale eDelivery sikkerhedskrav
-konstruktivt supportsamarbejde imellem accesspunkter
-når nødvendigt
-krav om passus angående konstruktivt supportsamarbejde
-imellem access-punkt og system når nødvendigt
-indgår i tilslutningsaftale for system
-Domænetilslutningsaftale for
-access-punkt
-Domænespecifikke krav til supportfunktion (kontaktdata,
-åbningstid, responstid, etc.)
-krav om passus angående supporterede meddelelsestyper
-indgår i tilslutningsaftale for system
-domænespecifikke krav til miljøer
-varslingsfrister for ændringer
-pålidelig meddelelseskommunikation
-supplerende domænespecifikke krav til sikkerhed og
-performance
-sikkerhedsaudit
-SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid,
-servicevinduer, transaktionsmængder)
-
-Til gengæld introducerer det også større omkostninger og risiko, der skal mitigeres, for domænet, og det er derfor en vigtig afklaring.
-
-Tilslutningsaftale for system Supportfunktion (kontaktdata, åbningstid, responstid,
-etc.)
-konstruktivt supportsamarbejde imellem accesspunkt
-og system når nødvendigt
-SLA (svartider, oppetid, driftstid (f.eks. 24/7), reetableringstid,
-servicevinduer, transaktionsmængder)
-supporterede meddelelsestyper
-miljøer
-varslingsfrister for ændringer
-sikkerhedsmæssige aspekter (kryptering og autentifikation)
-ved kommunikationen imellem access-punkt
-og system
-håndtering af opsamling af forsendelsesstatus for
-meddelelser i system
-Det er vigtigt at understrege, at de indgåede aftaler naturligvis er forpligtende, og at der fra de
-overordnede niveauers side følges løbende op på deres overholdelse, f.eks. jf. SLA-processen i
-afsnit ## 7.1.4., i overensstemmelse med dele af diskussionen i afsnit 2.4.
+Det er vigtigt at understrege, at de indgåede aftaler naturligvis er forpligtende, og at der fra de overordnede niveauers side følges løbende op på deres overholdelse, f.eks. jf. SLA-processen i afsnit ## 7.1.4., i overensstemmelse med dele af diskussionen i afsnit 2.4.
 
 ## 7.1.6 Afprøvningsdomæner
 
