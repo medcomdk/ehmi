@@ -35,6 +35,7 @@ Den faglige referencegruppe på et givet niveau har til opgave at
 fagligt kvalitetssikre og teknisk vurdere vedligeholdelses- og udviklingstiltag
 for meddelelseskommunikation via eDelivery på det
 givne niveau.
+
 Brugerforum 
 
 Der findes dels et EU brugerforum, hvori der bør være deltagere fra både eDelivery netværk niveauet og sundhedsdomæne niveauet.
@@ -49,6 +50,26 @@ Præcis hvordan sammensætningen af disse fora skal være og hvilke sammenhænge
 ## 7.1.3 Temaer
 
 Der er mange temaer under governance som tydeligt illustreret i følgende figur, der stammer fra [EDELDIGSTANRAP]:
+
+![Figur 21: Forskellige governance temaer og deres gruppering.](/ehmi/assets/images/MB_Figur-21-forskellige-governance-temaer-og-deres-gruppering.png)
+Figur 21: Forskellige governance temaer og deres gruppering.
+
+Temaerne kan inddeles i tre grupper under overskrifterne strategi og udvikling, systemforvaltning, og brugersupport og –dialog. Det ses at temaerne ikke udelukkende handler om kontrol
+og forvaltning. Selvom dette naturligvis er en meget vigtig og central del af governance, er det også vigtigt at denne ikke er så rigid, at det gør udvikling af infrastrukturen for meddelelseskommunikation for langsommelig.
+
+En opsummering af hvad der foregår på de enkelte fire governance niveauer hver især i forhold til de enkelte temaer er givet på tabelform i Appendiks E, hvor det meget generiske tema service management fra figuren er foldet lidt mere ud i nogle undertemaer.
+
+For temaerne i strategi og udvikling gruppen er det overordnede billede, at de to øverste niveauer (eDelivery netværk og sundhedsdomæne) står som ansvarlige og med facilitatorrollen,
+og de to nederste niveauer (access-punkt (C2/C3) og system (C1/C4 i bred forstand)) står i deltagerrollen.
+
+Dette overordnede billede gentager sig lidt i brugersupport og –dialog gruppen, hvor de to øverste niveauer primært har rollerne ansvarlig, facilitator, samt udgiver, og de to nederste niveauer rollerne deltager og anvender.
+
+Dette overordnede billede gælder også for nogle af temaerne under systemforvaltning gruppen, men her er der også nogle temaer, specielt de klassiske ITIL temaer incident management, problem management, change management, og security management, hvor alle de enkelte niveauer hver især, næsten selvindlysende, selv er ansvarlig for det, der er logisk hjemmehørende
+på niveauet (f.eks. system (C1/C4 i bred forstand) for systemet, access-punkt (C2/C3) for accesspunktet, sundhedsdomænet for sundhedsadresseringsservicen, og eDelivery netværk for SMP).
+
+## 7.1.4 Processer
+
+Der er også mange processer omkring temaerne under governance. I følgende tabel er de vigtigste af disse og deres væsentligste indhold præsenteret summarisk:
 
 
 ## 7.1.5 Aftaler
