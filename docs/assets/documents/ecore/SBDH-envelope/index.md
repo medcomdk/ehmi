@@ -8,6 +8,5 @@ It is developed to
 - serve the ground for EDS Delivery Status
 - serve the ground for EHMI Statistics of message exchange
 
-
-The specification for ehmiSBDH (IG) can be found [here:](https://build.fhir.org/ig/medcomdk/dk-ehmi-sbdh/index.html)
-
+<p/>
+The specification for ehmiSBDH (IG) can be found <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-sbdh/index.html" target _blank>here</a>
