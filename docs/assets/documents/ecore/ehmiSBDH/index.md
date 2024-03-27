@@ -9,4 +9,4 @@ It is developed to
 - serve the ground for EHMI Statistics of message exchange
 
 <p/>
-The specification for ehmiSBDH (IG) can be found <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-sbdh/index.html" target _blank>here</a>
+The specification for ehmiSBDH (IG) can be found <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-sbdh/index.html" target="_blank">here</a>
