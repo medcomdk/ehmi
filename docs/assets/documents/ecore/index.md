@@ -2,7 +2,7 @@
 
 **Table of contents**
 
-- [Standard Business Document Header (SBDH)](/SBDH-envelope/index.md)
+- [Standard Business Document Header (SBDH)](/ehmiSBDH/index.md)
 - [Service Metadata Publisher (SMP)](/SMP/index.md)
 
 ## EHMI Meddelelsesforsendelse og dokumentdeling
