@@ -3,9 +3,10 @@
 **Table of contents**
 
 - EHMI Core
-  - [Message sending (eDelivery) and sharing (XDS)](/assets/documents/message-sending-and-sharing/index.md)
+  - [Message sending (eDelivery) and sharing (XDS)](/assets/documents/ecore/index.md)
 - EHMI enhanced
-  - [EHMI Endpoint register ("SOR-EDI")](/assets/documents/endpoint-register/index.md)
-  - [EHMI Healthcare adressing ("Pakketabellen")](/assets/documents/healthcare-addressing/index.md)
+  - [EHMI Delivery Status ("EDS)](/assets/documents/eds/index.md)
+  - [EHMI Endpoint register ("EER")](/assets/documents/eer/index.md)
+  - [EHMI Healthcare adressing ("EAS")](/assets/documents/eas/index.md)
 - EHMI Governance
   - [Governance](/assets/documents/governance/index.md)

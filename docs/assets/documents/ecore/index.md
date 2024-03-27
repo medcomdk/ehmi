@@ -4,7 +4,6 @@
 
 - [Standard Business Document Header (SBDH)](/SBDH-envelope/index.md)
 - [Service Metadata Publisher (SMP)](/SMP/index.md)
-- [Forsendelsesstatus](/forsendelsesstatus/index.md)
 
 ## EHMI Meddelelsesforsendelse og dokumentdeling
 
