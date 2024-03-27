@@ -1,5 +1,5 @@
-title: "MedCom on EHMI"
-logo: /assets/images/ehmi_logo.png
+title: "EHMI - Enhanced Healthcare Messaging Infrastructure"
+logo: /assets/images/EHMI_logo_300x300_2.png
 description: "Enhanced Healthcare Messaging Infrastructure"
 show_downloads: false
 google_analytics:
@@ -10,7 +10,7 @@ releasenote: https://github.com/medcomdk/ehmi/releases
 thisurl: https://medcomdk.github.io/ehmi/
 menuurl_item1: https://medcomdk.github.io/ehmi/
 menutxt_item1: EHMI Landingpage
-menuurl_item2: /docs/governance/index.md
+menuurl_item2: https://medcomdk.github.io/ehmi/assets/documents/governance/
 menutxt_item2: EHMI Governance
 # menuurl_item3: https://medcomdk.github.io/MedCom-FHIR-Communication/#About
 # menutxt_item3: About MedCom FHIR®© Governance
