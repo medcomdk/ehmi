@@ -4,13 +4,19 @@ description: "Enhanced Healthcare Messaging Infrastructure"
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
-version: "Version 0.0.1"
+version: "Version 0.9.0"
 fhir_version: "EHMI"
 releasenote: https://github.com/medcomdk/ehmi/releases
 thisurl: https://medcomdk.github.io/ehmi/
 menuurl_item1: https://medcomdk.github.io/ehmi/
 menutxt_item1: EHMI Landingpage
-menuurl_item2: https://medcomdk.github.io/ehmi/assets/documents/governance/
-menutxt_item2: EHMI Governance
-# menuurl_item3: https://medcomdk.github.io/MedCom-FHIR-Communication/#About
-# menutxt_item3: About MedCom FHIR®© Governance
+menuurl_item2: https://medcomdk.github.io/ehmi/assets/documents/ecore/
+menutxt_item2: EHMI Core
+menuurl_item3: https://medcomdk.github.io/ehmi/assets/documents/eds/
+menutxt_item3: EHMI EDS
+menuurl_item4: https://medcomdk.github.io/ehmi/assets/documents/eer/
+menutxt_item4: EHMI Endpoint Register
+menuurl_item5: https://medcomdk.github.io/ehmi/assets/documents/eas/
+menutxt_item5: EHMI Addressing Service
+menuurl_item6: https://medcomdk.github.io/ehmi/assets/documents/governance/
+menutxt_item6: EHMI Governance
