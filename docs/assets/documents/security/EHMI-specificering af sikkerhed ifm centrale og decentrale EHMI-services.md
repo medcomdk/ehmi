@@ -1,5 +1,3 @@
-<p>
-
 # Indholdsfortegnelse
 
 [2 Introduktion](#introduktion)
@@ -52,7 +50,7 @@
 
 [7 Relevante links:](#relevante-links)
 
-<p>
+<p/>
 
 ## Introduktion
 
@@ -64,7 +62,7 @@ I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra k
 
 Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
 
-<p>
+<p/>
 
 ## Generelt omkring sikkerhed for nye komponenter i EHMI
 
@@ -79,7 +77,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 3.  Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af borgeren via MinLog
 
 
-<p>
+<p/>
 
 ### Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden
 
@@ -89,12 +87,12 @@ Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 -   Systemer/komponenter kan være en stand-alone applikation **grupperet sammen** med en eller flere andre systemer/komponenter i meddelelsesflowet på samme server.
 
 
-<p>
+<p/>
 
 ## Opgavespecificeringer - sikkerhed vedrørende punkt til punkt meddelelseskommunikation
 
 
-<p>
+<p/>
 
 ### Decentralt vedrørende sikkerhed
 
@@ -124,11 +122,11 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 *Ovenstående gælder også for al kommunikation mellem C3 og C4.*
 
 
-<p>
+<p/>
 
 ### Alle komponenter stand-alone - implementeret på forskellige servere
 
-<p>
+<p/>
 
 ![](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
@@ -143,12 +141,12 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | MSH stand-alone AP stand-alone                    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP                   |
 
 
-<p>
+<p/>
 
 ### Alle komponenter stand-alone - grupperet sammen på samme server
 
 
-<p>
+<p/>
 
 ![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
@@ -161,12 +159,12 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | AP stand-alone                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | AP                   |
 
 
-<p>
+<p/>
 
 ### Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server
 
 
-<p>
+<p/>
 
 ![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
@@ -180,15 +178,15 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | MSH stand-alone AP stand-alone    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP            |
 
 
-<p>
+<p/>
 
 ### Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server
 
-<p>
+<p/>
 
 #
 
-<p>
+<p/>
 
 ![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
@@ -201,11 +199,11 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | MSH stand-alone                                   | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | MSH                          |
 | AP stand-alone                                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                           |
 
-<p>
+<p/>
 
 ### Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere
 
-<p>
+<p/>
 
 ![](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
@@ -215,11 +213,11 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | MSH/AP                                  | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | MSH/AP                         |
 | Afsendende fagsystem stand-alone MSH/AP | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem og MSH/AP |
 
-<p>
+<p/>
 
 ### Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server
 
-<p>
+<p/>
 
 ![Et billede, der indeholder tekst, skærmbillede, Rektangel, linje/række Automatisk genereret beskrivelse](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
@@ -228,11 +226,11 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | Afsendende fagsystem stand-alone  | **Autenticitetshåndtering:** Implementering af signering af meddelelse | Afsendende fagsystem |
 | MSH/AP                            | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | MSH/AP               |
 
-<p>
+<p/>
 
 ### Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere
 
-<p>
+<p/>
 
 ![Et billede, der indeholder tekst, skærmbillede, gul, design Automatisk genereret beskrivelse](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
@@ -242,11 +240,11 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | AP Stand-alone                            | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                             |
 | Afsendende fagsystem/MSH  AP Stand-alone  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og AP |
 
-<p>
+<p/>
 
 ### Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server
 
-<p>
+<p/>
 
 ![](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
@@ -255,13 +253,13 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | Afsendende fagsystem/MSH | **Autenticitetshåndtering:** Implementering af signering af meddelelse | Afsendende fagsystem/MSH |
 | AP Stand-alone           | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | AP                       |
 
-<p>
+<p/>
 
 ### Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere
 
 Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dette kan være muligt. I så fald er det vigtigt at parter med et sådant setup aftaler, hvilken MSH, der er primær med udfyldelse af MSH forpligtelserne og hvilken MSH, der blot viderestiller informationer til næste led i kæden. Når dette er på plads, vil følgende sikkerhedsanvisninger være gældende.
 
-<p>
+<p/>
 
 ![](media/dc36c10735cb86a5499e120b23a83c79.png)
 
@@ -271,13 +269,13 @@ Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dett
 | Afsendende MSH/AP                   | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | MSH/AP                             |
 | Afsendende fagsystem/MSH og MSH/AP  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og MSH/AP |
 
-<p>
+<p/>
 
 ### Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server
 
 Som for 4.10.
 
-<p>
+<p/>
 
 ![Et billede, der indeholder skærmbillede, linje/række, Rektangel, diagram Automatisk genereret beskrivelse](media/dc36c10735cb86a5499e120b23a83c79.png)
 
@@ -286,23 +284,23 @@ Som for 4.10.
 | Afsendende fagsystem/MSH | **Autenticitetshåndtering:** Implementering af signering af meddelelse | Afsendende fagsystem/MSH |
 | Afsendende MSH/AP        | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | MSH/AP                   |
 
-<p>
+<p/>
 
 ### Alle komponenter sammenbyggede
 
-<p>
+<p/>
 
 ![](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 Da alle komponenter her er sammenbyggede, håndteres al sikkerhed internt i sammenbygningen, og der er derfor ikke behov for eksplicit at udtrykke noget om sikkerheden her.
 
-<p>
+<p/>
 
 ### Modtagersiden
 
 Ovenstående er kun beskrevet, hvordan sikkerheden ser ud på afsendersiden. De tilsvarende mekanismer implementeres naturligvis også på modtagersider, hvor de så bare anvendes i den modsatte rækkefølge og med de tilsvarende aktører i modsat rækkefølge.
 
-<p>
+<p/>
 
 ## Sikkerhedsspecificeringer vedrørende forsendelsesstatus af meddelelser
 
@@ -311,7 +309,7 @@ Sikkerhed i forhold til forsendelses-status opdeles i de forskellige trin:
 1.  Forsendelsesstatus opsamles og gemmes i et repositorie
     1.  Forsendelsesstatus hentes af anvendere via udstillede services
 
-<p>
+<p/>
 
 ### Opsamling til repositorie
 
@@ -323,7 +321,7 @@ Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at 
 -   **Uafviselighed:** En komponent, der gemmer forsendelsesstatus, skal audit logge opsamlingen på en standardiseret måde.
 -   **Fortrolighed:** Når den opsamlede forsendelsesstatus kommunikeres til repositoriet, sikres den enten via eksplicit kryptering eller implicit kryptering på det underliggende infrastruktur niveau.
 
-<p>
+<p/>
 
 #### Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - indberetning
 
@@ -335,7 +333,7 @@ Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at 
 | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatus-komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation via sikret transportprotokol, f.eks. TLS                              | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatuskomponent |
 | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatus-komponent | **Tilgængelighed:** Implementering af kø mekanisme til at håndtere at en forbindelse kan være nede                                  | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatuskomponent |
 
-<p>
+<p/>
 
 ### Indberetninger ift. scenarierne i afsnit 4.
 
@@ -349,7 +347,7 @@ I det følgende antages begge sider af afsender- og modtagerøkosystemerne at ha
 | Kap. 4.10 Kap. 4.11                  | Afsendende fagsystem/MSH Afsendende AP/MSH ------------------------------------------- Modtagende AP/MSH                        |  Afsendende AP/MSH ------------------------------------------- Modtagende AP/MSH Modtagende fagsystem/MSH                      |
 | Kap. 4.12                            | Afsendende fagsystem/MSH/AP                                                                                                     | Modtagende fagsystem/MSH/AP                                                                                                    |
 
-<p>
+<p/>
 
 ### Udstilling via service
 
@@ -363,7 +361,7 @@ Fra målbilledet ved vi, at servicen, der udstiller forsendelsesstatus for medde
 
 Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
 
-<p>
+<p/>
 
 #### Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - udsøgning
 
@@ -381,7 +379,7 @@ For søgning af forsendelsesstatus stilles der derudover krav om, at der ved bor
 | Modtagende komponent                                                 | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | Modtagende komponent                                                 |
 | Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent |
 
-<p>
+<p/>
 
 ## Sikkerhedsspecificeringer vedrørende Sundhedsadressering
 
@@ -395,7 +393,7 @@ Fra målbilledet ved vi, at sundhedsadresseringsservicen skal overholde de samme
 
 Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
 
-<p>
+<p/>
 
 ### Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice
 
@@ -406,7 +404,7 @@ Da servicen udstilles og afvikles på en platform, der kan have sine egne mere s
 | Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Integritetssikring og fortrolighedssikring:** Kommunikation sikret via transportprotokol, f.eks. TLS                                                                                                                               | Afsendende system (Fagsystem) Sundhedsadresseringsservice |
 | Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Tilgængelighed:** Implementering af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en forbindelse kan være nede.  Hvis servicen er online bør altid søges online. Faste søgninger bør opdateres udenfor peaktimes. | Afsendende system (Fagsystem) Sundhedsadresseringsservice |
 
-<p>
+<p/>
 
 ## Relevante links:
 
