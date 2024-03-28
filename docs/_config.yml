@@ -13,7 +13,7 @@ menutxt_item1: EHMI Landingpage
 menuurl_item2: https://medcomdk.github.io/ehmi/assets/documents/ecore/
 menutxt_item2: EHMI Core
 menuurl_item3: https://medcomdk.github.io/ehmi/assets/documents/eds/
-menutxt_item3: EHMI EDS
+menutxt_item3: EHMI Delivery Status
 menuurl_item4: https://medcomdk.github.io/ehmi/assets/documents/eas/
 menutxt_item4: EHMI Addressing Service
 menuurl_item5: https://medcomdk.github.io/ehmi/assets/documents/eer/
