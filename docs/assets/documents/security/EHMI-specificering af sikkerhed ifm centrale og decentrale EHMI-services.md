@@ -81,7 +81,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 
 <p/>
 
-### Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden
+## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
 
 Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 
