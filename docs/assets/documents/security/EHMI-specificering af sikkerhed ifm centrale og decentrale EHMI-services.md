@@ -1,4 +1,4 @@
-Indholdsfortegnelse
+# Indholdsfortegnelse
 
 [2 Introduktion](#introduktion)
 
@@ -50,7 +50,7 @@ Indholdsfortegnelse
 
 [7 Relevante links:](#relevante-links)
 
-# Introduktion
+## Introduktion
 
 I MedCom13 har MedCom et fælles afprøvningsprojekt ’Kommunale prøvesvar på ny infrastruktur’, hvor MedComs to centrale moderniseringsspor kobles: FHIR og EHMI, hvor såvel meddelelseskommunikationen som infrastrukturen moderniseres. Moderniseringen sker grundet behov for kvalitetsløft af bl.a. sikkerhed, gennemsigtighed, robusthed og effektiv, international digital meddelelseskommunikation.
 
@@ -60,7 +60,7 @@ I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra k
 
 Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
 
-# Generelt omkring sikkerhed for nye komponenter i EHMI
+## Generelt omkring sikkerhed for nye komponenter i EHMI
 
 Det er muligt at indrapportere og tilgå data via et FHIR API. Web-services/RESTful-services, der udstilles via et sådant interface, skal, præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde national arkitektur og nationale standarder.
 
@@ -72,7 +72,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 2.  Samtykke/frabedelse og behandlingsrelation skal tjekkes op mod den nationale samtykkeservice og den nationale behandlingsrelationsservice
 3.  Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af borgeren via MinLog
 
-## Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden
+### Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden
 
 Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 
@@ -91,13 +91,16 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | Mellem stand-alone komponenter/services.                          | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                                             | Modtagerkomponent          |
 | Mellem komponenter/services, der håndteres på forskellige servere | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse / meddelelsesindhold / kuvert via sikret transportprotokol, f.eks. TLS | Afsender/modtagerkomponent |
 
+
 **Autenticitetshåndtering mellem C1 og C2 (jf. Målbilledets afsnit 6.1.1):**
 
 *På sundhedsområdet stilles krav om, at meddelelse og/eller konvolutten signeres i C1 og at denne signatur efterfølgende verificeres i C2. På denne måde sikres autentifikation af C1 i C2. Denne autentifikation vil være en del af den aftale, der indgås imellem AP’et og det system AP’et agerer på vegne af. Sikres ved* eksplicit signering mellem Afsendende fagsystem/MSH/AP (med tilhørende verifikation) på systembevisniveau (VOCES/FOCES/Niveau 3). Dette kan eksempelvis sikres via DGWS/IDWS eller lignende.
 
+
 **Integritetssikring mellem C1 og C2 (jf. Målbilledets afsnit 6.1.2):**
 
 *Sikres ud over den under autenticitet (afsnit 6.1.1) beskrevne konvolutsignering via de protokoller, der anvendes imellem AP’erne og de systemer AP’erne agerer på vegne af – f.eks. TLS (Transport Layer Security).*
+
 
 **Fortrolighedssikring mellem C1 og C2 (jf. Målbilledets afsnit 6.1.4):**
 
@@ -105,9 +108,11 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 
 *Ovenstående gælder også for al kommunikation mellem C3 og C4.*
 
-## Alle komponenter stand-alone - implementeret på forskellige servere
+
+### Alle komponenter stand-alone - implementeret på forskellige servere
 
 ![](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+
 
 | **EHMI Komponenter**                              | **Delopgave**                                                                                                                 | **Hvem**                    |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
@@ -118,9 +123,12 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | AP stand-alone                                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                          |
 | MSH stand-alone AP stand-alone                    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP                   |
 
+
 ## Alle komponenter stand-alone - grupperet sammen på samme server
 
+
 ![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+
 
 | **EHMI Komponenter**              | **Delopgave**                                                          | **Hvem**             |
 |-----------------------------------|------------------------------------------------------------------------|----------------------|
@@ -129,9 +137,12 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | MSH stand-alone                   | **Autenticitetshåndtering:** Implementering af signering af meddelelse | MSH                  |
 | AP stand-alone                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | AP                   |
 
+
 ## Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server
 
+
 ![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+
 
 | **EHMI Komponenter**              | **Delopgave**                                                                                                                 | **Hvem**             |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------|
@@ -141,9 +152,12 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | AP stand-alone                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                   |
 | MSH stand-alone AP stand-alone    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP            |
 
+
 ## Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server
 
+
 ![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+
 
 | **EHMI Komponenter**                              | **Delopgave**                                                                                                                 | **Hvem**                     |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------|
