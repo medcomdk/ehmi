@@ -17,12 +17,8 @@
 | SBDH     | Standard Business Document Header | [TBD] | PEPPOL |
 | SMP      | Service Metadata Provider | [TBD] | eDelivery |
 | SML      | Service Metadata Locator | [TBD] | eDelivery |
-| 4-corner-model |   | "1. Fagsystem Corner 1 sender en meddelelse gennem en servicehandling til Access Point Corner 2. 
-2. Access Point Corner 2 slår op i SML/DNS for at finde adressen på den SMP, som det modtagende fagsystems Corner 4 modtager-kapabiliteter er registreret i. 
-3. Access Point Corner 2 slår op i SMP for at teste, om det modtagende Fagsystem Corner 4 har modtager-kapabiliteter svarende til det, der skal sendes, samt at finde adressen på det Access Point Corner 3, som meddelelsen skal sendes til. 
-4. Access Point Corner 2 sender meddelelsen til Access Point Corner 3. 
-5. Access Point Corner 3 sender meddelelsen gennem en servicehandling til det modtagende Fagsystem Corner 4."
- | eDelivery |
+
+| 4-corner-model |   | "1. Fagsystem Corner 1 sender en meddelelse gennem en servicehandling til Access Point Corner 2. <br/> 2. Access Point Corner 2 slår op i SML/DNS for at finde adressen på den SMP, som det modtagende fagsystems Corner 4 modtager-kapabiliteter er registreret i. <br/> 3. Access Point Corner 2 slår op i SMP for at teste, om det modtagende Fagsystem Corner 4 har modtager-kapabiliteter svarende til det, der skal sendes, samt at finde adressen på det Access Point Corner 3, som meddelelsen skal sendes til. <br/> 4. Access Point Corner 2 sender meddelelsen til Access Point Corner 3. <br/> 5. Access Point Corner 3 sender meddelelsen gennem en servicehandling til det modtagende Fagsystem Corner 4." | eDelivery |
  
 
 
