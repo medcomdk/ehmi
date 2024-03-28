@@ -20,5 +20,7 @@ menuurl_item5: https://medcomdk.github.io/ehmi/assets/documents/eer/
 menutxt_item5: EHMI Endpoint Register
 menuurl_item6: https://medcomdk.github.io/ehmi/assets/documents/egov/
 menutxt_item6: EHMI Governance
-menuurl_item7: https://medcomdk.github.io/ehmi/assets/documents/glossary.html
-menutxt_item7: EHMI Glossary
+menuurl_item7: https://medcomdk.github.io/ehmi/assets/documents/security/
+menutxt_item7: EHMI Governance
+menuurl_item8: https://medcomdk.github.io/ehmi/assets/documents/glossary/
+menutxt_item8: EHMI Glossary
