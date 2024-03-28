@@ -15,8 +15,8 @@
 - Production pilot for EHMI 
   - EHMI Specifications for March 31 2024
     - eDelivery
-      - [ehmiSBDH](/assets/documents/ecore/ehmiSBDH/)
-      - [ehmiSMP](/assets/documents/ecore/SMP/)
+      - [ehmiSBDH](/docs/assets/documents/ecore/ehmiSBDH/index.md)
+      - [ehmiSMP](/docs/assets/documents/ecore/SMP/index.md)
     - [EHMI Delivery Status (EDS)](/assets/documents/eds/index.md)
     - Security
       - [EHMI Security](/assets/documents/security/index.md)
