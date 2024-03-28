@@ -8,5 +8,7 @@
   - [EHMI Delivery Status (EDS)](/assets/documents/eds/index.md)
   - [EHMI Endpoint register (EER)](/assets/documents/eer/index.md)
   - [EHMI Healthcare adressing (EAS)](/assets/documents/eas/index.md)
+- EHMI Security
+  - [EHMI Security](/assets/documents/security/index.md)
 - EHMI Governance
   - [EHMI Governance](/assets/documents/egov/index.md)
