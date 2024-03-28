@@ -1,82 +1,109 @@
 <p>
+
 # Indholdsfortegnelse
 
 [2 Introduktion](<p>
+
 #introduktion)
 
 [3 Generelt omkring sikkerhed for nye komponenter i EHMI](<p>
+
 #generelt-omkring-sikkerhed-for-nye-komponenter-i-ehmi)
 
 [3.1 Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden](<p>
+
 #generelle-sikkerhedsmæssige-forudsætninger-for-komponenter-i-forsendelseskæden)
 
 [4 Opgavespecificeringer - sikkerhed vedrørende meddelelseskommunikation](<p>
+
 #opgavespecificeringer---sikkerhed-vedrørende-punkt-til-punkt-meddelelseskommunikation)
 
 [4.1 Decentralt vedrørende sikkerhed](<p>
+
 #decentralt-vedrørende-sikkerhed)
 
 [4.2 Alle komponenter stand-alone - implementeret på forskellige servere](<p>
+
 #alle-komponenter-stand-alone---implementeret-på-forskellige-servere)
 
 [4.3 Alle komponenter stand-alone - grupperet sammen på samme server](<p>
+
 #alle-komponenter-stand-alone---grupperet-sammen-på-samme-server)
 
 [4.4 Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](<p>
+
 #alle-komponenter-stand-alone---afsendende-fagsystem-og-msh-grupperet-sammen-på-samme-server)
 
 [4.5 Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](<p>
+
 #alle-komponenter-stand-alone-msh-og-ap-grupperet-sammen-på-samme-server)
 
 [4.6 Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](<p>
+
 #afsendende-fagsystem-stand-alone---mshap-sammenbygget---implementeret-på-forskellige-servere)
 
 [4.7 Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](<p>
+
 #afsendende-fagsystem-stand-alone---mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
 
 [4.8 Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](<p>
+
 #afsendende-fagsystemmsh-sammenbygget--ap-stand-alone---implementeret-på-forskellige-servere)
 
 [4.9 Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](<p>
+
 #afsendende-fagsystemmsh-sammenbygget--ap-stand-alone--alle-grupperet-sammen-på-samme-server)
 
 [4.10 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](<p>
+
 #afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget---implementeret-på-forskellige-servere)
 
 [4.11 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](<p>
+
 #afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
 
 [4.12 Alle komponenter sammenbyggede](<p>
+
 #alle-komponenter-sammenbyggede)
 
 [4.13 Modtagersiden](<p>
+
 #_Toc150964819)
 
 [5 Sikkerhedsspecificeringer vedrørende forsendelsesstatus af meddelelser](<p>
+
 #_Toc150964820)
 
 [5.1 Opsamling til repositorie](<p>
+
 #opsamling-til-repositorie)
 
 [5.1.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - indberetning](<p>
+
 #decentralt-vedrørende-sikkerhed-for-ehmi-komponent-forsendelsesstatus---indberetning)
 
 [5.2 Udstilling via service](<p>
+
 #_Toc150964823)
 
 [5.2.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - udsøgning](<p>
+
 #_Toc150964824)
 
 [6 Sikkerhedsspecificeringer vedrørende Sundhedsadressering](<p>
+
 #_Toc150964825)
 
 [6.1 Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice](<p>
+
 #_Toc150964826)
 
 [7 Relevante links:](<p>
+
 #relevante-links)
 
 <p>
+
 ## Introduktion
 
 I MedCom13 har MedCom et fælles afprøvningsprojekt ’Kommunale prøvesvar på ny infrastruktur’, hvor MedComs to centrale moderniseringsspor kobles: FHIR og EHMI, hvor såvel meddelelseskommunikationen som infrastrukturen moderniseres. Moderniseringen sker grundet behov for kvalitetsløft af bl.a. sikkerhed, gennemsigtighed, robusthed og effektiv, international digital meddelelseskommunikation.
@@ -88,6 +115,7 @@ I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra k
 Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
 
 <p>
+
 ## Generelt omkring sikkerhed for nye komponenter i EHMI
 
 Det er muligt at indrapportere og tilgå data via et FHIR API. Web-services/RESTful-services, der udstilles via et sådant interface, skal, præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde national arkitektur og nationale standarder.
@@ -102,6 +130,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 
 
 <p>
+
 ### Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden
 
 Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
@@ -111,10 +140,12 @@ Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 
 
 <p>
+
 ## Opgavespecificeringer - sikkerhed vedrørende punkt til punkt meddelelseskommunikation
 
 
 <p>
+
 ### Decentralt vedrørende sikkerhed
 
 Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende sikkerhed i meddelelsesflowet i EHMI.
@@ -144,7 +175,10 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 
 
 <p>
+
 ### Alle komponenter stand-alone - implementeret på forskellige servere
+
+<p>
 
 ![](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
@@ -160,8 +194,11 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 
 
 <p>
+
 ### Alle komponenter stand-alone - grupperet sammen på samme server
 
+
+<p>
 
 ![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
@@ -175,8 +212,11 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 
 
 <p>
+
 ### Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server
 
+
+<p>
 
 ![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
@@ -191,10 +231,14 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 
 
 <p>
+
 ### Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server
 
 <p>
+
 #
+
+<p>
 
 ![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
@@ -208,7 +252,10 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | AP stand-alone                                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                           |
 
 <p>
+
 ### Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere
+
+<p>
 
 ![](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
@@ -219,7 +266,10 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | Afsendende fagsystem stand-alone MSH/AP | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem og MSH/AP |
 
 <p>
+
 ### Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server
+
+<p>
 
 ![Et billede, der indeholder tekst, skærmbillede, Rektangel, linje/række Automatisk genereret beskrivelse](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
@@ -229,7 +279,10 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | MSH/AP                            | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | MSH/AP               |
 
 <p>
+
 ### Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere
+
+<p>
 
 ![Et billede, der indeholder tekst, skærmbillede, gul, design Automatisk genereret beskrivelse](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
@@ -240,7 +293,10 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | Afsendende fagsystem/MSH  AP Stand-alone  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og AP |
 
 <p>
+
 ### Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server
+
+<p>
 
 ![](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
@@ -250,9 +306,12 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | AP Stand-alone           | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | AP                       |
 
 <p>
+
 ### Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere
 
 Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dette kan være muligt. I så fald er det vigtigt at parter med et sådant setup aftaler, hvilken MSH, der er primær med udfyldelse af MSH forpligtelserne og hvilken MSH, der blot viderestiller informationer til næste led i kæden. Når dette er på plads, vil følgende sikkerhedsanvisninger være gældende.
+
+<p>
 
 ![](media/dc36c10735cb86a5499e120b23a83c79.png)
 
@@ -263,9 +322,12 @@ Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dett
 | Afsendende fagsystem/MSH og MSH/AP  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og MSH/AP |
 
 <p>
+
 ### Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server
 
 Som for 4.10.
+
+<p>
 
 ![Et billede, der indeholder skærmbillede, linje/række, Rektangel, diagram Automatisk genereret beskrivelse](media/dc36c10735cb86a5499e120b23a83c79.png)
 
@@ -275,18 +337,23 @@ Som for 4.10.
 | Afsendende MSH/AP        | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | MSH/AP                   |
 
 <p>
+
 ### Alle komponenter sammenbyggede
+
+<p>
 
 ![](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 Da alle komponenter her er sammenbyggede, håndteres al sikkerhed internt i sammenbygningen, og der er derfor ikke behov for eksplicit at udtrykke noget om sikkerheden her.
 
 <p>
+
 ### Modtagersiden
 
 Ovenstående er kun beskrevet, hvordan sikkerheden ser ud på afsendersiden. De tilsvarende mekanismer implementeres naturligvis også på modtagersider, hvor de så bare anvendes i den modsatte rækkefølge og med de tilsvarende aktører i modsat rækkefølge.
 
 <p>
+
 ## Sikkerhedsspecificeringer vedrørende forsendelsesstatus af meddelelser
 
 Sikkerhed i forhold til forsendelses-status opdeles i de forskellige trin:
@@ -295,6 +362,7 @@ Sikkerhed i forhold til forsendelses-status opdeles i de forskellige trin:
     1.  Forsendelsesstatus hentes af anvendere via udstillede services
 
 <p>
+
 ### Opsamling til repositorie
 
 Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at anvenderne vil anse servicen baseret på de opsamlede data for troværdig, og dels fordi der opsamles personoplysninger, da unik borgeridentifikation (oftest CPR-nummeret), for den borger meddelelsen omhandler, er en del af den opsamlede information:
@@ -306,6 +374,7 @@ Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at 
 -   **Fortrolighed:** Når den opsamlede forsendelsesstatus kommunikeres til repositoriet, sikres den enten via eksplicit kryptering eller implicit kryptering på det underliggende infrastruktur niveau.
 
 <p>
+
 #### Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - indberetning
 
 | **EHMI Komponenter**                                                         | **Delopgave**                                                                                                                       | **Hvem**                                                                    |
@@ -317,6 +386,7 @@ Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at 
 | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatus-komponent | **Tilgængelighed:** Implementering af kø mekanisme til at håndtere at en forbindelse kan være nede                                  | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatuskomponent |
 
 <p>
+
 ### Indberetninger ift. scenarierne i afsnit 4.
 
 I det følgende antages begge sider af afsender- og modtagerøkosystemerne at have samme setup til hinanden som det afsendende økosystem. I praksis er dette naturligvis meget forskelligt, og der skal i så fald kombineres
@@ -330,6 +400,7 @@ I det følgende antages begge sider af afsender- og modtagerøkosystemerne at ha
 | Kap. 4.12                            | Afsendende fagsystem/MSH/AP                                                                                                     | Modtagende fagsystem/MSH/AP                                                                                                    |
 
 <p>
+
 ### Udstilling via service
 
 Fra målbilledet ved vi, at servicen, der udstiller forsendelsesstatus for meddelelser, skal overholde de samme sikkerhedskrav og -regler som øvrige services på sundhedsområdet, jf. målbilledets princip PT6. Derfor bør flere af de samme allerede eksisterende sikkerhedsmekanismer fra disse andre services anvendes:
@@ -343,6 +414,7 @@ Fra målbilledet ved vi, at servicen, der udstiller forsendelsesstatus for medde
 Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
 
 <p>
+
 #### Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - udsøgning
 
 Det vil blive baseret på et OAuth-sikret REST-interface og SMART-on-FHIR eller lignende.
@@ -360,6 +432,7 @@ For søgning af forsendelsesstatus stilles der derudover krav om, at der ved bor
 | Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent |
 
 <p>
+
 ## Sikkerhedsspecificeringer vedrørende Sundhedsadressering
 
 Fra målbilledet ved vi, at sundhedsadresseringsservicen skal overholde de samme sikkerhedskrav og -regler som tilsvarende services på sundhedsområdet, og derfor bør flere af de samme allerede eksisterende sikkerhedsmekanismer anvendes:
@@ -373,6 +446,7 @@ Fra målbilledet ved vi, at sundhedsadresseringsservicen skal overholde de samme
 Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
 
 <p>
+
 ### Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice
 
 | **EHMI Komponenter**                                       | **Delopgave**                                                                                                                                                                                                                        | **Hvem**                                                  |
@@ -383,6 +457,7 @@ Da servicen udstilles og afvikles på en platform, der kan have sine egne mere s
 | Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Tilgængelighed:** Implementering af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en forbindelse kan være nede.  Hvis servicen er online bør altid søges online. Faste søgninger bør opdateres udenfor peaktimes. | Afsendende system (Fagsystem) Sundhedsadresseringsservice |
 
 <p>
+
 ## Relevante links:
 
 -   Dansk:
