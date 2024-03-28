@@ -1,5 +1,3 @@
-![Et billede, der indeholder cirkel, Grafik, Font/skrifttype, logo Automatisk genereret beskrivelse](media/0d48402dc6634bf263cac15fbc226859.png)
-
 Indholdsfortegnelse
 
 [2 Introduktion](#introduktion)
