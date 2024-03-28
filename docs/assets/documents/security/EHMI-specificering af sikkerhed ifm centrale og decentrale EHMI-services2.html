@@ -1,0 +1,3309 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Specificering af sikkerhed ifm. centrale og decentrale EHMI komponenter</title>
+
+<style id="dynCom" type="text/css"><!-- --></style>
+<script language="JavaScript"><!--
+function msoCommentShow(anchor_id, com_id)
+{
+	if(msoBrowserCheck()) 
+		{
+		c = document.all(com_id);
+		a = document.all(anchor_id);
+		if (null != c && null == c.length && null != a && null == a.length)
+			{
+			var cw = c.offsetWidth;
+			var ch = c.offsetHeight;
+			var aw = a.offsetWidth;
+			var ah = a.offsetHeight;
+			var x  = a.offsetLeft;
+			var y  = a.offsetTop;
+			var el = a;
+			while (el.tagName != "BODY") 
+				{
+				el = el.offsetParent;
+				x = x + el.offsetLeft;
+				y = y + el.offsetTop;
+				}
+			var bw = document.body.clientWidth;
+			var bh = document.body.clientHeight;
+			var bsl = document.body.scrollLeft;
+			var bst = document.body.scrollTop;
+			if (x + cw + ah / 2 > bw + bsl && x + aw - ah / 2 - cw >= bsl ) 
+				{ c.style.left = x + aw - ah / 2 - cw; }
+			else 
+				{ c.style.left = x + ah / 2; }
+			if (y + ch + ah / 2 > bh + bst && y + ah / 2 - ch >= bst ) 
+				{ c.style.top = y + ah / 2 - ch; }
+			else 
+				{ c.style.top = y + ah / 2; }
+			c.style.visibility = "visible";
+}	}	}
+function msoCommentHide(com_id) 
+{
+	if(msoBrowserCheck())
+		{
+		c = document.all(com_id);
+		if (null != c && null == c.length)
+		{
+		c.style.visibility = "hidden";
+		c.style.left = -1000;
+		c.style.top = -1000;
+		} } 
+}
+function msoBrowserCheck()
+{
+	ms = navigator.appVersion.indexOf("MSIE");
+	vers = navigator.appVersion.substring(ms + 5, ms + 6);
+	ie4 = (ms > 0) && (parseInt(vers) >= 4);
+	return ie4;
+}
+if (msoBrowserCheck())
+{
+	document.styleSheets.dynCom.addRule(".msocomanchor","background: infobackground");
+	document.styleSheets.dynCom.addRule(".msocomoff","display: none");
+	document.styleSheets.dynCom.addRule(".msocomtxt","visibility: hidden");
+	document.styleSheets.dynCom.addRule(".msocomtxt","position: absolute");
+	document.styleSheets.dynCom.addRule(".msocomtxt","top: -1000");
+	document.styleSheets.dynCom.addRule(".msocomtxt","left: -1000");
+	document.styleSheets.dynCom.addRule(".msocomtxt","width: 33%");
+	document.styleSheets.dynCom.addRule(".msocomtxt","background: infobackground");
+	document.styleSheets.dynCom.addRule(".msocomtxt","color: infotext");
+	document.styleSheets.dynCom.addRule(".msocomtxt","border-top: 1pt solid threedlightshadow");
+	document.styleSheets.dynCom.addRule(".msocomtxt","border-right: 2pt solid threedshadow");
+	document.styleSheets.dynCom.addRule(".msocomtxt","border-bottom: 2pt solid threedshadow");
+	document.styleSheets.dynCom.addRule(".msocomtxt","border-left: 1pt solid threedlightshadow");
+	document.styleSheets.dynCom.addRule(".msocomtxt","padding: 3pt 3pt 3pt 3pt");
+	document.styleSheets.dynCom.addRule(".msocomtxt","z-index: 100");
+}
+// --></script>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"Yu Gothic Light";
+	panose-1:2 11 3 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Yu Mincho";}
+@font-face
+	{font-family:"\@Yu Gothic Light";}
+@font-face
+	{font-family:"\@Yu Mincho";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Overskrift 1 Tegn";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.6pt;
+	text-indent:-21.6pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Overskrift 2 Tegn";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.8pt;
+	text-indent:-28.8pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Overskrift 3 Tegn";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	text-indent:-36.0pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Overskrift 4 Tegn";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:43.2pt;
+	text-indent:-43.2pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-link:"Overskrift 5 Tegn";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:50.4pt;
+	text-indent:-50.4pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Overskrift 6 Tegn";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:57.6pt;
+	text-indent:-57.6pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Overskrift 7 Tegn";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:64.8pt;
+	text-indent:-64.8pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;
+	font-style:italic;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Overskrift 8 Tegn";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	text-indent:-72.0pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#272727;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Overskrift 9 Tegn";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:79.2pt;
+	text-indent:-79.2pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#272727;
+	font-style:italic;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:11.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:22.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Kommentartekst Tegn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Sidehoved Tegn";
+	margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Sidefod Tegn";
+	margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Titel Tegn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Titel Tegn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Titel Tegn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Titel Tegn";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Undertitel Tegn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Verdana",sans-serif;
+	color:black;
+	letter-spacing:.75pt;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Kommentaremne Tegn";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Markeringsbobletekst Tegn";
+	margin:0cm;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:21.6pt;
+	text-indent:-21.6pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.Overskrift2Tegn
+	{mso-style-name:"Overskrift 2 Tegn";
+	mso-style-link:"Overskrift 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.KommentartekstTegn
+	{mso-style-name:"Kommentartekst Tegn";
+	mso-style-link:Kommentartekst;}
+span.TitelTegn
+	{mso-style-name:"Titel Tegn";
+	mso-style-link:Titel;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+span.Overskrift1Tegn
+	{mso-style-name:"Overskrift 1 Tegn";
+	mso-style-link:"Overskrift 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.SidehovedTegn
+	{mso-style-name:"Sidehoved Tegn";
+	mso-style-link:Sidehoved;}
+span.SidefodTegn
+	{mso-style-name:"Sidefod Tegn";
+	mso-style-link:Sidefod;}
+span.Overskrift3Tegn
+	{mso-style-name:"Overskrift 3 Tegn";
+	mso-style-link:"Overskrift 3";
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;}
+span.KommentaremneTegn
+	{mso-style-name:"Kommentaremne Tegn";
+	mso-style-link:Kommentaremne;
+	font-weight:bold;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+span.Overskrift4Tegn
+	{mso-style-name:"Overskrift 4 Tegn";
+	mso-style-link:"Overskrift 4";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-style:italic;}
+span.Overskrift5Tegn
+	{mso-style-name:"Overskrift 5 Tegn";
+	mso-style-link:"Overskrift 5";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.Overskrift6Tegn
+	{mso-style-name:"Overskrift 6 Tegn";
+	mso-style-link:"Overskrift 6";
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;}
+span.Overskrift7Tegn
+	{mso-style-name:"Overskrift 7 Tegn";
+	mso-style-link:"Overskrift 7";
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;
+	font-style:italic;}
+span.Overskrift8Tegn
+	{mso-style-name:"Overskrift 8 Tegn";
+	mso-style-link:"Overskrift 8";
+	font-family:"Calibri Light",sans-serif;
+	color:#272727;}
+span.Overskrift9Tegn
+	{mso-style-name:"Overskrift 9 Tegn";
+	mso-style-link:"Overskrift 9";
+	font-family:"Calibri Light",sans-serif;
+	color:#272727;
+	font-style:italic;}
+span.MarkeringsbobletekstTegn
+	{mso-style-name:"Markeringsbobletekst Tegn";
+	mso-style-link:Markeringsbobletekst;
+	font-family:"Segoe UI",sans-serif;}
+span.UndertitelTegn
+	{mso-style-name:"Undertitel Tegn";
+	mso-style-link:Undertitel;
+	font-family:"Verdana",sans-serif;
+	color:black;
+	letter-spacing:.75pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 2.0cm 3.0cm 2.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=DA link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:48.0pt;line-height:107%;font-family:"Calibri Light",sans-serif;
+color:#44546A;letter-spacing:.25pt'><img width=478 height=412 id="Billede 1"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image001.png"
+alt="Et billede, der indeholder cirkel, Grafik, Font/skrifttype, logo&#10;&#10;Automatisk genereret beskrivelse"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:36.0pt;line-height:107%'>Specificering af sikkerhed ifm.
+centrale og decentrale EHMI komponenter</span><span style='font-size:48.0pt;
+line-height:107%;font-family:"Calibri Light",sans-serif;color:#44546A;
+letter-spacing:.25pt'> <br clear=all style='page-break-before:always'>
+</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+
+<p class=MsoTocHeading>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Indholdsfortegnelse</p>
+
+<p class=MsoToc1><a href="#_Toc150964803">2<span style='color:windowtext;
+text-decoration:none'>       </span>Introduktion<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc150964804">3<span style='color:windowtext;
+text-decoration:none'>       </span>Generelt omkring sikkerhed for nye
+komponenter i EHMI<span style='color:windowtext;display:none;text-decoration:
+none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964805">3.1<span style='color:windowtext;
+text-decoration:none'>        </span>Generelle sikkerhedsmæssige forudsætninger
+for komponenter i forsendelseskæden<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc150964806">4<span style='color:windowtext;
+text-decoration:none'>       </span>Opgavespecificeringer - sikkerhed
+vedrørende meddelelseskommunikation<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964807">4.1<span style='color:windowtext;
+text-decoration:none'>        </span>Decentralt vedrørende sikkerhed<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964808">4.2<span style='color:windowtext;
+text-decoration:none'>        </span>Alle komponenter stand-alone  -
+implementeret på forskellige servere<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964809">4.3<span style='color:windowtext;
+text-decoration:none'>        </span>Alle komponenter stand-alone - grupperet
+sammen på samme server<span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964810">4.4<span style='color:windowtext;
+text-decoration:none'>        </span>Alle komponenter stand-alone  - afsendende
+fagsystem og MSH grupperet sammen på samme server<span style='color:windowtext;
+display:none;text-decoration:none'>  </span><span
+style='color:windowtext;display:none;text-decoration:none'>7</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964811">4.5<span style='color:windowtext;
+text-decoration:none'>        </span>Alle komponenter stand-alone, MSH og AP
+grupperet sammen på samme server<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>8</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964812">4.6<span style='color:windowtext;
+text-decoration:none'>        </span>Afsendende fagsystem stand-alone  - MSH/AP
+sammenbygget  - implementeret på forskellige servere<span style='color:windowtext;
+display:none;text-decoration:none'>  </span><span
+style='color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964813">4.7<span style='color:windowtext;
+text-decoration:none'>        </span>Afsendende fagsystem stand-alone  - MSH/AP
+sammenbygget – alle grupperet sammen på samme server<span style='color:windowtext;
+display:none;text-decoration:none'>  </span><span
+style='color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964814">4.8<span style='color:windowtext;
+text-decoration:none'>        </span>Afsendende fagsystem/MSH sammenbygget – AP
+stand-alone  - implementeret på forskellige servere<span style='color:windowtext;
+display:none;text-decoration:none'>  </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964815">4.9<span style='color:windowtext;
+text-decoration:none'>        </span>Afsendende fagsystem/MSH sammenbygget – AP
+stand-alone  – alle grupperet sammen på samme server<span style='color:windowtext;
+display:none;text-decoration:none'>  </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964816">4.10<span style='color:windowtext;
+text-decoration:none'>     </span>Afsendende fagsystem/MSH sammenbygget –
+MSH/AP sammenbygget - implementeret på forskellige servere<span
+style='color:windowtext;display:none;text-decoration:none'>  </span><span
+style='color:windowtext;display:none;text-decoration:none'>11</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964817">4.11<span style='color:windowtext;
+text-decoration:none'>     </span>Afsendende fagsystem/MSH sammenbygget –
+MSH/AP sammenbygget – alle grupperet sammen på samme server<span
+style='color:windowtext;display:none;text-decoration:none'>  </span><span
+style='color:windowtext;display:none;text-decoration:none'>11</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964818">4.12<span style='color:windowtext;
+text-decoration:none'>     </span>Alle komponenter sammenbyggede<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964819">4.13<span style='color:windowtext;
+text-decoration:none'>     </span>Modtagersiden<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc150964820">5<span style='color:windowtext;
+text-decoration:none'>       </span>Sikkerhedsspecificeringer vedrørende forsendelsesstatus
+af meddelelser<span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964821">5.1<span style='color:windowtext;
+text-decoration:none'>        </span>Opsamling til repositorie<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc150964822">5.1.1<span style='color:windowtext;
+text-decoration:none'>         </span>Decentralt vedrørende sikkerhed for
+EHMI-komponent: Forsendelsesstatus - indberetning<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964823">5.2<span style='color:windowtext;
+text-decoration:none'>        </span>Udstilling via service<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>14</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc150964824">5.2.1<span style='color:windowtext;
+text-decoration:none'>         </span>Decentralt vedrørende sikkerhed for
+EHMI-komponent: Forsendelsesstatus  - udsøgning<span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc150964825">6<span style='color:windowtext;
+text-decoration:none'>       </span>Sikkerhedsspecificeringer vedrørende Sundhedsadressering<span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc150964826">6.1<span style='color:windowtext;
+text-decoration:none'>        </span>Decentral vedrørende EHMI-komponent:
+Sundhedsadresseringsservice<span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc150964827">7<span style='color:windowtext;
+text-decoration:none'>       </span>Relevante links:<span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>17</span></a></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><a name="_Toc135118611"><span style='font-size:13.0pt;
+line-height:107%;font-family:"Calibri Light",sans-serif;color:#2F5496'>&nbsp;</span></a></p>
+
+<h1><a name="_Toc150964803">2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Introduktion</a> </h1>
+
+<p class=MsoNormal>I MedCom13 har MedCom et fælles afprøvningsprojekt
+’Kommunale prøvesvar på ny infrastruktur’, hvor MedComs to centrale
+moderniseringsspor kobles: FHIR og EHMI, hvor såvel meddelelseskommunikationen
+som infrastrukturen moderniseres. <a></a><a>Moderniseringen sker grundet behov
+for kvalitetsløft af bl.a. sikkerhed, gennemsigtighed, robusthed og effektiv,
+international digital meddelelseskommunikation</a><span
+class=MsoCommentReference><span style='font-size:8.0pt;line-height:107%'><a
+class=msocomanchor id="_anchor_1"
+onmouseover="msoCommentShow('_anchor_1','_com_1')"
+onmouseout="msoCommentHide('_com_1')" href="#_msocom_1" language=JavaScript
+name="_msoanchor_1">[AH1]</a>&nbsp;</span></span><span
+class=MsoCommentReference><span style='font-size:8.0pt;line-height:107%'><a
+class=msocomanchor id="_anchor_2"
+onmouseover="msoCommentShow('_anchor_2','_com_2')"
+onmouseout="msoCommentHide('_com_2')" href="#_msocom_2" language=JavaScript
+name="_msoanchor_2">[OVM2]</a>&nbsp;</span></span>. </p>
+
+<p class=MsoNormal>I projektet gennemføres en afprøvning i drift fra d. 1.
+marts til d. 31. maj 2025. </p>
+
+<p class=MsoNormal>I afprøvningen skal den nye FHIR-standard for kommunale
+prøvesvar sendes fra kommunale akutfunktioner (EOJ) til almen lægepraksis (LPS)
+via den nye infrastruktur EHMI (Enhanced Healthcare Messaging Infrastructure). </p>
+
+<p class=MsoNormal>Forsendelsen af standarden skal ske via den nye
+underliggende eDelivery infrastruktur, og der skal ligeledes ske en afprøvning
+af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus
+(Track’n’Trace).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><a name="_Toc150964804">3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Generelt omkring sikkerhed for nye komponenter i EHMI</a> </h1>
+
+<p class=MsoNormal>Det er muligt at indrapportere og tilgå data via et FHIR
+API. Web-services/RESTful-services, der udstilles via et sådant interface, skal,
+præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde
+national arkitektur og nationale standarder.</p>
+
+<p class=MsoNormal>Det betyder bl.a., at ved personhenførbare oplysninger:</p>
+
+<p class=MsoNormal>&nbsp;Der skal ske en stærk autentifikation af brugere
+(svarende til NIST niveau 3-4 eller NSIS niveau ”betydeligt”)</p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Der skal foretages adgangskontrol baseret på nationalt standardiseret
+information (attributter)</p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Samtykke/frabedelse og behandlingsrelation skal tjekkes op mod den
+nationale samtykkeservice og den nationale behandlingsrelationsservice</p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af
+borgeren via MinLog</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc150964805">3.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Generelle sikkerhedsmæssige forudsætninger for komponenter i
+forsendelseskæden</a></h2>
+
+<p class=MsoNormal>Følgende definitioner <a></a><span
+class=MsoCommentReference><span style='font-size:8.0pt;line-height:107%'><a
+class=msocomanchor id="_anchor_3"
+onmouseover="msoCommentShow('_anchor_3','_com_3')"
+onmouseout="msoCommentHide('_com_3')" href="#_msocom_3" language=JavaScript
+name="_msoanchor_3">[AH3]</a>&nbsp;</span></span>for alle systemer/komponenter
+i EHMI er gældende:</p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Systemer/komponenter kan være en stand-alone applikation eller <b><i>sammenbygget</i></b>
+med en eller flere andre systemer/komponenter i meddelelsesflowet.</p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Systemer/komponenter kan være en stand-alone applikation <b><i>grupperet
+sammen</i></b> med en eller flere andre systemer/komponenter i
+meddelelsesflowet på samme server.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=Default><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#2F5496'>&nbsp;</span></p>
+
+<h1><a name="_Toc135118617"></a><a name="_Toc150964806">4<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Opgavespecificeringer - sikkerhed vedrørende punkt til punkt meddelelseskommunikation</a></h1>
+
+<h2><a name="_Toc150964807">4.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Decentralt vedrørende sikkerhed</a></h2>
+
+<p class=MsoNormal>Følgende tabel illustrerer generelt, hvordan retningslinjerne
+er vedrørende sikkerhed i meddelelsesflowet i EHMI.</p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a><b>EHMI
+   Komponent</b></a><span class=MsoCommentReference><span style='font-size:
+   8.0pt'><a class=msocomanchor id="_anchor_4"
+   onmouseover="msoCommentShow('_anchor_4','_com_4')"
+   onmouseout="msoCommentHide('_com_4')" href="#_msocom_4" language=JavaScript
+   name="_msoanchor_4">[AH4]</a>&nbsp;</span></span><b>er</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Mellem
+  stand-alone komponenter/services.</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af forsendelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsenderkomponent</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Mellem
+  stand-alone komponenter/services.</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagerkomponent</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Mellem
+  komponenter/services, der håndteres på forskellige servere</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation af meddelelse / meddelelsesindhold
+  / kuvert via sikret transportprotokol, f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsender/modtagerkomponent</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='page-break-after:avoid'><b>Autenticitetshåndtering
+mellem C1 og C2 (jf. Målbilledets afsnit 6.1.1):</b></p>
+
+<p class=MsoNormal><i>På sundhedsområdet stilles krav om, at meddelelse
+og/eller konvolutten signeres i C1 og at denne signatur efterfølgende
+verificeres i C2. På denne måde sikres autentifikation af C1 i C2. Denne
+autentifikation vil være en del af den aftale, der indgås imellem AP’et og det
+system AP’et agerer på vegne af. Sikres ved </i>eksplicit signering mellem Afsendende
+fagsystem/MSH/AP (med tilhørende verifikation) på systembevisniveau
+(VOCES/FOCES/Niveau 3). <a>Dette kan eksempelvis sikres via DGWS/IDWS eller
+lignende</a><span class=MsoCommentReference><span style='font-size:8.0pt;
+line-height:107%'><a class=msocomanchor id="_anchor_5"
+onmouseover="msoCommentShow('_anchor_5','_com_5')"
+onmouseout="msoCommentHide('_com_5')" href="#_msocom_5" language=JavaScript
+name="_msoanchor_5">[AH5]</a>&nbsp;</span></span>.</p>
+
+<p class=MsoNormal><b>Integritetssikring mellem C1 og C2 (jf. Målbilledets
+afsnit 6.1.2):</b></p>
+
+<p class=MsoNormal><i>Sikres ud over den under autenticitet (afsnit 6.1.1)
+beskrevne konvolutsignering via de protokoller, der anvendes imellem AP’erne og
+de systemer AP’erne agerer på vegne af – f.eks. TLS (Transport Layer Security).</i></p>
+
+<p class=MsoNormal><b>Fortrolighedssikring mellem C1 og C2 (jf. Målbilledets
+afsnit 6.1.4):</b></p>
+
+<p class=MsoNormal><i>Da alle meddelelser under sundhedsdomænet som
+udgangspunkt indeholder følsomme personoplysninger, skal kryptering anvendes,
+hvor det er muligt. Meddelelsen skal derfor krypteres imellem afsender og
+afsendende AP via MSH (C1 og C2) samt imellem modtagende AP og modtager via MSH
+(C3 og C4). Anvendelse af denne kryptering vil være en del af den aftale, der
+indgås imellem AP’et og det system AP’et agerer på vegne af. Sikres som via
+Integritetssikring.</i></p>
+
+<p class=MsoNormal><i>&nbsp;</i></p>
+
+<p class=MsoNormal><i>Ovenstående gælder også for al kommunikation mellem C3 og
+C4.</i></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964808">4.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Alle komponenter stand-alone  - implementeret på forskellige servere</a></h2>
+
+<p class=MsoNormal><img width=570 height=112 id="Billede 2056586359"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image002.png"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b><a></a><span class=MsoCommentReference><span
+   style='font-size:8.0pt'><a class=msocomanchor id="_anchor_6"
+   onmouseover="msoCommentShow('_anchor_6','_com_6')"
+   onmouseout="msoCommentHide('_com_6')" href="#_msocom_6" language=JavaScript
+   name="_msoanchor_6">[AH6]</a>&nbsp;</span></span></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a></a><a>Afsendende
+  fagsystem </a><span class=MsoCommentReference><span style='font-size:8.0pt'><a
+  class=msocomanchor id="_anchor_7"
+  onmouseover="msoCommentShow('_anchor_7','_com_7')"
+  onmouseout="msoCommentHide('_com_7')" href="#_msocom_7" language=JavaScript
+  name="_msoanchor_7">[AH7]</a>&nbsp;</span></span><span
+  class=MsoCommentReference><span style='font-size:8.0pt'><a
+  class=msocomanchor id="_anchor_8"
+  onmouseover="msoCommentShow('_anchor_8','_com_8')"
+  onmouseout="msoCommentHide('_com_8')" href="#_msocom_8" language=JavaScript
+  name="_msoanchor_8">[OVM8]</a>&nbsp;</span></span>stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH
+  stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation af meddelelse/konvolut via sikret
+  transportprotokol, f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem og MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH
+  stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>AP stand-alone</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>AP</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>MSH stand-alone</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>AP stand-alone</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>&nbsp;</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation af meddelelse/konvolut via sikret
+  transportprotokol, f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH og AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964809">4.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Alle komponenter stand-alone - </a><a></a><a>grupperet </a><span
+class=MsoCommentReference><span style='font-size:8.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;color:windowtext'><a class=msocomanchor
+id="_anchor_9" onmouseover="msoCommentShow('_anchor_9','_com_9')"
+onmouseout="msoCommentHide('_com_9')" href="#_msocom_9" language=JavaScript
+name="_msoanchor_9">[AH9]</a>&nbsp;</span></span><span
+class=MsoCommentReference><span style='font-size:8.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;color:windowtext'><a class=msocomanchor
+id="_anchor_10" onmouseover="msoCommentShow('_anchor_10','_com_10')"
+onmouseout="msoCommentHide('_com_10')" href="#_msocom_10" language=JavaScript
+name="_msoanchor_10">[OVM10]</a>&nbsp;</span></span>sammen på samme server</h2>
+
+<p class=MsoNormal><img width=570 height=112 id="Billede 1039149675"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image003.png"
+alt="Et billede, der indeholder tekst, skærmbillede, gul&#10;&#10;Automatisk genereret beskrivelse"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH
+  stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH
+  stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>AP stand-alone</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>&nbsp;</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964810">4.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Alle komponenter stand-alone  - afsendende fagsystem og MSH </a><a>grupperet
+</a><span class=MsoCommentReference><span style='font-size:8.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;color:windowtext'><a class=msocomanchor
+id="_anchor_11" onmouseover="msoCommentShow('_anchor_11','_com_11')"
+onmouseout="msoCommentHide('_com_11')" href="#_msocom_11" language=JavaScript
+name="_msoanchor_11">[AH11]</a>&nbsp;</span></span>sammen på samme server</h2>
+
+<p class=MsoNormal><img width=570 height=112 id="Billede 1572208327"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image003.png"
+alt="Et billede, der indeholder tekst, skærmbillede, gul&#10;&#10;Automatisk genereret beskrivelse"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende fagsystem</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH
+  stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH
+  stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>AP stand-alone</span><span lang=EN-GB> </span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>AP</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>MSH stand-alone</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>AP stand-alone</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation af meddelelse/konvolut via sikret
+  transportprotokol, f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH og AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964811">4.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Alle komponenter stand-alone, MSH og AP </a><a>grupperet </a><span
+class=MsoCommentReference><span style='font-size:8.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;color:windowtext'><a class=msocomanchor
+id="_anchor_12" onmouseover="msoCommentShow('_anchor_12','_com_12')"
+onmouseout="msoCommentHide('_com_12')" href="#_msocom_12" language=JavaScript
+name="_msoanchor_12">[AH12]</a>&nbsp;</span></span>sammen på samme server</h2>
+
+<p class=MsoNormal><img width=570 height=112 id="Billede 541968891"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image004.png"
+alt="Et billede, der indeholder tekst, skærmbillede, gul&#10;&#10;Automatisk genereret beskrivelse"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH
+  stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation af meddelelse/konvolut via sikret
+  transportprotokol, f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem og MSH </p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH
+  stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-GB>AP stand-alone</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964812">4.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Afsendende fagsystem stand-alone  - MSH/AP sammenbygget  - implementeret
+på forskellige servere</a></h2>
+
+<p class=MsoNormal><img width=582 height=125 id="Billede 1977982531"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image005.png"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b><a></a><span class=MsoCommentReference><span
+   style='font-size:8.0pt'><a class=msocomanchor id="_anchor_13"
+   onmouseover="msoCommentShow('_anchor_13','_com_13')"
+   onmouseout="msoCommentHide('_com_13')" href="#_msocom_13"
+   language=JavaScript name="_msoanchor_13">[AH13]</a>&nbsp;</span></span></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem<a></a><a></a><span class=MsoCommentReference><span
+  style='font-size:8.0pt'><a class=msocomanchor id="_anchor_14"
+  onmouseover="msoCommentShow('_anchor_14','_com_14')"
+  onmouseout="msoCommentHide('_com_14')" href="#_msocom_14"
+  language=JavaScript name="_msoanchor_14">[AH14]</a>&nbsp;</span></span><span
+  class=MsoCommentReference><span style='font-size:8.0pt'><a
+  class=msocomanchor id="_anchor_15"
+  onmouseover="msoCommentShow('_anchor_15','_com_15')"
+  onmouseout="msoCommentHide('_com_15')" href="#_msocom_15"
+  language=JavaScript name="_msoanchor_15">[OM15]</a>&nbsp;</span></span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH/AP </p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH/AP</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH/AP</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation af meddelelse/konvolut via sikret
+  transportprotokol, f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem og MSH/AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964813">4.7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Afsendende fagsystem stand-alone  - MSH/AP sammenbygget – alle </a><a>grupperet
+</a><span class=MsoCommentReference><span style='font-size:8.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;color:windowtext'><a class=msocomanchor
+id="_anchor_16" onmouseover="msoCommentShow('_anchor_16','_com_16')"
+onmouseout="msoCommentHide('_com_16')" href="#_msocom_16" language=JavaScript
+name="_msoanchor_16">[AH16]</a>&nbsp;</span></span>sammen på samme server</h2>
+
+<p class=MsoNormal><img width=582 height=125 id="Billede 791479707"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image006.png"
+alt="Et billede, der indeholder tekst, skærmbillede, Rektangel, linje/række&#10;&#10;Automatisk genereret beskrivelse"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem stand-alone</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH/AP </p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH/AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964814">4.8<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Afsendende fagsystem/MSH sammenbygget – AP stand-alone  - implementeret
+på forskellige servere</a></h2>
+
+<p class=MsoNormal><img width=592 height=125 id="Billede 436646284"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image007.png"
+alt="Et billede, der indeholder tekst, skærmbillede, gul, design&#10;&#10;Automatisk genereret beskrivelse"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem/MSH</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem<a></a><span class=MsoCommentReference><span style='font-size:8.0pt'><a
+  class=msocomanchor id="_anchor_17"
+  onmouseover="msoCommentShow('_anchor_17','_com_17')"
+  onmouseout="msoCommentHide('_com_17')" href="#_msocom_17"
+  language=JavaScript name="_msoanchor_17">[AH17]</a>&nbsp;</span></span>/MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>AP
+  Stand-alone</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>AP</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem<a>/MSH</a> </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>AP
+  Stand-alone <span class=MsoCommentReference><span style='font-size:8.0pt'><a
+  class=msocomanchor id="_anchor_18"
+  onmouseover="msoCommentShow('_anchor_18','_com_18')"
+  onmouseout="msoCommentHide('_com_18')" href="#_msocom_18"
+  language=JavaScript name="_msoanchor_18">[AH18]</a>&nbsp;</span></span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation af meddelelse/konvolut via sikret
+  transportprotokol, f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem/MSH og AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964815">4.9<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Afsendende fagsystem/MSH sammenbygget – AP stand-alone  – alle </a><a>grupperet
+</a><span class=MsoCommentReference><span style='font-size:8.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;color:windowtext'><a class=msocomanchor
+id="_anchor_19" onmouseover="msoCommentShow('_anchor_19','_com_19')"
+onmouseout="msoCommentHide('_com_19')" href="#_msocom_19" language=JavaScript
+name="_msoanchor_19">[AH19]</a>&nbsp;</span></span>sammen på samme server</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><img width=592 height=125 id="Billede 907300127"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image008.png"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem/MSH</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem<a></a><span class=MsoCommentReference><span style='font-size:8.0pt'><a
+  class=msocomanchor id="_anchor_20"
+  onmouseover="msoCommentShow('_anchor_20','_com_20')"
+  onmouseout="msoCommentHide('_com_20')" href="#_msocom_20"
+  language=JavaScript name="_msoanchor_20">[AH20]</a>&nbsp;</span></span>/MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>AP
+  Stand-alone</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964816">4.10<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget -
+implementeret på forskellige servere</a></h2>
+
+<p class=MsoNormal>Vi har erfaret gennem samtaler med de deltagende parter, at
+et scenarie som dette kan være muligt. I så fald er det vigtigt at parter med
+et sådant setup aftaler, hvilken MSH, der er primær med udfyldelse af MSH
+forpligtelserne og hvilken MSH, der blot viderestiller informationer til næste
+led i kæden. Når dette er på plads, vil følgende sikkerhedsanvisninger være
+gældende.</p>
+
+<p class=MsoNormal><img width=638 height=113 id="Billede 1668588455"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image009.png"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=NO-NYN>Afsendende fagsystem/MSH</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem/MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=NO-NYN>Afsendende MSH/AP</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH/AP</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=NO-NYN>Afsendende fagsystem/MSH</span><span lang=NO-NYN> og</span></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=NO-NYN>MSH/AP </span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation af meddelelse/konvolut via sikret
+  transportprotokol, f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=NO-NYN>Afsendende fagsystem/MSH</span><span lang=NO-NYN> </span><span
+  lang=NO-NYN>og MSH/AP</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=NO-NYN style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri Light",sans-serif;color:#1F3763'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964817">4.11<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Afsendende fagsystem</a><a>/MSH sammenbygget – MSH/AP sammenbygget –
+alle grupperet sammen på samme server</a><span class=MsoCommentReference><span
+style='font-size:8.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+color:windowtext'><a class=msocomanchor id="_anchor_21"
+onmouseover="msoCommentShow('_anchor_21','_com_21')"
+onmouseout="msoCommentHide('_com_21')" href="#_msocom_21" language=JavaScript
+name="_msoanchor_21">[AH21]</a>&nbsp;</span></span></h2>
+
+<p class=MsoNormal>Som for 4.10.</p>
+
+<p class=MsoNormal><img width=636 height=113 id="Billede 552270678"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image010.png"
+alt="Et billede, der indeholder skærmbillede, linje/række, Rektangel, diagram&#10;&#10;Automatisk genereret beskrivelse"></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Delopgave</b></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=NO-NYN>Afsendende fagsystem/MSH</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af meddelelse</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem/MSH</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=NO-NYN>Afsendende MSH/AP</span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>MSH/AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Toc150964818">4.12<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span>Alle komponenter sammenbyggede</a></h2>
+
+<p class=MsoNormal><img width=640 height=127 id="Billede 1993764135"
+src="EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services2-filer/image011.png"></p>
+
+<p class=MsoNormal>Da alle komponenter her er sammenbyggede, håndteres al
+sikkerhed internt i sammenbygningen, og der er derfor ikke behov for eksplicit
+at udtrykke noget om sikkerheden her.</p>
+
+<h2><a name="_Toc150784862"></a><a name="_Toc150964819">4.13<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Modtagersiden</a></h2>
+
+<p class=MsoNormal>Ovenstående er kun beskrevet, hvordan sikkerheden ser ud på
+afsendersiden. De tilsvarende mekanismer implementeres naturligvis også på
+modtagersider, hvor de så bare anvendes i den modsatte rækkefølge og med de
+tilsvarende aktører i modsat rækkefølge.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#2F5496'>&nbsp;</span></p>
+
+<h1><a name="_Toc150784863"></a><a name="_Toc150964820">5<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Sikkerheds</a>specificeringer <a name="_Toc135118614">vedrørende f</a>orsendelsesstatus
+af meddelelser </h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=Default><span style='font-size:11.0pt'>Sikkerhed i forhold til
+forsendelses-status opdeles i de forskellige trin: </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:65.2pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt'>Forsendelsesstatus opsamles og gemmes i et repositorie
+</span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:65.2pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt'>Forsendelsesstatus hentes af anvendere via udstillede
+services <a name="_Toc150784864"></a></span></p>
+
+<p class=Default style='margin-bottom:2.45pt'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<h2><a name="_Toc150964821"><span style='font-size:11.0pt;line-height:107%'>5.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Opsamling til repositorie</a></h2>
+
+<p class=Default><span style='font-size:11.0pt'>Fra målbilledet ved vi, at sikkerhed
+omkring dette er nødvendigt dels for, at anvenderne vil anse servicen baseret
+på de opsamlede data for troværdig, og dels fordi der opsamles
+personoplysninger, da unik borgeridentifikation (oftest CPR-nummeret), for den
+borger meddelelsen omhandler, er en del af den opsamlede information: </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Autenticitet: </span></b><span
+style='font-size:11.0pt'>En komponent, der gemmer forsendelsesstatus for
+meddelelser, skal autentificere sig når den tilgår repositoriet. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Tilgængelighed: </span></b><span
+style='font-size:11.0pt'>Aftalt oppetid og svartid skal sikres via standard
+driftsmekanismer. Dette er særlig vigtigt her, da forsendelsesstatus, jf.
+afsnit 5.2.8, skal være tæt på realtidsopdateret. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Integritet: </span></b><span
+style='font-size:11.0pt'>Sikres af den protokol, som opsamlingen implementeres
+via. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Uafviselighed: </span></b><span
+style='font-size:11.0pt'>En komponent, der gemmer forsendelsesstatus, skal
+audit logge opsamlingen på en standardiseret måde. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Fortrolighed: </span></b><span
+style='font-size:11.0pt'>Når den opsamlede forsendelsesstatus kommunikeres til
+repositoriet, sikres den enten via eksplicit kryptering eller implicit
+kryptering på det underliggende infrastruktur niveau. </span></p>
+
+<p class=Default style='margin-bottom:2.45pt'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<h3><a name="_Toc150964822">5.1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus -
+indberetning</a></h3>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a><b>Delopgave</b></a><span
+   class=MsoCommentReference><span style='font-size:8.0pt'><a
+   class=msocomanchor id="_anchor_22"
+   onmouseover="msoCommentShow('_anchor_22','_com_22')"
+   onmouseout="msoCommentHide('_com_22')" href="#_msocom_22"
+   language=JavaScript name="_msoanchor_22">[AH22]</a>&nbsp;</span></span></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Forsendelsesstatus-komponent</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default><b><span style='font-size:11.0pt'>Autenticitet: </span></b><span
+  style='font-size:11.0pt'>En komponent, der gemmer forsendelsesstatus for
+  meddelelser, skal autentificere sig når den tilgår repositoriet. </span></p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af indberetning</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Forsendelsesstatus-komponent</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Forsendelsesstatuskomponent</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Forsendelsesstatus-komponent</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation via sikret transportprotokol,
+  f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Forsendelsesstatuskomponent</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Forsendelsesstatus-komponent</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Tilgængelighed:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af kø mekanisme til at håndtere at en forbindelse kan være nede</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Forsendelsesstatuskomponent</p>
+  </td>
+ </tr>
+</table>
+
+<p class=Default style='margin-bottom:2.45pt'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<h2><a name="_Toc150784865"></a><a name="_Toc150964823">5.2<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Indberetninger ift. scenarierne i afsnit 4.</a></h2>
+
+<p class=MsoNormal>I det følgende antages begge sider af afsender- og modtagerøkosystemerne
+at have samme setup til hinanden som det afsendende økosystem. I praksis er
+dette naturligvis meget forskelligt, og der skal i så fald kombineres</p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Scenarier</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a><b>Skabende/Indgående
+   indberetning</b></a></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Afsluttende/udgående
+   indberetning</b><span class=MsoCommentReference><span style='font-size:8.0pt'><a
+   class=msocomanchor id="_anchor_23"
+   onmouseover="msoCommentShow('_anchor_23','_com_23')"
+   onmouseout="msoCommentHide('_com_23')" href="#_msocom_23"
+   language=JavaScript name="_msoanchor_23">[AH23]</a>&nbsp;</span></span></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.2</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.3</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.4</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.5</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  MSH </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende AP</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-------------------------------------------</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende AP
+  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  MSH </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  MSH </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende AP</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-------------------------------------------</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende AP
+  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  MSH </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  fagsystem</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.6</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.7</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  MSH/AP</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-------------------------------------------</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  MSH/AP</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  MSH/AP </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-------------------------------------------</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  MSH/AP</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  fagsystem</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.8</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.9</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem/MSH</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende AP</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-------------------------------------------</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende AP</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende AP
+  </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-------------------------------------------</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende AP</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  fagsystem/MSH</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.10</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.11</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem/MSH</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende AP/MSH</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-------------------------------------------</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende AP/MSH</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende AP/MSH</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>-------------------------------------------</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende AP/MSH</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  fagsystem/MSH</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Kap. 4.12</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  fagsystem/MSH/AP</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  fagsystem/MSH/AP</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>5.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Udstilling via service </h2>
+
+<p class=Default><span style='font-size:11.0pt'>Fra målbilledet ved vi, at servicen,
+der udstiller forsendelsesstatus for meddelelser, skal overholde de samme
+sikkerhedskrav og -regler som øvrige services på sundhedsområdet, jf.
+målbilledets princip PT6. Derfor bør flere af de samme allerede eksisterende
+sikkerhedsmekanismer fra disse andre services anvendes: </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Autenticitet: </span></b><span
+style='font-size:11.0pt'>Servicen skal udstilles som en DGWS/IDWS service eller
+lignende niveau, og anvenderne (både systemer, sundhedspersoner og borgere)
+skal anvende digitale certifikater i forbindelse med kald til servicen på samme
+måde som for andre services på sundhedsområdet, og det er (igen) et krav, at de
+anvendte certifikater er på personbevisniveau. For systemer dog
+systembevisniveau. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Tilgængelighed: </span></b><span
+style='font-size:11.0pt'>Aftalt oppetid og svartid sikres via den platform, som
+servicen afvikles på</span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Integritet: </span></b><span
+style='font-size:11.0pt'>Sikres af den protokol, som servicen er implementeret
+med. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Uafviselighed: </span></b><span
+style='font-size:11.0pt'>Servicen implementerer standardiseret audit log.
+Logning til MinLog er påkrævet i tilfældene hvor en borger henter
+forsendelsesstatus for meddelelser angående en anden borger end sig selv, og
+hvor en sundhedsperson henter forsendelsesstatus specifikt for en borger. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Fortrolighed: </span></b><span
+style='font-size:11.0pt'>Servicen skal aktivt anvende den identifikation af
+anvenderen (system, sundhedsperson eller borger) samt de søgeparametre, der er
+en del af kaldet af servicen. </span></p>
+
+<p class=Default><span style='font-size:11.0pt'>Da servicen udstilles og
+afvikles på en platform, der kan have sine egne mere strikse
+sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet
+fald også overholdes. </span></p>
+
+<p class=Default><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<h3><a name="_Toc150964824"></a><a name="_Toc150784866">5.3.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus</a> 
+- udsøgning</h3>
+
+<p class=MsoNormal><a>Det vil blive baseret på et OAuth-sikret REST-interface
+og SMART-on-FHIR eller lignende</a><span class=MsoCommentReference><span
+style='font-size:8.0pt;line-height:107%'><a class=msocomanchor id="_anchor_24"
+onmouseover="msoCommentShow('_anchor_24','_com_24')"
+onmouseout="msoCommentHide('_com_24')" href="#_msocom_24" language=JavaScript
+name="_msoanchor_24">[AH24]</a>&nbsp;</span></span>.</p>
+
+<p class=MsoNormal><a>For opsamling af forsendelsesstatus stilles der krav om,
+at der jf. målbilledets afsnit 6.3.1 eksplicit signeres mellem
+forsendelsesstatus ”klienten” og ”serveren” (med tilhørende verifikation) på
+systembevisniveau (VOCES/FOCES/Niveau 3)</a><span class=MsoCommentReference><span
+style='font-size:8.0pt;line-height:107%'><a class=msocomanchor id="_anchor_25"
+onmouseover="msoCommentShow('_anchor_25','_com_25')"
+onmouseout="msoCommentHide('_com_25')" href="#_msocom_25" language=JavaScript
+name="_msoanchor_25">[AH25]</a>&nbsp;</span></span>. </p>
+
+<p class=MsoNormal>For søgning af forsendelsesstatus stilles der krav om, at
+der mellem forsendelsesstatus ”klienten” og ”serveren” anvendes identifikation
+på systembevisniveau (VOCES/FOCES/Niveau 3).</p>
+
+<p class=MsoNormal>For søgning af forsendelsesstatus stilles der derudover krav
+om, at der ved borgers egen adgang og en klinikers specifikke adgang via
+borgerens/patientens journal anvendes identifikation på personbevisniveau (MOCES/MitID/Niveau
+4).</p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a><b>Delopgave</b></a><span
+   class=MsoCommentReference><span style='font-size:8.0pt'><a
+   class=msocomanchor id="_anchor_26"
+   onmouseover="msoCommentShow('_anchor_26','_com_26')"
+   onmouseout="msoCommentHide('_com_26')" href="#_msocom_26"
+   language=JavaScript name="_msoanchor_26">[AH26]</a>&nbsp;</span></span></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af indberetning</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  komponent</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering ved modtagelse.</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  komponent</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</a></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  komponent</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation af meddelelse/konvolut via sikret
+  transportprotokol, f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Afsendende fagsystem/MSH/AP)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Modtagende
+  komponent<span class=MsoCommentReference><span style='font-size:8.0pt'><a
+  class=msocomanchor id="_anchor_27"
+  onmouseover="msoCommentShow('_anchor_27','_com_27')"
+  onmouseout="msoCommentHide('_com_27')" href="#_msocom_27"
+  language=JavaScript name="_msoanchor_27">[AH27]</a>&nbsp;</span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><a name="_Toc150784867"><span style='font-size:16.0pt;
+line-height:107%;font-family:"Calibri Light",sans-serif;color:#2F5496'>&nbsp;</span></a></p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><a name="_Toc150964825"><span style='font-size:16.0pt;
+line-height:107%;font-family:"Calibri Light",sans-serif;color:#2F5496'>&nbsp;</span></a></p>
+
+<h1>6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Sikkerhedsspecificeringer vedrørende Sundhedsadressering </h1>
+
+<p class=Default><span style='font-size:11.0pt'>Fra målbilledet ved vi, at sundhedsadresseringsservicen
+skal overholde de samme sikkerhedskrav og -regler som tilsvarende services på
+sundhedsområdet, og derfor bør flere af de samme allerede eksisterende
+sikkerhedsmekanismer anvendes: </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Autenticitet: </span></b><span
+style='font-size:11.0pt'>Servicen skal udstilles som en DGWS/IDWS service, og
+anvenderne skal anvende digitale certifikater i forbindelse med kald til
+servicen på samme måde som for tilsvarende services på sundhedsområdet. På
+grund af denne service’ natur er det imidlertid i dette tilfælde
+tilstrækkeligt, at de anvendte certifikater er på systembevisniveau. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Tilgængelighed: </span></b><span
+style='font-size:11.0pt'>Aftalt oppetid og svartid skal sikres via den
+platform, som servicen afvikles på – f.eks. via standard driftsmekanismer som
+fail-over og load-balancere. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Integritet: </span></b><span
+style='font-size:11.0pt'>Sikres af den protokol, som servicen er implementeret
+med. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Uafviselighed: </span></b><span
+style='font-size:11.0pt'>Servicen skal implementere standardiseret audit log. </span></p>
+
+<p class=Default style='margin-top:0cm;margin-right:0cm;margin-bottom:2.45pt;
+margin-left:36.0pt;text-indent:-18.0pt'><span style='font-size:11.0pt'>•<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.0pt'>Fortrolighed: </span></b><span
+style='font-size:11.0pt'>Servicen skal anvende den identifikation af anvenderen
+samt de søgeparametre, der er en del af kaldet af servicen, men en egentlig
+brugerstyring i forhold til hvem, der kalder servicen, antages håndhævet af de
+kaldende systemer, så når et anvendersystem er korrekt autentificeret, er der
+adgang til servicen. </span></p>
+
+<p class=Default style='margin-bottom:2.45pt'><span style='font-size:11.0pt'>Da
+servicen udstilles og afvikles på en platform, der kan have sine egne mere
+strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i
+givet fald også overholdes.</span></p>
+
+<p class=Default style='margin-bottom:2.45pt'><span style='font-size:11.0pt'>&nbsp;</span></p>
+
+<h2><a name="_Toc150784868"></a><a name="_Toc150964826">6.1<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice</a></h2>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=638
+ style='width:478.35pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='page-break-inside:avoid'>
+   <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+   padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>EHMI
+   Komponenter</b></p>
+   </td>
+   <td width=209 valign=top style='width:156.5pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a><b>Delopgave</b></a><span
+   class=MsoCommentReference><span style='font-size:8.0pt'><a
+   class=msocomanchor id="_anchor_28"
+   onmouseover="msoCommentShow('_anchor_28','_com_28')"
+   onmouseout="msoCommentHide('_com_28')" href="#_msocom_28"
+   language=JavaScript name="_msoanchor_28">[AH28]</a>&nbsp;</span></span></p>
+   </td>
+   <td width=276 valign=top style='width:207.3pt;border:solid windowtext 1.0pt;
+   border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Hvem</b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a>Afsendende
+  system (Fagsystem)</a><span class=MsoCommentReference><span style='font-size:
+  8.0pt'><a class=msocomanchor id="_anchor_29"
+  onmouseover="msoCommentShow('_anchor_29','_com_29')"
+  onmouseout="msoCommentHide('_com_29')" href="#_msocom_29"
+  language=JavaScript name="_msoanchor_29">[AH29]</a>&nbsp;</span></span></p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af signering af søgning (VOCES/FOCES)</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Fagsystem)</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Sundheds-adresseringsservice</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Autenticitetshåndtering:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Verifikation
+  af signering (VOCES/FOCES)</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Sundhedsadresseringsservice</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Fagsystem)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Sundheds-adresseringsservice</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Integritetssikring
+  og fortrolighedssikring: </b>Kommunikation sikret via transportprotokol,
+  f.eks. TLS</p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Fagsystem)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Sundhedsadresseringsservice</p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=153 valign=top style='width:114.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Fagsystem)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Sundheds-adresseringsservice</p>
+  </td>
+  <td width=209 valign=top style='width:156.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b>Tilgængelighed:</b></p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Implementering
+  af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en
+  forbindelse kan være nede. </p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Hvis servicen
+  er online bør altid søges online.</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><a>Faste
+  søgninger bør opdateres udenfor peaktimes.</a><span
+  class=MsoCommentReference><span style='font-size:8.0pt'><a
+  class=msocomanchor id="_anchor_30"
+  onmouseover="msoCommentShow('_anchor_30','_com_30')"
+  onmouseout="msoCommentHide('_com_30')" href="#_msocom_30"
+  language=JavaScript name="_msoanchor_30">[AH30]</a>&nbsp;</span></span></p>
+  </td>
+  <td width=276 valign=top style='width:207.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Afsendende
+  system (Fagsystem)</p>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'>Sundhedsadresseringsservice</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;font-family:
+"Calibri Light",sans-serif;color:#2F5496'>&nbsp;</span></p>
+
+<h1><a name="_Toc150964827">7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Relevante links:</a></h1>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Dansk:</p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:54.0pt;text-indent:-18.0pt'><span style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span>Målbillede for
+meddelelseskommunikation på sundhedsområdet (<a
+href="https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf">https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf</a>)</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>SDN (<a
+href="https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/">https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/</a>)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Engelsk:</p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
+lang=NO-NYN style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=NO-NYN>EU eDelivery (</span><a
+href="https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery"><span
+lang=NO-NYN>https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery</span></a><span
+lang=NO-NYN>) </span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>EU AP specifikationer (<a
+href="https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications">https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications</a>)</p>
+
+<p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:54.0pt;text-indent:-18.0pt'><span lang=EN-GB style='font-family:
+"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+lang=EN-GB>EU PEPPOL SBDH envelope (</span><a
+href="https://docs.peppol.eu/edelivery/envelope/Peppol-EDN-Business-Message-Envelope-2.0.0-2023-03-13.pdf"><span
+lang=EN-GB>https://docs.peppol.eu/edelivery/envelope/Peppol-EDN-Business-Message-Envelope-2.0.0-2023-03-13.pdf</span></a><span
+lang=EN-GB>)</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>IHE BALP (<a href="https://profiles.ihe.net/ITI/BALP/index.html">https://profiles.ihe.net/ITI/BALP/index.html</a>)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<div>
+
+<hr class=msocomoff align=left size=1 width="33%">
+
+<div>
+
+<div id="_com_1" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_1','_com_1')"
+onmouseout="msoCommentHide('_com_1')"><a name="_msocom_1"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_1" class=msocomoff>[AH1]</a></span></span>Der
+er fortsat noget, der halter rent tekstuelt i denne sætning.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_2" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_2','_com_2')"
+onmouseout="msoCommentHide('_com_2')"><a name="_msocom_2"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_2" class=msocomoff>[OVM2]</a></span></span>Kirstens
+sætningskonstruktion, som jeg for øjeblikket lader være</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_3" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_3','_com_3')"
+onmouseout="msoCommentHide('_com_3')"><a name="_msocom_3"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_3" class=msocomoff>[AH3]</a></span></span>Er
+det forudsætninger? Er det ikke mere definitioner?</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_4" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_4','_com_4')"
+onmouseout="msoCommentHide('_com_4')"><a name="_msocom_4"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_4" class=msocomoff>[AH4]</a></span></span>Denne
+tabel er desværre lidt forvirrende og måske ret indforstået. Burde der ikke stå
+EHMI komponenter? Ellers giver indholdet i kolonnen ikke rigtig mening. Burde
+der måske afslutningsvis i dette afsnit 4.1 ikke stå, at disse helt generelle
+retningslinjer foldes ud i større detalje i de efterfølgende afsnit, for de
+forskellige muligheder for setups?</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_5" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_5','_com_5')"
+onmouseout="msoCommentHide('_com_5')"><a name="_msocom_5"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_5" class=msocomoff>[AH5]</a></span></span>For
+indforstået, hvad der menes hermed, og nogle læsere vil blive forvirret og hvad
+webserviceprotokoller har med det hele at gøre.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_6" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_6','_com_6')"
+onmouseout="msoCommentHide('_com_6')"><a name="_msocom_6"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_6" class=msocomoff>[AH6]</a></span></span>Igen,
+det vil hjælpe læseren, hvis der står EHMI-komponenter. </p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_7" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_7','_com_7')"
+onmouseout="msoCommentHide('_com_7')"><a name="_msocom_7"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_7" class=msocomoff>[AH7]</a></span></span>Der
+er fortsat, tilsyneladende helt generelt, anvendt ”Afsendersystem” i figurerne
+og ”Afsendende fagsystem” i tabellerne. Kunne det ikke ensrettes?</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_8" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_8','_com_8')"
+onmouseout="msoCommentHide('_com_8')"><a name="_msocom_8"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_8" class=msocomoff>[OVM8]</a></span></span>Jeg
+skifter det på figurerne også &#128522;</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_9" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_9','_com_9')"
+onmouseout="msoCommentHide('_com_9')"><a name="_msocom_9"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_9" class=msocomoff>[AH9]</a></span></span>Kan
+vi indikere grupperingen på figuren på en eller anden måde? Sammenbygget
+illustreres nedenfor ved fuldt linjeoptrukne rektangler. Kunne gruppering måske
+være rektangler med stiplede linjer?</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_10" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_10','_com_10')"
+onmouseout="msoCommentHide('_com_10')"><a name="_msocom_10"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_10" class=msocomoff>[OVM10]</a></span></span>God
+idé</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_11" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_11','_com_11')"
+onmouseout="msoCommentHide('_com_11')"><a name="_msocom_11"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_11" class=msocomoff>[AH11]</a></span></span>Samme
+kommentar om gruppering som ovenfor.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_12" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_12','_com_12')"
+onmouseout="msoCommentHide('_com_12')"><a name="_msocom_12"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_12" class=msocomoff>[AH12]</a></span></span>Samme
+kommentar om gruppering som ovenfor.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_13" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_13','_com_13')"
+onmouseout="msoCommentHide('_com_13')"><a name="_msocom_13"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_13" class=msocomoff>[AH13]</a></span></span>Som
+ovenfor: EHMI komponenter.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_14" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_14','_com_14')"
+onmouseout="msoCommentHide('_com_14')"><a name="_msocom_14"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_14" class=msocomoff>[AH14]</a></span></span>Som
+ovenfor Fagsystem eller afsendersystem.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_15" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_15','_com_15')"
+onmouseout="msoCommentHide('_com_15')"><a name="_msocom_15"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_15" class=msocomoff>[OM15]</a></span></span>check</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_16" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_16','_com_16')"
+onmouseout="msoCommentHide('_com_16')"><a name="_msocom_16"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_16" class=msocomoff>[AH16]</a></span></span>Samme
+kommentar om grupperet som ovenfor.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_17" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_17','_com_17')"
+onmouseout="msoCommentHide('_com_17')"><a name="_msocom_17"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_17" class=msocomoff>[AH17]</a></span></span>Som
+ovenfor: Afsendersystem eller fagsystem?</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_18" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_18','_com_18')"
+onmouseout="msoCommentHide('_com_18')"><a name="_msocom_18"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_18" class=msocomoff>[AH18]</a></span></span>Her
+er det helt fint (i tråd med kommentarerne til tabellerne ovenfor).</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_19" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_19','_com_19')"
+onmouseout="msoCommentHide('_com_19')"><a name="_msocom_19"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_19" class=msocomoff>[AH19]</a></span></span>Samme
+kommentar om grupperet som ovenfor.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_20" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_20','_com_20')"
+onmouseout="msoCommentHide('_com_20')"><a name="_msocom_20"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_20" class=msocomoff>[AH20]</a></span></span>Fagsystem
+eller afsendersystem?</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_21" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_21','_com_21')"
+onmouseout="msoCommentHide('_com_21')"><a name="_msocom_21"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_21" class=msocomoff>[AH21]</a></span></span>Samme
+kommentar som til afsnit 4.10.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_22" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_22','_com_22')"
+onmouseout="msoCommentHide('_com_22')"><a name="_msocom_22"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_22" class=msocomoff>[AH22]</a></span></span>Uafviselighed
+via audit log mangler i tabellen.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_23" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_23','_com_23')"
+onmouseout="msoCommentHide('_com_23')"><a name="_msocom_23"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_23" class=msocomoff>[AH23]</a></span></span>Jeg
+forstår ikke nomenklaturen ”Skabende/Indgående” og ”Afsluttende/udgående”, og
+det gør det meget svært at faktatjekke at de enkelte celler i disse to kolonner
+indeholder det korrekte.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_24" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_24','_com_24')"
+onmouseout="msoCommentHide('_com_24')"><a name="_msocom_24"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_24" class=msocomoff>[AH24]</a></span></span>Vil
+blive uddybet hen ad vejen.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_25" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_25','_com_25')"
+onmouseout="msoCommentHide('_com_25')"><a name="_msocom_25"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_25" class=msocomoff>[AH25]</a></span></span>Dette
+hører vel snarere hjemme oppe i afsnit 5.1, og er allerede indikeret i tabellen
+i afsnit 5.1.1.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_26" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_26','_com_26')"
+onmouseout="msoCommentHide('_com_26')"><a name="_msocom_26"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_26" class=msocomoff>[AH26]</a></span></span>Hvad
+med uafviselighed og tilgængelighed.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_27" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_27','_com_27')"
+onmouseout="msoCommentHide('_com_27')"><a name="_msocom_27"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_27" class=msocomoff>[AH27]</a></span></span>Der
+er dømt lige lovlig ukritisk cut-paste anvendt her. Det skal tilrettes
+situationen (fremsøgning af forsendelsesstatus).</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_28" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_28','_com_28')"
+onmouseout="msoCommentHide('_com_28')"><a name="_msocom_28"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_28" class=msocomoff>[AH28]</a></span></span>Hvad
+med uafviseligehed.</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_29" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_29','_com_29')"
+onmouseout="msoCommentHide('_com_29')"><a name="_msocom_29"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_29" class=msocomoff>[AH29]</a></span></span>Og
+her har vi så en tredje variant over afsender/fagsystem :-)</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div id="_com_30" class=msocomtxt language=JavaScript
+onmouseover="msoCommentShow('_anchor_30','_com_30')"
+onmouseout="msoCommentHide('_com_30')"><a name="_msocom_30"></a>
+
+<p class=MsoCommentText><span class=MsoCommentReference><span style='font-size:
+8.0pt'>&nbsp;<a href="#_msoanchor_30" class=msocomoff>[AH30]</a></span></span>Lidt
+indforstået.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
