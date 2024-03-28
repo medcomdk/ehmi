@@ -2,105 +2,55 @@
 
 # Indholdsfortegnelse
 
-[2 Introduktion](<p>
+[2 Introduktion](#introduktion)
 
-#introduktion)
+[3 Generelt omkring sikkerhed for nye komponenter i EHMI](#generelt-omkring-sikkerhed-for-nye-komponenter-i-ehmi)
 
-[3 Generelt omkring sikkerhed for nye komponenter i EHMI](<p>
+[3.1 Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-forudsætninger-for-komponenter-i-forsendelseskæden)
 
-#generelt-omkring-sikkerhed-for-nye-komponenter-i-ehmi)
+[4 Opgavespecificeringer - sikkerhed vedrørende meddelelseskommunikation](#opgavespecificeringer---sikkerhed-vedrørende-punkt-til-punkt-meddelelseskommunikation)
 
-[3.1 Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden](<p>
+[4.1 Decentralt vedrørende sikkerhed](#decentralt-vedrørende-sikkerhed)
 
-#generelle-sikkerhedsmæssige-forudsætninger-for-komponenter-i-forsendelseskæden)
+[4.2 Alle komponenter stand-alone - implementeret på forskellige servere](#alle-komponenter-stand-alone---implementeret-på-forskellige-servere)
 
-[4 Opgavespecificeringer - sikkerhed vedrørende meddelelseskommunikation](<p>
+[4.3 Alle komponenter stand-alone - grupperet sammen på samme server](#alle-komponenter-stand-alone---grupperet-sammen-på-samme-server)
 
-#opgavespecificeringer---sikkerhed-vedrørende-punkt-til-punkt-meddelelseskommunikation)
+[4.4 Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](#alle-komponenter-stand-alone---afsendende-fagsystem-og-msh-grupperet-sammen-på-samme-server)
 
-[4.1 Decentralt vedrørende sikkerhed](<p>
+[4.5 Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](#alle-komponenter-stand-alone-msh-og-ap-grupperet-sammen-på-samme-server)
 
-#decentralt-vedrørende-sikkerhed)
+[4.6 Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystem-stand-alone---mshap-sammenbygget---implementeret-på-forskellige-servere)
 
-[4.2 Alle komponenter stand-alone - implementeret på forskellige servere](<p>
+[4.7 Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystem-stand-alone---mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
 
-#alle-komponenter-stand-alone---implementeret-på-forskellige-servere)
+[4.8 Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone---implementeret-på-forskellige-servere)
 
-[4.3 Alle komponenter stand-alone - grupperet sammen på samme server](<p>
+[4.9 Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone--alle-grupperet-sammen-på-samme-server)
 
-#alle-komponenter-stand-alone---grupperet-sammen-på-samme-server)
+[4.10 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget---implementeret-på-forskellige-servere)
 
-[4.4 Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](<p>
+[4.11 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
 
-#alle-komponenter-stand-alone---afsendende-fagsystem-og-msh-grupperet-sammen-på-samme-server)
+[4.12 Alle komponenter sammenbyggede](#alle-komponenter-sammenbyggede)
 
-[4.5 Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](<p>
+[4.13 Modtagersiden](#_Toc150964819)
 
-#alle-komponenter-stand-alone-msh-og-ap-grupperet-sammen-på-samme-server)
+[5 Sikkerhedsspecificeringer vedrørende forsendelsesstatus af meddelelser](#_Toc150964820)
 
-[4.6 Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](<p>
+[5.1 Opsamling til repositorie](#opsamling-til-repositorie)
 
-#afsendende-fagsystem-stand-alone---mshap-sammenbygget---implementeret-på-forskellige-servere)
+[5.1.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - indberetning](#decentralt-vedrørende-sikkerhed-for-ehmi-komponent-forsendelsesstatus---indberetning)
 
-[4.7 Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](<p>
+[5.2 Udstilling via service](#_Toc150964823)
 
-#afsendende-fagsystem-stand-alone---mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
+[5.2.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - udsøgning](#_Toc150964824)
 
-[4.8 Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](<p>
+[6 Sikkerhedsspecificeringer vedrørende Sundhedsadressering](#_Toc150964825)
 
-#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone---implementeret-på-forskellige-servere)
+[6.1 Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice](#_Toc150964826)
 
-[4.9 Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](<p>
-
-#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone--alle-grupperet-sammen-på-samme-server)
-
-[4.10 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](<p>
-
-#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget---implementeret-på-forskellige-servere)
-
-[4.11 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](<p>
-
-#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
-
-[4.12 Alle komponenter sammenbyggede](<p>
-
-#alle-komponenter-sammenbyggede)
-
-[4.13 Modtagersiden](<p>
-
-#_Toc150964819)
-
-[5 Sikkerhedsspecificeringer vedrørende forsendelsesstatus af meddelelser](<p>
-
-#_Toc150964820)
-
-[5.1 Opsamling til repositorie](<p>
-
-#opsamling-til-repositorie)
-
-[5.1.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - indberetning](<p>
-
-#decentralt-vedrørende-sikkerhed-for-ehmi-komponent-forsendelsesstatus---indberetning)
-
-[5.2 Udstilling via service](<p>
-
-#_Toc150964823)
-
-[5.2.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - udsøgning](<p>
-
-#_Toc150964824)
-
-[6 Sikkerhedsspecificeringer vedrørende Sundhedsadressering](<p>
-
-#_Toc150964825)
-
-[6.1 Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice](<p>
-
-#_Toc150964826)
-
-[7 Relevante links:](<p>
-
-#relevante-links)
+[7 Relevante links:](#relevante-links)
 
 <p>
 
