@@ -1,6 +1,18 @@
 # Welcome to EHMI - MedCom's Enhanced Healthcare Messaging Infrastructure
 
-**Table of contents**
+**Table of contents for Production pilot for EHMI**
+
+- Production pilot for EHMI 
+  - EHMI Specifications for March 31 2024
+    - EHMI Core (eDelivery)
+      - [ehmiSBDH](/assets/documents/ecore/ehmiSBDH/index.md)
+      - [ehmiSMP](/assets/documents/ecore/SMP/index.md)
+    - EHMI Delivery Status (EDS)
+      - [EHMI Delivery Status (EDS)](/assets/documents/eds/index.md)
+    - EHMI Security
+      - [EHMI Security](/assets/documents/security/index.md)
+
+**Table of contents for stable documentation**
 
 - EHMI Core
   - [EHMI Message sending (eDelivery) and sharing (XDS)](/assets/documents/ecore/index.md)
@@ -12,12 +24,3 @@
   - [EHMI Security](/assets/documents/security/index.md)
 - EHMI Governance
   - [EHMI Governance](/assets/documents/egov/index.md)
-- Production pilot for EHMI 
-  - EHMI Specifications for March 31 2024
-    - EHMI Core (eDelivery)
-      - [ehmiSBDH](/assets/documents/ecore/ehmiSBDH/index.md)
-      - [ehmiSMP](/assets/documents/ecore/SMP/index.md)
-    - EHMI Delivery Status (EDS)
-      - [EHMI Delivery Status (EDS)](/assets/documents/eds/index.md)
-    - EHMI Security
-      - [EHMI Security](/assets/documents/security/index.md)
