@@ -2,3 +2,4 @@
 
 - [Specificering af sikkerhed ifm centrale og decentrale EHMI-services](EHMI-specificering%20af%20sikkerhed%20ifm%20centrale%20og%20decentrale%20EHMI-services.html)
 - [Sikkerhedsarkitektur EHMI støtteservices v01](./media/Sikkerhedsarkitektur%20EHMI%20støtteservices%20v01.pdf)
+- <a href="./media/Sikkerhedsarkitektur%20EHMI%20støtteservices%20v01.pdf (opens in new window)" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01</a>
