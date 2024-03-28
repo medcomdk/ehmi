@@ -51,7 +51,7 @@ Præcis hvordan sammensætningen af disse fora skal være og hvilke sammenhænge
 
 Der er mange temaer under governance som tydeligt illustreret i følgende figur, der stammer fra [EDELDIGSTANRAP]:
 
-<p>
+<p/>
 ![
 Figur 21: Forskellige governance temaer og deres gruppering.](/ehmi/assets/images/MB_Figur-21-forskellige-governance-temaer-og-deres-gruppering.png)
 
@@ -181,7 +181,7 @@ Der er også mange processer omkring temaerne under governance. I følgende tabe
 Aftaler er et helt centralt begreb i forhold til governance og taget i betragtning af, hvordan meddelelseskommunikation i eDelivery er, er de fleste af de centrale tilslutningsaftaler desangående
 imellem to på hinanden følgende niveauer. Dvs. imellem eDelivery netværket og sundhedsdomænet, imellem sundhedsdomænet og access-punktet (C2/C3), og endelig imellem accesspunktet og systemet (C1/C4 i bred forstand). Den eneste undtagelse for dette er, at der også eksisterer en aftale imellem eDelivery netværket og access-punktet, som illustreret ved følgende figur:
 
-<p>
+<p/>
 ![
 Figur 22: Governance aftaler imellem de forskellige niveauer for punkt til punkt meddelelseskommunikation.](/ehmi/assets/images/MB_Figur-22-Governance-aftaler-imellem-de-forskellige-niveauer-for-punkt-til-punkt-meddelelseskommunikation.png)
 Figur 22: Governance aftaler imellem de forskellige niveauer for punkt til punkt meddelelseskommunikation.

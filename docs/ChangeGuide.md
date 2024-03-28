@@ -39,7 +39,7 @@ It is also possible to use double enter.
 ## Images and Links
 ### Images
 Using _'!'_ before the reference entails that the images is shown on the webpages. It is not neccesary to have a text in the squared parenthesis, but will be presented as 'Alternative text'. Ensure that you use the correct folder path.  
-<p>
+<p/>
 ![
 Profile Content](/assets/images/ProfileContent.png)
 

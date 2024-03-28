@@ -48,7 +48,7 @@ SLA: Monitorering, opfølgning, og afrapportering i forhold til SLA eksisterer o
 
 Aftalestrukturen i forhold til deling af meddelelser og forsendelsesstatus kan illustreres ved:
 
-<p>
+<p/>
 ![
 Figur 23: Governance aftaler imellem de forskellige niveauer for deling af meddelelser og forsendelsesstatus](/ehmi/assets/images/MB_Figur-23-Governance-aftaler-imellem-de-forskellige-niveauer-for-deling-af-meddelelser-og-forsendelsesstatus.png)
 
