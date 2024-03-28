@@ -4,8 +4,9 @@ EHMI anvender en komponent til at håndtere forsendelsesstatus.
 
 En skitse over komponenterne i EHMI netværkets indrapoortering til komponenten kan ses her:
 
-[The specification for EHMI Delivery Status](https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/)
-
+  
+  
+<a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/" target="_blank">The specification for EHMI Delivery Status</a>
 <p/>
   
   
