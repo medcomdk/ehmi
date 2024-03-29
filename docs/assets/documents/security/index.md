@@ -1,4 +1,4 @@
-# Security for EHMI
+# EHMI Security 
 
 ## EHMI Core Security Description
 
