@@ -1,6 +1,11 @@
 # Sundhedsadressering for EHMI
 
-**To be specified in Q2 2024 and through working groups 2024-2026**
+***
+    **Disclaimer** 
+    
+    **To be specified in Q2 2024 and through working groups 2024-2026**
+
+***
 
 EHMI anvender en komponent til at håndtere Sundhedsadressering.
 
