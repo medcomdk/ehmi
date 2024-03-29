@@ -6,7 +6,8 @@
     
     **The menu items above marked with a star are yet not specified**
     
-
+    ***There will occur shifts of languages between English and Danish in this version - that will change completely to English in the next upcoming version***
+    
 ***
 
 | Acronym | Acronym for | Description | Domain |
