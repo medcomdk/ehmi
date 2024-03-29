@@ -5,7 +5,7 @@
     
     **To be specified in Q2 2024 and through working groups 2024-2026**
 
-    ***There will occur shifts of languages between English and Danish in this version - that will change completely to English in the next upcoming version***
+    ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
     
 ***
 

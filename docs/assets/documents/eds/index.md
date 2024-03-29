@@ -6,14 +6,14 @@
     
     **The menu items above marked with a star are yet not specified**
     
-    ***There will occur shifts of languages between English and Danish in this version - that will change completely to English in the next upcoming version***
+    ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
     
 ***
 
 EHMI Delivery Status is defined as 
 - a server component implemented as a FHIR server that will host the registred data coming in from the clients at each station of EUAs, MSHs and APs in the primary and secondary messaging flow. The server will expose two APIs for the client to registrate their status:
-    - [EdsBasicDeliveryStatus](https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/StructureDefinition-EdsBasicDeliveryStatus.html) for registrations of message status without patient data, eg. Acknowledgments
-    - [EdsPatientDeliveryStatus](https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/StructureDefinition-EdsPatientDeliveryStatus.html) for registrations of message status containing patient data
+    - <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/StructureDefinition-EdsBasicDeliveryStatus.html" target="_blank">EdsBasicDeliveryStatus</a> for registrations of message status without patient data, eg. Acknowledgments (opens in a new window)
+    - <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/StructureDefinition-EdsPatientDeliveryStatus.html" target="_blank">EdsPatientDeliveryStatus</a> for registrations of message status containing patient data (opens in a new window)
 - clients that handle the registration of EHMI Delivery Status (FHIR AuditEvents) from each "station" in the primary message delivering from a sender system to a receiver system 
 
 The specification for EHMI Delivery Status can be found 
