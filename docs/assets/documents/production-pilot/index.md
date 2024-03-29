@@ -24,6 +24,8 @@ EHMI Core is defined as
     - Message Service Handlers (MSH)
     - edelivery Access Points (AP)
 
+EHMI Core is also described [here](../ecore/index.md)
+
 ### EHMI Core Security Description
 
 EHMI Core Security is defined as
