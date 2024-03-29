@@ -18,7 +18,7 @@
     
 ***
   
-The whole specification for EHMI Delivery Status can be found 
+**The whole specification for EHMI Delivery Status can be found** 
 <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/" target="_blank">here</a>
     
 ***
