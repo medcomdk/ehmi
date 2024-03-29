@@ -1,4 +1,4 @@
-# Sundhedsadressering for EHMI
+# EHMI Addressing Service (EAS)
 
 ***
     **Disclaimer** 
