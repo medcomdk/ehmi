@@ -1,4 +1,4 @@
-# EHMI Endpoint Register
+# EHMI Endpoint Register (EER)
 
 ***
     **Disclaimer** 
