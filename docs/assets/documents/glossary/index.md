@@ -9,7 +9,7 @@
 
 ***
 
-| Acronym | Abbreviation for | Description | Domain |
+| Acronym | Acronym for | Description | Domain |
 | --- | --- | --- | --- |
 | AP       | Access Point | The eDelivery component responsible for exchanging data between Corner 2 and 3 in the 4 Corner model | eDelivery |
 | EDS      | EHMI Delivery Status | [TBD] | EHMI |
