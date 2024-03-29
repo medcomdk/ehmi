@@ -15,4 +15,4 @@ En skitse over komponenterne i EHMI netværkets anvendelse af komponenten kan se
 
 <p/>
 
-![Sundhedsadresseringsservice](/ehmi/assets/images/3_EHMI_Sundhedsadresseringsservice_1315x551.png)
+![EHMI Addressing Service (EAS)](/ehmi/assets/images/3_EHMI_Sundhedsadresseringsservice_1315x551.png)
