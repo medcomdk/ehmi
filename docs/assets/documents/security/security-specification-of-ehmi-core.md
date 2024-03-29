@@ -6,9 +6,9 @@
 
 - [2.1 Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
 
-- [3 Generelt omkring sikkerhed for komponenter i EHMI](#generelt-omkring-sikkerhed-nye-komponenter-i-ehmi)
+- [3 Generelt omkring sikkerhed for komponenter i EHMI](#generelt-omkring-sikkerhed-for-komponenter-i-ehmi)
 
-- [4 Specifikationer - sikkerhed vedrørende meddelelseskommunikation](#Specifikationer---sikkerhed-vedrørende-punkt-til-punkt-meddelelseskommunikation)
+- [4 Specifikationer - sikkerhed vedrørende meddelelseskommunikation](#specifikationer---sikkerhed-vedrørende-meddelelseskommunikation)
 
 - [4.1 Decentralt vedrørende sikkerhed](#decentralt-vedrørende-sikkerhed)
 
@@ -62,7 +62,7 @@ Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 ***
 
 
-## Generelt omkring sikkerhed for nye komponenter i EHMI
+## Generelt omkring sikkerhed for komponenter i EHMI
 
 Det er muligt at indrapportere og tilgå data via et FHIR API. Web-services/RESTful-services, der udstilles via et sådant interface, skal, præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde national arkitektur og nationale standarder.
 
@@ -77,7 +77,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 ***
 
 
-## Specifikationer - sikkerhed vedrørende punkt til punkt meddelelseskommunikation
+## Specifikationer - sikkerhed vedrørende meddelelseskommunikation
 
 ***
 
