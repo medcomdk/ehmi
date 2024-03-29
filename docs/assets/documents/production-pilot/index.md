@@ -1,5 +1,14 @@
 # EHMI Production Pilot Description
 
+***
+
+    **Disclaimer** 
+    
+    **The menu items above marked with a star are yet not specified**
+    
+
+***
+
 **Table of contents**
 
 - EHMI Production Pilot Description
