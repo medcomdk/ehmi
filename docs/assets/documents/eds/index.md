@@ -1,5 +1,14 @@
 # EHMI Delivery Status (EDS)
 
+***
+
+    **Disclaimer** 
+    
+    **The menu items above marked with a star are yet not specified**
+    
+
+***
+
 EHMI anvender en komponent til at håndtere forsendelsesstatus.
 
 En skitse over komponenterne i EHMI netværkets indrapoortering til komponenten kan ses her:
