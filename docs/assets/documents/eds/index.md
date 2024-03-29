@@ -15,13 +15,15 @@
     - <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/StructureDefinition-EdsBasicDeliveryStatus.html" target="_blank">EdsBasicDeliveryStatus</a> for registrations of message status without patient data, eg. Acknowledgments (opens in a new window)
     - <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/StructureDefinition-EdsPatientDeliveryStatus.html" target="_blank">EdsPatientDeliveryStatus</a> for registrations of message status containing patient data (opens in a new window)
 - clients that handle the registration of EHMI Delivery Status (FHIR AuditEvents) from each "station" in the primary message delivering from a sender system to a receiver system 
-
-The specification for EHMI Delivery Status can be found 
+    
+***
+  
+The whole specification for EHMI Delivery Status can be found 
 <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/" target="_blank">here</a>
     
 ***
   
-## An outline of the components of the EHMI network's reporting to the component can be seen here:
+## An outline of the components of the EHMI Delivery Status can be seen here:
     
 ***
 
