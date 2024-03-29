@@ -1,6 +1,7 @@
 # Welcome to EHMI - MedCom's Enhanced Healthcare Messaging Infrastructure
 
-  `**Disclaimer** The menu items above marked with a star are yet not specified`
+  **Disclaimer** 
+  `The menu items above marked with a star are yet not specified`
 
 **Table of contents for Production pilot for EHMI**
 
