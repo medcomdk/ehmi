@@ -2,8 +2,6 @@
 
 ## Indholdsfortegnelse
 
-- [2 Introduktion](#introduktion)
-
 - [2.1 Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
 
 - [3 Generelt omkring sikkerhed for komponenter i EHMI](#generelt-omkring-sikkerhed-for-komponenter-i-ehmi)
@@ -39,19 +37,6 @@
 ***
 
 
-## Introduktion
-
-I MedCom13 har MedCom et fælles afprøvningsprojekt ’Kommunale prøvesvar på ny infrastruktur’, hvor MedComs to centrale moderniseringsspor kobles: FHIR og EHMI, hvor såvel meddelelseskommunikationen som infrastrukturen moderniseres. Moderniseringen sker grundet behov for kvalitetsløft af bl.a. sikkerhed, gennemsigtighed, robusthed og effektiv, international digital meddelelseskommunikation.
-
-I projektet gennemføres en afprøvning i drift fra d. 1. marts til d. 31. maj 2025.
-
-I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra kommunale akutfunktioner (EOJ) til almen lægepraksis (LPS) via den nye infrastruktur EHMI (Enhanced Healthcare Messaging Infrastructure).
-
-Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
-
-***
-
-
 ## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
 
 Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
@@ -62,7 +47,7 @@ Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 ***
 
 
-## Generelt omkring sikkerhed for komponenter i EHMI
+### Generelt omkring sikkerhed for komponenter i EHMI
 
 Det er muligt at indrapportere og tilgå data via et FHIR API. Web-services/RESTful-services, der udstilles via et sådant interface, skal, præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde national arkitektur og nationale standarder.
 
