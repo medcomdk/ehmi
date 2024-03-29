@@ -2,27 +2,23 @@
 
 ## Indholdsfortegnelse
 
-[2 Introduktion](#introduktion)
+- [Generelt omkring sikkerhed for komponenter i EHMI](#generelt-omkring-sikkerhed-for-komponenter-i-ehmi)
 
-[3 Generelt omkring sikkerhed for nye komponenter i EHMI](#generelt-omkring-sikkerhed-for-nye-komponenter-i-ehmi)
+- [Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
 
-[3.1 Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-forudsætninger-for-komponenter-i-forsendelseskæden)
+- [Sikkerhedsspecificeringer vedrørende EHMI Delivery Status af meddelelser](#sikkerhedsspecificeringer-vedrørende-Delivery Status-af-meddelelser)
 
-[5 Sikkerhedsspecificeringer vedrørende forsendelsesstatus af meddelelser](#_Toc150964820)
+- [Opsamling til repositorie](#opsamling-til-repositorie)
 
-[5.1 Opsamling til repositorie](#opsamling-til-repositorie)
+- [Klient sikkerhed for EHMI Delivery Status - indberetning](#decentralt-vedrørende-sikkerhed-for-ehmi-komponent-Delivery Status---indberetning)
 
-[5.1.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - indberetning](#decentralt-vedrørende-sikkerhed-for-ehmi-komponent-forsendelsesstatus---indberetning)
+- [Udstilling via service](#udstilling-via-service)
 
-[5.2 Udstilling via service](#_Toc150964823)
+- [Klient sikkerhed for EHMI Delivery Status - udsøgning](#_Toc150964824)
 
-[5.2.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - udsøgning](#_Toc150964824)
+- [Sikkerhedsspecificeringer vedrørende EHMI Adressing](#_Toc150964825)
 
-[6 Sikkerhedsspecificeringer vedrørende Sundhedsadressering](#_Toc150964825)
-
-[6.1 Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice](#_Toc150964826)
-
-[7 Relevante links:](#relevante-links)
+- [Decentral vedrørende EHMI Adressing Service](#decentral-vedrørende-ehmi-komponent-ehmi-adressing-service)
 
 
 ## Generelt omkring sikkerhed for komponenter i EHMI
@@ -49,38 +45,38 @@ Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 ***
 
 
-## Sikkerhedsspecificeringer vedrørende forsendelsesstatus af meddelelser
+## Sikkerhedsspecificeringer vedrørende EHMI Delivery Status af meddelelser
 
 Sikkerhed i forhold til forsendelses-status opdeles i de forskellige trin:
 
-1.  Forsendelsesstatus opsamles og gemmes i et repositorie
-2.  Forsendelsesstatus hentes af anvendere via udstillede services
+1. EHMI Delivery Status opsamles og gemmes i et repositorie
+2. EHMI Delivery Status hentes af anvendere via udstillede services
 
 ***
 
 
-### Opsamling til repositorie
+### Opsamling til EHMI Delivery Service repository
 
 Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at anvenderne vil anse servicen baseret på de opsamlede data for troværdig, og dels fordi der opsamles personoplysninger, da unik borgeridentifikation (oftest CPR-nummeret), for den borger meddelelsen omhandler, er en del af den opsamlede information:
 
--   **Autenticitet:** En komponent, der gemmer forsendelsesstatus for meddelelser, skal autentificere sig når den tilgår repositoriet.
--   **Tilgængelighed:** Aftalt oppetid og svartid skal sikres via standard driftsmekanismer. Dette er særlig vigtigt her, da forsendelsesstatus, jf. afsnit 5.2.8, skal være tæt på realtidsopdateret.
+-   **Autenticitet:** En komponent, der gemmer EHMI Delivery Status for meddelelser, skal autentificere sig når den tilgår repositoriet.
+-   **Tilgængelighed:** Aftalt oppetid og svartid skal sikres via standard driftsmekanismer. Dette er særlig vigtigt her, da EHMI Delivery Status, jf. afsnit 5.2.8, skal være tæt på realtidsopdateret.
 -   **Integritet:** Sikres af den protokol, som opsamlingen implementeres via.
--   **Uafviselighed:** En komponent, der gemmer forsendelsesstatus, skal audit logge opsamlingen på en standardiseret måde.
--   **Fortrolighed:** Når den opsamlede forsendelsesstatus kommunikeres til repositoriet, sikres den enten via eksplicit kryptering eller implicit kryptering på det underliggende infrastruktur niveau.
+-   **Uafviselighed:** En komponent, der gemmer EHMI Delivery Status, skal audit logge opsamlingen på en standardiseret måde.
+-   **Fortrolighed:** Når den opsamlede EHMI Delivery Status kommunikeres til repositoriet, sikres den enten via eksplicit kryptering eller implicit kryptering på det underliggende infrastruktur niveau.
 
 ***
 
 
-#### Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - indberetning
+#### Klient sikkerhed EHMI Delivery Status - indberetning
 
 | **EHMI Komponenter**                                                         | **Delopgave**                                                                                                                       | **Hvem**                                                                    |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| Forsendelsesstatus-komponent                                                 | **Autenticitet:** En komponent, der gemmer forsendelsesstatus for meddelelser, skal autentificere sig når den tilgår repositoriet.  | Afsendende system (Afsendende fagsystem/MSH/AP)                             |
+| EHMI Delivery Status-komponent                                                 | **Autenticitet:** En komponent, der gemmer EHMI Delivery Status for meddelelser, skal autentificere sig når den tilgår repositoriet.  | Afsendende system (Afsendende fagsystem/MSH/AP)                             |
 | Afsendende system (Afsendende fagsystem/MSH/AP)                              | **Autenticitetshåndtering:** Implementering af signering af indberetning                                                            | Afsendende system (Afsendende fagsystem/MSH/AP)                             |
-| Forsendelsesstatus-komponent                                                 | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                              | Forsendelsesstatuskomponent                                                 |
-| Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatus-komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation via sikret transportprotokol, f.eks. TLS                              | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatuskomponent |
-| Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatus-komponent | **Tilgængelighed:** Implementering af kø mekanisme til at håndtere at en forbindelse kan være nede                                  | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatuskomponent |
+| EHMI Delivery Status-komponent                                                 | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                              | EHMI Delivery Statuskomponent                                                 |
+| Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Status-komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation via sikret transportprotokol, f.eks. TLS                              | Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Statuskomponent |
+| Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Status-komponent | **Tilgængelighed:** Implementering af kø mekanisme til at håndtere at en forbindelse kan være nede                                  | Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Statuskomponent |
 
 ***
 
@@ -102,12 +98,12 @@ I det følgende antages begge sider af afsender- og modtagerøkosystemerne at ha
 
 ### Udstilling via service
 
-Fra målbilledet ved vi, at servicen, der udstiller forsendelsesstatus for meddelelser, skal overholde de samme sikkerhedskrav og -regler som øvrige services på sundhedsområdet, jf. målbilledets princip PT6. Derfor bør flere af de samme allerede eksisterende sikkerhedsmekanismer fra disse andre services anvendes:
+Fra målbilledet ved vi, at servicen, der udstiller EHMI Delivery Status for meddelelser, skal overholde de samme sikkerhedskrav og -regler som øvrige services på sundhedsområdet, jf. målbilledets princip PT6. Derfor bør flere af de samme allerede eksisterende sikkerhedsmekanismer fra disse andre services anvendes:
 
 -   **Autenticitet:** Servicen skal udstilles som en DGWS/IDWS service eller lignende niveau, og anvenderne (både systemer, sundhedspersoner og borgere) skal anvende digitale certifikater i forbindelse med kald til servicen på samme måde som for andre services på sundhedsområdet, og det er (igen) et krav, at de anvendte certifikater er på personbevisniveau. For systemer dog systembevisniveau.
 -   **Tilgængelighed:** Aftalt oppetid og svartid sikres via den platform, som servicen afvikles på
 -   **Integritet:** Sikres af den protokol, som servicen er implementeret med.
--   **Uafviselighed:** Servicen implementerer standardiseret audit log. Logning til MinLog er påkrævet i tilfældene hvor en borger henter forsendelsesstatus for meddelelser angående en anden borger end sig selv, og hvor en sundhedsperson henter forsendelsesstatus specifikt for en borger.
+-   **Uafviselighed:** Servicen implementerer standardiseret audit log. Logning til MinLog er påkrævet i tilfældene hvor en borger henter EHMI Delivery Status for meddelelser angående en anden borger end sig selv, og hvor en sundhedsperson henter EHMI Delivery Status specifikt for en borger.
 -   **Fortrolighed:** Servicen skal aktivt anvende den identifikation af anvenderen (system, sundhedsperson eller borger) samt de søgeparametre, der er en del af kaldet af servicen.
 
 Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
@@ -115,15 +111,15 @@ Da servicen udstilles og afvikles på en platform, der kan have sine egne mere s
 ***
 
 
-#### Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - udsøgning
+#### Klient sikkerhed for EHMI Delivery Status - udsøgning
 
 Det vil blive baseret på et OAuth-sikret REST-interface og SMART-on-FHIR eller lignende.
 
-For opsamling af forsendelsesstatus stilles der krav om, at der jf. målbilledets afsnit 6.3.1 eksplicit signeres mellem forsendelsesstatus ”klienten” og ”serveren” (med tilhørende verifikation) på systembevisniveau (VOCES/FOCES/Niveau 3).
+For opsamling af EHMI Delivery Status stilles der krav om, at der jf. målbilledets afsnit 6.3.1 eksplicit signeres mellem EHMI Delivery Status ”klienten” og ”serveren” (med tilhørende verifikation) på systembevisniveau (VOCES/FOCES/Niveau 3).
 
-For søgning af forsendelsesstatus stilles der krav om, at der mellem forsendelsesstatus ”klienten” og ”serveren” anvendes identifikation på systembevisniveau (VOCES/FOCES/Niveau 3).
+For søgning af EHMI Delivery Status stilles der krav om, at der mellem EHMI Delivery Status ”klienten” og ”serveren” anvendes identifikation på systembevisniveau (VOCES/FOCES/Niveau 3).
 
-For søgning af forsendelsesstatus stilles der derudover krav om, at der ved borgers egen adgang og en klinikers specifikke adgang via borgerens/patientens journal anvendes identifikation på personbevisniveau (MOCES/MitID/Niveau 4).
+For søgning af EHMI Delivery Status stilles der derudover krav om, at der ved borgers egen adgang og en klinikers specifikke adgang via borgerens/patientens journal anvendes identifikation på personbevisniveau (MOCES/MitID/Niveau 4).
 
 | **EHMI Komponenter**                                                 | **Delopgave**                                                                                                                 | **Hvem**                                                             |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -136,7 +132,7 @@ For søgning af forsendelsesstatus stilles der derudover krav om, at der ved bor
 
 ## Sikkerhedsspecificeringer vedrørende Sundhedsadressering
 
-Fra målbilledet ved vi, at sundhedsadresseringsservicen skal overholde de samme sikkerhedskrav og -regler som tilsvarende services på sundhedsområdet, og derfor bør flere af de samme allerede eksisterende sikkerhedsmekanismer anvendes:
+Fra målbilledet ved vi, at EHMI Adressing Servicen skal overholde de samme sikkerhedskrav og -regler som tilsvarende services på sundhedsområdet, og derfor bør flere af de samme allerede eksisterende sikkerhedsmekanismer anvendes:
 
 -   **Autenticitet:** Servicen skal udstilles som en DGWS/IDWS service, og anvenderne skal anvende digitale certifikater i forbindelse med kald til servicen på samme måde som for tilsvarende services på sundhedsområdet. På grund af denne service’ natur er det imidlertid i dette tilfælde tilstrækkeligt, at de anvendte certifikater er på systembevisniveau.
 -   **Tilgængelighed:** Aftalt oppetid og svartid skal sikres via den platform, som servicen afvikles på – f.eks. via standard driftsmekanismer som fail-over og load-balancere.
@@ -149,13 +145,13 @@ Da servicen udstilles og afvikles på en platform, der kan have sine egne mere s
 ***
 
 
-### Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice
+### Decentral vedrørende EHMI-komponent: EHMI Adressing Service
 
 | **EHMI Komponenter**                                       | **Delopgave**                                                                                                                                                                                                                        | **Hvem**                                                  |
 |------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | Afsendende system (Fagsystem)                              | **Autenticitetshåndtering:** Implementering af signering af søgning (VOCES/FOCES)                                                                                                                                                    | Afsendende system (Fagsystem)                             |
-| Sundheds-adresseringsservice                               | **Autenticitetshåndtering:** Verifikation af signering (VOCES/FOCES)                                                                                                                                                                 | Sundhedsadresseringsservice                               |
-| Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Integritetssikring og fortrolighedssikring:** Kommunikation sikret via transportprotokol, f.eks. TLS                                                                                                                               | Afsendende system (Fagsystem) Sundhedsadresseringsservice |
-| Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Tilgængelighed:** Implementering af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en forbindelse kan være nede.  Hvis servicen er online bør altid søges online. Faste søgninger bør opdateres udenfor peaktimes. | Afsendende system (Fagsystem) Sundhedsadresseringsservice |
+| Sundheds-adresseringsservice                               | **Autenticitetshåndtering:** Verifikation af signering (VOCES/FOCES)                                                                                                                                                                 | EHMI Adressing Service                               |
+| Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Integritetssikring og fortrolighedssikring:** Kommunikation sikret via transportprotokol, f.eks. TLS                                                                                                                               | Afsendende system (Fagsystem) EHMI Adressing Service |
+| Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Tilgængelighed:** Implementering af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en forbindelse kan være nede.  Hvis servicen er online bør altid søges online. Faste søgninger bør opdateres udenfor peaktimes. | Afsendende system (Fagsystem) EHMI Adressing Service |
 
 ***
