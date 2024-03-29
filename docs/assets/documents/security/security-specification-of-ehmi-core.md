@@ -106,7 +106,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 ***
 
 
-![](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![Alle komponenter stand-alone - implementeret på forskellige servere](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 
 | **EHMI Komponenter**                              | **Delopgave**                                                                                                                 | **Hvem**                    |
@@ -126,7 +126,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 ***
 
 
-![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![Alle komponenter stand-alone - grupperet sammen på samme server](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 
 | **EHMI Komponenter**              | **Delopgave**                                                          | **Hvem**             |
@@ -144,7 +144,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 ***
 
 
-![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 
 | **EHMI Komponenter**              | **Delopgave**                                                                                                                 | **Hvem**             |
@@ -160,7 +160,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 
 ### Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server
 
-![Et billede, der indeholder tekst, skærmbillede, gul Automatisk genereret beskrivelse](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 
 | **EHMI Komponenter**                              | **Delopgave**                                                                                                                 | **Hvem**                     |
@@ -176,7 +176,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 
 ### Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere
 
-![](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
+![Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
 | **EHMI Komponenter**                    | **Delopgave**                                                                                                                 | **Hvem**                       |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
@@ -189,7 +189,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 
 ### Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server
 
-![Et billede, der indeholder tekst, skærmbillede, Rektangel, linje/række Automatisk genereret beskrivelse](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
+![Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
 | **EHMI Komponenter**              | **Delopgave**                                                          | **Hvem**             |
 |-----------------------------------|------------------------------------------------------------------------|----------------------|
@@ -202,7 +202,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 ### Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere
 
 
-![Et billede, der indeholder tekst, skærmbillede, gul, design Automatisk genereret beskrivelse](media/be1c6e9b30bae64a8f5738170ef00b20.png)
+![Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
 | **EHMI Komponenter**                      | **Delopgave**                                                                                                                 | **Hvem**                       |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
@@ -216,7 +216,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 ### Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server
 
 
-![](media/be1c6e9b30bae64a8f5738170ef00b20.png)
+![Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
 | **EHMI Komponenter**     | **Delopgave**                                                          | **Hvem**                 |
 |--------------------------|------------------------------------------------------------------------|--------------------------|
@@ -231,7 +231,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dette kan være muligt. I så fald er det vigtigt at parter med et sådant setup aftaler, hvilken MSH, der er primær med udfyldelse af MSH forpligtelserne og hvilken MSH, der blot viderestiller informationer til næste led i kæden. Når dette er på plads, vil følgende sikkerhedsanvisninger være gældende.
 
 
-![](media/dc36c10735cb86a5499e120b23a83c79.png)
+![Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](media/dc36c10735cb86a5499e120b23a83c79.png)
 
 | **EHMI Komponenter**                | **Delopgave**                                                                                                                 | **Hvem**                           |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
@@ -244,10 +244,7 @@ Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dett
 
 ### Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server
 
-Som for 4.10.
-
-
-![Et billede, der indeholder skærmbillede, linje/række, Rektangel, diagram Automatisk genereret beskrivelse](media/dc36c10735cb86a5499e120b23a83c79.png)
+![Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](media/dc36c10735cb86a5499e120b23a83c79.png)
 
 | **EHMI Komponenter**     | **Delopgave**                                                          | **Hvem**                 |
 |--------------------------|------------------------------------------------------------------------|--------------------------|
@@ -260,7 +257,7 @@ Som for 4.10.
 ### Alle komponenter sammenbyggede
 
 
-![](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![Alle komponenter sammenbyggede](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 Da alle komponenter her er sammenbyggede, håndteres al sikkerhed internt i sammenbygningen, og der er derfor ikke behov for eksplicit at udtrykke noget om sikkerheden her.
 
