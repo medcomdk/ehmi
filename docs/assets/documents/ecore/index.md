@@ -8,15 +8,15 @@
 
 EHMI Core is defined as 
 - the primary message delivering from a sender system to a receiver system concerning 
-    - End USer Applications (EUA)
+    - End User Applications (EUA)
     - Message Service Handlers (MSH)
-    - edelivery Access Points (AP)
-    - edelivery SML and SMP
+    - eDelivery Access Points (AP)
+    - eDelivery SML and SMP
 - the secondary message delivering from a sender system to the national XDS Document Sharing platform with an index on NSP also concerning 
-    - Sender's End USer Applications (EUA)
+    - Sender's End User Application (EUA)
     - Message Service Handlers (MSH)
-    - edelivery Access Points (AP)
-    - edelivery SML and SMP
+    - eDelivery Access Points (AP)
+    - eDelivery SML and SMP
 
 ## EHMI Core Message Delivery and Document Sharing
 
