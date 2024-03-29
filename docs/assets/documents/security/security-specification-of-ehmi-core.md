@@ -6,7 +6,7 @@
 
 - [2.1 Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
 
-- [3 Generelt omkring sikkerhed for nye komponenter i EHMI](#generelt-omkring-sikkerhed-for-nye-komponenter-i-ehmi)
+- [3 Generelt omkring sikkerhed for komponenter i EHMI](#generelt-omkring-sikkerhed-nye-komponenter-i-ehmi)
 
 - [4 Specifikationer - sikkerhed vedrørende meddelelseskommunikation](#Specifikationer---sikkerhed-vedrørende-punkt-til-punkt-meddelelseskommunikation)
 
@@ -34,7 +34,7 @@
 
 - [4.12 Alle komponenter sammenbyggede](#alle-komponenter-sammenbyggede)
 
-- [4.13 Modtagersiden](#_Toc150964819)
+- [4.13 Modtagersiden](#modtagersiden)
 
 ***
 
