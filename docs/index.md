@@ -4,7 +4,7 @@
 
     **Disclaimer** 
     
-    **`The menu items above marked with a star are yet not specified`**
+    **The menu items above marked with a star are yet not specified**
     
 
 ***
