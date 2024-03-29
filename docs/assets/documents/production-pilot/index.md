@@ -14,9 +14,9 @@
 
 - EHMI Production Pilot Description
     - [EHMI Core Description](#ehmi-core-description)
-    - [EHMI Core Security Description](#ehmi-core-security-description)
+        - [EHMI Core Security Description](#ehmi-core-security-description)
     - [EHMI Delivery Status Description](#ehmi-delivery-status-description)
-    - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
+        - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
 
 ## EHMI Production Pilot Description
 
@@ -46,7 +46,7 @@ EHMI Core is defined as
 
 EHMI Core is described further [here](../ecore/index.md)
 
-### EHMI Core Security Description
+#### EHMI Core Security Description
 
 EHMI Core Security is defined as
 - the needed security implementation to serve message delivering as described in [EHMI Core Description](#ehmi-core-description)
@@ -60,7 +60,9 @@ EHMI Delivery Status is defined as
 - the registration of EHMI Delivery Status (FHIR AuditEvents) from each "station" in the primary message delivering from a sender system to a receiver system 
 - the secondary message delivering from a sender system to the national XDS Document Sharing platform with an index on NSP
 
-### EHMI Delivery Status Security Description
+EHMI Delivery Status is described further [here](../eds/index.md)
+
+#### EHMI Delivery Status Security Description
 
 EHMI Delivery Status Security is defined as
 - the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](#ehmi-delivery-status-description)
