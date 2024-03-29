@@ -1,9 +1,9 @@
-# Governance for EHMI - MedCom's Enhanced Healthcare Messaging Infrastructure
+# EHMI Governance
 
 ***
     **Disclaimer** 
     
-    **Minimal Viable Governance to be specified in 2024 and Governance in a broader sence through working groups 2024-2026**
+    **Minimal Viable Governance (MVG) to be specified in 2024 and final Governance in a broader sence through working groups 2024-2026**
 
 ***
 
