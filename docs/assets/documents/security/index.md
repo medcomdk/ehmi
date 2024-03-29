@@ -1,5 +1,14 @@
 # EHMI Security 
 
+***
+
+    **Disclaimer** 
+    
+    **The menu items above marked with a star are yet not specified**
+    
+
+***
+
 ## EHMI Core Security Description
 
 EHMI Core Security is defined as
