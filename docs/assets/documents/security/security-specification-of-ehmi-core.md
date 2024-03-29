@@ -36,21 +36,7 @@
 
 [4.13 Modtagersiden](#_Toc150964819)
 
-[5 Sikkerhedsspecificeringer vedrørende forsendelsesstatus af meddelelser](#_Toc150964820)
-
-[5.1 Opsamling til repositorie](#opsamling-til-repositorie)
-
-[5.1.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - indberetning](#decentralt-vedrørende-sikkerhed-for-ehmi-komponent-forsendelsesstatus---indberetning)
-
-[5.2 Udstilling via service](#_Toc150964823)
-
-[5.2.1 Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - udsøgning](#_Toc150964824)
-
-[6 Sikkerhedsspecificeringer vedrørende Sundhedsadressering](#_Toc150964825)
-
-[6.1 Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice](#_Toc150964826)
-
-[7 Relevante links:](#relevante-links)
+[5 Relevante links:](#relevante-links)
 
 <p/>
 
