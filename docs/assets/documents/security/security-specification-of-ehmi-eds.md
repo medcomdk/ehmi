@@ -130,7 +130,7 @@ For søgning af EHMI Delivery Status stilles der derudover krav om, at der ved b
 ***
 
 
-## Sikkerhedsspecificeringer vedrørende Sundhedsadressering
+## Sikkerhedsspecificeringer vedrørende EHMI Adressing Service
 
 Fra målbilledet ved vi, at EHMI Adressing Servicen skal overholde de samme sikkerhedskrav og -regler som tilsvarende services på sundhedsområdet, og derfor bør flere af de samme allerede eksisterende sikkerhedsmekanismer anvendes:
 
@@ -150,8 +150,8 @@ Da servicen udstilles og afvikles på en platform, der kan have sine egne mere s
 | **EHMI Komponenter**                                       | **Delopgave**                                                                                                                                                                                                                        | **Hvem**                                                  |
 |------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | Afsendende system (Fagsystem)                              | **Autenticitetshåndtering:** Implementering af signering af søgning (VOCES/FOCES)                                                                                                                                                    | Afsendende system (Fagsystem)                             |
-| Sundheds-adresseringsservice                               | **Autenticitetshåndtering:** Verifikation af signering (VOCES/FOCES)                                                                                                                                                                 | EHMI Adressing Service                               |
-| Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Integritetssikring og fortrolighedssikring:** Kommunikation sikret via transportprotokol, f.eks. TLS                                                                                                                               | Afsendende system (Fagsystem) EHMI Adressing Service |
-| Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Tilgængelighed:** Implementering af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en forbindelse kan være nede.  Hvis servicen er online bør altid søges online. Faste søgninger bør opdateres udenfor peaktimes. | Afsendende system (Fagsystem) EHMI Adressing Service |
+| EHMI Adressing Service                               | **Autenticitetshåndtering:** Verifikation af signering (VOCES/FOCES)                                                                                                                                                                 | EHMI Adressing Service                               |
+| Afsendende system (Fagsystem) EHMI Adressing Service | **Integritetssikring og fortrolighedssikring:** Kommunikation sikret via transportprotokol, f.eks. TLS                                                                                                                               | Afsendende system (Fagsystem) EHMI Adressing Service |
+| Afsendende system (Fagsystem) EHMI Adressing Service | **Tilgængelighed:** Implementering af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en forbindelse kan være nede.  Hvis servicen er online bør altid søges online. Faste søgninger bør opdateres udenfor peaktimes. | Afsendende system (Fagsystem) EHMI Adressing Service |
 
 ***
