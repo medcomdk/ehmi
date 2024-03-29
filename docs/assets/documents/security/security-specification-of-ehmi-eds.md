@@ -24,19 +24,6 @@
 
 [7 Relevante links:](#relevante-links)
 
-<p/>
-
-## Introduktion
-
-I MedCom13 har MedCom et fælles afprøvningsprojekt ’Kommunale prøvesvar på ny infrastruktur’, hvor MedComs to centrale moderniseringsspor kobles: FHIR og EHMI, hvor såvel meddelelseskommunikationen som infrastrukturen moderniseres. Moderniseringen sker grundet behov for kvalitetsløft af bl.a. sikkerhed, gennemsigtighed, robusthed og effektiv, international digital meddelelseskommunikation.
-
-I projektet gennemføres en afprøvning i drift fra d. 1. marts til d. 31. maj 2025.
-
-I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra kommunale akutfunktioner (EOJ) til almen lægepraksis (LPS) via den nye infrastruktur EHMI (Enhanced Healthcare Messaging Infrastructure).
-
-Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
-
-<p/>
 
 ## Generelt omkring sikkerhed for nye komponenter i EHMI
 
