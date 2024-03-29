@@ -66,7 +66,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 
 Først beskrives de generelle retningslinjerne er vedrørende sikkerhed i meddelelsesflowet i EHMI.
 
-Dernæst beskrives det for de forskellige scenarier af **sammenbyggethed** og **gruppering** hvordan retningslinjerne udmøntes i de enkelte scenarier.
+Dernæst beskrives det for de forskellige scenarier af **sammenbyggethed** og **gruppering**, jf. [Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden) , hvordan retningslinjerne udmøntes i de enkelte scenarier.
 
 ***
 
