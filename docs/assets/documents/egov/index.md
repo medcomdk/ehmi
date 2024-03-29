@@ -1,5 +1,7 @@
 # Governance for EHMI - MedCom's Enhanced Healthcare Messaging Infrastructure
 
+**To be specified through working groups 2024-2026**
+
 **Table of contents**
 
 0. [EHMI Governance](00_ehmi-governance.md)
