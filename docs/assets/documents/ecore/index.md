@@ -1,5 +1,14 @@
 # EHMI Core
 
+***
+
+    **Disclaimer** 
+    
+    **The menu items above marked with a star are yet not specified**
+    
+
+***
+
 **Table of contents**
 - [EHMI Core Description](#ehmi-core-description)
 - [EHMI Core Message Delivery and Document Sharing](#ehmi-core-message-delivery-and-document-sharing)
