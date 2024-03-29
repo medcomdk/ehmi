@@ -12,7 +12,7 @@ EHMI Core Security is defined as
 ## EHMI Delivery Status Security Description
 
 EHMI Delivery Status Security is defined as
-- the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](#ehmi-delivery-status-description)
+- the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](../eds/index.md#ehmi-delivery-status-description)
 
 - [EHMI Delivery Status Security Description](security-specification-of-ehmi-eds.md)
 
