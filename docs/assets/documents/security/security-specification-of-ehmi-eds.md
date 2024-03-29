@@ -25,7 +25,7 @@
 [7 Relevante links:](#relevante-links)
 
 
-## Generelt omkring sikkerhed for nye komponenter i EHMI
+## Generelt omkring sikkerhed for komponenter i EHMI
 
 Det er muligt at indrapportere og tilgå data via et FHIR API. Web-services/RESTful-services, der udstilles via et sådant interface, skal, præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde national arkitektur og nationale standarder.
 
@@ -37,8 +37,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 2.  Samtykke/frabedelse og behandlingsrelation skal tjekkes op mod den nationale samtykkeservice og den nationale behandlingsrelationsservice
 3.  Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af borgeren via MinLog
 
-
-<p/>
+***
 
 ## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
 
@@ -47,23 +46,7 @@ Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 -   Systemer/komponenter kan være en stand-alone applikation eller **sammenbygget** med en eller flere andre systemer/komponenter i meddelelsesflowet.
 -   Systemer/komponenter kan være en stand-alone applikation **grupperet sammen** med en eller flere andre systemer/komponenter i meddelelsesflowet på samme server.
 
-
-<p/>
-
-## Opgavespecificeringer - sikkerhed vedrørende punkt til punkt meddelelseskommunikation
-
-
-<p/>
-
-### Decentralt vedrørende sikkerhed
-
-Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende sikkerhed i meddelelsesflowet i EHMI.
-
-| **EHMI Komponenter**                                              | **Delopgave**                                                                                                                                      | **Hvem**                   |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| Mellem stand-alone komponenter/services.                          | **Autenticitetshåndtering:** Implementering af signering af forsendelse.                                                                           | Afsenderkomponent          |
-| Mellem stand-alone komponenter/services.                          | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                                             | Modtagerkomponent          |
-| Mellem komponenter/services, der håndteres på forskellige servere | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse / meddelelsesindhold / kuvert via sikret transportprotokol, f.eks. TLS | Afsender/modtagerkomponent |
+***
 
 
 ## Sikkerhedsspecificeringer vedrørende forsendelsesstatus af meddelelser
@@ -71,7 +54,10 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 Sikkerhed i forhold til forsendelses-status opdeles i de forskellige trin:
 
 1.  Forsendelsesstatus opsamles og gemmes i et repositorie
-    1.  Forsendelsesstatus hentes af anvendere via udstillede services
+2.  Forsendelsesstatus hentes af anvendere via udstillede services
+
+***
+
 
 ### Opsamling til repositorie
 
@@ -83,7 +69,8 @@ Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at 
 -   **Uafviselighed:** En komponent, der gemmer forsendelsesstatus, skal audit logge opsamlingen på en standardiseret måde.
 -   **Fortrolighed:** Når den opsamlede forsendelsesstatus kommunikeres til repositoriet, sikres den enten via eksplicit kryptering eller implicit kryptering på det underliggende infrastruktur niveau.
 
-<p/>
+***
+
 
 #### Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - indberetning
 
@@ -95,7 +82,8 @@ Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at 
 | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatus-komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation via sikret transportprotokol, f.eks. TLS                              | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatuskomponent |
 | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatus-komponent | **Tilgængelighed:** Implementering af kø mekanisme til at håndtere at en forbindelse kan være nede                                  | Afsendende system (Afsendende fagsystem/MSH/AP) Forsendelsesstatuskomponent |
 
-<p/>
+***
+
 
 ### Indberetninger ift. scenarierne i afsnit 4.
 
@@ -109,7 +97,8 @@ I det følgende antages begge sider af afsender- og modtagerøkosystemerne at ha
 | Kap. 4.10 Kap. 4.11                  | Afsendende fagsystem/MSH Afsendende AP/MSH ------------------------------------------- Modtagende AP/MSH                        |  Afsendende AP/MSH ------------------------------------------- Modtagende AP/MSH Modtagende fagsystem/MSH                      |
 | Kap. 4.12                            | Afsendende fagsystem/MSH/AP                                                                                                     | Modtagende fagsystem/MSH/AP                                                                                                    |
 
-<p/>
+***
+
 
 ### Udstilling via service
 
@@ -123,7 +112,8 @@ Fra målbilledet ved vi, at servicen, der udstiller forsendelsesstatus for medde
 
 Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
 
-<p/>
+***
+
 
 #### Decentralt vedrørende sikkerhed for EHMI-komponent: Forsendelsesstatus - udsøgning
 
@@ -141,7 +131,8 @@ For søgning af forsendelsesstatus stilles der derudover krav om, at der ved bor
 | Modtagende komponent                                                 | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | Modtagende komponent                                                 |
 | Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent |
 
-<p/>
+***
+
 
 ## Sikkerhedsspecificeringer vedrørende Sundhedsadressering
 
@@ -155,7 +146,8 @@ Fra målbilledet ved vi, at sundhedsadresseringsservicen skal overholde de samme
 
 Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
 
-<p/>
+***
+
 
 ### Decentral vedrørende EHMI-komponent: Sundhedsadresseringsservice
 
@@ -166,15 +158,4 @@ Da servicen udstilles og afvikles på en platform, der kan have sine egne mere s
 | Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Integritetssikring og fortrolighedssikring:** Kommunikation sikret via transportprotokol, f.eks. TLS                                                                                                                               | Afsendende system (Fagsystem) Sundhedsadresseringsservice |
 | Afsendende system (Fagsystem) Sundheds-adresseringsservice | **Tilgængelighed:** Implementering af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en forbindelse kan være nede.  Hvis servicen er online bør altid søges online. Faste søgninger bør opdateres udenfor peaktimes. | Afsendende system (Fagsystem) Sundhedsadresseringsservice |
 
-<p/>
-
-## Relevante links:
-
--   Dansk:
-    -   Målbillede for meddelelseskommunikation på sundhedsområdet (<https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf>)
-    -   SDN (<https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/>)
--   Engelsk:
-    -   EU eDelivery (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery>)
-    -   EU AP specifikationer (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications>)
-    -   EU PEPPOL SBDH envelope (<https://docs.peppol.eu/edelivery/envelope/Peppol-EDN-Business-Message-Envelope-2.0.0-2023-03-13.pdf>)
-    -   IHE BALP (<https://profiles.ihe.net/ITI/BALP/index.html>)
+***
