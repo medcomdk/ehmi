@@ -8,15 +8,15 @@
 
 - [Sikkerhedsspecificeringer vedrørende EHMI Delivery Status af meddelelser](#sikkerhedsspecificeringer-vedrørende-Delivery Status-af-meddelelser)
 
-- [Opsamling til repositorie](#opsamling-til-repositorie)
+- [Opsamling til repositorie](#opsamling-til-ehmi-delivery-service-repository)
 
 - [Klient sikkerhed for EHMI Delivery Status - indberetning](#decentralt-vedrørende-sikkerhed-for-ehmi-komponent-Delivery Status---indberetning)
 
 - [Udstilling via service](#udstilling-via-service)
 
-- [Klient sikkerhed for EHMI Delivery Status - udsøgning](#_Toc150964824)
+- [Klient sikkerhed for EHMI Delivery Status - udsøgning](#klient-sikkerhed-ehmi-delivery-status---indberetning)
 
-- [Sikkerhedsspecificeringer vedrørende EHMI Adressing](#_Toc150964825)
+- [Sikkerhedsspecificeringer vedrørende EHMI AdressingService]()
 
 - [Decentral vedrørende EHMI Adressing Service](#decentral-vedrørende-ehmi-komponent-ehmi-adressing-service)
 
