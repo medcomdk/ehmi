@@ -4,11 +4,11 @@
 
 - [2 Introduktion](#introduktion)
 
+- [2.1 Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
+
 - [3 Generelt omkring sikkerhed for nye komponenter i EHMI](#generelt-omkring-sikkerhed-for-nye-komponenter-i-ehmi)
 
-- [3.1 Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-forudsætninger-for-komponenter-i-forsendelseskæden)
-
-- [4 Opgavespecificeringer - sikkerhed vedrørende meddelelseskommunikation](#opgavespecificeringer---sikkerhed-vedrørende-punkt-til-punkt-meddelelseskommunikation)
+- [4 Specifikationer - sikkerhed vedrørende meddelelseskommunikation](#Specifikationer---sikkerhed-vedrørende-punkt-til-punkt-meddelelseskommunikation)
 
 - [4.1 Decentralt vedrørende sikkerhed](#decentralt-vedrørende-sikkerhed)
 
@@ -52,6 +52,16 @@ Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastr
 ***
 
 
+## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
+
+Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
+
+-   Systemer/komponenter kan være en stand-alone applikation eller **sammenbygget** med en eller flere andre systemer/komponenter i meddelelsesflowet.
+-   Systemer/komponenter kan være en stand-alone applikation **grupperet sammen** med en eller flere andre systemer/komponenter i meddelelsesflowet på samme server.
+
+***
+
+
 ## Generelt omkring sikkerhed for nye komponenter i EHMI
 
 Det er muligt at indrapportere og tilgå data via et FHIR API. Web-services/RESTful-services, der udstilles via et sådant interface, skal, præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde national arkitektur og nationale standarder.
@@ -67,17 +77,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 ***
 
 
-## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
-
-Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
-
--   Systemer/komponenter kan være en stand-alone applikation eller **sammenbygget** med en eller flere andre systemer/komponenter i meddelelsesflowet.
--   Systemer/komponenter kan være en stand-alone applikation **grupperet sammen** med en eller flere andre systemer/komponenter i meddelelsesflowet på samme server.
-
-***
-
-
-## Opgavespecificeringer - sikkerhed vedrørende punkt til punkt meddelelseskommunikation
+## Specifikationer - sikkerhed vedrørende punkt til punkt meddelelseskommunikation
 
 ***
 
