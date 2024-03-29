@@ -2,41 +2,39 @@
 
 ## Indholdsfortegnelse
 
-[2 Introduktion](#introduktion)
+- [2 Introduktion](#introduktion)
 
-[3 Generelt omkring sikkerhed for nye komponenter i EHMI](#generelt-omkring-sikkerhed-for-nye-komponenter-i-ehmi)
+- [3 Generelt omkring sikkerhed for nye komponenter i EHMI](#generelt-omkring-sikkerhed-for-nye-komponenter-i-ehmi)
 
-[3.1 Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-forudsætninger-for-komponenter-i-forsendelseskæden)
+- [3.1 Generelle sikkerhedsmæssige forudsætninger for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-forudsætninger-for-komponenter-i-forsendelseskæden)
 
-[4 Opgavespecificeringer - sikkerhed vedrørende meddelelseskommunikation](#opgavespecificeringer---sikkerhed-vedrørende-punkt-til-punkt-meddelelseskommunikation)
+- [4 Opgavespecificeringer - sikkerhed vedrørende meddelelseskommunikation](#opgavespecificeringer---sikkerhed-vedrørende-punkt-til-punkt-meddelelseskommunikation)
 
-[4.1 Decentralt vedrørende sikkerhed](#decentralt-vedrørende-sikkerhed)
+- [4.1 Decentralt vedrørende sikkerhed](#decentralt-vedrørende-sikkerhed)
 
-[4.2 Alle komponenter stand-alone - implementeret på forskellige servere](#alle-komponenter-stand-alone---implementeret-på-forskellige-servere)
+- [4.2 Alle komponenter stand-alone - implementeret på forskellige servere](#alle-komponenter-stand-alone---implementeret-på-forskellige-servere)
 
-[4.3 Alle komponenter stand-alone - grupperet sammen på samme server](#alle-komponenter-stand-alone---grupperet-sammen-på-samme-server)
+- [4.3 Alle komponenter stand-alone - grupperet sammen på samme server](#alle-komponenter-stand-alone---grupperet-sammen-på-samme-server)
 
-[4.4 Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](#alle-komponenter-stand-alone---afsendende-fagsystem-og-msh-grupperet-sammen-på-samme-server)
+- [4.4 Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](#alle-komponenter-stand-alone---afsendende-fagsystem-og-msh-grupperet-sammen-på-samme-server)
 
-[4.5 Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](#alle-komponenter-stand-alone-msh-og-ap-grupperet-sammen-på-samme-server)
+- [4.5 Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](#alle-komponenter-stand-alone-msh-og-ap-grupperet-sammen-på-samme-server)
 
-[4.6 Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystem-stand-alone---mshap-sammenbygget---implementeret-på-forskellige-servere)
+- [4.6 Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystem-stand-alone---mshap-sammenbygget---implementeret-på-forskellige-servere)
 
-[4.7 Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystem-stand-alone---mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
+- [4.7 Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystem-stand-alone---mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
 
-[4.8 Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone---implementeret-på-forskellige-servere)
+- [4.8 Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone---implementeret-på-forskellige-servere)
 
-[4.9 Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone--alle-grupperet-sammen-på-samme-server)
+- [4.9 Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone--alle-grupperet-sammen-på-samme-server)
 
-[4.10 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget---implementeret-på-forskellige-servere)
+- [4.10 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget---implementeret-på-forskellige-servere)
 
-[4.11 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
+- [4.11 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
 
-[4.12 Alle komponenter sammenbyggede](#alle-komponenter-sammenbyggede)
+- [4.12 Alle komponenter sammenbyggede](#alle-komponenter-sammenbyggede)
 
-[4.13 Modtagersiden](#_Toc150964819)
-
-[5 Relevante links:](#relevante-links)
+- [4.13 Modtagersiden](#_Toc150964819)
 
 ***
 
