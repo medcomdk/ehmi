@@ -64,6 +64,10 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 
 ## Specifikationer - sikkerhed vedrørende meddelelseskommunikation
 
+Først beskrives de generelle retningslinjerne er vedrørende sikkerhed i meddelelsesflowet i EHMI.
+
+Dernæst beskrives det for de forskellige scenarier af **sammenbyggethed** og **gruppering** hvordan retningslinjerne udmøntes i de enkelte scenarier.
+
 ***
 
 
