@@ -3,7 +3,7 @@
 **Table of contents for Production pilot for EHMI**
 
 - Production pilot for EHMI 
-  - EHMI Production Pilot Description
+  - [EHMI Production Pilot Description](/assets/documents/production-pilot/index.md)
     - [EHMI Core Description](/assets/documents/production-pilot/index.md#ehmi-core-description)
     - [EHMI Core Security Description](/assets/documents/production-pilot/index.md#ehmi-core-security-description)
     - [EHMI Delivery Status Description](/assets/documents/production-pilot/index.md#ehmi-delivery-status-description)
