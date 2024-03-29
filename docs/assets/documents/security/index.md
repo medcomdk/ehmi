@@ -29,6 +29,9 @@ EHMI Delivery Status Security is defined as
 
 - [EHMI Delivery Status Security Description](security-specification-of-ehmi-eds.md)
 
-- <a href="./media/Sikkerhedsarkitektur%20EHMI%20støtteservices%20v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01 (opens in new window)</a>
+### EHMI Delivery Status Security Description
+
+EHMI Delivery Status Security is handled as described in:
+- <a href="./media/Sikkerhedsarkitektur%20EHMI%20støtteservices%20v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01/Security architechture regarding EHMI central services v01 (opens in new window)</a>
 
 ***
