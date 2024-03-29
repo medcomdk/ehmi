@@ -10,6 +10,7 @@
     
 ***
 
+
 **Table of contents**
 
 - EHMI Production Pilot Description
@@ -18,7 +19,13 @@
     - [EHMI Delivery Status Description](#ehmi-delivery-status-description)
         - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
 
+***
+
+
 ## EHMI Production Pilot Description
+
+***
+
 
 ### Introduction
 
@@ -29,6 +36,9 @@ I projektet gennemføres en afprøvning i drift i dela af Q1 og Q2 2026.
 I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra kommunale akutfunktioner (EOJ) til almen lægepraksis (LPS) via EHMI.
 
 Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
+
+***
+
 
 ### EHMI Core Description
 
@@ -46,6 +56,9 @@ EHMI Core is defined as
 
 EHMI Core is described further [here](../ecore/index.md)
 
+***
+
+
 #### EHMI Core Security Description
 
 EHMI Core Security is defined as
@@ -54,6 +67,9 @@ EHMI Core Security is defined as
 - the already established security implementation regarding XDS Document Sharing on NSP
     - this part of EHMI Core Security is desribed [here (Link to NSP)]()
     
+***
+
+
 ### EHMI Delivery Status Description
     
 EHMI Delivery Status is defined as 
@@ -62,9 +78,25 @@ EHMI Delivery Status is defined as
 
 EHMI Delivery Status is described further [here](../eds/index.md)
 
+***
+
+
 #### EHMI Delivery Status Security Description
 
 EHMI Delivery Status Security is defined as
 - the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](#ehmi-delivery-status-description)
     - this part of EHMI Core Security is desribed [here](../security/security-specification-of-ehmi-eds.md)
     
+***
+
+
+## Relevante links:
+
+-   Dansk:
+    -   Målbillede for meddelelseskommunikation på sundhedsområdet (<https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf>)
+    -   SDN (<https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/>)
+-   Engelsk:
+    -   EU eDelivery (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery>)
+    -   EU AP specifikationer (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications>)
+    -   EU PEPPOL SBDH envelope (<https://docs.peppol.eu/edelivery/envelope/Peppol-EDN-Business-Message-Envelope-2.0.0-2023-03-13.pdf>)
+    -   IHE BALP (<https://profiles.ihe.net/ITI/BALP/index.html>)
