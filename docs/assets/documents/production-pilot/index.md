@@ -101,7 +101,7 @@ EHMI Delivery Status Security is defined as
 |---                        |---          |---          |---          |
 |EHMI Servers <br/> <br/> <br/> <br/> | | EHMI Server Specification for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI EDS Server <br/> - EHMI EAS Server <br/> - EHMI EER Server |
 |---                        |---          |---          |---          |
-|EHMI Server & API Security <br/> <br/> <br/> <br/> | EHMI API Security for: <br/> - EDS <br/> <br/> <br/> | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI Security Server <br/> <br/> |
+|EHMI Server & API Security <br/> <br/> <br/> <br/> | EHMI API Security for: <br/> - EDS <br/> <br/> <br/> | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI Security Server <br/> <br/> <br/> |
 
 ***
 
