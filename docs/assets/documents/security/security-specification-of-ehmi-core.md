@@ -281,16 +281,3 @@ Ovenstående er kun beskrevet, hvordan sikkerheden ser ud på afsendersiden. De 
 
 ***
 
-
-### Indberetninger ift. scenarierne i afsnit 4.
-
-I det følgende antages begge sider af afsender- og modtagerøkosystemerne at have samme setup til hinanden som det afsendende økosystem. I praksis er dette naturligvis meget forskelligt, og der skal i så fald kombineres
-
-| **Scenarier**                        | **Skabende/Indgående indberetning**                                                                                             | **Afsluttende/udgående indberetning**                                                                                          |
-|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Kap. 4.2 Kap. 4.3 Kap. 4.4 Kap. 4.5  | Afsendende fagsystem  Afsendende MSH  Afsendende AP ------------------------------------------- Modtagende AP  Modtagende MSH   |  Afsendende MSH  Afsendende AP ------------------------------------------- Modtagende AP  Modtagende MSH  Modtagende fagsystem |
-| Kap. 4.6 Kap. 4.7                    | Afsendende fagsystem  Afsendende MSH/AP ------------------------------------------- Modtagende MSH/AP                           |  Afsendende MSH/AP  ------------------------------------------- Modtagende MSH/AP Modtagende fagsystem                         |
-| Kap. 4.8 Kap. 4.9                    | Afsendende fagsystem/MSH Afsendende AP ------------------------------------------- Modtagende AP                                |  Afsendende AP  ------------------------------------------- Modtagende AP Modtagende fagsystem/MSH                             |
-| Kap. 4.10 Kap. 4.11                  | Afsendende fagsystem/MSH Afsendende AP/MSH ------------------------------------------- Modtagende AP/MSH                        |  Afsendende AP/MSH ------------------------------------------- Modtagende AP/MSH Modtagende fagsystem/MSH                      |
-| Kap. 4.12                            | Afsendende fagsystem/MSH/AP                                                                                                     | Modtagende fagsystem/MSH/AP                                                                                                    |
-
