@@ -30,6 +30,7 @@ Here the entire description and all the specifications of EHMI will be centered.
   - [EHMI Core Security Description](/assets/documents/production-pilot/index.md#ehmi-core-security-description)
   - [EHMI Delivery Status Description](/assets/documents/production-pilot/index.md#ehmi-delivery-status-description)
   - [EHMI Delivery Status Security Description](/assets/documents/production-pilot/index.md#ehmi-delivery-status-security-description)
+
 - EHMI Specifications for March 31 2024
   - EHMI Core
     - [ehmiSBDH](/assets/documents/ecore/ehmiSBDH/index.md)
