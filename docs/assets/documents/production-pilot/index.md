@@ -42,7 +42,7 @@ Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastr
 
 ### EHMI Time schedule
 
-![Revideret tidsplan](../../images/EHMI_revideret_tidsplam.png)
+![Revideret tidsplan](../../images/EHMI_revideret_tidsplan_1200x720.png)
 
 ### EHMI Core Description
 
