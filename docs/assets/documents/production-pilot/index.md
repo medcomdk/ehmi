@@ -19,9 +19,11 @@
 |---                        |---          |---          |
 |EHMI Core Security         | EHMI Security for EHMI Core | | |
 |---                        |---          |---          |---          |
-|EHMI EDS <br/> <br/> <br/> | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP | EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> <br/> <br/> | |
+|EHMI EDS <br/> <br/> <br/> <br/> | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP | EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> <br/> <br/> | |
 |---                        |---          |---          |---          |
-|EHMI Server & API Security <br/> <br/> <br/> | EHMI API Security for: <br/> - EDS | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER| |
+|EHMI Servers <br/> <br/> <br/> <br/> | | EHMI Server Specification for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI EDS Server <br/> - EHMI EAS Server <br/> - EHMI EER Server |
+|---                        |---          |---          |---          |
+|EHMI Server & API Security <br/> <br/> <br/> <br/> | EHMI API Security for: <br/> - EDS <br/> <br/> | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI Security Server |
 
 
 **Table of contents**
