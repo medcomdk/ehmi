@@ -30,7 +30,7 @@
 
 ### Introduction
 
-I MedCom13 har MedCom et fælles afprøvningsprojekt ’Kommunale prøvesvar på ny infrastruktur’, hvor MedComs to centrale moderniseringsspor kobles: FHIR og EHMI, hvor såvel meddelelseskommunikationen som infrastrukturen moderniseres. Moderniseringen sker grundet behov for kvalitetsløft af bl.a. sikkerhed, gennemsigtighed, robusthed og effektiv, international digital meddelelseskommunikation. Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 [here:](https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/)
+I MedCom13 har MedCom et fælles afprøvningsprojekt ’Kommunale prøvesvar på ny infrastruktur’, hvor MedComs to centrale moderniseringsspor kobles: FHIR og EHMI, hvor såvel meddelelseskommunikationen som infrastrukturen moderniseres. Moderniseringen sker grundet behov for kvalitetsløft af bl.a. sikkerhed, gennemsigtighed, robusthed og effektiv, international digital meddelelseskommunikation. Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">here</a>
 
 I projektet gennemføres en afprøvning i drift i dela af Q1 og Q2 2026.
 
@@ -110,11 +110,19 @@ EHMI Delivery Status Security is defined as
 
 ### Relevante links:
 
--   Dansk:
-    -   Målbillede for meddelelseskommunikation på sundhedsområdet (<https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf>)
-    -   SDN (<https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/>)
--   Engelsk:
-    -   EU eDelivery (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery>)
-    -   EU AP specifikationer (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications>)
-    -   EU PEPPOL SBDH envelope (<https://docs.peppol.eu/edelivery/envelope/Peppol-EDN-Business-Message-Envelope-2.0.0-2023-03-13.pdf>)
-    -   IHE BALP (<https://profiles.ihe.net/ITI/BALP/index.html>)
+<bold>
+
+*OBS! Alle links åbner i et nyt vindue.*
+
+</bold>
+
+*- Dansk:*
+    - <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">MedCom13 projektbesksrivelse af ’Kommunale prøvesvar på ny infrastruktur’</a>
+    - <a href="https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf" target="_blank">Målbillede for meddelelseskommunikation på sundhedsområdet</a>
+    - <a href="https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/" target="_blank">SDN</a>
+*- Engelsk:*
+    - <a href="" target="_blank"></a>
+    - EU eDelivery (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery>)
+    - EU AP specifikationer (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications>)
+    - EU PEPPOL SBDH envelope (<https://docs.peppol.eu/edelivery/envelope/Peppol-EDN-Business-Message-Envelope-2.0.0-2023-03-13.pdf>)
+    - IHE BALP (<https://profiles.ihe.net/ITI/BALP/index.html>)
