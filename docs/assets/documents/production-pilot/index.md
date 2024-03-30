@@ -23,7 +23,7 @@ I projektet gennemføres en afprøvning i drift i dela af Q1 og Q2 2026.
 
 I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra kommunale akutfunktioner (EOJ) til almen lægepraksis (LPS) via EHMI.
 
-Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
+Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, som afvikles på Sundhedsdatanettet, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
 
 ***
 
