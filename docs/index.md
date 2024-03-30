@@ -11,6 +11,10 @@
 ***
 ***
 
+Here the entire description and all the specifications of EHMI will be centered. Some may be described here, while others will be linked to from here. For instance will all HL7 FHIR Specifications be found in their respective Implementation Guides following the standard for publishing by HL7. Other may be shared with our partners in the Danish Health Data Authority and therfore have a format that suits them as well.
+
+**For now all what is published here at 01-04-2024 will focus on the Production pilot for EHMI and therefore in the first place narrowed to show only what is ready for now. Later by the end of Q2 2024 several more specifications and descriptions will show up here and make the documentation more comprehensive.**
+
 **Table of contents for Production pilot for EHMI**
 
 - Production pilot for EHMI 
