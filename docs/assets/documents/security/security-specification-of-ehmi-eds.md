@@ -44,7 +44,11 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 2.  Samtykke/frabedelse og behandlingsrelation skal tjekkes op mod den nationale samtykkeservice og den nationale behandlingsrelationsservice
 3.  Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af borgeren via MinLog
 
+Den generelle og specifkke sikkerhed omkring dette er beskrevet her i: <br/> <a href="../security/media/Sikkerhedsarkitektur EHMI støtteservices v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01 (opens in new window)</a>
+
 ***
+***
+
 
 ## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
 
@@ -53,6 +57,7 @@ Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 -   Systemer/komponenter kan være en stand-alone applikation eller **sammenbygget** med en eller flere andre systemer/komponenter i meddelelsesflowet.
 -   Systemer/komponenter kan være en stand-alone applikation **grupperet sammen** med en eller flere andre systemer/komponenter i meddelelsesflowet på samme server.
 
+***
 ***
 
 
