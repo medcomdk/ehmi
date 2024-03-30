@@ -17,6 +17,8 @@
         - [EHMI Core Security Description](#ehmi-core-security-description)
     - [EHMI Delivery Status Description](#ehmi-delivery-status-description)
         - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
+    - [EHMI Production Pilot specificaion schema](#ehmi-production-pilot-specificaion-schema)
+    - [Relevante Links](#relevante-links)
 
 ***
 
@@ -89,7 +91,7 @@ EHMI Delivery Status Security is defined as
 ***
 
 
-## EHMI Production Pilot specificaion schema
+### EHMI Production Pilot specificaion schema
 
 | EHMI Specification        | **Q1 2024** | **Q2 2024** |**Q3 & Q4 2024** |
 |---                        |---          |---          |---          |
@@ -106,7 +108,7 @@ EHMI Delivery Status Security is defined as
 ***
 
 
-## Relevante links:
+### Relevante links:
 
 -   Dansk:
     -   Målbillede for meddelelseskommunikation på sundhedsområdet (<https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf>)
