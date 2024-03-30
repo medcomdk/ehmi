@@ -19,9 +19,9 @@
 |---                        |---          |---          |
 |EHMI Core Security         | EHMI Security for EHMI Core | |
 |---                        |---          |---          |
-|EHMI EDS                   | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP | EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> |
+|EHMI EDS <br/> <br/>       | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP | EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> <br/> |
 |---                        |---          |---          |
-|EHMI Server & API Security | EHMI API Security for: <br/> - EDS | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|
+|EHMI Server & API Security <br/> <br/> | EHMI API Security for: <br/> - EDS | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|
 
 
 **Table of contents**
