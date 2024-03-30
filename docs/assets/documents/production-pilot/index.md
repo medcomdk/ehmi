@@ -25,11 +25,14 @@ I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra k
 
 Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, som afvikles på Sundhedsdatanettet, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
 
+Projektet har en række leveringer af specifikationer, som kan ses nednefor i [EHMI Production Pilot specification schema](#ehmi-production-pilot-specification-schema)
+
 ***
 
 
 **Table of contents**
 
+- [Project Time schedule](#project-time-schedule)
 - [EHMI Core Description](#ehmi-core-description)
     - [EHMI Core Security Description](#ehmi-core-security-description)
 - [EHMI Delivery Status Description](#ehmi-delivery-status-description)
@@ -40,9 +43,12 @@ Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastr
 ***
 
 
-### EHMI Time schedule
+### Project Time schedule
 
 ![Revideret tidsplan](../../images/EHMI_revideret_tidsplan_1200x720.png)
+
+***
+
 
 ### EHMI Core Description
 
