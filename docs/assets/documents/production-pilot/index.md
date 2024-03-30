@@ -106,7 +106,7 @@ EHMI Delivery Status Security is defined as
 |---                               |---          |---          |---          |
 |<i>**EHMI Servers**</i> <br/> <br/> <br/> <br/> | | EHMI Specs for all EHMI Server operations: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI EDS Server <br/> - EHMI EAS Server <br/> - EHMI EER Server |
 |---                               |---          |---          |---          |
-|<i>**EHMI Server & API Security**</i> <br/> <br/> <br/> <br/> | EHMI API Security for: <br/> - EDS <br/> EHMI Delivery Status Security is handled as described in: <a href="./media/Sikkerhedsarkitektur%20EHMI%20støtteservices%20v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01/Security architechture regarding EHMI central services v01 (opens in new window)</a> <br/> <br/> | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI Security Server <br/> <br/> <br/> |
+|<i>**EHMI Server & API Security**</i> <br/> <br/> <br/> <br/> | EHMI API Security for: <br/> - EDS <br/> EHMI Delivery Status Security is handled as described in: <br/> <a href="../security/media/Sikkerhedsarkitektur EHMI støtteservices v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01/Security architechture regarding EHMI central services v01 (opens in new window)</a> <br/> <br/> | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI Security Server <br/> <br/> <br/> |
 |---                               |---          |---          |---          |
 
 ***
