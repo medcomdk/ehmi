@@ -110,17 +110,14 @@ EHMI Delivery Status Security is defined as
 
 ### Relevante links:
 
-<bold>
 
-*OBS! Alle links åbner i et nyt vindue.*
+<bold><i>OBS! Alle links åbner i et nyt vindue.</i></bold>
 
-</bold>
-
-*- Dansk:*
+- Dansk:
     - <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">MedCom13 projektbesksrivelse af ’Kommunale prøvesvar på ny infrastruktur’</a>
     - <a href="https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf" target="_blank">Målbillede for meddelelseskommunikation på sundhedsområdet</a>
     - <a href="https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/" target="_blank">SDN</a>
-*- Engelsk:*
+- Engelsk:
     - <a href="" target="_blank"></a>
     - EU eDelivery (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery>)
     - EU AP specifikationer (<https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications>)
