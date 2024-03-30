@@ -13,15 +13,15 @@
 
 ## EHMI Production Pilot specificaion schema
 
-| EHMI Specification        | **Q1 2024** | **Q2 2024** |
+| EHMI Specification        | **Q1 2024** | **Q2 2024** |**Q3 & Q4 2024** |
+|---                        |---          |---          |---          |
+|EHMI Core <br/>            | ehmiSMP Spec for AP <br/> ehmiSBDH Spec for MSH & AP <br/> | | |
 |---                        |---          |---          |
-|EHMI Core                  | ehmiSMP Spec for AP <br/> ehmiSBDH Spec for MSH & AP <br/> ||
-|---                        |---          |---          |
-|EHMI Core Security         | EHMI Security for EHMI Core | |
-|---                        |---          |---          |
-|EHMI EDS <br/> <br/>       | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP | EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> <br/> |
-|---                        |---          |---          |
-|EHMI Server & API Security <br/> <br/> | EHMI API Security for: <br/> - EDS | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|
+|EHMI Core Security         | EHMI Security for EHMI Core | | |
+|---                        |---          |---          |---          |
+|EHMI EDS <br/> <br/> <br/> | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP | EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> <br/> <br/> | |
+|---                        |---          |---          |---          |
+|EHMI Server & API Security <br/> <br/> <br/> | EHMI API Security for: <br/> - EDS | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER| |
 
 
 **Table of contents**
