@@ -10,23 +10,10 @@
     
 ***
 
-**Table of contents**
-
-- EHMI Production Pilot Description
-    - [EHMI Core Description](#ehmi-core-description)
-        - [EHMI Core Security Description](#ehmi-core-security-description)
-    - [EHMI Delivery Status Description](#ehmi-delivery-status-description)
-        - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
-    - [EHMI Production Pilot specificaion schema](#ehmi-production-pilot-specificaion-schema)
-    - [Relevante Links](#relevante-links)
-
-***
-
-
 ## EHMI Production Pilot Description
 
-***
 
+***
 
 ### Introduction
 
@@ -37,6 +24,19 @@ I projektet gennemføres en afprøvning i drift i dela af Q1 og Q2 2026.
 I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra kommunale akutfunktioner (EOJ) til almen lægepraksis (LPS) via EHMI.
 
 Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
+
+***
+
+
+**Table of contents**
+
+- EHMI Production Pilot Description
+    - [EHMI Core Description](#ehmi-core-description)
+        - [EHMI Core Security Description](#ehmi-core-security-description)
+    - [EHMI Delivery Status Description](#ehmi-delivery-status-description)
+        - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
+    - [EHMI Production Pilot specificaion schema](#ehmi-production-pilot-specificaion-schema)
+    - [Relevante Links](#relevante-links)
 
 ***
 
