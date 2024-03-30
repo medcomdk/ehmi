@@ -40,6 +40,10 @@ Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastr
 ***
 
 
+### EHMI Time schedule
+
+![Revideret tidsplan](../../images/EHMI_revideret_tidsplam.png)
+
 ### EHMI Core Description
 
 EHMI Core is defined as 
