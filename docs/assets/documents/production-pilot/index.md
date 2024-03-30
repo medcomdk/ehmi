@@ -35,7 +35,7 @@ Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastr
         - [EHMI Core Security Description](#ehmi-core-security-description)
     - [EHMI Delivery Status Description](#ehmi-delivery-status-description)
         - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
-    - [EHMI Production Pilot specificaion schema](#ehmi-production-pilot-specificaion-schema)
+    - [EHMI Production Pilot specificaion schema](#ehmi-production-pilot-specification-schema)
     - [Relevante Links](#relevante-links)
 
 ***
@@ -91,7 +91,7 @@ EHMI Delivery Status Security is defined as
 ***
 
 
-### EHMI Production Pilot specificaion schema
+### EHMI Production Pilot specification schema
 
 | **EHMI Specification**              | **Q1 2024** | **Q2 2024** |**Q3 & Q4 2024** |
 |---                              |---          |---          |---          |
