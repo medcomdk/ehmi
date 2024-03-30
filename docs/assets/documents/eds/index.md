@@ -1,13 +1,16 @@
 # EHMI Delivery Status (EDS)
 
 ***
+***
 
     **Disclaimer** 
     
     **The menu items above marked with a star are yet not specified**
     
     ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
+***
     
+***
 ***
 
 ## EHMI Delivery Status is defined as 
@@ -18,14 +21,17 @@
 - the clients that handle the registration of EHMI Delivery Status (FHIR AuditEvents) from each "station" in both the primary and secondary message delivering from a sender system to a receiver system 
     
 ***
+***
   
 **The whole specification for EHMI Delivery Status can be found** 
 <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/" target="_blank">here</a>
     
 ***
+***
   
 ## An outline of the components of the EHMI Delivery Status can be seen here:
     
+***
 ***
 
 ![EHMI Delivery Status (EDS)](https://medcomdk.github.io/ehmi/assets/images/2_EHMI_Forsendelsesstatus_1315x551.png)

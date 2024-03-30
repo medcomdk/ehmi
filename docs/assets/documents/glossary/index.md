@@ -1,13 +1,16 @@
 # Acronyms
 
 ***
+***
 
     **Disclaimer** 
     
     **The menu items above marked with a star are yet not specified**
     
     ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
+***
     
+***
 ***
 
 | Acronym | Acronym for | Description | Domain |

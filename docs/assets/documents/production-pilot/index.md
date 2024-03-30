@@ -1,18 +1,22 @@
 # EHMI Production Pilot
 
 ***
+***
 
     **Disclaimer** 
     
     **The menu items above marked with a star are yet not specified**
 
     ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
+***
     
+***
 ***
 
 ## EHMI Production Pilot Description
 
 
+***
 ***
 
 ### Introduction
@@ -28,6 +32,7 @@ Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastr
 Projektet har en række leveringer af specifikationer, som kan ses nednefor i [EHMI Production Pilot specification schema](#ehmi-production-pilot-specification-schema)
 
 ***
+***
 
 
 **Table of contents**
@@ -41,12 +46,14 @@ Projektet har en række leveringer af specifikationer, som kan ses nednefor i [E
 - [Relevante Links](#relevante-links)
 
 ***
+***
 
 
 ### Project Time schedule
 
 ![Revideret tidsplan](../../images/EHMI_revideret_tidsplan_1200x720.png)
 
+***
 ***
 
 
@@ -67,6 +74,7 @@ EHMI Core is defined as
 EHMI Core is described further [here](../ecore/index.md)
 
 ***
+***
 
 
 #### EHMI Core Security Description
@@ -77,6 +85,7 @@ EHMI Core Security is defined as
 - the already established security implementation regarding XDS Document Sharing on NSP
     - this part of EHMI Core Security is desribed [here (Link to NSP)]()
     
+***
 ***
 
 
@@ -89,6 +98,7 @@ EHMI Delivery Status is defined as
 EHMI Delivery Status is described further [here](../eds/index.md)
 
 ***
+***
 
 
 #### EHMI Delivery Status Security Description
@@ -97,6 +107,7 @@ EHMI Delivery Status Security is defined as
 - the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](#ehmi-delivery-status-description)
     - this part of EHMI Core Security is desribed [here](../security/security-specification-of-ehmi-eds.md)
     
+***
 ***
 
 
@@ -115,6 +126,7 @@ EHMI Delivery Status Security is defined as
 |<i>**EHMI Server & API Security**</i> <br/> <br/> <br/> <br/> | EHMI API Security for: <br/> - EDS <br/> EDS Security is handled as described in: <br/> <a href="../security/media/Sikkerhedsarkitektur EHMI støtteservices v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01 (opens in new window)</a> <br/> | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI Security Server <br/> <br/> <br/> |
 |---                               |---          |---          |---          |
 
+***
 ***
 
 

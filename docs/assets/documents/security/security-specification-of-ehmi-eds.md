@@ -1,13 +1,16 @@
 # Specificering af sikkerhed ifm centrale og decentrale EHMI-services
 
 ***
+***
 
     **Disclaimer** 
     
     **The menu items above marked with a star are yet not specified**
 
     ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
+***
     
+***
 ***
 
 
@@ -72,6 +75,7 @@ Sikkerhed i forhold til forsendelses-status opdeles i de forskellige trin:
 2. EHMI Delivery Status hentes af anvendere via udstillede services
 
 ***
+***
 
 
 ### Opsamling til EHMI Delivery Service repository
@@ -85,6 +89,7 @@ Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at 
 -   **Fortrolighed:** Når den opsamlede EHMI Delivery Status kommunikeres til repositoriet, sikres den enten via eksplicit kryptering eller implicit kryptering på det underliggende infrastruktur niveau.
 
 ***
+***
 
 
 #### Klient sikkerhed EHMI Delivery Status - indberetning
@@ -97,6 +102,7 @@ Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at 
 | Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Status-komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation via sikret transportprotokol, f.eks. TLS                              | Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Statuskomponent |
 | Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Status-komponent | **Tilgængelighed:** Implementering af kø mekanisme til at håndtere at en forbindelse kan være nede                                  | Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Statuskomponent |
 
+***
 ***
 
 
@@ -117,6 +123,7 @@ I det følgende antages begge sider af afsender- og modtagerøkosystemerne at ha
 | [Alle komponenter sammenbyggede](./security-specification-of-ehmi-core.md#alle-komponenter-sammenbyggede) <br/> | Afsendende fagsystem/MSH/AP <br/> | Modtagende fagsystem/MSH/AP <br/> |
 
 ***
+***
 
 
 ### Udstilling via service
@@ -131,6 +138,7 @@ Fra målbilledet ved vi, at servicen, der udstiller EHMI Delivery Status for med
 
 Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
 
+***
 ***
 
 
@@ -151,6 +159,7 @@ For søgning af EHMI Delivery Status stilles der derudover krav om, at der ved b
 | Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent |
 
 ***
+***
 
 
 ## Sikkerhedsspecificeringer vedrørende EHMI Adressing Service
@@ -166,6 +175,7 @@ Fra målbilledet ved vi, at EHMI Adressing Servicen skal overholde de samme sikk
 Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
 
 ***
+***
 
 
 ### Decentral vedrørende EHMI-komponent: EHMI Adressing Service
@@ -177,4 +187,5 @@ Da servicen udstilles og afvikles på en platform, der kan have sine egne mere s
 | Afsendende system (Fagsystem) EHMI Adressing Service | **Integritetssikring og fortrolighedssikring:** Kommunikation sikret via transportprotokol, f.eks. TLS                                                                                                                               | Afsendende system (Fagsystem) EHMI Adressing Service |
 | Afsendende system (Fagsystem) EHMI Adressing Service | **Tilgængelighed:** Implementering af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en forbindelse kan være nede.  Hvis servicen er online bør altid søges online. Faste søgninger bør opdateres udenfor peaktimes. | Afsendende system (Fagsystem) EHMI Adressing Service |
 
+***
 ***

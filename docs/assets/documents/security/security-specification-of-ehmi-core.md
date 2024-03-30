@@ -1,13 +1,16 @@
 # Specificering af sikkerhed ifm meddelelsesflow i EHMI Core
 
 ***
+***
 
     **Disclaimer** 
     
     **The menu items above marked with a star are yet not specified**
 
     ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
+***
     
+***
 ***
 
 
@@ -46,6 +49,7 @@
 - [4.13 Modtagersiden](#modtagersiden)
 
 ***
+***
 
 
 ## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
@@ -55,6 +59,7 @@ Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
 -   Systemer/komponenter kan være en stand-alone applikation eller **sammenbygget** med en eller flere andre systemer/komponenter i meddelelsesflowet.
 -   Systemer/komponenter kan være en stand-alone applikation **grupperet sammen** med en eller flere andre systemer/komponenter i meddelelsesflowet på samme server.
 
+***
 ***
 
 
@@ -71,6 +76,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 3.  Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af borgeren via MinLog
 
 ***
+***
 
 
 ## Specifikationer - sikkerhed vedrørende meddelelseskommunikation
@@ -79,6 +85,7 @@ Først beskrives de generelle retningslinjerne er vedrørende sikkerhed i meddel
 
 Dernæst beskrives det for de forskellige scenarier af **sammenbyggethed** og **gruppering**, jf. [Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden) , hvordan retningslinjerne udmøntes i de enkelte scenarier.
 
+***
 ***
 
 
@@ -110,10 +117,12 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 *Ovenstående gælder også for al kommunikation mellem C3 og C4.*
 
 ***
+***
 
 
 ### Alle komponenter stand-alone - implementeret på forskellige servere
 
+***
 ***
 
 
@@ -130,10 +139,12 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | MSH stand-alone AP stand-alone                    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP                   |
 
 ***
+***
 
 
 ### Alle komponenter stand-alone - grupperet sammen på samme server
 
+***
 ***
 
 
@@ -148,10 +159,12 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | AP stand-alone                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | AP                   |
 
 ***
+***
 
 
 ### Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server
 
+***
 ***
 
 
@@ -166,6 +179,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | AP stand-alone                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                   |
 | MSH stand-alone AP stand-alone    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP            |
 
+***
 ***
 
 
@@ -183,6 +197,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | AP stand-alone                                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                           |
 
 ***
+***
 
 
 ### Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere
@@ -196,6 +211,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | Afsendende fagsystem stand-alone MSH/AP | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem og MSH/AP |
 
 ***
+***
 
 
 ### Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server
@@ -207,6 +223,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | Afsendende fagsystem stand-alone  | **Autenticitetshåndtering:** Implementering af signering af meddelelse | Afsendende fagsystem |
 | MSH/AP                            | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | MSH/AP               |
 
+***
 ***
 
 
@@ -222,6 +239,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | Afsendende fagsystem/MSH  AP Stand-alone  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og AP |
 
 ***
+***
 
 
 ### Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server
@@ -234,6 +252,7 @@ Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende si
 | Afsendende fagsystem/MSH | **Autenticitetshåndtering:** Implementering af signering af meddelelse | Afsendende fagsystem/MSH |
 | AP Stand-alone           | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | AP                       |
 
+***
 ***
 
 
@@ -251,6 +270,7 @@ Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dett
 | Afsendende fagsystem/MSH og MSH/AP  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og MSH/AP |
 
 ***
+***
 
 
 ### Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server
@@ -263,6 +283,7 @@ Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dett
 | Afsendende MSH/AP        | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | MSH/AP                   |
 
 ***
+***
 
 
 ### Alle komponenter sammenbyggede
@@ -273,11 +294,13 @@ Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dett
 Da alle komponenter her er sammenbyggede, håndteres al sikkerhed internt i sammenbygningen, og der er derfor ikke behov for eksplicit at udtrykke noget om sikkerheden her.
 
 ***
+***
 
 
 ### Modtagersiden
 
 Ovenstående er kun beskrevet, hvordan sikkerheden ser ud på afsendersiden. De tilsvarende mekanismer implementeres naturligvis også på modtagersider, hvor de så bare anvendes i den modsatte rækkefølge og med de tilsvarende aktører i modsat rækkefølge.
 
+***
 ***
 
