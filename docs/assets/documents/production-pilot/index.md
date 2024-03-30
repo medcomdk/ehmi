@@ -98,13 +98,13 @@ EHMI Delivery Status Security is defined as
 
 | **EHMI Specification**           | **Q1 2024** | **Q2 2024** |<i>**Q3 & Q4 2024** |
 |---                               |---          |---          |---          |
-|<i>**EHMI Core** <br/> <br/>      | ehmiSMP Spec for AP <br/> ehmiSBDH Spec for MSH & AP <br/> | | |
+|<i>**EHMI Core** <br/> [read more...](../ecore/index.md) <br/>      | ehmiSMP Spec for AP <br/> ehmiSBDH Spec for MSH & AP <br/> | | |
 |---                               |---          |---          |
-|<i>**EHMI Core Security**</i> <br/> [read more..](../security/security-specification-of-ehmi-core.md) | EHMI Security for EHMI Core <br/> | | |
+|<i>**EHMI Core Security**</i> <br/> [read more...](../security/security-specification-of-ehmi-core.md) | EHMI Security for EHMI Core <br/> | | |
 |---                               |---          |---          |---          |
-|<i>**EHMI EDS**</i> <br/> [read more..](../eds/index.md) <br/> <br/> <br/> | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP <br/> [read more..](../security/security-specification-of-ehmi-eds.md)| EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> <br/> <br/> | |
+|<i>**EHMI EDS**</i> <br/> [read more...](../eds/index.md) <br/> <br/> <br/> <br/> | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP <br/> [read more...](../security/security-specification-of-ehmi-eds.md)| EHMI Specs for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> <br/> <br/> <br/> | |
 |---                               |---          |---          |---          |
-|<i>**EHMI Servers**</i> <br/> <br/> <br/> <br/> | | EHMI Server Specification for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI EDS Server <br/> - EHMI EAS Server <br/> - EHMI EER Server |
+|<i>**EHMI Servers**</i> <br/> <br/> <br/> <br/> | | EHMI Specs for all EHMI Server operations: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI EDS Server <br/> - EHMI EAS Server <br/> - EHMI EER Server |
 |---                               |---          |---          |---          |
 |<i>**EHMI Server & API Security**</i> <br/> <br/> <br/> <br/> | EHMI API Security for: <br/> - EDS <br/> <br/> <br/> | EHMI Server & API Security for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI Security Server <br/> <br/> <br/> |
 |---                               |---          |---          |---          |
