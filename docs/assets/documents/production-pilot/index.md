@@ -102,7 +102,7 @@ EHMI Delivery Status Security is defined as
 |---                               |---          |---          |
 |<i>**EHMI Core Security**</i>     | EHMI Security for EHMI Core | | |
 |---                               |---          |---          |---          |
-|<i>**EHMI EDS**</i> <br/> <br/> <br/> <br/> | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP | EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> <br/> <br/> | |
+|<i>**EHMI EDS**</i> <br/> [read more..](../eds/index.md) <br/> <br/> <br/> | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP <br/> [read more..](../security/security-specification-of-ehmi-eds.md)| EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> <br/> <br/> | |
 |---                               |---          |---          |---          |
 |<i>**EHMI Servers**</i> <br/> <br/> <br/> <br/> | | EHMI Server Specification for: <br/> - EDS <br/> - EAS <br/> - EER|Tenders for: <br/> - EHMI EDS Server <br/> - EHMI EAS Server <br/> - EHMI EER Server |
 |---                               |---          |---          |---          |
