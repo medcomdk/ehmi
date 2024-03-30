@@ -30,13 +30,12 @@ Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastr
 
 **Table of contents**
 
-- EHMI Production Pilot Description
-    - [EHMI Core Description](#ehmi-core-description)
-        - [EHMI Core Security Description](#ehmi-core-security-description)
-    - [EHMI Delivery Status Description](#ehmi-delivery-status-description)
-        - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
-    - [EHMI Production Pilot specificaion schema](#ehmi-production-pilot-specification-schema)
-    - [Relevante Links](#relevante-links)
+- [EHMI Core Description](#ehmi-core-description)
+    - [EHMI Core Security Description](#ehmi-core-security-description)
+- [EHMI Delivery Status Description](#ehmi-delivery-status-description)
+    - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
+- [EHMI Production Pilot specificaion schema](#ehmi-production-pilot-specification-schema)
+- [Relevante Links](#relevante-links)
 
 ***
 
