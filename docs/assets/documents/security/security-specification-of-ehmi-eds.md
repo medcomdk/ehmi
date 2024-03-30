@@ -50,7 +50,7 @@ Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 
 2.  Samtykke/frabedelse og behandlingsrelation skal tjekkes op mod den nationale samtykkeservice og den nationale behandlingsrelationsservice
 3.  Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af borgeren via MinLog
 
-Den generelle og specifkke sikkerhed omkring dette er beskrevet her i: <br/> <a href="../security/media/Sikkerhedsarkitektur EHMI støtteservices v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01 (opens in new window)</a>
+Den generelle og specifkke sikkerhed omkring dette er beskrevet her i: <a href="../security/media/Sikkerhedsarkitektur EHMI støtteservices v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01 (opens in new window)</a>
 
 ***
 ***
