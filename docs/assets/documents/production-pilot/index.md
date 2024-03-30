@@ -1,4 +1,4 @@
-# EHMI Production Pilot Description
+# EHMI Production Pilot
 
 ***
 
@@ -9,6 +9,17 @@
     ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
     
 ***
+
+
+## EHMI Production Pilot specificaion schema
+
+| EHMI Specification | **Q1 2024** | **Q2 2024** |
+|---                 |---          |---          |
+|EHMI Core           | ehmiSMP Spec for AP <br/> ehmiSBDH Spec for MSH & AP <br/> ||
+|---                 |---          |---          |
+|EHMI Security       | EHMI Security for EHMI Core | |
+|---                 |---          |---          |
+|EHMI EDS            | EHMI Spec for EDS Client write operation <br/> - EUA <br/> - MSH <br/> - AP | EHMI Spec for EDS Server operations <br/> EHMI Spec for other EDS Client operations <br/> |
 
 
 **Table of contents**
