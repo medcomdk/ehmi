@@ -17,9 +17,11 @@
     - [EHMI Core Message Delivery and Document Sharing](#ehmi-core-message-delivery-and-document-sharing)
     - [EHMI Core Specifications](#ehmi-core-specifications)
 
-    
+<br/> 
+
 ***
-***
+
+<br/> 
 
 ## EHMI Core Description
 
