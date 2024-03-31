@@ -68,7 +68,7 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 - [EHMI Profile of SBDH (ehmiSBDH)](/ehmiSBDH/index.md)
 - [EHMI Profile of Service Metadata Publisher (ehmiSMP)](/ehmiSMP/index.md)
 
-<br/> EHMI Reliable Messaging follows [Governance for Reliable Messaging in general](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/020_Governance-for-Reliable-Messaging-in-general.html) as specified in MedCom's Governance for FHIR Messaging. A similar description for Reliable Messaging for [Reliable Messaging using VANSEnvelope](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/032_Reliable_Messaging-VANSEnvelope.html) will be produced for ehmiSDBH.
+<br/> EHMI Reliable Messaging follows <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/020_Governance-for-Reliable-Messaging-in-general.html" target="_blank">Governance for Reliable Messaging in general</a> as specified in MedCom's Governance for FHIR Messaging. A similar description for Reliable Messaging for <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/032_Reliable_Messaging-VANSEnvelope.html" target="_blank">Reliable Messaging using VANSEnvelope</a> will be produced for ehmiSDBH.
 
 <br/> Security in relation to EHMI Core is specified [here](../security/security-specification-of-ehmi-core.md)
 
