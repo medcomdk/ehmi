@@ -62,6 +62,8 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be send from the Recei
 
 ### EHMI Core specifications
 
+<br/> 
+
 EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 
 - [EHMI Profile of SBDH (ehmiSBDH)](/ehmiSBDH/index.md)
