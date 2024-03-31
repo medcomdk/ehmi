@@ -47,9 +47,13 @@ EHMI Core specifies
 
 ### EHMI Core Message Delivery and Document Sharing
 
+<br/> 
+
 The graphic shows and explains in plain text how the primary flow of a MedCom Message is from the Sender to the Receiver.
 
 In addition to the primary flow, ehmiEnvelopeReceipt will be send from the Receiver's MSH to Sender's MSH and FHIR Acknowledgements will be send from the Receiver's EUA to the Original Sender's EUA.
+
+<br/> 
 
 ![EHMI Core Message Delivery and Document Sharing](/ehmi/assets/images/1_EHMI_Meddelelsesforsendelse_og_dokumentdeling_1315x563.png)
 
@@ -64,7 +68,7 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 - [EHMI Profile of SBDH (ehmiSBDH)](/ehmiSBDH/index.md)
 - [EHMI Profile of Service Metadata Publisher (ehmiSMP)](/ehmiSMP/index.md)
 
-EHMI Reliable Messaging follows [Governance for Reliable Messaging in general](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/020_Governance-for-Reliable-Messaging-in-general.html) as specified in MedCom's Governance for FHIR Messaging. A similar description for Reliable Messaging for [Reliable Messaging using VANSEnvelope](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/032_Reliable_Messaging-VANSEnvelope.html) will be produced for ehmiSDBH.
+<br/> EHMI Reliable Messaging follows [Governance for Reliable Messaging in general](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/020_Governance-for-Reliable-Messaging-in-general.html) as specified in MedCom's Governance for FHIR Messaging. A similar description for Reliable Messaging for [Reliable Messaging using VANSEnvelope](https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/032_Reliable_Messaging-VANSEnvelope.html) will be produced for ehmiSDBH.
 
 <br/> Security in relation to EHMI Core is specified [here](../security/security-specification-of-ehmi-core.md)
 
