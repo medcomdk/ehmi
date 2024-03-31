@@ -11,7 +11,7 @@
 <br/> 
 
 
-Here the entire description and all the specifications of EHMI will be centered. Some may be described here, while others will be linked to from here. For instance will all HL7 FHIR Specifications be found in their respective Implementation Guides following the standard for publishing by HL7. Other may be shared with our partners in the Danish Health Data Authority and therfore have a format that suits them as well.
+This is the home of the entire description and all the specifications of EHMI. Some may be described here, while others will be linked to from here. For instance will all HL7 FHIR Specifications be found in their respective Implementation Guides following the standard for publishing by HL7. Other may be shared with our partners in the Danish Health Data Authority and therfore have a format that suits them as well.
 
 <br/> 
 
