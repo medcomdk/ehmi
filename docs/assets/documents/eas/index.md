@@ -7,8 +7,7 @@
 
     ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
     
-***
-***
+<br/> 
 
 EHMI anvender en komponent til at håndtere Sundhedsadressering.
 

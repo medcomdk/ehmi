@@ -8,8 +8,7 @@
     
     ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
     
-***
-***
+<br/> 
 
 
 **Table of contents**
@@ -79,6 +78,5 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 
 - [EHMI Core Security is specified here](../security/security-specification-of-ehmi-core.md)
 
-***
-***
+<br/> 
 
