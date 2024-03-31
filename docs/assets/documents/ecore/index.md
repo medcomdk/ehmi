@@ -11,9 +11,15 @@
 ***
 ***
 
+
 **Table of contents**
 - [EHMI Core Description](#ehmi-core-description)
-- [EHMI Core Message Delivery and Document Sharing](#ehmi-core-message-delivery-and-document-sharing)
+    - [EHMI Core Message Delivery and Document Sharing](#ehmi-core-message-delivery-and-document-sharing)
+    - [EHMI Core Description](#ehmi-core-specifications)
+
+    
+***
+***
 
 ## EHMI Core Description
 
@@ -29,9 +35,34 @@ EHMI Core is defined as
     - eDelivery Access Points (AP)
     - eDelivery SML and SMP
 
-## EHMI Core Message Delivery and Document Sharing
+EHMI Core specifies 
+- ehmiSBDH, the envelope that is used between the MSH's
+- how ehmiSBDH in addition to its primary purpose of carrying metadata for eDelivery Messaging can carry the metadata used for:
+    - Reliable Messaging embedded in ehmiSBDH BusinessScopes
+    - XDS Document Sharing through the FHIR DocumentReference profile for each messagetype and how it is embedded in an ehmiSBDH BusinessScope
+    - EHMI Delivery Status embedded in ehmiSBDH BusinessScopes
+
+***
+***
+
+### EHMI Core Message Delivery and Document Sharing
+
+
+![EHMI Core Message Delivery and Document Sharing](/ehmi/assets/images/1_EHMI_Meddelelsesforsendelse_og_dokumentdeling_1315x563.png)
+
+    
+***
+***
+
+### EHMI Core specifications
+
+EHMI Core specifies two
 
 - [EHMI Profile of SBDH (ehmiSBDH)](/ehmiSBDH/index.md)
 - [Service Metadata Publisher (SMP)](/SMP/index.md)
 
-![EHMI Core Message Delivery and Document Sharing](/ehmi/assets/images/1_EHMI_Meddelelsesforsendelse_og_dokumentdeling_1315x563.png)
+<br/> Security in relation to EHMI Core is specified [here](../security/security-specification-of-ehmi-core.md)
+
+***
+***
+
