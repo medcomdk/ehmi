@@ -42,8 +42,7 @@ EHMI Core specifies
     - XDS Document Sharing through the FHIR DocumentReference profile for each messagetype and how it is embedded in an ehmiSBDH BusinessScope
     - EHMI Delivery Status embedded in ehmiSBDH BusinessScopes
 
-***
-***
+<br/> 
 
 ### EHMI Core Message Delivery and Document Sharing
 
@@ -57,9 +56,7 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be send from the Recei
 
 ![EHMI Core Message Delivery and Document Sharing](/ehmi/assets/images/1_EHMI_Meddelelsesforsendelse_og_dokumentdeling_1315x563.png)
 
-    
-***
-***
+<br/> 
 
 ### EHMI Core specifications
 
@@ -68,9 +65,13 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 - [EHMI Profile of SBDH (ehmiSBDH)](/ehmiSBDH/index.md)
 - [EHMI Profile of Service Metadata Publisher (ehmiSMP)](/ehmiSMP/index.md)
 
-<br/> EHMI Reliable Messaging follows <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/020_Governance-for-Reliable-Messaging-in-general.html" target="_blank">Governance for Reliable Messaging in general</a> as specified in MedCom's Governance for FHIR Messaging. A similar description for Reliable Messaging for <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/032_Reliable_Messaging-VANSEnvelope.html" target="_blank">Reliable Messaging using VANSEnvelope</a> will be produced for ehmiSDBH.
+<br/> 
 
-<br/> Security in relation to EHMI Core is specified [here](../security/security-specification-of-ehmi-core.md)
+- EHMI Reliable Messaging follows <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/020_Governance-for-Reliable-Messaging-in-general.html" target="_blank">Governance for Reliable Messaging in general</a> as specified in MedCom's Governance for FHIR Messaging. A similar description for Reliable Messaging for <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/032_Reliable_Messaging-VANSEnvelope.html" target="_blank">Reliable Messaging using VANSEnvelope</a> will be produced for ehmiSDBH.
+
+<br/> 
+
+- Security in relation to EHMI Core is specified [here](../security/security-specification-of-ehmi-core.md)
 
 ***
 ***
