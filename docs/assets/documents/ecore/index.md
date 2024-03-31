@@ -35,6 +35,8 @@ EHMI Core is defined as
     - eDelivery Access Points (AP)
     - eDelivery SML and SMP
 
+<br/> 
+
 EHMI Core specifies 
 - ehmiSBDH, the envelope that is used between the MSHs
 - how ehmiSBDH in addition to its primary purpose of carrying metadata for eDelivery Messaging can carry the metadata used for:
@@ -71,7 +73,7 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 
 <br/> 
 
-- Security in relation to EHMI Core is specified [here](../security/security-specification-of-ehmi-core.md)
+- [EHMI Core Security is specified here](../security/security-specification-of-ehmi-core.md)
 
 ***
 ***
