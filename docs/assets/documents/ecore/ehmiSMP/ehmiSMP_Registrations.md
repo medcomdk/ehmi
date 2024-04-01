@@ -51,11 +51,11 @@ Scopene DOCUMENTID og PROCESSID er i PEPPOL fast definerede scopes, som sikrer e
 
 Værdien i DocumentIdentifier  er identisk med den tilsvarende ehmiSBDH-registrering for DOCUMENTID:
 
-    | SMP ServiceInformation/DocumentIdentifier |
-    |---|
-    | urn:dk:healthcare:prod:medcom:messaging:fhir:structuredefinition:homecareobservation\#urn:dk:medcom:fhir:homecareobservation:3.0 |
-    | urn:dk:healthcare:prod:medcom:messaging:fhir:structuredefinition:acknowledgement\#urn:dk:medcom:fhir:acknowledgement:2.0 |
-    | urn:dk:healthcare:prod:messaging:oasis:ebxml:schema:xsd:sbdhreceiptacknowledgement\#urn:oasis:ebxml:sbdhreceiptacknowledgement:ebbp-signals-2.0 |
+    SMP ServiceInformation/DocumentIdentifier
+    
+    urn:dk:healthcare:prod:medcom:messaging:fhir:structuredefinition:homecareobservation\#urn:dk:medcom:fhir:homecareobservation:3.0
+    urn:dk:healthcare:prod:medcom:messaging:fhir:structuredefinition:acknowledgement\#urn:dk:medcom:fhir:acknowledgement:2.0
+    urn:dk:healthcare:prod:messaging:oasis:ebxml:schema:xsd:sbdhreceiptacknowledgement\#urn:oasis:ebxml:sbdhreceiptacknowledgement:ebbp-signals-2.0
 
 
 
