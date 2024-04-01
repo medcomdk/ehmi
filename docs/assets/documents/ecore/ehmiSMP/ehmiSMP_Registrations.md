@@ -47,9 +47,17 @@ i eDelivery kommunikationen udgør SBDH’ens Scope struktur med de to typer, DO
 
 Scopene DOCUMENTID og PROCESSID er i PEPPOL fast definerede scopes, som sikrer en unik relation til SMP. DOCUMENTID og PROCESSID anvendes i EHMI med samme præcision som i PEPPOL, så der sikres en vis ensartethed i, hvordan man udtrykker værdierne på tværs af PEPPOL og EHMI. DOCUMENTID og PROCESSID bruges af AP’erne sammen med modtagers ReceiverId til at slå modtagers eDelivery adresse op i SMP med et unikt respons som resultat.
 
-### SMP:DOCUMENTID
+### SMP:DocumentIdentifier
 
-Værdien i InstanceIdentifier er identisk med den tilsvarende SMP-registrering
+Værdien i DocumentIdentifier  er identisk med den tilsvarende ehmiSBDH-registrering for DOCUMENTID:
+
+    | SMP ServiceInformation/DocumentIdentifier |
+    |---|
+    | urn:dk:healthcare:prod:medcom:messaging:fhir:structuredefinition:homecareobservation\#urn:dk:medcom:fhir:homecareobservation:3.0 |
+    | urn:dk:healthcare:prod:medcom:messaging:fhir:structuredefinition:acknowledgement\#urn:dk:medcom:fhir:acknowledgement:2.0 |
+    | urn:dk:healthcare:prod:messaging:oasis:ebxml:schema:xsd:sbdhreceiptacknowledgement\#urn:oasis:ebxml:sbdhreceiptacknowledgement:ebbp-signals-2.0 |
+
+
 
 Værdierne hentes fra MedComs standardkatalog og er her repræsenteret ved de værdier, som de har i MedCom meddelelserne. Se bogmærke: [DKEDEL_DT_CodeList]
 
