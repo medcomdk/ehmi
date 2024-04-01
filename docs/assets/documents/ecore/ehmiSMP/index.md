@@ -4,4 +4,4 @@ The eDelivery SMP profile is an open specification for publishing service metada
 
 <a href="https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/SMP" target="_blank">SMP hos Digital Europe (EU)</a>
 
-[link](ehmiSMP_%20Registrations.md)
+[link](ehmiSMP_Registrations.md)
