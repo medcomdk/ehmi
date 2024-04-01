@@ -1,4 +1,4 @@
-# EDS Receiver Userstories
+# EDS Patient Userstories
 
 ***
 
