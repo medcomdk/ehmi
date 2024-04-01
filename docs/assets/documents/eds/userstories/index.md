@@ -16,6 +16,7 @@
 - [EHMI Delivery Status Receiver User stories](#ehmi-delivery-status-receiver-user-stories)
 - [Sender US](sender.md)
 - [Receiver US](receiver.md)
+- [Patient US](patient.md)
 
 <br/> 
 
