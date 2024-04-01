@@ -1,4 +1,4 @@
-# ehmiSMP (EHMI Service Metadata Provider) – konfiguration
+# EHMI Service Metadata Provider – ehmiSMP konfiguration
 
 ***
 
