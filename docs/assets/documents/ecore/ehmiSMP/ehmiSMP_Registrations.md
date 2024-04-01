@@ -49,7 +49,7 @@ Scopene DOCUMENTID og PROCESSID er i PEPPOL fast definerede scopes, som sikrer e
 
 ### SMP:DocumentIdentifier
 
-Værdien i DocumentIdentifier  er identisk med den tilsvarende ehmiSBDH-registrering for DOCUMENTID:
+Værdien i DocumentIdentifier  er identisk med den tilsvarende ehmiSBDH-registrering for BusinessScope/Scope[DOCUMENTID]:
 
     SMP ServiceInformation/DocumentIdentifier
     
