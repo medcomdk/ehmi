@@ -1,14 +1,27 @@
-![Et billede, der indeholder cirkel, Grafik, Font/skrifttype, logo Automatisk genereret beskrivelse](media/0d48402dc6634bf263cac15fbc226859.png)
+# EHMI SMP (Service Metadata Provider) – konfiguration
 
-EHMI SMP (Service Metadata Provider) – konfiguration
+***
+
+    **Disclaimer** 
+    
+    **The menu items above marked with a star are yet not specified**
+    
+    ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
+    
+<br/> 
+
+# EHMI Delivery Status User stories
+
+- [EHMI Delivery Status Sender User stories](#ehmi-delivery-status-sender-user-stories)
+- [EHMI Delivery Status Receiver User stories](#ehmi-delivery-status-receiver-user-stories)
+    
+<br/> 
 
 Version af 01-04-2024 15:27
 
 Indhold
 
 [2 Version history](#version-history)
-
-[3 Referencer](#referencer)
 
 [4 SBDH BusinessScopes](#_Toc161170580)
 
