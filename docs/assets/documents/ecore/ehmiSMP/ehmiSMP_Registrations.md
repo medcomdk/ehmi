@@ -41,11 +41,11 @@ The eDelivery SMP profile is an open specification for publishing service metada
 
 ## BusinessScope for generel eDelivery meddelelseskommunikation
 
-### Sammenhæng til SMP
+### Sammenhæng til SBDH
 
-i eDelivery kommunikationen udgør SBDH’ens Scope struktur med de to typer, DOCUMENTID og PROCESSID, foruden de allerede gennemgåede elementer i Sender og Receiver, den direkte sammenhæng til SMP’ens DOCUMENTID og PROCESSID. I det følgende beskrives netop disse 2 Type elementer i SBDH’ens overordnede BusinessScope struktur.
+i eDelivery kommunikationen udgør SBDH’ens Scope struktur med de to typer, DOCUMENTID og PROCESSID, foruden værdierne i elementerne Sender og Receiver, den direkte sammenhæng til SMP’ens DocumentIdentifier og ProcessIdentifier. I det følgende beskrives disse 2 Type elementer i SMP.
 
-Scopene DOCUMENTID og PROCESSID er i PEPPOL fast definerede scopes, som sikrer en unik relation til SMP. DOCUMENTID og PROCESSID anvendes i EHMI med samme præcision som i PEPPOL, så der sikres en vis ensartethed i, hvordan man udtrykker værdierne på tværs af PEPPOL og EHMI. DOCUMENTID og PROCESSID bruges af AP’erne sammen med modtagers ReceiverId til at slå modtagers eDelivery adresse op i SMP med et unikt respons som resultat.
+Scopene DOCUMENTID og PROCESSID er i PEPPOL fast definerede scopes, som sikrer en unik relation til SBDH. DOCUMENTID og PROCESSID anvendes i EHMI med samme præcision som i PEPPOL, så der sikres en vis ensartethed i, hvordan man udtrykker værdierne på tværs af PEPPOL og EHMI. DOCUMENTID og PROCESSID bruges af AP’erne sammen med modtagers ReceiverId til at slå modtagers eDelivery adresse op i SMP med et unikt respons som resultat.
 
 ### SMP:DocumentIdentifier
 
@@ -58,110 +58,11 @@ Værdien i DocumentIdentifier  er identisk med den tilsvarende ehmiSBDH-registre
     urn:dk:healthcare:prod:messaging:oasis:ebxml:schema:xsd:sbdhreceiptacknowledgement\#urn:oasis:ebxml:sbdhreceiptacknowledgement:ebbp-signals-2.0
 
 
-
 Værdierne hentes fra MedComs standardkatalog og er her repræsenteret ved de værdier, som de har i MedCom meddelelserne. Se bogmærke: [DKEDEL_DT_CodeList]
 
 Ift. det oprindeligt intentionerede fjernes dobbelt ”\#\#” og ”::” fra konstruktionen af InstanceIdentifier, da den aktuelle konfiguration af SMP fra CEF ikke kan håndtere disse så værdierne kan fremsøges igen. Dermed må SBDH’s DOCUMENTID ændres tilsvarende.
 
-#### DOCUMENTID for MedCom FHIR Meddelelser
-
-\<Scope\>
-
-\<Type\>DOCUMENTID\</Type\>
-
-\<InstanceIdentifier\>
-
-urn:dk:healthcare:prod:medcom:messaging:fhir:structuredefinition:[Bundle.MessageHeader.eventCoding.code.value]\#urn:dk:medcom:fhir:[Bundle.MessageHeader.definition.[value of \|]]
-
-\</InstanceIdentifier\>
-
-\<Identifier\>dk-medcom-messaging\</Identifier\>
-
-\</Scope\>
-
-##### DOCUMENTID for MedCom FHIR Meddelelseseksempel
-
-\<Scope\>
-
-\<Type\>DOCUMENTID\</Type\>
-
-\<InstanceIdentifier\>
-
-urn:dk:medcom:prod:messaging:fhir:structuredefinition:homecareobservation-message\#urn:dk:medcom:fhir:homecareobservation:3.0
-
-\</InstanceIdentifier\>
-
-\<Identifier\>dk-medcom-messaging\</Identifier\>
-
-\</Scope\>
-
-#### DOCUMENTID for MedCom kvitteringer
-
-##### DOCUMENTID for MedCom FHIR Kvitteringer:
-
-\<Scope\>
-
-\<Type\>DOCUMENTID\</Type\>
-
-\<InstanceIdentifier\>
-
-urn:dk:healthcare:prod:messaging:medcom:messaging:fhir:structuredefinition:[Bundle/MessageHeader/eventCoding/code.value]\#urn:dk:medcom:fhir:[https://medcomfhir.dk/ig/homecareobservation/2.1.0]
-
-\</InstanceIdentifier\>
-
-\<Identifier\>urn:urn:dk:healthcare:prod:messaging:medcom:messaging \</Identifier\>
-
-\</Scope\>
-
-##### DOCUMENTID for SBDH Kvitteringer:
-
-\<Scope\>
-
-\<Type\>DOCUMENTID\</Type\>
-
-\<InstanceIdentifier\>
-
-urn:dk:healthcare:prod:oasis:messaging:ebxml:schema:xsd:[eMessage/[LetterType]]\#urn:dk:healthcare:prod:messaging:medcom:messaging:oioxml:schema:xsd:[eMessage/[LetterType]]/[Letter/**StatisticalCode**]:[eMessage/[LetterType]]/[Letter/VersionCode]
-
-\</InstanceIdentifier\>
-
-\<Identifier\>urn:dk:healthcare:prod:messaging:medcom:messaging\</Identifier\>
-
-\</Scope\>
-
-#### DOCUMENTID Kvitterings Eksempler
-
-##### DOCUMENTID for MedCom FHIR Kvitteringseksempel:
-
-\<Scope\>
-
-\<Type\>DOCUMENTID\</Type\>
-
-\<InstanceIdentifier\>
-
-urn:dk:healthcare:prod:messaging:medcom:messaging:oioxml:schema:xsd:PositiveReceipt\#urn:dk:healthcare:prod:messaging:medcom:messaging:oioxml:schema:xsd:PositiveReceipt:XCTL03:XC0330Q
-
-\</InstanceIdentifier\>
-
-\<Identifier\>urn:dk:healthcare:prod:messaging:medcom:messaging:oioxml\</Identifier\>
-
-\</Scope\>
-
-##### DOCUMENTID SBDH Kvitteringseksempel:
-
-\<Scope\>
-
-\<Type\>DOCUMENTID\</Type\>
-
-\<InstanceIdentifier\>
-
-urn:urn:dk:healthcare:prod:messaging:medcom:messaging:ebxml:schema:xsd:SBDHReceiptAcknowledgement
-
-\</InstanceIdentifier\>
-
-\<Identifier\>urn:urn:dk:healthcare:prod:messaging:medcom:messaging:ebxml\</Identifier\>
-
-\</Scope\>
+<br/>
 
 ### SMP:PROCESSID
 
@@ -169,24 +70,14 @@ Værdien i InstanceIdentifier er identisk med den tilsvarende ProcessId SMP-regi
 
 Værdien hentes fra nedenstående tabel:
 
+    ProcessList/Process/ProcessIdentifier
+
+    sdn-emergence
+
+
 **dk-messaging Process Identifier values**
 
 | **Process**   | **Process Identifier value (InstanceIdentifier)** | **Identifier type** |
 |---------------|---------------------------------------------------|---------------------|
 | sdn-emergence | sdn-emergence                                     | dk-messaging-procid |
 
-#### PROCESSID Eksempel: Brug i 4-corner model
-
-I 4-corner modellen sendes emergence-registreringen med til SMP, således at afsenders AP kan slå finalreceipient op korrekt i SMP.
-
-PROCESSID for SDN Eksempel
-
-\<Scope\>
-
-\<Type\>PROCESSID\</Type\>
-
-\<InstanceIdentifier\>sdn-emergence\</InstanceIdentifier\>
-
-\<Identifier\>dk-messaging-procid\</Identifier\>
-
-\</Scope\>
