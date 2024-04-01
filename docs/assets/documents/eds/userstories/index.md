@@ -31,6 +31,8 @@ EDS Clients can be either an EUA, a MSH or an AP.
 
 <br/> 
 
+**Sender** in the role of EDS Client
+
 **o	Afsender.1**
 - i.	Som en Afsender 
 - ii.	Ønsker jeg at kunne følge min forsendelses status ift. hvor den er i flowet 
