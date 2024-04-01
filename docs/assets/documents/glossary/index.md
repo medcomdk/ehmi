@@ -18,10 +18,10 @@
 | ehmiAck  | EHMI Envelope Receipt | [TBD] | EHMI |
 | ehmiSBDH | The EHMI Profile of Standard Business Document Header | [TBD] | EHMI |
 | EUA      | End User Application | [TBD] | EHMI |
-| GS1      | [TBD] | The organisation responsible for GLN numbers and the original SBDH specification | GS1 |
+| GS1      | Originally "EAN International" now just GS1 | The organisation responsible for GLN numbers and the original SBDH specification. [Website](https://www.gs1.org/) | GS1 |
 | IHE      | Integrating the Healthcare Enterprise | International organisation som arbejder for at skabe interoperability i sundhedssystemer | EHMI |
 | MSH      | Message Service Handler | The functionality who is responsible for wrapping messages into the ehmiSBDH. Can be a module in an EUA or AP, or it can be a stand-alone application | EHMI |
-| OASIS    | [TBD] | The Standardisation Organisation responsible for the specifications of AS4, SML, SMP, ebbs | EHMI |
+| OASIS    | [TBD] | The Standardisation Organisation responsible for the specifications of AS4, SML, SMP, ebXML [Website](https://www.oasis-open.org/) | EHMI |
 | PEPPOL   | [TBD] | [TBD] | PEPPOL |
 | SBD      | Standard Business Document | The wrapper around the SBDH and the Binary content of ehmiSBDH | PEPPOL |
 | SBDH     | Standard Business Document Header | [TBD] | PEPPOL |
