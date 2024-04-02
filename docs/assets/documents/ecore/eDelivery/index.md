@@ -2,8 +2,6 @@
 
 **Table of contents**
 
-- [Service Metadata Publisher (SMP)](/SMP/index.md)
-
 ## EHMI Meddelelsesforsendelse og dokumentdeling
 
 <p/>
