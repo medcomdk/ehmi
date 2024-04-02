@@ -38,7 +38,7 @@ Indhold
 
 [4.2.1 SBDH for en MedCom meddelelse og en MedCom kvittering](#_Toc162258789)
 
-[4.2.2 SBDH for en EHMI EnvelopeReceipt](#_Toc162258790)
+[4.2.2 SBDH for en ehmiEnvelopeReceipt](#_Toc162258790)
 
 [4.3 SBDH – Fast definerede generelle elementer](#_Toc162258791)
 
@@ -146,7 +146,7 @@ Indholdet i SBDH er for en stor dels vedkommende bestemt af hvorledes
 -   de samme informationer registreres i EER
 -   de samme informationer registreres i SMP
 -   sammenhængen er til DokumentDelingServicen DDS
--   sammenhængen er til EHMI EnvelopeReceipt
+-   sammenhængen er til ehmiEnvelopeReceipt
 -   de samme informationer registreres i EDS
 
 SBDH har en struktur, der overordnet er delt ind i følgende elementer:
@@ -168,9 +168,9 @@ I en SBDH for en MedCom meddelelse og en MedCom kvittering kan følgende metadat
 -   XDS Metadata for Dokumentdeling
 -   Metadata for Reliable messaging - BusinessService Request
 
-### SBDH for en EHMI EnvelopeReceipt
+### SBDH for en ehmiEnvelopeReceipt
 
-I en SBDH for en EHMI EnvelopeReceipt er der følgende metadata:
+I en SBDH for en ehmiEnvelopeReceipt er der følgende metadata:
 
 -   Generelle SBDH metadata
 -   Metadata for eDelivery generel meddelelseskommunikation
@@ -186,7 +186,7 @@ BusinessScope har dog fået sit eget kapitel, da det afviger markant fra de øvr
 I det følgende præsenteres de generelle SBDH elementer for de foreløbigt 2 meddelelsestyper, som EHMI opererer med:
 
 -   FHIR
-    -   EHMI EnvelopeReceipt
+    -   ehmiEnvelopeReceipt
 
 Hvor det er relevant, vil de generelle elementer være opdelt i underafsnit, der beskriver stien til værdien for det pågældende element i de respektive meddelelsestyper.
 
@@ -325,7 +325,7 @@ Meddelelseseksempel:
 
 \</DocumentInformation\>
 
-##### Hvis MedCom meddelelsen er af typen EHMI EnvelopeReceipt
+##### Hvis MedCom meddelelsen er af typen ehmiEnvelopeReceipt
 
 Altid
 
@@ -391,7 +391,7 @@ Hvis MedCom meddelelsen er af typen FHIR, da altid på følgende form:
 
 \</DocumentInformation\>
 
-##### Hvis den indeholdte meddelelse er af typen EHMI EnvelopeReceipt
+##### Hvis den indeholdte meddelelse er af typen ehmiEnvelopeReceipt
 
 Altid
 
@@ -409,7 +409,7 @@ Altid
 
 \</DocumentInformation\>
 
-**EHMI EnvelopeReceipt eksempel:**
+**ehmiEnvelopeReceipt eksempel:**
 
 \<DocumentInformation\>
 
@@ -423,7 +423,7 @@ Altid
 
 #### InstanceIdentifier
 
-InstanceIdentifier vil blive genereret af den afsendende MSH og er uanset om det er en meddelelse eller en EHMI EnvelopeReceipt genereret.
+InstanceIdentifier vil blive genereret af den afsendende MSH og er uanset om det er en meddelelse eller en ehmiEnvelopeReceipt genereret.
 
 \<InstanceIdentifier\>[generated UUID]\</InstanceIdentifier\>
 
@@ -481,7 +481,7 @@ Hvis MedCom meddelelsen er en FHIR, da altid på følgende form:
 
 \</DocumentInformation\>
 
-##### Hvis meddelelsen er af typen EHMI EnvelopeReceipt:
+##### Hvis meddelelsen er af typen ehmiEnvelopeReceipt:
 
 \<DocumentInformation\>
 
@@ -657,7 +657,7 @@ urn:dk:medcom:prod:messaging:fhir:structuredefinition:homecareobservation\# urn:
 
 \</Scope\>
 
-#### DOCUMENTID for EHMI EnvelopeReceipt
+#### DOCUMENTID for ehmiEnvelopeReceipt
 
 \<Scope\>
 
@@ -673,7 +673,7 @@ urn:dk:healthcare:prod:messaging:oasis:ebxml:schema:xsd:[bpps-signaltype]
 
 \</Scope\>
 
-**DOCUMENTID EHMI EnvelopeReceipt eksempel:**
+**DOCUMENTID ehmiEnvelopeReceipt eksempel:**
 
 \<Scope\>
 
@@ -866,7 +866,7 @@ MESSAGEIDENTIFIER eksempel:
 
 \</Scope\>
 
-##### Hvis MedCom meddelelsen er af typen EHMI EnvelopeReceipt
+##### Hvis MedCom meddelelsen er af typen ehmiEnvelopeReceipt
 
 \<Scope\>
 
@@ -1148,7 +1148,7 @@ Altid FHIR DocumentReference for den pågældende meddelelsestype med tilhørend
 
 Reliable messaging udløses af et request for hvilken grad af reliable messaging, der ønskes fra afsender, hvilket gøres vha. SBDHs BusinessService i BusinessScope elementet.
 
-Når afsender har lavet et request for Reliable messaging og dermed brugen af SBDH-Acknowledgements håndteres disse vha. ebXML Business Process Signals (ebBP Signals 2.0.4).
+Når afsender har lavet et request for Reliable messaging og dermed brugen af ehmiEnvelopeReceipts håndteres disse vha. ebXML Business Process Signals (ebBP Signals 2.0.4).
 
 Udfaldsrum for disse ebXML Business Process Signals er:
 
