@@ -1,4 +1,4 @@
-# Specificering af sikkerhed ifm centrale og decentrale EHMI-services
+# Specificering af sikkerhed ifm centrale EHMI-services
 
 ***
 
