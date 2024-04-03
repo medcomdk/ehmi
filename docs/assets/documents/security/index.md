@@ -36,5 +36,4 @@ EHMI Delivery Status Security is handled as described in chapter 1-4 in:
 
 In the document EUAs, MSHs and APs are named "stations" in the message flow.
 
-
 <br/> 
