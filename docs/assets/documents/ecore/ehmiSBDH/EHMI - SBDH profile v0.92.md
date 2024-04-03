@@ -145,7 +145,7 @@ Indholdet i SBDH er for en stor dels vedkommende bestemt af hvorledes
 
 -   de samme informationer registreres i EER
 -   de samme informationer registreres i SMP
--   sammenhængen er til DokumentDelingServicen DDS
+-   sammenhængen er til DokumentDelingsServicen DDS
 -   sammenhængen er til ehmiEnvelopeReceipt
 -   de samme informationer registreres i EDS
 
