@@ -127,8 +127,11 @@ EHMI Delivery Status Security is defined as
 | EHMI Core                 | DocumentReference    | *MedComDocumentSharing IG?* | *New*          | A new basic profile, that will be inherited in *all?* concrete Message Profiles. Is used to transmit XDS Metadata to XDS |
 
 
-### Relevante links:
+<br/> 
 
+## Relevante links:
+
+<br/> 
 
 <bold><i>OBS! Alle links åbner i et nyt vindue.</i></bold>
 
