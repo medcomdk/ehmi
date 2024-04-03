@@ -117,7 +117,7 @@ EHMI Delivery Status Security is defined as
 
 <br/> 
 
-## Changes that EHMI causes on MedCom FHIR IGs and FHIR Profiles
+## Changes that EHMI causes on MedCom FHIR IGs and FHIR Profiles (by 2024.04.01)
 
 | **EHMI Domain**           | **FHIR Profile(s)**  | **FHIR IG(s)**              | **Change/New** |**Comments** |
 |---                        |---                   |---                          |---             |---          |
