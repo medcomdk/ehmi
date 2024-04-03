@@ -1,5 +1,15 @@
 # EHMI Standard Business Document Header (ehmiSBDH)
 
+***
+
+    **Disclaimer** 
+    
+    **The menu items above marked with a star are yet not specified**
+
+    ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
+   
+<br/> 
+
 The EHMI Standard Business Document Header (ehmiSBDH) is a customized version of the PEPPOL SBDDH.
 
 It is developed to 
