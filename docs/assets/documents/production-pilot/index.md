@@ -76,7 +76,7 @@ EHMI Core Security is defined as
 - the needed security implementation to serve message delivering as described in [EHMI Core Description](#ehmi-core-description)
     - this part of EHMI Core Security is desribed [here](../security/security-specification-of-ehmi-core.md)
 - the already established security implementation regarding XDS Document Sharing on NSP
-    - this part of EHMI Core Security is desribed [here (Link to NSP)]()
+    - this part of EHMI Core Security is desribed <a href="https://www.nspop.dk/display/Web3/E.+Sikkerhed+og+Logning" target="_blank">here (Link to NSP opens in a new window)</a>
     
 <br/> 
 
