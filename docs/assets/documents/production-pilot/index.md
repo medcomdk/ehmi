@@ -38,6 +38,7 @@ Projektet har en række leveringer af specifikationer, som kan ses nednefor i [E
 - [EHMI Delivery Status Description](#ehmi-delivery-status-description)
     - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
 - [EHMI Production Pilot specification schema](#ehmi-production-pilot-specification-schema)
+- [Changes that EHMI causes on MedCom FHIR IGs and FHIR Profiles (by 2024.04.01)](#changes-that-ehmi-causes-on-medcom-fhir-igs-and-fhir-profiles-by-20240401)
 - [Relevante Links](#relevante-links)
 
 <br/> 
