@@ -121,10 +121,10 @@ EHMI Delivery Status Security is defined as
 
 | **EHMI Domain**           | **FHIR Profile(s)**  | **FHIR IG(s)**           | **Change/New** |**Comments** |
 |---                        |---                   |---                       |---             |---          |
-| EHMI Core                 | MessageDefinition    | MedComMessaging IG       | *New*          | A new basic profile, that will be inhgerited in all concrete Message Profiles. Is used to define Version among other things |
+| EHMI Core                 | MessageDefinition    | MedComMessaging IG       | *New*          | A new basic profile, that will be inherited in all concrete Message Profiles. Is used to define Version among other things |
 | EHMI Core                 | MessageDefinition    | All Concrete Message IGs | *New*          | Is used to define Version among other things |
 | EHMI Core                 | All Concrete Message Profiles | All Concrete Message IGs | *Change* | Message Profiles are going to reference MessageDefinition |
-| EHMI Core                 | MessageDefinition    | MedComMessaging IG       | *New*          | Is used to define Version among other things |
+| EHMI Core                 | DocumentReference    | *MedComDocumentSharing IG?* | *New*          | A new basic profile, that will be inherited in *all?* concrete Message Profiles. Is used to transmit XDS Metadata to XDS |
 
 
 ### Relevante links:
