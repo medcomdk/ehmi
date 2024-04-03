@@ -31,7 +31,7 @@ This is the home of the entire description and all the specifications of EHMI. S
 - EHMI Specifications for March 31 2024
   - EHMI Core
     - [ehmiSBDH](/assets/documents/ecore/ehmiSBDH/index.md)
-    - [ehmiSMP](/assets/documents/ecore/SMP/index.md)
+    - [ehmiSMP](/assets/documents/ecore/ehmiSMP/index.md)
   - EHMI Delivery Status (EDS)
     - [EHMI Delivery Status (EDS)](/assets/documents/eds/index.md)
   - EHMI Security
