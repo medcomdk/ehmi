@@ -21,7 +21,6 @@ EHMI Core Security is defined as
 
 <br/> 
 
-
 ## EHMI Delivery Status Security Description
 
 EHMI Delivery Status Security is defined as
