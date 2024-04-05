@@ -85,7 +85,7 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 <br/>
 
 <table>
-<tr><b><td>Reference</td><td>Name</td><td>Filename</td></b></tr>
+<tr><td><b>Reference</b></td><td><b>Name</b></td><td><b>Filename</b></td></tr>
 <tr><td>
 Policy_identifiers
 </td><td>
@@ -128,13 +128,7 @@ DK-IHE_Metadata-Common_Code_systems-Value_sets
 </td><td>
 <a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx</a>
 </td></tr>
-<tr><td>
-DDS_Metadata- ValueSets
-</td><td>
-DK-IHE_Metadata-Common_Code_systems-Value_sets
-</td><td>
-<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx</a>
-</td></tr>
+
 </table>
 
 <br/>
