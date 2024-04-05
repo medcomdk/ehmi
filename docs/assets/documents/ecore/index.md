@@ -86,17 +86,34 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 
 <table>
 <tr><bold><td>Reference</td><td>Name</td><td>Filename</td></bold></tr>
-<tr>
-<td><bold>Policy_identifiers<bold></td>
-<td>PEPPOL Transport Infrastructure  ICT - Models  Policy for use of Identifiers, Version: 4.2.0</td><td><a href="https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf" target="_blank">PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf</a></td>
-</tr>
 <tr><td>
-<bold>DKEDEL_PIV_CodeList<bold>
+Policy_identifiers
+</td><td>
+PEPPOL Transport Infrastructure  ICT - Models  Policy for use of Identifiers, Version: 4.2.0
+</td><td>
+<a href="https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf" target="_blank">PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf</a>
+</td></tr>
+<tr><td>
+DKEDEL_PIV_CodeList
 </td><td>
 DK_EDEL Code Lists - Participant identifier schemes v7.2
- </td><td>
- <a href="../../documents/ecore/eDelivery/DK_EDEL%20Code%20Lists%20-%20Participant%20identifier%20schemes%20v7.2.xlsx" target="_blank">DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx</a></td>
-</tr>
+</td><td>
+<a href="../../documents/ecore/eDelivery/DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx" target="_blank">DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx</a>
+</td></tr>
+<tr><td>
+DKEDEL_TP_CodeList
+</td><td>
+Dansk eDelivery Code Lists - Transport profiles v7.2
+</td><td>
+<a href="../../documents/ecore/eDelivery/DK_EDEL Code Lists - Transport profiles v7.2.xlsx" target="_blank">Dansk eDelivery Code Lists - Transport profiles v7.2</a>
+</td></tr>
+<tr><td>
+PEPPOL_SBDH12
+</td><td>
+PEPPOL Business Message Envelope (SBDH) 1.2
+</td><td>
+<a href="https://github.com/OpenPEPPOL/documentation/blob/master/TransportInfrastructure/PEPPOL-EDN-Business-Message-Envelope-1.2-2019-02-01.pdf" target="_blank">PEPPOL-EDN-Business-Message-Envelope-1.2-2019-02-01.pdf</a>
+</td></tr>
 </table>
 
 <br/>
@@ -108,7 +125,7 @@ DK_EDEL Code Lists - Participant identifier schemes v7.2
 | [DKEDEL_PIV_CodeList]     | DK_EDEL Code Lists - Participant identifier schemes v7.2                                   | DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx | [DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx](../../documents/ecore/eDelivery/DK_EDEL%20Code%20Lists%20-%20Participant%20identifier%20schemes%20v7.2.xlsx) |
 
 | [DKEDEL_TP_CodeList]      | Dansk eDelivery Code Lists - Transport profiles v7.2                                       | Dansk eDelivery Code Lists - Transport profiles v7.2.xlsx     | <https://medcomtest.sharepoint.com/:x:/s/MedComModerniseringsPilot2020/EdlEjIlLDadJuy7RjD926bkB0X5X-0m1JuQG_VF8Je2f-g?e=4b7jF8>                                                                                                                                 |
-| [DKEDEL_DT_CodeList]      | Dansk eDelivery Code Lists - Document types v7.2. (MedCom meddelelser)                     | Dansk eDelivery Code Lists - Document types v7.2.xlsx         | <https://medcomtest.sharepoint.com/:x:/r/sites/MedComModerniseringsPilot2020/Delte%20dokumenter/eDelivery/Dansk%20eDelivery/DK_EDEL%20Code%20Lists%20-%20Document%20types%20v7.2%20-%2020211122.xlsx?d=wf68cc9cce4594eae8b8c8d26c828280c&csf=1&web=1&e=H5LYNJ>  |
+
 | [PEPPOL_SBDH12]           | PEPPOL Business Message Envelope (SBDH) 1.2                                                | PEPPOL-EDN-Business-Message-Envelope-1.2-2019-02-01.pdf       | <https://medcomtest.sharepoint.com/:b:/s/MedComModerniseringsPilot2020/EeWbN0HnqcZMhel_56f8tCcB7G-boIwnP5PeoMAsDU5lCQ?e=gXR3cY>                                                                                                                                 |
 | [DDS Metadata]            | DDS Metadata-v096                                                                          | DDS Metadata-v096.docx                                        | <http://svn.medcom.dk/svn/drafts/Standarder/IHE/DK_profil_metadata/Metadata-v096.docx>                                                                                                                                                                          |
 | [DDS_Metadata- ValueSets] | DK-IHE_Metadata-Common_Code_systems-Value_sets                                             | DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx           | <http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx>                                                                                                                                                        |
