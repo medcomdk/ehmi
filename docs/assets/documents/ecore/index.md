@@ -80,21 +80,26 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 
 <br/> 
 
-# Referencer
+## Referencer
 
 <br/>
 
 <table>
 <tr><bold><td>Reference</td><td>Name</td><td>Filename</td></bold></tr>
+<tr>
+<td><bold>Policy_identifiers<bold></td>
+<td>PEPPOL Transport Infrastructure  ICT - Models  Policy for use of Identifiers, Version: 4.2.0</td><td><a href="https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf" target="_blank">PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf</a></td>
+</tr>
 <tr><td>
-<bold>Policy_identifiers<bold>
+<bold>DKEDEL_PIV_CodeList<bold>
 </td><td>
-PEPPOL Transport Infrastructure  ICT - Models  Policy for use of Identifiers, Version: 4.2.0
-</td><td>
-a href="https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf target="_blank">PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf</a>
-</td></tr>
+DK_EDEL Code Lists - Participant identifier schemes v7.2
+ </td><td>
+ <a href="../../documents/ecore/eDelivery/DK_EDEL%20Code%20Lists%20-%20Participant%20identifier%20schemes%20v7.2.xlsx" target="_blank">DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx</a></td>
+</tr>
 </table>
 
+<br/>
 
 | **Reference**             | **Navn**                                                                                   | **Filnavn**                                                   | **Placering**                                                                                                                                                                                                                                                   |
 |---------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
