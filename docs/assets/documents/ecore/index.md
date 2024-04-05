@@ -86,9 +86,9 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 
 <table>
 <tr><td><b>Reference</b></td><td><b>Name</b></td><td><b>Filename</b></td></tr>
-<tr><td>
+<tr><td><b>
 Policy_identifiers
-</td><td>
+</b></td><td>
 PEPPOL Transport Infrastructure  ICT - Models  Policy for use of Identifiers, Version: 4.2.0
 </td><td>
 <a href="https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf" target="_blank">PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf</a>
