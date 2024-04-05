@@ -85,7 +85,7 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 <br/>
 
 <table>
-<tr><bold><td>Reference</td><td>Name</td><td>Filename</td></bold></tr>
+<tr><b><td>Reference</td><td>Name</td><td>Filename</td></b></tr>
 <tr><td>
 Policy_identifiers
 </td><td>
@@ -93,44 +93,48 @@ PEPPOL Transport Infrastructure  ICT - Models  Policy for use of Identifiers, Ve
 </td><td>
 <a href="https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf" target="_blank">PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf</a>
 </td></tr>
-<tr><td>
+<tr><td><b>
 DKEDEL_PIV_CodeList
-</td><td>
+</b></td><td>
 DK_EDEL Code Lists - Participant identifier schemes v7.2
 </td><td>
 <a href="../../documents/ecore/eDelivery/DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx" target="_blank">DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx</a>
 </td></tr>
-<tr><td>
+<tr><td><b>
 DKEDEL_TP_CodeList
-</td><td>
+</b></td><td>
 Dansk eDelivery Code Lists - Transport profiles v7.2
 </td><td>
 <a href="../../documents/ecore/eDelivery/DK_EDEL Code Lists - Transport profiles v7.2.xlsx" target="_blank">Dansk eDelivery Code Lists - Transport profiles v7.2</a>
 </td></tr>
-<tr><td>
+<tr><td><b>
 PEPPOL_SBDH12
-</td><td>
+</b></td><td>
 PEPPOL Business Message Envelope (SBDH) 1.2
 </td><td>
 <a href="https://github.com/OpenPEPPOL/documentation/blob/master/TransportInfrastructure/PEPPOL-EDN-Business-Message-Envelope-1.2-2019-02-01.pdf" target="_blank">PEPPOL-EDN-Business-Message-Envelope-1.2-2019-02-01.pdf</a>
 </td></tr>
+<tr><td><b>
+DDS Metadata
+</b></td><td>
+DDS Metadata-v1.0.0
+</td><td>
+<a href="" target="_blank">[To be updated]</a>
+</td></tr>
+<tr><td><b>
+DDS_Metadata- ValueSets
+</b></td><td>
+DK-IHE_Metadata-Common_Code_systems-Value_sets
+</td><td>
+<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx</a>
+</td></tr>
+<tr><td>
+DDS_Metadata- ValueSets
+</td><td>
+DK-IHE_Metadata-Common_Code_systems-Value_sets
+</td><td>
+<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx" target="_blank">DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx</a>
+</td></tr>
 </table>
 
 <br/>
-
-| **Reference**             | **Navn**                                                                                   | **Filnavn**                                                   | **Placering**                                                                                                                                                                                                                                                   |
-|---------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Policy_identifiers]      | PEPPOL Transport Infrastructure  ICT - Models  Policy for use of Identifiers, Version: 42..0 | PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf   | <a href="https://docs.peppol.eu/edelivery/policies/PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf target="_blank">PEPPOL-EDN-Policy-for-use-of-identifiers-4.2.0-2023-06-19.pdf</a> |
-
-| [DKEDEL_PIV_CodeList]     | DK_EDEL Code Lists - Participant identifier schemes v7.2                                   | DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx | [DK_EDEL Code Lists - Participant identifier schemes v7.2.xlsx](../../documents/ecore/eDelivery/DK_EDEL%20Code%20Lists%20-%20Participant%20identifier%20schemes%20v7.2.xlsx) |
-
-| [DKEDEL_TP_CodeList]      | Dansk eDelivery Code Lists - Transport profiles v7.2                                       | Dansk eDelivery Code Lists - Transport profiles v7.2.xlsx     | <https://medcomtest.sharepoint.com/:x:/s/MedComModerniseringsPilot2020/EdlEjIlLDadJuy7RjD926bkB0X5X-0m1JuQG_VF8Je2f-g?e=4b7jF8>                                                                                                                                 |
-
-| [PEPPOL_SBDH12]           | PEPPOL Business Message Envelope (SBDH) 1.2                                                | PEPPOL-EDN-Business-Message-Envelope-1.2-2019-02-01.pdf       | <https://medcomtest.sharepoint.com/:b:/s/MedComModerniseringsPilot2020/EeWbN0HnqcZMhel_56f8tCcB7G-boIwnP5PeoMAsDU5lCQ?e=gXR3cY>                                                                                                                                 |
-| [DDS Metadata]            | DDS Metadata-v096                                                                          | DDS Metadata-v096.docx                                        | <http://svn.medcom.dk/svn/drafts/Standarder/IHE/DK_profil_metadata/Metadata-v096.docx>                                                                                                                                                                          |
-| [DDS_Metadata- ValueSets] | DK-IHE_Metadata-Common_Code_systems-Value_sets                                             | DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx           | <http://svn.medcom.dk/svn/drafts/Standarder/IHE/OID/DK-IHE_Metadata-Common_Code_systems-Value_sets.xlsx>                                                                                                                                                        |
-| [ebxmlbp]                 | ebxmlbp-v2.0.4-Spec-os-en                                                                  | ebxmlbp-v2.0.4-Spec-os-en.pdf                                 | <https://docs.oasis-open.org/ebxml-bp/2.0.4/OS/spec/ebxmlbp-v2.0.4-Spec-os-en.pdf>                                                                                                                                                                              |
-| [SBDHschema]              | Standard Business Document Header Schema for pilot                                         | MedComStandardBusinessDocumentHeader_20210217.xsd             | <https://medcomtest.sharepoint.com/:u:/s/MedComModerniseringsPilot2020/EdudZoIaoXtAgC_PhWGKvCwBscQxkP54bYLqWQPx86SxuQ?e=bITgGk>                                                                                                                                 |
-| EER                       | EHMI Endpoint Register                                                                     |                                                               |                                                                                                                                                                                                                                                                 |
-| EDS                       | EHMI Delivery Status                                                                       |                                                               |                                                                                                                                                                                                                                                                 |
-
