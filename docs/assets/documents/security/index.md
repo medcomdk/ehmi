@@ -31,7 +31,7 @@ EHMI Delivery Status Security is defined as
 ### EHMI Delivery Status Security Description
 
 EHMI Delivery Status Security is handled as described in chapter 1-4 in:
-- <a href="./media/Sikkerhedsarkitektur EHMI Services v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI Services v01/Security architechture regarding EHMI central services v01 (opens in new window)</a>
+- <a href="./media/Sikkerhedsarkitektur EHMI Services v0.1.1.pdf" target="_blank">Sikkerhedsarkitektur EHMI Services v0.1.1/Security architechture regarding EHMI central services v01 (opens in new window)</a>
 
 In the document EUAs, MSHs and APs are named "stations" in the message flow.
 
