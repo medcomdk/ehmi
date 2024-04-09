@@ -10,6 +10,7 @@
    
 <br/> 
 
+![ehmicore-security](./media/ehmicore-security.png)
 
 ## Indholdsfortegnelse
 
