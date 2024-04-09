@@ -78,6 +78,11 @@
     display: block;
     text-align: left;
   }
+  .responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  }
 }
 </style>
 
@@ -86,7 +91,7 @@
     <div class="wrapper">
         <!--header-->
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" style="height:100px;"/>
+          <img src="{{site.logo | relative_url}}" alt="EHMI Logo"  class="responsive"/>
         {% endif %}
 
       <!-- <strong> -->
