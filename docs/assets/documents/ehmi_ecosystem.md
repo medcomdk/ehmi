@@ -1,5 +1,17 @@
 # EHMI Ecosystem
 
+***
+
+    **Disclaimer** 
+    
+    **The menu items above marked with a star are yet not specified**
+    
+    ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
+    
+<br/> 
+
+## EHMI Ecosystem sites
+
 - <a href="https://medcomdk.github.io/ehmi/" target="blank">1: EHMI Landingpage</a>
 - <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/" target="blank">2: EHMI Core</a>
 - <a href="https://medcomdk.github.io/ehmi/assets/documents/eds/" target="blank">3: EHMI Delivery Status</a>
