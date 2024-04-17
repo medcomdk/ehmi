@@ -19,10 +19,10 @@ menutxt_item4: EHMI Addressing Service*
 menuurl_item5: https://medcomdk.github.io/ehmi/assets/documents/eer/
 menutxt_item5: EHMI Endpoint Register*
 menuurl_item6: https://medcomdk.github.io/ehmi/assets/documents/egov/
-menutxt_item6: EHMI Governance*
+menutxt_item6: Governance*
 menuurl_item7: https://medcomdk.github.io/ehmi/assets/documents/security/
-menutxt_item7: EHMI Security
+menutxt_item7: Security
 menuurl_item8: https://medcomdk.github.io/ehmi/assets/documents/glossary/
-menutxt_item8: EHMI Glossary
+menutxt_item8: Glossary
 menuurl_item9: https://medcomdk.github.io/ehmi/ehmi_ecosystem.html
 menutxt_item9: EHMI Ecosystem
