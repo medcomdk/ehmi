@@ -2,6 +2,9 @@
 
 **Table of contents**
 
+
+[eDelivery på Digital Europes website](https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eDelivery)
+
 ## EHMI Meddelelsesforsendelse og dokumentdeling
 
 <p/>
