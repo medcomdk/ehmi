@@ -21,9 +21,10 @@ These requirements means basically that the ehmiAP **SHALL** be on the list of <
 Especially the ehmiAP **SHALL** conform to these basic functionalities
 - Common Profile
 - Four Corner Topology
-- Dynamic Sender
-- Dynamic Receiver
-- SBDH (Standard Business Document Header (SBDH))
+- Dynamic Discovery
+    - Dynamic Sender
+    - Dynamic Receiver
+- SBDH (Standard Business Document Header)
 
 
 <a href="" target="_blank"></a>
