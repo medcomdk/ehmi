@@ -22,4 +22,4 @@
 - <a href="https://medcomdk.github.io/ehmi/assets/documents/glossary/" target="blank">8: EHMI Glossary</a>
 
 
-Masterpage of this page is: <a href="https://medcomdk.github.io/ehmi/assets/documents/ehmi_ecosystem.html" target="blank">EHMI Ecosystem</a>
+Masterpage of this page is: <a href="https://medcomdk.github.io/ehmi/assets/ehmi_ecosystem.html" target="blank">EHMI Ecosystem</a>
