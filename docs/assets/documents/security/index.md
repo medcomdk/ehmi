@@ -31,9 +31,8 @@ EHMI Delivery Status Security is defined as
 ### EHMI Delivery Status Security Description
 
 **Note!**
-<b><i>
-This specification is right now being updated with security specifications pointed out in the FAPI 2.0 specification. New release ready May 7th 2024
-</i></b>
+
+<b><i>This specification is right now being updated with security specifications pointed out in the FAPI 2.0 specification. New release ready May 7th 2024</i></b>
 - <a href="https://medium.com/@hidebike712/fapi2-explained-8602e52596e5" target="_blank">if you want to read more about FAPI click here</a> 
 
 EHMI Delivery Status Security is handled as described in chapter 1-4 in:
