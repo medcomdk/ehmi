@@ -17,15 +17,15 @@
 
 ### Introduction
 
-I MedCom13 har MedCom et fælles afprøvningsprojekt ’Kommunale prøvesvar på ny infrastruktur’, hvor MedComs to centrale moderniseringsspor kobles: FHIR og EHMI, hvor såvel meddelelseskommunikationen som infrastrukturen moderniseres. Moderniseringen sker grundet behov for kvalitetsløft af bl.a. sikkerhed, gennemsigtighed, robusthed og effektiv, international digital meddelelseskommunikation. Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">here</a>
+In MedCom13, MedCom has a joint testing project ’Kommunale prøvesvar på ny infrastruktur’('HomeCareObservations on new infrastructure'), where MedCom's two central modernization tracks are connected: FHIR and EHMI, where both the message communication and the infrastructure are modernized. The modernization is due to the need to improve the quality of e.g. security, transparency, robustness and efficient, international digital message communication. Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">here</a>
 
-I projektet gennemføres en afprøvning i drift i dela af Q1 og Q2 2026.
+In the project, a test will be carried out in operation in parts of Q1 and Q2 2026.
 
-I afprøvningen skal den nye FHIR-standard for kommunale prøvesvar sendes fra kommunale akutfunktioner (EOJ) til almen lægepraksis (LPS) via EHMI.
+In the test, the new FHIR standard for municipal test responses, HomeCareObservation, will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI.
 
-Forsendelsen af standarden skal ske via den nye underliggende eDelivery infrastruktur, som afvikles på Sundhedsdatanettet, og der skal ligeledes ske en afprøvning af EHMI-funktionaliteter så som dokumentdeling og forsendelsesstatus (Track’n’Trace).
+The dispatch of the standard must be done via the new underlying eDelivery infrastructure, which is carried out on the *Health Data Network*, **Sundhedsdatanettet**, and there must also be a test of EHMI functionalities such as document sharing and Delivery status (Track'n'Trace).
 
-Projektet har en række leveringer af specifikationer, som kan ses nednefor i [EHMI Production Pilot specification schema](#ehmi-production-pilot-specification-schema)
+The project has a number of deliverables of specifications, which can be seen below in [EHMI Production Pilot specification schema](#ehmi-production-pilot-specification-schema)
 
 <br/> 
 
