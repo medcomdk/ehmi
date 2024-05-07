@@ -36,7 +36,7 @@ EHMI Delivery Status Security is defined as
 - <a href="https://medium.com/@hidebike712/fapi2-explained-8602e52596e5" target="_blank">if you want to read more about FAPI click here</a> 
 
 EHMI Delivery Status Security is handled as described in chapter 1-4 in:
-- <a href="./media/Sikkerhedsarkitektur EHMI Services v0.1.1.pdf" target="_blank">Sikkerhedsarkitektur EHMI Services v0.1.1/Security architechture regarding EHMI central services v01 (opens in new window)</a>
+- <a href="./media/Sikkerhedsarkitektur EHMI Services v0.22.pdf" target="_blank">Sikkerhedsarkitektur EHMI Services v0.22/Security architechture regarding EHMI central services v0.22 (opens in new window)</a>
 
 In the document EUAs, MSHs and APs are named "stations" in the message flow.
 
