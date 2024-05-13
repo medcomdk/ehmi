@@ -39,7 +39,7 @@ EHMI Core is defined as
 <br/> 
 
 EHMI Core specifies 
-- ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see](/eDelivery/ehmiAP/)
+- ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see here](/eDelivery/ehmiAP/)
 - ehmiSBDH, the envelope that is used between the MSHs
 - how ehmiSBDH in addition to its primary purpose of carrying metadata for eDelivery Messaging can carry the metadata used for:
     - Reliable Messaging embedded in ehmiSBDH BusinessScopes
@@ -54,7 +54,7 @@ EHMI Core specifies
 
 The graphic shows and explains in plain text how the primary flow of a MedCom Message is from the Sender to the Receiver.
 
-In addition to the primary flow, ehmiEnvelopeReceipt will be send from the Receiver's MSH to Sender's MSH and FHIR Acknowledgements will be send from the Receiver's EUA to the Original Sender's EUA.
+In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Receiver's MSH to Sender's MSH and FHIR Acknowledgements will be sent from the Receiver's EUA to the Original Sender's EUA.
 
 <br/> 
 
@@ -66,7 +66,7 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be send from the Recei
 
 <br/> 
 
-EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
+EHMI Core specifies two profiles, 1 for ehmiSBDH and 1 for ehmiSMP:
 
 - [EHMI Profile of SBDH (ehmiSBDH)](/ehmiSBDH/index.md)
 - [EHMI Profile of Service Metadata Publisher (ehmiSMP)](/ehmiSMP/index.md)
@@ -81,7 +81,7 @@ EHMI Core specifies two profile, 1 for ehmiSBDH and 1 for ehmiSMP
 
 <br/> 
 
-## Referencer
+## References
 
 <br/>
 
@@ -104,9 +104,9 @@ DK_EDEL Code Lists - Participant identifier schemes v7.2
 <tr><td><b>
 DKEDEL_TP_CodeList
 </b></td><td>
-Dansk eDelivery Code Lists - Transport profiles v7.2
+Danish eDelivery Code Lists - Transport profiles v7.2
 </td><td>
-<a href="../../documents/ecore/eDelivery/DK_EDEL Code Lists - Transport profiles v7.2.xlsx" target="_blank">Dansk eDelivery Code Lists - Transport profiles v7.2</a>
+<a href="../../documents/ecore/eDelivery/DK_EDEL Code Lists - Transport profiles v7.2.xlsx" target="_blank">Danish eDelivery Code Lists - Transport profiles v7.2</a>
 </td></tr>
 <tr><td><b>
 PEPPOL_SBDH12
