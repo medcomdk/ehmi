@@ -18,7 +18,7 @@
     
 <br/> 
   
-The EDS Server and EDS Clients are expected to implement the userstories outlined [here:](./userstories/index.md)
+The EDS Server and EDS Clients are expected to implement the user stories outlined [here:](./userstories/index.md)
 
 <br/> 
   
