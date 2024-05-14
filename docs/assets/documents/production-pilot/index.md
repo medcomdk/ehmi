@@ -65,7 +65,7 @@ EHMI Core is defined as
     - eDelivery Access Points (AP)
     - eDelivery SML and SMP
 
-EHMI Core is described further [here](../ecore/index.md)
+EHMI Core is further described [here](../ecore/index.md)
 
 <br/> 
 
@@ -74,9 +74,9 @@ EHMI Core is described further [here](../ecore/index.md)
 
 EHMI Core Security is defined as
 - the needed security implementation to serve message delivering as described in [EHMI Core Description](#ehmi-core-description)
-    - this part of EHMI Core Security is desribed [here](../security/security-specification-of-ehmi-core.md)
+    - this part of EHMI Core Security is described [here](../security/security-specification-of-ehmi-core.md)
 - the already established security implementation regarding XDS Document Sharing on NSP
-    - this part of EHMI Core Security is desribed <a href="https://www.nspop.dk/display/Web3/E.+Sikkerhed+og+Logning" target="_blank">here (Link to NSP opens in a new window)</a>
+    - this part of EHMI Core Security is described <a href="https://www.nspop.dk/display/Web3/E.+Sikkerhed+og+Logning" target="_blank">here (Link to NSP opens in a new window)</a>
     
 <br/> 
 
@@ -87,7 +87,7 @@ EHMI Delivery Status is defined as
 - the registration of EHMI Delivery Status (FHIR AuditEvents) from each "station" in the primary message delivering from a sender system to a receiver system 
 - the secondary message delivering from a sender system to the national XDS Document Sharing platform with an index on NSP
 
-EHMI Delivery Status is described further [here](../eds/index.md)
+EHMI Delivery Status is further described [here](../eds/index.md)
 
 <br/> 
 
@@ -96,7 +96,7 @@ EHMI Delivery Status is described further [here](../eds/index.md)
 
 EHMI Delivery Status Security is defined as
 - the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](#ehmi-delivery-status-description)
-    - this part of EHMI Core Security is desribed [here](../security/security-specification-of-ehmi-eds.md)
+    - this part of EHMI Core Security is described [here](../security/security-specification-of-ehmi-eds.md)
     
 <br/> 
 
@@ -133,11 +133,11 @@ EHMI Delivery Status Security is defined as
 
 <br/> 
 
-## Relevante links:
+## Relevant links:
 
 <br/> 
 
-<bold><i>OBS! Alle links åbner i et nyt vindue.</i></bold>
+<bold><i>Note! All links opens in a new window.</i></bold>
 
 - Dansk:
     - MedCom: <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">MedCom13 projektbesksrivelse af ’Kommunale prøvesvar på ny infrastruktur’</a>
