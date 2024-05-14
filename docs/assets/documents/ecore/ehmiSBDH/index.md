@@ -10,7 +10,7 @@
    
 <br/> 
 
-The EHMI Standard Business Document Header (ehmiSBDH) is a customized version of the PEPPOL SBDDH.
+The EHMI Standard Business Document Header (ehmiSBDH) is a customized version of the PEPPOL SBDH.
 
 It is developed to 
 - suit the direct messaging of clinical content in EHMI
