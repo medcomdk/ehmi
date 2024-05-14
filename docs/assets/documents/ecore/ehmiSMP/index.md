@@ -1,4 +1,4 @@
-# EHMI Service Metadata Provider – ehmiSMP konfiguration
+# EHMI Service Metadata Provider – ehmiSMP configuration
 
 ***
 
@@ -21,9 +21,9 @@
 
 <br/> 
 
-EHMIs SMP, ehmiSMP, vil følge den generelle eDelivery funktionalitet for SMP.
+EHMIs SMP, ehmiSMP, follows the generel eDelivery SMP functionality.
 
-ehmiSMP vil med tiden blive populeret fra EHMI Endpoint Register (EER), men vil i Produktionspiloten blive populeret via scripts styret af MedCom.
+ehmiSMP will eventually be populated from the EHMI Endpoint Register (EER), but will, in the EHMI Production Pilot, be populated via scripts managed by MedCom.
     
 <br/> 
 
@@ -35,17 +35,17 @@ The eDelivery SMP profile is an open specification for publishing service metada
 
 <br/>
 
-## SMP ServiceMetadata i generel eDelivery meddelelseskommunikation
+## SMP ServiceMetadata in general eDelivery message communication
 
 <br/>
 
-### Sammenhæng til SBDH
+### Connection to SBDH
 
 <br/>
 
-I eDelivery kommunikationen udgør SBDH’ens Scope struktur med de to typer, DOCUMENTID og PROCESSID, foruden værdierne i elementerne Sender og Receiver, den direkte sammenhæng til SMP’ens DocumentIdentifier og ProcessIdentifier i ServiceMetadata-strukturen. I det følgende beskrives disse 2 Type elementer i SMP.
+In the eDelivery communication, the SBDH Scope structure with the two types, DOCUMENTID and PROCESSID, forms (in addition to the values in the elements Sender and Receiver) a direct connection to the SMP DocumentIdentifier and ProcessIdentifier in the ServiceMetadata structure. In the following, these two types of elements in SMP are described. 
 
-Scopene DOCUMENTID og PROCESSID er i PEPPOL fast definerede scopes, som sikrer en unik relation til SBDH. DOCUMENTID og PROCESSID anvendes i EHMI med samme præcision som i PEPPOL, så der sikres en vis ensartethed i, hvordan man udtrykker værdierne på tværs af PEPPOL og EHMI. DOCUMENTID og PROCESSID bruges af AP’erne sammen med modtagers ReceiverId til at slå modtagers eDelivery adresse op i SMP med et unikt respons som resultat.
+In PEPPOL, the scopes of DOCUMENTID and PROCESSID are permanently defined scopes, which ensure a unique relation to SBDH. DOCUMENTID and PROCESSID is used in EHMI with the same precision as in PEPPOL, which ensure a certain uniformity in how the values across of PEPPOL and EHMI is expressed. DOCUMENTID and PROCESSID is used by the APs together with the recipient’s ReceiverId to look up the recipient’s eDelivery address in SMP with a unique response as result. 
 
 <br/>
 
@@ -53,7 +53,7 @@ Scopene DOCUMENTID og PROCESSID er i PEPPOL fast definerede scopes, som sikrer e
 
 <br/>
 
-Værdien i DocumentIdentifier er identisk med den tilsvarende ehmiSBDH-registrering for BusinessScope/Scope[DOCUMENTID]:
+The value in DocumentIdentifier is identical to the corresponding ehmiSBDH-registration for BusinessScope/Scope[DOCUMENTID]:
 
     SMP ServiceInformation/DocumentIdentifier
     
@@ -62,9 +62,9 @@ Værdien i DocumentIdentifier er identisk med den tilsvarende ehmiSBDH-registrer
     urn:dk:healthcare:prod:messaging:oasis:ebxml:schema:xsd:sbdhreceiptacknowledgement\#urn:oasis:ebxml:sbdhreceiptacknowledgement:ebbp-signals-2.0
 
 
-Værdierne hentes fra MedComs standardkatalog og er her repræsenteret ved de værdier, som de har i MedCom meddelelserne. Se bogmærke: [DKEDEL_DT_CodeList]
+The values are taken from MedComs standard catalog and are represented here by the values they have in MedCom messages. See bookmark: [DKEDEL_DT_CodeList]
 
-Ift. det oprindeligt intentionerede fjernes dobbelt ”\#\#” og ”::” fra konstruktionen af InstanceIdentifier, da den aktuelle konfiguration af SMP fra CEF ikke kan håndtere disse så værdierne kan fremsøges igen. Dermed må SBDH’s DOCUMENTID ændres tilsvarende.
+Regarding the originally intended, double ”##” and ”::” are removed from the construction of InstanceIdentifier, as the current configuration of SMP from CEF cannot handle these, so that the values can be retrieved again. This means that SBDH's DOCUMENTID must be changed accordingly.
 
 <br/>
 
@@ -72,22 +72,22 @@ Ift. det oprindeligt intentionerede fjernes dobbelt ”\#\#” og ”::” fra k
 
 <br/>
 
-Værdien i ProcessIdentifier er identisk med den tilsvarende ehmiSBDH-registrering for BusinessScope/Scope[PROCESSID]:
+The value in ProcessIdentifier is identical with the corresponding ehmiSBDH-registration for BusinessScope/Scope[DOCUMENTID]:
 
-Værdien hentes fra nedenstående:
+The value is obtained from the following: 
 
     ProcessList/Process/ProcessIdentifier
 
     sdn-emergence
 
 
-Umiddelbart er værdien af statisk karakter. Dette vil ændre sig, når der kommunikeres ind og ud af sundhedsområdet. Udtrykket "sdn-emergence" står for en meddelelses "opkomst" på sundhedsdomænet/sundhedsdatanettet "sdn"
+By now, the value is of static character. This will change when communicating in and out of the healthcare area. The term “sdn-emergence” stands for the ”emergence” of a message on the health domain/health data network “sdn”. 
 
 <br/>
 
-### SMP hos Digital Europe (EU)
+### SMP at Digital Europe (EU)
 
 <br/>
 
-<a href="https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/SMP" target="_blank">SMP hos Digital Europe (EU)</a>
+<a href="https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/SMP" target="_blank">SMP at Digital Europe (EU)</a>
 
