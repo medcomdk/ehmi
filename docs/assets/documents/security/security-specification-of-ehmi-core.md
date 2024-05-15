@@ -116,17 +116,18 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-![Alle komponenter stand-alone - implementeret på forskellige servere](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![All components stand-alone - implemented on different servers](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 
 | **EHMI components**                              | **Subtask**                                                                                                                 | **Who**                    |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| Sending system stand-alone                  | **Authenticity management:** Implementering af signering af meddelelse                                                        | Sending system        |
-| MSH stand-alone                                   | **Authenticity management:** Verifikation af signering ved modtagelse.                                                        | MSH                         |
-| Sending system stand-alone MSH stand-alone  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem og MSH |
-| MSH stand-alone                                   | **Authenticity management:** Implementering af signering af meddelelse                                                        | MSH                         |
-| AP stand-alone                                    | **Authenticity management:** Verifikation af signering ved modtagelse.                                                        | AP                          |
-| MSH stand-alone AP stand-alone                    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP                   |
+| Sending system stand-alone                  | **Authenticity management:** Implementation of message signing                                                        | Sending system        |
+| MSH stand-alone                                   | **Authenticity management:** Verification of signing upon receipt.                                                        | MSH                         |
+| Sending system stand-alone 
+MSH stand-alone  | **Integritetssikring og fortrolighedssikring:** Communication of a message / envelope via secured transport protocol, e.g. TLS | Sending system and MSH |
+| MSH stand-alone                                   | **Authenticity management:** Implementation of message signing                                                        | MSH                         |
+| AP stand-alone                                    | **Authenticity management:** Verification of signing upon receipt.                                                        | AP                          |
+| MSH stand-alone AP stand-alone                    | **Integrity protection and confidentiality protection:** Communication of a message / envelope via secured transport protocol, e.g. TLS | MSH and AP                   |
 
 <br/> 
 
@@ -141,9 +142,9 @@ The following table illustrates in general, how the guidelines are regarding sec
 
 | **EHMI Komponenter**              | **Delopgave**                                                          | **Hvem**             |
 |-----------------------------------|------------------------------------------------------------------------|----------------------|
-| Afsendende fagsystem stand-alone  | **Authenticity management:** Implementering af signering af meddelelse | Afsendende fagsystem |
-| MSH stand-alone                   | **Authenticity management:** Verifikation af signering ved modtagelse. | MSH                  |
-| MSH stand-alone                   | **Authenticity management:** Implementering af signering af meddelelse | MSH                  |
+| Afsendende fagsystem stand-alone  | **Authenticity management:** Implementation of message signing | Afsendende fagsystem |
+| MSH stand-alone                   | **Authenticity management:** Verification of signing upon receipt. | MSH                  |
+| MSH stand-alone                   | **Authenticity management:** Implementation of message signing | MSH                  |
 | AP stand-alone                    | **Authenticity management:** Verifikation af signering ved modtagelse. | AP                   |
 
 <br/> 
@@ -159,9 +160,9 @@ The following table illustrates in general, how the guidelines are regarding sec
 
 | **EHMI Komponenter**              | **Delopgave**                                                                                                                 | **Hvem**             |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| Afsendende fagsystem stand-alone  | **Authenticity management:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem |
+| Afsendende fagsystem stand-alone  | **Authenticity management:** Implementation of message signing                                                        | Afsendende fagsystem |
 | MSH stand-alone                   | **Authenticity management:** Verifikation af signering ved modtagelse.                                                        | MSH                  |
-| MSH stand-alone                   | **Authenticity management:** Implementering af signering af meddelelse                                                        | MSH                  |
+| MSH stand-alone                   | **Authenticity management:** Implementation of message signing                                                        | MSH                  |
 | AP stand-alone                    | **Authenticity management:** Verifikation af signering ved modtagelse.                                                        | AP                   |
 | MSH stand-alone AP stand-alone    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP            |
 
@@ -175,10 +176,10 @@ The following table illustrates in general, how the guidelines are regarding sec
 
 | **EHMI Komponenter**                              | **Delopgave**                                                                                                                 | **Hvem**                     |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| Afsendende fagsystem stand-alone                  | **Authenticity management:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem         |
+| Afsendende fagsystem stand-alone                  | **Authenticity management:** Implementation of message signing                                                        | Afsendende fagsystem         |
 | MSH stand-alone                                   | **Authenticity management:** Verifikation af signering ved modtagelse.                                                        | MSH                          |
 | Afsendende fagsystem stand-alone MSH stand-alone  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem og MSH  |
-| MSH stand-alone                                   | **Authenticity management:** Implementering af signering af meddelelse                                                        | MSH                          |
+| MSH stand-alone                                   | **Authenticity management:** Implementation of message signing                                                        | MSH                          |
 | AP stand-alone                                    | **Authenticity management:** Verifikation af signering ved modtagelse.                                                        | AP                           |
 
 <br/> 
@@ -190,7 +191,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 
 | **EHMI Komponenter**                    | **Delopgave**                                                                                                                 | **Hvem**                       |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| Afsendende fagsystem stand-alone        | **Authenticity management:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem           |
+| Afsendende fagsystem stand-alone        | **Authenticity management:** Implementation of message signing                                                        | Afsendende fagsystem           |
 | MSH/AP                                  | **Authenticity management:** Verifikation af signering ved modtagelse.                                                        | MSH/AP                         |
 | Afsendende fagsystem stand-alone MSH/AP | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem og MSH/AP |
 
@@ -203,7 +204,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 
 | **EHMI Komponenter**              | **Delopgave**                                                          | **Hvem**             |
 |-----------------------------------|------------------------------------------------------------------------|----------------------|
-| Afsendende fagsystem stand-alone  | **Authenticity management:** Implementering af signering af meddelelse | Afsendende fagsystem |
+| Sending system stand-alone  | **Authenticity management:** Implementation of message signing | Sending system |
 | MSH/AP                            | **Authenticity management:** Verifikation af signering ved modtagelse. | MSH/AP               |
 
 <br/> 
@@ -216,7 +217,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 
 | **EHMI Komponenter**                      | **Delopgave**                                                                                                                 | **Hvem**                       |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| Afsendende fagsystem/MSH                  | **Authenticity management:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem/MSH       |
+| Afsendende fagsystem/MSH                  | **Authenticity management:** Implementation of message signing                                                        | Afsendende fagsystem/MSH       |
 | AP Stand-alone                            | **Authenticity management:** Verifikation af signering ved modtagelse.                                                        | AP                             |
 | Afsendende fagsystem/MSH  AP Stand-alone  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og AP |
 
@@ -230,7 +231,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 
 | **EHMI Komponenter**     | **Delopgave**                                                          | **Hvem**                 |
 |--------------------------|------------------------------------------------------------------------|--------------------------|
-| Afsendende fagsystem/MSH | **Authenticity management:** Implementering af signering af meddelelse | Afsendende fagsystem/MSH |
+| Afsendende fagsystem/MSH | **Authenticity management:** Implementation of message signing | Afsendende fagsystem/MSH |
 | AP Stand-alone           | **Authenticity management:** Verifikation af signering ved modtagelse. | AP                       |
 
 <br/> 
@@ -245,7 +246,7 @@ Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dett
 
 | **EHMI Komponenter**                | **Delopgave**                                                                                                                 | **Hvem**                           |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| Afsendende fagsystem/MSH            | **Authenticity management:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem/MSH           |
+| Afsendende fagsystem/MSH            | **Authenticity management:** Implementation of message signing                                                        | Afsendende fagsystem/MSH           |
 | Afsendende MSH/AP                   | **Authenticity management:** Verifikation af signering ved modtagelse.                                                        | MSH/AP                             |
 | Afsendende fagsystem/MSH og MSH/AP  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og MSH/AP |
 
@@ -258,7 +259,7 @@ Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dett
 
 | **EHMI Komponenter**     | **Delopgave**                                                          | **Hvem**                 |
 |--------------------------|------------------------------------------------------------------------|--------------------------|
-| Afsendende fagsystem/MSH | **Authenticity management:** Implementering af signering af meddelelse | Afsendende fagsystem/MSH |
+| Afsendende fagsystem/MSH | **Authenticity management:** Implementation of message signing | Afsendende fagsystem/MSH |
 | Afsendende MSH/AP        | **Authenticity management:** Verifikation af signering ved modtagelse. | MSH/AP                   |
 
 <br/> 
