@@ -14,37 +14,37 @@
 
 ## Table of content
 
-- [2.1 General security definitions regarding components in the delivery chain](#general-security-definitions-regarding-components-in-the-delivery-chain)
+- [General security definitions regarding components in the delivery chain](#general-security-definitions-regarding-components-in-the-delivery-chain)
 
-- [3 General information about security for components in EHMI](#general-information-about-security-for-components-in-ehmi)
+- [General information about security for components in EHMI](#general-information-about-security-for-components-in-ehmi)
 
-- [4 Specifications – security regarding message communication ](#specifications---security-regarding-message-communication)
+- [Specifications – security regarding message communication ](#specifications---security-regarding-message-communication)
 
-- [4.1 Decentralized regarding security](#decentralized-regarding-security)
+- [Decentralized regarding security](#decentralized-regarding-security)
 
-- [4.2 All components stand-alone – implemented on different servers](#all-components-stand-alone---implemented-on-different-servers)
+- [All components stand-alone – implemented on different servers](#all-components-stand-alone---implemented-on-different-servers)
 
-- [4.3 All components stand-alone - grouped together on the same server](#all-components-stand-alone---grouped-together-on-the-same-server)
+- [All components stand-alone - grouped together on the same server](#all-components-stand-alone---grouped-together-on-the-same-server)
 
-- [4.4 All components stand-alone - sending system and MSH grouped together on the same server](#all-components-stand-alone---sending-system-and-msh-grouped-together-on-the-same-server)
+- [All components stand-alone - sending system and MSH grouped together on the same server](#all-components-stand-alone---sending-system-and-msh-grouped-together-on-the-same-server)
 
-- [4.5 All components stand-alone, MSH and AP grouped together on the same server](#all-components-stand-alone-msh-and-ap-grouped-together-on-the-same-server)
+- [All components stand-alone, MSH and AP grouped together on the same server](#all-components-stand-alone-msh-and-ap-grouped-together-on-the-same-server)
 
-- [4.6 Sending system stand-alone - MSH/AP build together and implemented on different servers](#sending-system-stand-alone---mshap-build-together-and-implemented-on-different-servers)
+- [Sending system stand-alone - MSH/AP build together and implemented on different servers](#sending-system-stand-alone---mshap-build-together-and-implemented-on-different-servers)
 
-- [4.7 Sending system stand-alone - MSH/AP build together and all grouped together on the same server](#sending-system-stand-alone---mshap-build-together-and-all-grouped-together-on-the-same-server)
+- [Sending system stand-alone - MSH/AP build together and all grouped together on the same server](#sending-system-stand-alone---mshap-build-together-and-all-grouped-together-on-the-same-server)
 
-- [4.8 Sending system/MSH build together – AP stand-alone and implemented on different servers](#sending-systemmsh-build-together---ap-stand-alone-and-implemented-on-different-servers)
+- [Sending system/MSH build together – AP stand-alone and implemented on different servers](#sending-systemmsh-build-together---ap-stand-alone-and-implemented-on-different-servers)
 
-- [4.9 Sending system/MSH build together – AP stand-alone and all grouped together on the same server](#sending-systemmsh-build-together---ap-stand-alone-and-all-grouped-on-the-same-server)
+- [Sending system/MSH build together – AP stand-alone and all grouped together on the same server](#sending-systemmsh-build-together---ap-stand-alone-and-all-grouped-on-the-same-server)
 
-- [4.10 Sending system/MSH build together – MSH/AP build together and implemented on different servers](#sending-systemmsh-build-together---mshap-build-together-and-implemented-on-different-servers)
+- [Sending system/MSH build together – MSH/AP build together and implemented on different servers](#sending-systemmsh-build-together---mshap-build-together-and-implemented-on-different-servers)
 
-- [4.11 Sending system/MSH build together – MSH/AP build together and alle grouped together on the same server](#sending-systemmsh-build-together---mshap-build-together-and-all-grouped-on-the-same-server)
+- [Sending system/MSH build together – MSH/AP build together and alle grouped together on the same server](#sending-systemmsh-build-together---mshap-build-together-and-all-grouped-on-the-same-server)
 
-- [4.12 All components build together](#all-components-build-together)
+- [All components build together](#all-components-build-together)
 
-- [4.13 Receiver](#Receiver)
+- [Receiver](#Receiver)
 
 <br/> 
 
@@ -65,7 +65,7 @@ It is possible to report and access data via a FHIR API. Web-services/RESTful-se
 
 This means, among other things, that in case of personal identifiable information:
 
-A strong authentication of users must take place (according to NIST niveau 3-4 or NSIS niveau “significant”)
+A strong authentication of users must take place (according to NIST niveau 3-4 or NSIS niveau “substantial”)
 
 1.  Access control must be carried out based on nationally standardized information (attributes)
 2.  Consent/rejection and treatment relationship must be checked against the national consent service and the national treatment relationship service
@@ -92,17 +92,17 @@ The following table illustrates in general, how the guidelines are regarding sec
 | Between components/services, that are handled on different servers | **Integrity protection and confidentiality protection:** Communication of a message / message content / envelope via secured transport protocol, e.g. TLS | Sender/receiver component |
 
 
-**Autenticity management between C1 and C2 (cf. section 6.1.1 in Målbilledet):**
+**Autenticity management between C1 and C2 (cf. section 6.1.1 in the Architectural Vision):**
 
 *In the health sector, there is a requirement that the message and/or the envelope is signed in C1, and that this signature is subsequently verified in C2. This way, the authentication of C1 is ensured in C2. This authentication will be a part of the agreement between the AP and the system, which the AP acts on behalf of. This is ensured by explicit signing between the sending system/MSH/AP (with associated verification) on system certificate level (VOCES/FOCES/Level 3). This can, for example, be ensured via DGWS/IDWS or similar.*
 
 
-**Integrity protection between C1 and C2 (cf. section 6.1.2 in Målbilledet):**
+**Integrity protection between C1 and C2 (cf. section 6.1.2 in the Architectural Vision):**
 
 *This is ensured, in addition to the envelope signing described under authenticity (section 6.1.1), via the protocols used between the Aps and the systems, which the Aps acts on behalf of, e.g. TLS (Transport Layer Security).*
 
 
-**Confidentiality between C1 and C2 (cf. section 6.1.4 in Målbilledet):**
+**Confidentiality between C1 and C2 (cf. section 6.1.4 in the Architectural Vision):**
 
 *As all messages under the health domain basically contain sensitive personal data, the encryption must be used, when it is possible. Therefore, the message must be encrypted between sender and the sending AP via MSH (C1 and C2) as well as between the receiving AP and receiver via MSH (C3 and C4). The use of this encryption will be part of the agreement between the AP and the system, which the AP acts on behalf of. This is ensured as via the integrity protection.*
 
