@@ -14,37 +14,37 @@
 
 ## Table of content
 
-- [2.1 Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
+- [2.1 General security definitions regarding components in the delivery chain](#general-security-definitions-regarding-components-in-the-delivery-chain)
 
-- [3 Generelt omkring sikkerhed for komponenter i EHMI](#generelt-omkring-sikkerhed-for-komponenter-i-ehmi)
+- [3 General information about security for components in EHMI](#general-information-about-security-for-components-in-ehmi)
 
-- [4 Specifikationer - sikkerhed vedrørende meddelelseskommunikation](#specifikationer---sikkerhed-vedrørende-meddelelseskommunikation)
+- [4 Specifications – security regarding message communication ](#specifications---security-regarding-message-communication)
 
-- [4.1 Decentralt vedrørende sikkerhed](#decentralt-vedrørende-sikkerhed)
+- [4.1 Decentralized regarding security](#decentralized-regarding-security)
 
-- [4.2 Alle komponenter stand-alone - implementeret på forskellige servere](#alle-komponenter-stand-alone---implementeret-på-forskellige-servere)
+- [4.2 All components stand-alone – implemented on different servers](#all-components-stand-alone---implemented-on-different-servers)
 
-- [4.3 Alle komponenter stand-alone - grupperet sammen på samme server](#alle-komponenter-stand-alone---grupperet-sammen-på-samme-server)
+- [4.3 All components stand-alone - grouped together on the same server](#all-components-stand-alone---grouped-together-on-the-same-server)
 
-- [4.4 Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](#alle-komponenter-stand-alone---afsendende-fagsystem-og-msh-grupperet-sammen-på-samme-server)
+- [4.4 All components stand-alone - sending system and MSH grouped together on the same server](#all-components-stand-alone---sending-system-and-msh-grouped-together-on-the-same-server)
 
-- [4.5 Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](#alle-komponenter-stand-alone-msh-og-ap-grupperet-sammen-på-samme-server)
+- [4.5 All components stand-alone, MSH and AP grouped together on the same server](#all-components-stand-alone-msh-and-ap-grouped-together-on-the-same-server)
 
-- [4.6 Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystem-stand-alone---mshap-sammenbygget---implementeret-på-forskellige-servere)
+- [4.6 Sending system stand-alone - MSH/AP build together and implemented on different servers](#sending-system-stand-alone---mshap-build-together-and-implemented-on-different-servers)
 
-- [4.7 Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystem-stand-alone---mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
+- [4.7 Sending system stand-alone - MSH/AP build together and all grouped together on the same server](#sending-system-stand-alone---mshap-build-together-and-all-grouped-together-on-the-same-server)
 
-- [4.8 Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone---implementeret-på-forskellige-servere)
+- [4.8 Sending system/MSH build together – AP stand-alone and implemented on different servers](#sending-systemmsh-build-together---ap-stand-alone-and-implemented-on-different-servers)
 
-- [4.9 Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone--alle-grupperet-sammen-på-samme-server)
+- [4.9 Sending system/MSH build together – AP stand-alone and all grouped together on the same server](#sending-systemmsh-build-together---ap-stand-alone-and-all-grouped-on-the-same-server)
 
-- [4.10 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget---implementeret-på-forskellige-servere)
+- [4.10 Sending system/MSH build together – MSH/AP build together and implemented on different servers](#sending-systemmsh-build-together---mshap-build-together-and-implemented-on-different-servers)
 
-- [4.11 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
+- [4.11 Sending system/MSH build together – MSH/AP build together and alle grouped together on the same server](#sending-systemmsh-build-together---mshap-build-together-and-all-grouped-on-the-same-server)
 
-- [4.12 Alle komponenter sammenbyggede](#alle-komponenter-sammenbyggede)
+- [4.12 All components build together](#all-components-build-together)
 
-- [4.13 Modtagersiden](#modtagersiden)
+- [4.13 Receiver](#Receiver)
 
 <br/> 
 
