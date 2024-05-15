@@ -1,4 +1,4 @@
-# Specificering af sikkerhed ifm meddelelsesflow i EHMI Core
+# Specification of security regarding message flow in EHMI Core 
 
 ***
 
@@ -12,7 +12,7 @@
 
 ![ehmicore-security](./media/ehmicore-security.png)
 
-## Indholdsfortegnelse
+## Table of content
 
 - [2.1 Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
 
@@ -49,36 +49,34 @@
 <br/> 
 
 
-## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
+## General security definitions regarding components in the delivery chain
 
-Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
+The following definitions regarding all systems/components in EHMI applies:
 
--   Systemer/komponenter kan være en stand-alone applikation eller **sammenbygget** med en eller flere andre systemer/komponenter i meddelelsesflowet.
--   Systemer/komponenter kan være en stand-alone applikation **grupperet sammen** med en eller flere andre systemer/komponenter i meddelelsesflowet på samme server.
-
-<br/> 
-
-
-### Generelt omkring sikkerhed for komponenter i EHMI
-
-Det er muligt at indrapportere og tilgå data via et FHIR API. Web-services/RESTful-services, der udstilles via et sådant interface, skal, præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde national arkitektur og nationale standarder.
-
-Det betyder bl.a., at ved personhenførbare oplysninger:
-
-Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 eller NSIS niveau ”betydeligt”)
-
-1.  Der skal foretages adgangskontrol baseret på nationalt standardiseret information (attributter)
-2.  Samtykke/frabedelse og behandlingsrelation skal tjekkes op mod den nationale samtykkeservice og den nationale behandlingsrelationsservice
-3.  Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af borgeren via MinLog
+-   Systems/components can be a stand-alone applications or **build-in** with one or more systems/components in the message flow.
+-   Systems/components can be a stand-alone application **grouped together** with one or more systems/components in the message flow on the same server.
 
 <br/> 
 
 
-## Specifikationer - sikkerhed vedrørende meddelelseskommunikation
+### General information about security for components in EHMI
 
-Først beskrives de generelle retningslinjerne er vedrørende sikkerhed i meddelelsesflowet i EHMI.
+It is possible to report and access data via a FHIR API. Web-services/RESTful-services, which are exposed via such interface, must, like other national web-services in the healthcare area, comply with national architecture and national standards.
 
-Dernæst beskrives det for de forskellige scenarier af **sammenbyggethed** og **gruppering**, jf. [Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden) , hvordan retningslinjerne udmøntes i de enkelte scenarier.
+This means, among other things, that in case of personal identifiable information:
+
+A strong authentication of users must take place (according to NIST niveau 3-4 or NSIS niveau “significant”)
+
+1.  Access control must be carried out based on nationally standardized information (attributes)
+2.  Consent/rejection and treatment relationship must be checked against the national consent service and the national treatment relationship service
+3.  Information about healthcare professionals’ access to personal data must be viewable for the citizen/patient via MinLog
+
+<br/> 
+
+
+## Specifications – security regarding message communication
+
+First, the general guidelines regarding security in the message flow in EHMI are described. Secondly, it is described for the different scenarios of **interconnections** and **grouping**, cf. [General information about security for components in EHMI](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden) how the guidelines is implemented in the individual scenarios.  
 
 <br/> 
 
