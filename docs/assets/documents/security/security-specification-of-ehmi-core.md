@@ -10,7 +10,7 @@
    
 <br/> 
 
-![ehmicore-security](./media/ehmicore-security.png)
+![ehmicore-security](./media/ehmicore-security.jpg)
 
 ## Table of content
 
