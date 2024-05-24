@@ -197,9 +197,9 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-### Sending system stand-alone - MSH/AP build together - all grouped together on the same server
+### Sending system stand-alone - MSH/AP build together – all grouped together on the same server
 
-![Sending system stand-alone - MSH/AP build together - all grouped together on the same server](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
+![Sending system stand-alone - MSH/AP build together – all grouped together on the same server](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
 | **EHMI components**              | **Subtask**                                                          | **Who**             |
 |-----------------------------------|------------------------------------------------------------------------|----------------------|
@@ -209,10 +209,10 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-### Sending system/MSH build together – AP stand-alone - implemented on different servers
+### Sending system/MSH build together – AP stand-alone – implemented on different servers
 
 
-![Sending system/MSH build together – AP stand-alone - implemented on different servers](media/be1c6e9b30bae64a8f5738170ef00b20.png)
+![Sending system/MSH build together – AP stand-alone – implemented on different servers](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
 | **EHMI components**                      | **Subtask**                                                                                                                 | **Who**                       |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
@@ -223,10 +223,10 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-### Sending system/MSH build together – AP stand-alone - all grouped together on the same server
+### Sending system/MSH build together – AP stand-alone – all grouped together on the same server
 
 
-![Sending system/MSH build together – AP stand-alone - all grouped together on the same server](media/be1c6e9b30bae64a8f5738170ef00b20.png)
+![Sending system/MSH build together – AP stand-alone – all grouped together on the same server](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
 | **EHMI components**     | **Subtask**                                                          | **Who**                 |
 |--------------------------|------------------------------------------------------------------------|--------------------------|
@@ -241,7 +241,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 Through dialog with the participating parties, we have learned that this scenario is possible. In that case, it is important, that parties with this kind of setup agree on which MSH is the primary with fulfilling the MSH obligations, and which MSH simply forwards information to the next link in the chain. Once this is in place , the following security instructions will apply. 
 
 
-![Sending system/MSH build together – MSH/AP build together - implemented on different servers](media/dc36c10735cb86a5499e120b23a83c79.png)
+![Sending system/MSH build together – MSH/AP build together – implemented on different servers](media/dc36c10735cb86a5499e120b23a83c79.png)
 
 | **EHMI components**                | **Subtask**                                                                                                                 | **Who**                           |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
@@ -252,9 +252,9 @@ Through dialog with the participating parties, we have learned that this scenari
 <br/> 
 
 
-### Sending system/MSH build together – MSH/AP build together - all grouped together on the same server
+### Sending system/MSH build together – MSH/AP build together – all grouped together on the same server
 
-![Sending system/MSH build together – MSH/AP build together - all grouped together on the same server](media/dc36c10735cb86a5499e120b23a83c79.png)
+![Sending system/MSH build together – MSH/AP build together – all grouped together on the same server](media/dc36c10735cb86a5499e120b23a83c79.png)
 
 | **EHMI components**     | **Subtask**                                                          | **Who**                 |
 |--------------------------|------------------------------------------------------------------------|--------------------------|
