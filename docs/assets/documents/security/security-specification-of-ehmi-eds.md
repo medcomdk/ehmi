@@ -46,132 +46,132 @@ A strong authentication of users must take place (equivalent to NIST level 3-4 o
 2.  Consent/rejection and treatment relation must be checked against the national consent service and the national treatment relation service 
 3.  Information about healthcare professionals’ access to personal data must be viewable by the citizen via MinLog. 
 
-Den generelle og specifkke sikkerhed omkring dette er beskrevet her i: <a href="../security/media/Sikkerhedsarkitektur EHMI støtteservices v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01 (opens in new window)</a>
+The general and specific security about this is described in: <a href="../security/media/Sikkerhedsarkitektur EHMI støtteservices v01.pdf" target="_blank">Security architecture EHMI support services v01 (opens in new window)</a>
 
 <br/> 
 
 
-## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
+## General security definitions for components in the message chain
 
-Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
+Following definitions for all systems/components in EHMI apply: 
 
--   Systemer/komponenter kan være en stand-alone applikation eller **sammenbygget** med en eller flere andre systemer/komponenter i meddelelsesflowet.
--   Systemer/komponenter kan være en stand-alone applikation **grupperet sammen** med en eller flere andre systemer/komponenter i meddelelsesflowet på samme server.
-
-<br/> 
-
-
-## Sikkerhedsspecificeringer vedrørende EHMI Delivery Status af meddelelser
-
-Sikkerhed i forhold til forsendelses-status opdeles i de forskellige trin:
-
-1. EHMI Delivery Status opsamles og gemmes i et repositorie
-2. EHMI Delivery Status hentes af anvendere via udstillede services
+-   Systems/components can be a stand-alone application or **build together** with one or more systems/components in the message flow.
+-   Systems/components can be a stand-alone application or **grouped together** with one or more systems/components in the message flow on the same server. 
 
 <br/> 
 
 
-### Opsamling til EHMI Delivery Service repository
+## Security specifications regarding EHMI Delivery Status of messages
 
-Fra målbilledet ved vi, at sikkerhed omkring dette er nødvendigt dels for, at anvenderne vil anse servicen baseret på de opsamlede data for troværdig, og dels fordi der opsamles personoplysninger, da unik borgeridentifikation (oftest CPR-nummeret), for den borger meddelelsen omhandler, er en del af den opsamlede information:
+Security in relation to delivery status is divided into these different steps: 
 
--   **Autenticitet:** En komponent, der gemmer EHMI Delivery Status for meddelelser, skal autentificere sig når den tilgår repositoriet.
--   **Tilgængelighed:** Aftalt oppetid og svartid skal sikres via standard driftsmekanismer. Dette er særlig vigtigt her, da EHMI Delivery Status, jf. afsnit 5.2.8, skal være tæt på realtidsopdateret.
--   **Integritet:** Sikres af den protokol, som opsamlingen implementeres via.
--   **Uafviselighed:** En komponent, der gemmer EHMI Delivery Status, skal audit logge opsamlingen på en standardiseret måde.
--   **Fortrolighed:** Når den opsamlede EHMI Delivery Status kommunikeres til repositoriet, sikres den enten via eksplicit kryptering eller implicit kryptering på det underliggende infrastruktur niveau.
+1. EHMI Delivery Status is collected and saved in a repository.
+2. EHMI Delivery Status is retrieved by users via displayed services.
 
 <br/> 
 
 
-#### Klient sikkerhed EHMI Delivery Status - indberetning
+### Collection to the EHMI Delivery Service repository
 
-| **EHMI Komponenter**                                                         | **Delopgave**                                                                                                                       | **Hvem**                                                                    |
+From the Architecture Vision, we know that security around this is necessary partly so that the users will consider the service based on the collected data to be trustworthy, and partly because personal data is collected, since unique citizen identification (most often the CPR number) is part of the collected information: 
+
+-   **Authenticity:** A component that stores EHMI Delivery Status for messages must authenticate itself when accessing the repository. 
+-   **Availability:** Agreed uptime and response must be ensured via standard operating mechanisms. This is particularly important, as EHMI Delivery Status, cf. section 5.2.8, must be updated close to real-time. 
+-   **Integrity:** Ensured by the protocol through which the collection is implemented.
+-   **Non-repudiation:** A component, that stores EHMI Delivery Status, must audit log the collection in a standardized way.
+-   **Confidentiality:** When the collected EHMI Delivery Status is communicated to the repository, it is secured either via explicit encryption or implicit encryption in the underlying infrastructure level.
+
+<br/> 
+
+
+#### Client security EHMI Delivery Status - report
+
+| **EHMI components**                                                         | **Subtask**                                                                                                                       | **Who**                                                                    |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| EHMI Delivery Status-komponent                                                 | **Autenticitet:** En komponent, der gemmer EHMI Delivery Status for meddelelser, skal autentificere sig når den tilgår repositoriet.  | Afsendende system (Afsendende fagsystem/MSH/AP)                             |
-| Afsendende system (Afsendende fagsystem/MSH/AP)                              | **Autenticitetshåndtering:** Implementering af signering af indberetning                                                            | Afsendende system (Afsendende fagsystem/MSH/AP)                             |
-| EHMI Delivery Status-komponent                                                 | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                              | EHMI Delivery Statuskomponent                                                 |
-| Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Status-komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation via sikret transportprotokol, f.eks. TLS                              | Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Statuskomponent |
-| Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Status-komponent | **Tilgængelighed:** Implementering af kø mekanisme til at håndtere at en forbindelse kan være nede                                  | Afsendende system (Afsendende fagsystem/MSH/AP) EHMI Delivery Statuskomponent |
+| EHMI Delivery Status-component                                                 | **Authenticity:** A component, that stores EHMI Delivery Status for messages must authenticate itself when accessing the repository.  | Sending system (Sending system/MSH/AP)                             |
+| Sending system (Sending system/MSH/AP)                              | **Authenticity management:** Implementation of signing reports                                                           | Sending system (Sending system/MSH/AP)                             |
+| EHMI Delivery Status-component                                                 | **Authenticity management:** Verification of signature upon receipt.                                                              | EHMI Delivery Statuscomponent                                                 |
+| Sending system (Sending system/MSH/AP) EHMI Delivery Status-component | **Integrity protection and confidentiality protection:** Communication via secured transport protocol, e.g. TLS                              | Sending system (Sending system/MSH/AP) EHMI Delivery Status-component |
+| Sending system (Sending system/MSH/AP) EHMI Delivery Status-component | **Availability:** Implementation of queue mechanism to handle that a connection may be down                                  | Sending system (Sending system/MSH/AP) EHMI Delivery Status-component |
 
 <br/> 
 
 
-### Indberetninger ift. scenarierne i [afsnit 4.](./security-specification-of-ehmi-core.md#specifikationer---sikkerhed-vedrørende-meddelelseskommunikation)
+### Reports in relation to the scenarios in [section 4.](./security-specification-of-ehmi-core.md#Specifications---security-regarding-message-communication)
 
-I det følgende antages begge sider af afsender- og modtagerøkosystemerne at have samme setup til hinanden som det afsendende økosystem. I praksis er dette naturligvis meget forskelligt, og der skal i så fald kombineres
+In the following, both sides of the sender and receiver ecosystems are assumed to have the same setup as the sending ecosystem. In practice, this is of course very different, and in that case must be combined. 
 
-| **Scenarier** | **Skabende/Indgående indberetning** | **Afsluttende/udgående indberetning** |
+| **Scenarios** | **Starting/Incoming report** | **Final/outgoing report** |
 |---|---|---|
-| [Alle komponenter stand-alone - implementeret på forskellige servere](./security-specification-of-ehmi-core.md#alle-komponenter-stand-alone---implementeret-på-forskellige-servere) <br/> [Alle komponenter stand-alone - grupperet sammen på samme server](./security-specification-of-ehmi-core.md#alle-komponenter-stand-alone---grupperet-sammen-på-samme-server) <br/> [Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](./security-specification-of-ehmi-core.md#alle-komponenter-stand-alone---afsendende-fagsystem-og-msh-grupperet-sammen-på-samme-server) <br/> [Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](./security-specification-of-ehmi-core.md#alle-komponenter-stand-alone-msh-og-ap-grupperet-sammen-på-samme-server) <br/> <br/> <br/>  | Afsendende fagsystem  <br/> Afsendende MSH <br/>  Afsendende AP <br/> ------------------------------------------- <br/> Modtagende AP <br/>  Modtagende MSH <br/> | Afsendende MSH <br/> Afsendende AP <br/> ------------------------------------------- <br/> Modtagende AP <br/>  Modtagende MSH <br/>  Modtagende fagsystem <br/> |
+| [All components stand-alone – implemented on different servers](./security-specification-of-ehmi-core.md#all-components-stand-alone---implemented-on-different-servers) <br/> [All components stand-alone – grouped together on the same server](./security-specification-of-ehmi-core.md#all-components-stand-alone---grouped-together-on-the-same-server) <br/> [All components stand-alone – sending system and MSH grouped together on the same server](./security-specification-of-ehmi-core.md#all-components-stand-alone---sending-system-and-msh-grouped-together-on-the-same-server) <br/> [All components stand-alone - MSH and AP grouped together on the same server](./security-specification-of-ehmi-core.md#all-components-stand-alone-msh-and-ap-grouped-together-on-the-same-server) <br/> <br/> <br/>  | Sending system  <br/> Sending MSH <br/>  Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/>  Receiving MSH <br/> | Sending MSH <br/> Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/>  Receiving MSH <br/>  Receiving system <br/> |
 | | | |
-| [Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](./security-specification-of-ehmi-core.md#afsendende-fagsystem-stand-alone---mshap-sammenbygget---implementeret-på-forskellige-servere) <br/> [Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](./security-specification-of-ehmi-core.md#afsendende-fagsystem-stand-alone---mshap-sammenbygget--alle-grupperet-sammen-på-samme-server) <br/> <br/> <br/> | Afsendende fagsystem <br/> Afsendende MSH/AP <br/> ------------------------------------------- <br/> Modtagende MSH/AP <br/> | Afsendende MSH/AP <br/>  ------------------------------------------- <br/> Modtagende MSH/AP <br/> Modtagende fagsystem <br/> |
+| [Sending system stand-alone - MSH/AP build together - implemented on different servers](./security-specification-of-ehmi-core.md#sending-system-stand-alone---mshap-build-together---implemented-on-different-servers) <br/> [Sending system stand-alone - MSH/AP build together - all grouped on the same server](./security-specification-of-ehmi-core.md#sending-system-stand-alone---mshap-build-together---all-grouped-on-the-same-server) <br/> <br/> <br/> | Sending system <br/> Sending MSH/AP <br/> ------------------------------------------- <br/> Receiving MSH/AP <br/> | Sending MSH/AP <br/>  ------------------------------------------- <br/> Receiving MSH/AP <br/> Receiving system <br/> |
 | | | |
-| [Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](./security-specification-of-ehmi-core.md#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone---implementeret-på-forskellige-servere) <br/> [Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](./security-specification-of-ehmi-core.md#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone--alle-grupperet-sammen-på-samme-server) <br/><br/> | Afsendende fagsystem/MSH <br/> Afsendende AP <br/> ------------------------------------------- <br/> Modtagende AP <br/> | Afsendende AP <br/> ------------------------------------------- <br/> Modtagende AP <br/> Modtagende fagsystem/MSH <br/> |
+| [Sending system/MSH build together - AP stand-alone - implemented on different servers](./security-specification-of-ehmi-core.md#sending-systemmsh-build-together--ap-stand-alone---implemented-on-different-servers) <br/> [Sending system/MSH build together - AP stand-alone - all grouped together on the same server](./security-specification-of-ehmi-core.md#sending-systemmsh-build-together---ap-stand-alone--all-grouped-together-on-the-same-server) <br/><br/> | Sending system/MSH <br/> Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/> | Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/> Receiving system/MSH <br/> |
 | | | |
-| [Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](./security-specification-of-ehmi-core.md#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget---implementeret-på-forskellige-servere) <br/> [Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](./security-specification-of-ehmi-core.md#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget--alle-grupperet-sammen-på-samme-server) <br/> <br/> | Afsendende fagsystem/MSH <br/> Afsendende AP/MSH <br/> ------------------------------------------- <br/> Modtagende AP/MSH <br/> | Afsendende AP/MSH <br/> ------------------------------------------- <br/> Modtagende AP/MSH <br/> Modtagende fagsystem/MSH <br/> |
+| [Sending system/MSH build together – MSH/AP build together - implemented on different servers](./security-specification-of-ehmi-core.md#sending-systemmsh-build-together---mshap-build-together---implemented-on-different-servers) <br/> [Sending system/MSH build together – MSH/AP build together - all grouped on the same server](./security-specification-of-ehmi-core.md#sending-systemmsh-build-together---mshap-build-together--all-grouped-on-the-same-server) <br/> <br/> | Sending system/MSH <br/> Sending AP/MSH <br/> ------------------------------------------- <br/> Receiving AP/MSH <br/> | Sending AP/MSH <br/> ------------------------------------------- <br/> Receiving AP/MSH <br/> Receiving system/MSH <br/> |
 | | | |
-| [Alle komponenter sammenbyggede](./security-specification-of-ehmi-core.md#alle-komponenter-sammenbyggede) <br/> | Afsendende fagsystem/MSH/AP <br/> | Modtagende fagsystem/MSH/AP <br/> |
+| [All components build together](./security-specification-of-ehmi-core.md#all-components-build-together) <br/> | Sending system/MSH/AP <br/> | Receiving system/MSH/AP <br/> |
 
 <br/> 
 
 
-### Udstilling via service
+### Exhibition via service
 
-Fra målbilledet ved vi, at servicen, der udstiller EHMI Delivery Status for meddelelser, skal overholde de samme sikkerhedskrav og -regler som øvrige services på sundhedsområdet, jf. målbilledets princip PT6. Derfor bør flere af de samme allerede eksisterende sikkerhedsmekanismer fra disse andre services anvendes:
+From the Architecture Vision, we know that the service, who exhibit EHMI Delivery Status on messages, must comply to the same security requirements and rules as other services in the health area, cf. the Architecture Vision’s principle PT6. Therefore, several of the same already existing security mechanisms from other services should be used:
 
--   **Autenticitet:** Servicen skal udstilles som en DGWS/IDWS service eller lignende niveau, og anvenderne (både systemer, sundhedspersoner og borgere) skal anvende digitale certifikater i forbindelse med kald til servicen på samme måde som for andre services på sundhedsområdet, og det er (igen) et krav, at de anvendte certifikater er på personbevisniveau. For systemer dog systembevisniveau.
--   **Tilgængelighed:** Aftalt oppetid og svartid sikres via den platform, som servicen afvikles på
--   **Integritet:** Sikres af den protokol, som servicen er implementeret med.
--   **Uafviselighed:** Servicen implementerer standardiseret audit log. Logning til MinLog er påkrævet i tilfældene hvor en borger henter EHMI Delivery Status for meddelelser angående en anden borger end sig selv, og hvor en sundhedsperson henter EHMI Delivery Status specifikt for en borger.
--   **Fortrolighed:** Servicen skal aktivt anvende den identifikation af anvenderen (system, sundhedsperson eller borger) samt de søgeparametre, der er en del af kaldet af servicen.
+-   **Authenticity:** The service must be presented as a DGWS/IDWS service or a similar level, and the users (both systems, health professionals and citizens) must use digital certificates when calling the service in the same way as for other services on the healthcare area. Again, it is a requirement, that the certificates used are at identity proof level. For systems, however, the certificates must be at system proof level.
+-   **Availability:** Agreed uptime and response time are ensured via the platform on which the service is carried out.
+-   **Integrity:** Secured by the protocol with which the service is implemented.
+-   **Non-repudiation:** The service implements a standardized audit log. Logging to MinLog is required in cases where a citizen retrieves the EHMI Delivery Status for messages concerning a citizen other than himself, and where a healthcare professional retrieves EHMI Delivery Status specifically for a citizen.
+-   **Confidentiality:** The service must actively use the identification of the user (system, healthcare professional or citizen) as well as the search parameters, that are part of the call for the service.
 
-Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
+Since the service is exhibited and performed on a platform, that may have its own and more strict security politics than the general security politics in the healthcare area, these must also be observed if necessary.
 
 <br/> 
 
 
-#### Klient sikkerhed for EHMI Delivery Status - udsøgning
+#### Client security for EHMI Delivery Status - search
 
-Det vil blive baseret på et OAuth-sikret REST-interface og SMART-on-FHIR eller lignende.
+It will be based on an OAuth-secured REST-interface and SMART-on-FHIR or similar.
 
-For opsamling af EHMI Delivery Status stilles der krav om, at der jf. målbilledets afsnit 6.3.1 eksplicit signeres mellem EHMI Delivery Status ”klienten” og ”serveren” (med tilhørende verifikation) på systembevisniveau (VOCES/FOCES/Niveau 3).
+For the collection of EHMI Delivery Status, explicit signature between the EHMI Delivery Status “client” and “server” (with associated verification) on system proof level (VOCES/FOCES/Niveau 3) is required, cf. section 6.3.1 in the Architecture Vision.
 
-For søgning af EHMI Delivery Status stilles der krav om, at der mellem EHMI Delivery Status ”klienten” og ”serveren” anvendes identifikation på systembevisniveau (VOCES/FOCES/Niveau 3).
+To search for EHMI Delivery Status, it is required to use identification on system proof level (VOCES/FOCES/Niveau 3) between the EHMI Delivery Status “client” and “server”.
 
-For søgning af EHMI Delivery Status stilles der derudover krav om, at der ved borgers egen adgang og en klinikers specifikke adgang via borgerens/patientens journal anvendes identifikation på personbevisniveau (MOCES/MitID/Niveau 4).
+To search for EHMI Delivery Status, it is further required to use identification on person proof level (MOCES/MitID/Niveau 4) for a citizen’s own access as well as a healthcare professional’s specific access via the citizen’s/patient’s record. 
 
-| **EHMI Komponenter**                                                 | **Delopgave**                                                                                                                 | **Hvem**                                                             |
+| **EHMI components**                                                 | **Subtask**                                                                                                                 | **Who**                                                             |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| Afsendende system (Afsendende fagsystem/MSH/AP)                      | **Autenticitetshåndtering:** Implementering af signering af indberetning                                                      | Afsendende system (Afsendende fagsystem/MSH/AP)                      |
-| Modtagende komponent                                                 | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | Modtagende komponent                                                 |
-| Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende system (Afsendende fagsystem/MSH/AP) Modtagende komponent |
+| Sending system (Sending system/MSH/AP)                      | **Authenticity management:** Implementation of signing reports                                                      | Sending system (Sending system/MSH/AP)                      |
+| Receiving component                                                 | **Authenticity management:** Verification of signing upon receiving.                                                        | Receiving component                                                 |
+| Sending system (Sending system/MSH/AP) Receiving component | **Integrity protection and confidentiality protection:** Communication of message/envelope via secured transport protocol, e.g. TLS | Sending system (Sending system/MSH/AP) Receiving component |
 
 <br/> 
 
 
-## Sikkerhedsspecificeringer vedrørende EHMI Adressing Service
+## Security specifications regarding EHMI Addressing Service
 
-Fra målbilledet ved vi, at EHMI Adressing Servicen skal overholde de samme sikkerhedskrav og -regler som tilsvarende services på sundhedsområdet, og derfor bør flere af de samme allerede eksisterende sikkerhedsmekanismer anvendes:
+From the Architecture Vision it is known, that EHMI Addressing Service must comply to the same security requirements and rules as corresponding services on the healthcare area, and therefore more of the same already existing security mechanisms should be used: 
 
--   **Autenticitet:** Servicen skal udstilles som en DGWS/IDWS service, og anvenderne skal anvende digitale certifikater i forbindelse med kald til servicen på samme måde som for tilsvarende services på sundhedsområdet. På grund af denne service’ natur er det imidlertid i dette tilfælde tilstrækkeligt, at de anvendte certifikater er på systembevisniveau.
--   **Tilgængelighed:** Aftalt oppetid og svartid skal sikres via den platform, som servicen afvikles på – f.eks. via standard driftsmekanismer som fail-over og load-balancere.
--   **Integritet:** Sikres af den protokol, som servicen er implementeret med.
--   **Uafviselighed:** Servicen skal implementere standardiseret audit log.
--   **Fortrolighed:** Servicen skal anvende den identifikation af anvenderen samt de søgeparametre, der er en del af kaldet af servicen, men en egentlig brugerstyring i forhold til hvem, der kalder servicen, antages håndhævet af de kaldende systemer, så når et anvendersystem er korrekt autentificeret, er der adgang til servicen.
+-   **Authenticity:** The service must be presented as a DGWS/IDWS service, and the users must use digital certificates when calling the service in the same way as for other services on the healthcare area. Due to the nature of the service, it is in this case sufficient, that the used certificates are at system certificate level.
+-   **Availability:** Agreed uptime and response time must be ensured via the platform on which the service is carried out, e.g. via standard operating mechanisms such as fail-over and load-balancing.
+-   **Integrity:** Secured by the protocol with which the service is implemented.
+-   **Non-repudiation:** The service must implement standardized audit log. 
+-   **Confidentiality:** The service must use the identification of the user as well as the search parameters, that are part of the call for the service. An actual user management in relation to who calls the service, is assumed to be enforced by the calling systems. So, when a user system is correctly authenticated, there is access to the service.
 
-Da servicen udstilles og afvikles på en platform, der kan have sine egne mere strikse sikkerhedspolitikker end de generelle på sundhedsområdet, skal disse i givet fald også overholdes.
+Since the service is exhibited and performed on a platform, that may have its own and more strict security politics than the general security politics in the healthcare area, these must also be observed if necessary.
 
 <br/> 
 
 
-### Decentral vedrørende EHMI-komponent: EHMI Adressing Service
+### Decentral regarding EHMI-component: EHMI Addressing Service
 
-| **EHMI Komponenter**                                       | **Delopgave**                                                                                                                                                                                                                        | **Hvem**                                                  |
+| **EHMI components**                                       | **Subtask**                                                                                                                                                                                                                        | **Who**                                                  |
 |------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| Afsendende system (Fagsystem)                              | **Autenticitetshåndtering:** Implementering af signering af søgning (VOCES/FOCES)                                                                                                                                                    | Afsendende system (Fagsystem)                             |
-| EHMI Adressing Service                               | **Autenticitetshåndtering:** Verifikation af signering (VOCES/FOCES)                                                                                                                                                                 | EHMI Adressing Service                               |
-| Afsendende system (Fagsystem) EHMI Adressing Service | **Integritetssikring og fortrolighedssikring:** Kommunikation sikret via transportprotokol, f.eks. TLS                                                                                                                               | Afsendende system (Fagsystem) EHMI Adressing Service |
-| Afsendende system (Fagsystem) EHMI Adressing Service | **Tilgængelighed:** Implementering af faste søgninger, som evt. kan gemmes lokalt til at håndtere at en forbindelse kan være nede.  Hvis servicen er online bør altid søges online. Faste søgninger bør opdateres udenfor peaktimes. | Afsendende system (Fagsystem) EHMI Adressing Service |
+| Sending system (System)                              | **Authenticity management:** mplementation of signing a search (VOCES/FOCES)                                                                                                                                                    | Sending system (System)                             |
+| EHMI Addressing Service                               | **Authenticity management:** Verification of signing (VOCES/FOCES)                                                                                                                                                                 | EHMI Addressing Service                               |
+| Sending system (System) EHMI Addressing Service | **Integrity protection and confidentiality protection:** Communication secured via transport protocol, e.g. TLS                                                                                                                               | Sending system (System) EHMI Addressing Service |
+| Sending system (System) EHMI Addressing Service | **Availability:** Implementation of fixed searches, which may be locally saved to handle if a connection is down. If the service is online, one should always search online. Fixed searches should be updated outside peak hours | Sending system (System) EHMI Addressing Service
 
 <br/> 
