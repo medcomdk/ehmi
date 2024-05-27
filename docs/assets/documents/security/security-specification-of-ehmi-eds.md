@@ -23,7 +23,7 @@
 
 - [Client security for EHMI Delivery Status - reporting](#client-security-for-ehmi-delivery-status---reporting)
 
-- [Exhibition via service](#exhibition-via-services)
+- [Exhibition via service](#exhibition-via-service)
 
 - [Client security for EHMI Delivery Status – searching](#client-security-for-ehmi-delivery-status---searching)
 
@@ -165,7 +165,7 @@ Since the service is exhibited and performed on a platform, that may have its ow
 <br/> 
 
 
-### Decentral regarding EHMI-component: EHMI Addressing Service
+### Decentral regarding EHMI Addressing Service
 
 | **EHMI components**                                       | **Subtask**                                                                                                                                                                                                                        | **Who**                                                  |
 |------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
