@@ -1,4 +1,4 @@
-# Specificering af sikkerhed ifm centrale EHMI-services
+# Specification of security regarding central EHMI services 
 
 ***
 
@@ -11,40 +11,40 @@
 <br/> 
 
 
-## Indholdsfortegnelse
+## Table of context
 
-- [Generelt omkring sikkerhed for komponenter i EHMI](#generelt-omkring-sikkerhed-for-komponenter-i-ehmi)
+- [General information regarding security for components in EHMI](#generelt-omkring-sikkerhed-for-komponenter-i-ehmi)
 
-- [Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
+- [General security definitions for components in the message chain](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
 
-- [Sikkerhedsspecificeringer vedrørende EHMI Delivery Status af meddelelser](#sikkerhedsspecificeringer-vedrørende-Delivery Status-af-meddelelser)
+- [Security specifications regarding EHMI Delivery Status of messages](#sikkerhedsspecificeringer-vedrørende-Delivery Status-af-meddelelser)
 
-- [Opsamling til repositorie](#opsamling-til-ehmi-delivery-service-repository)
+- [Collection to repository](#opsamling-til-ehmi-delivery-service-repository)
 
-- [Klient sikkerhed for EHMI Delivery Status - indberetning](#decentralt-vedrørende-sikkerhed-for-ehmi-komponent-Delivery Status---indberetning)
+- [Client security for EHMI Delivery Status - reporting](#decentralt-vedrørende-sikkerhed-for-ehmi-komponent-Delivery Status---indberetning)
 
-- [Udstilling via service](#udstilling-via-service)
+- [Exhibition via service](#udstilling-via-service)
 
-- [Klient sikkerhed for EHMI Delivery Status - udsøgning](#klient-sikkerhed-ehmi-delivery-status---indberetning)
+- [Client security for EHMI Delivery Status – searching](#klient-sikkerhed-ehmi-delivery-status---indberetning)
 
-- [Sikkerhedsspecificeringer vedrørende EHMI AdressingService]()
+- [Security specifications regarding EHMI Addressing Service]()
 
-- [Decentral vedrørende EHMI Adressing Service](#decentral-vedrørende-ehmi-komponent-ehmi-adressing-service)
+- [Decentral regarding EHMI Addressing Service](#decentral-vedrørende-ehmi-komponent-ehmi-adressing-service)
 
 <br/> 
 
 
-## Generelt omkring sikkerhed for komponenter i EHMI
+## General information regarding security for components in EHMI
 
-Det er muligt at indrapportere og tilgå data via et FHIR API. Web-services/RESTful-services, der udstilles via et sådant interface, skal, præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde national arkitektur og nationale standarder.
+It is possible to report and access data via a FHIR API. Web-services/RESTful-services, that are exposed via an interface, must, like other national web-services on the health area, comply with national architecture and national standards.
 
-Det betyder bl.a., at ved personhenførbare oplysninger:
+This means, among other things, that in case of personally identifiable information:
 
-Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 eller NSIS niveau ”betydeligt”)
+A strong authentication of users must take place (equivalent to NIST level 3-4 or NSIS level “significant”).
 
-1.  Der skal foretages adgangskontrol baseret på nationalt standardiseret information (attributter)
-2.  Samtykke/frabedelse og behandlingsrelation skal tjekkes op mod den nationale samtykkeservice og den nationale behandlingsrelationsservice
-3.  Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af borgeren via MinLog
+1.  Access control must be carried out based on national standardized information (attributes).
+2.  Consent/rejection and treatment relation must be checked against the national consent service and the national treatment relation service 
+3.  Information about healthcare professionals’ access to personal data must be viewable by the citizen via MinLog. 
 
 Den generelle og specifkke sikkerhed omkring dette er beskrevet her i: <a href="../security/media/Sikkerhedsarkitektur EHMI støtteservices v01.pdf" target="_blank">Sikkerhedsarkitektur EHMI støtteservices v01 (opens in new window)</a>
 
