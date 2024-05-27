@@ -13,7 +13,7 @@
 
 ## Table of context
 
-- [General information regarding security for components in EHMI](#generelt-omkring-sikkerhed-for-komponenter-i-ehmi)
+- [General information regarding security for components in EHMI](#general-information-regarding-security-for-components-in-ehmi)
 
 - [General security definitions for components in the message chain](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
 
