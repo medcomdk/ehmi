@@ -17,19 +17,19 @@
 
 - [General security definitions for components in the message chain](#general-security-definitions-for-components-in-the-message-chain)
 
-- [Security specifications regarding EHMI Delivery Status of messages](#sikkerhedsspecificeringer-vedrørende-Delivery Status-af-meddelelser)
+- [Security specifications regarding EHMI Delivery Status of messages](#security-specifications-regarding-EHMI-Delivery-Status-of-messages)
 
-- [Collection to repository](#opsamling-til-ehmi-delivery-service-repository)
+- [Collection to EHMI Delivery Service repository](#collection-to-ehmi-delivery-service-repository)
 
-- [Client security for EHMI Delivery Status - reporting](#decentralt-vedrørende-sikkerhed-for-ehmi-komponent-Delivery Status---indberetning)
+- [Client security for EHMI Delivery Status - reporting](#client-security-for-ehmi-delivery-status---reporting)
 
-- [Exhibition via service](#udstilling-via-service)
+- [Exhibition via service](#exhibition-via-services)
 
-- [Client security for EHMI Delivery Status – searching](#klient-sikkerhed-ehmi-delivery-status---indberetning)
+- [Client security for EHMI Delivery Status – searching](#client-security-for-ehmi-delivery-status---searching)
 
-- [Security specifications regarding EHMI Addressing Service]()
+- [Security specifications regarding EHMI Addressing Service](#security-specifications-regarding-ehmi-addressing-service)
 
-- [Decentral regarding EHMI Addressing Service](#decentral-vedrørende-ehmi-komponent-ehmi-adressing-service)
+- [Decentral regarding EHMI Addressing Service](#decentral-regarding-ehmi-addressing-service)
 
 <br/> 
 
@@ -71,7 +71,7 @@ Security in relation to delivery status is divided into these different steps:
 <br/> 
 
 
-### Collection to the EHMI Delivery Service repository
+### Collection to EHMI Delivery Service repository
 
 From the Architecture Vision, we know that security around this is necessary partly so that the users will consider the service based on the collected data to be trustworthy, and partly because personal data is collected, since unique citizen identification (most often the CPR number) is part of the collected information: 
 
@@ -84,7 +84,7 @@ From the Architecture Vision, we know that security around this is necessary par
 <br/> 
 
 
-#### Client security EHMI Delivery Status - report
+#### Client security for EHMI Delivery Status - reporting
 
 | **EHMI components**                                                         | **Subtask**                                                                                                                       | **Who**                                                                    |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -131,7 +131,7 @@ Since the service is exhibited and performed on a platform, that may have its ow
 <br/> 
 
 
-#### Client security for EHMI Delivery Status - search
+#### Client security for EHMI Delivery Status - searching
 
 It will be based on an OAuth-secured REST-interface and SMART-on-FHIR or similar.
 
