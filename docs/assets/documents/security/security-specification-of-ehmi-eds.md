@@ -15,7 +15,7 @@
 
 - [General information regarding security for components in EHMI](#general-information-regarding-security-for-components-in-ehmi)
 
-- [General security definitions for components in the message chain](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
+- [General security definitions for components in the message chain](#general-security-definitions-for-components-in-the-message-chain)
 
 - [Security specifications regarding EHMI Delivery Status of messages](#sikkerhedsspecificeringer-vedrørende-Delivery Status-af-meddelelser)
 
