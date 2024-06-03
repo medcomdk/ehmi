@@ -46,7 +46,7 @@ A strong authentication of users must take place (equivalent to NIST level 3-4 o
 2.  Consent/rejection and treatment relation must be checked against the national consent service and the national treatment relation service 
 3.  Information about healthcare professionals’ access to personal data must be viewable by the citizen via MinLog. 
 
-The general and specific security about this is described in: <a href="../security/media/Sikkerhedsarkitektur EHMI støtteservices v01.pdf" target="_blank">Security architecture EHMI support services v01 (opens in new window)</a>
+The general and specific security about this is described in: <a href="../security/media/Sikkerhedsarkitektur EHMI Services v0.22.pdf" target="_blank">Security architecture EHMI support services v01 (opens in new window)</a>
 
 <br/> 
 
