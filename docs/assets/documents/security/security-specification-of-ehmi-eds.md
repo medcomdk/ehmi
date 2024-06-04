@@ -43,7 +43,7 @@ This means, among other things, that in case of personally identifiable informat
 A strong authentication of users must take place (equivalent to NIST level 3-4 or NSIS level “significant”).
 
 1.  Access control must be carried out based on national standardized information (attributes).
-2.  Consent/rejection and treatment relation must be checked against the national consent service and the national treatment relation service 
+2.  Consent/rejection and treatment relation (dansk: behandlingsrelation) must be checked against the national consent service and the national treatment relation service (dansk: behandlingsrelationservice)
 3.  Information about healthcare professionals’ access to personal data must be viewable by the citizen via MinLog. 
 
 The general and specific security about this is described in: <a href="../security/media/Sikkerhedsarkitektur EHMI Services v0.22.pdf" target="_blank">Security architecture EHMI support services v01 (opens in new window)</a>
@@ -71,7 +71,7 @@ Security in relation to delivery status is divided into these different steps:
 <br/> 
 
 
-### Collection to EHMI Delivery Service repository
+### Submission to EHMI Delivery Service repository
 
 From the Architecture Vision, we know that security around this is necessary partly so that the users will consider the service based on the collected data to be trustworthy, and partly because personal data is collected, since unique citizen identification (most often the CPR number) is part of the collected information: 
 
