@@ -120,7 +120,7 @@ In the following, both sides of the sender and receiver ecosystems are assumed t
 
 From the Architecture Vision, we know that the service, who exhibit EHMI Delivery Status on messages, must comply to the same security requirements and rules as other services in the health area, cf. the Architecture Vision’s principle PT6. Therefore, several of the same already existing security mechanisms from other services should be used:
 
--   **Authenticity:** The service must be presented as a DGWS/IDWS service or a similar level, and the users (both systems, health professionals and citizens) must use digital certificates when calling the service in the same way as for other services on the healthcare area. Again, it is a requirement, that the certificates used are at identity proof level. For systems, however, the certificates must be at system proof level.
+-   **Authenticity:** The service must be presented as a DGWS/IDWS service or a similar level, and the users (both systems, health professionals and citizens) must use digital certificates when calling the service in the same way as for other services on the healthcare area. Again, it is a requirement, that the certificates used are at user credentials level. For systems, however, the certificates must be at system credentials level.
 -   **Availability:** Agreed uptime and response time are ensured via the platform on which the service is carried out.
 -   **Integrity:** Secured by the protocol with which the service is implemented.
 -   **Non-repudiation:** The service implements a standardized audit log. Logging to MinLog is required in cases where a citizen retrieves the EHMI Delivery Status for messages concerning a citizen other than himself, and where a healthcare professional retrieves EHMI Delivery Status specifically for a citizen.
@@ -135,11 +135,11 @@ Since the service is exhibited and performed on a platform, that may have its ow
 
 It will be based on an OAuth-secured REST-interface and SMART-on-FHIR or similar.
 
-For the collection of EHMI Delivery Status, explicit signature between the EHMI Delivery Status “client” and “server” (with associated verification) on system proof level (VOCES/FOCES/Niveau 3) is required, cf. section 6.3.1 in the Architecture Vision.
+For the collection of EHMI Delivery Status, explicit signature between the EHMI Delivery Status “client” and “server” (with associated verification) on system credentials level (VOCES/FOCES/Niveau 3) is required, cf. section 6.3.1 in the Architecture Vision.
 
-To search for EHMI Delivery Status, it is required to use identification on system proof level (VOCES/FOCES/Niveau 3) between the EHMI Delivery Status “client” and “server”.
+To search for EHMI Delivery Status, it is required to use identification on system credentials level (VOCES/FOCES/Niveau 3) between the EHMI Delivery Status “client” and “server”.
 
-To search for EHMI Delivery Status, it is further required to use identification on person proof level (MOCES/MitID/Niveau 4) for a citizen’s own access as well as a healthcare professional’s specific access via the citizen’s/patient’s record. 
+To search for EHMI Delivery Status, it is further required to use identification on user credentials level (MOCES/MitID/Niveau 4) for a citizen’s own access as well as a healthcare professional’s specific access via the citizen’s/patient’s record. 
 
 | **EHMI components**                                                 | **Subtask**                                                                                                                 | **Who**                                                             |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -154,7 +154,7 @@ To search for EHMI Delivery Status, it is further required to use identification
 
 From the Architecture Vision it is known, that EHMI Addressing Service must comply to the same security requirements and rules as corresponding services on the healthcare area, and therefore more of the same already existing security mechanisms should be used: 
 
--   **Authenticity:** The service must be presented as a DGWS/IDWS service, and the users must use digital certificates when calling the service in the same way as for other services on the healthcare area. Due to the nature of the service, it is in this case sufficient, that the used certificates are at system certificate level.
+-   **Authenticity:** The service must be presented as a DGWS/IDWS service, and the users must use digital certificates when calling the service in the same way as for other services on the healthcare area. Due to the nature of the service, it is in this case sufficient, that the used certificates are at system credentials level.
 -   **Availability:** Agreed uptime and response time must be ensured via the platform on which the service is carried out, e.g. via standard operating mechanisms such as fail-over and load-balancing.
 -   **Integrity:** Secured by the protocol with which the service is implemented.
 -   **Non-repudiation:** The service must implement standardized audit log. 
