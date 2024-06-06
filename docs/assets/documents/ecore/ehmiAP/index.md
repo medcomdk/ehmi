@@ -24,9 +24,8 @@ Especially the ehmiAP **SHALL** conform to these basic functionalities
 - SBDH (Standard Business Document Header)
 
 
-Furthermore, for being an ehmiAP supplier for the production pilot it is important that you conform to the following requirements (in danish):
+Furthermore, for being an EHMI AP supplier for the production pilot it is important that you conform to the following requirements (in danish):
 
-Følgende forudsætninger for en EHMI AP-leverandør er gældende:
 - AP-leverandøren har allerede valgt et EU-godkendt AP og vil kunne implementere dette i drift for en organisation i sundhedsvæsenet.
 - AP-leverandøren har implementeret understøttelse for SBDH compliance  med PEPPOL. Der vil derfor ikke være MedCom-støttemidler til implementering af dette.
 - AP’et skal operere på sundhedsdatanettet (SDN) med de godkendelser, det kræves at operere her.
