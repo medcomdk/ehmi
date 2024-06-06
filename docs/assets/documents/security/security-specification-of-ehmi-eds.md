@@ -19,13 +19,13 @@
 
 - [Security specifications regarding EHMI Delivery Status of messages](#security-specifications-regarding-EHMI-Delivery-Status-of-messages)
 
-- [Collection to EHMI Delivery Service repository](#collection-to-ehmi-delivery-service-repository)
+- [Submission to EHMI Delivery Service repository](#submission-to-ehmi-delivery-service-repository)
 
-- [Client security for EHMI Delivery Status - reporting](#client-security-for-ehmi-delivery-status---reporting)
+- [Client security for EHMI Delivery Status - submission](#client-security-for-ehmi-delivery-status---submission)
 
 - [Exhibition via service](#exhibition-via-service)
 
-- [Client security for EHMI Delivery Status – searching](#client-security-for-ehmi-delivery-status---searching)
+- [Client security for EHMI Delivery Status – search](#client-security-for-ehmi-delivery-status---searching)
 
 - [Security specifications regarding EHMI Addressing Service](#security-specifications-regarding-ehmi-addressing-service)
 
