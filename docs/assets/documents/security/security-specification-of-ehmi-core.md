@@ -68,7 +68,7 @@ This means, among other things, that in case of personal identifiable informatio
 A strong authentication of users must take place (according to NIST niveau 3-4 or NSIS niveau “substantial”)
 
 1.  Access control must be carried out based on nationally standardized information (attributes)
-2.  Consent/rejection and treatment relationship must be checked against the national consent service and the national treatment relationship service
+2.  Consent/rejection and treatment relation (dansk: behandlingsrelation) must be checked against the national consent service and the national treatment relation service (dansk: behandlingsrelationsservice)
 3.  Information about healthcare professionals’ access to personal data must be viewable for the citizen/patient via MinLog
 
 <br/> 
