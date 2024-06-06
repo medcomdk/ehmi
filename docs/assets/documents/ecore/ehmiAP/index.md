@@ -2,8 +2,6 @@
 
 An eDelivery AP for EHMI is in the following called ehmiAP
 
-**Table of contents**
-
 
 ![EHMI Meddelelsesforsendelse og dokumentdeling](/ehmi/assets/images/1_EHMI_Meddelelsesforsendelse_og_dokumentdeling_1315x563.png)
 
@@ -24,6 +22,7 @@ Especially the ehmiAP **SHALL** conform to these basic functionalities
     - Dynamic Sender
     - Dynamic Receiver
 - SBDH (Standard Business Document Header)
+
 
 Furthermore, for being an ehmiAP supplier for the production pilot it is important that you conform to the following requirements (in danish):
 
