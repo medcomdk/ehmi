@@ -87,7 +87,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 
 | **EHMI components**                                              | **Subtask**                                                                                                                                      | **Who**                   |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| Between stand-alone components/services.                          | **Authenticity management:** Implementation of signing of delivering.                                                                           | Afsenderkomponent          |
+| Between stand-alone components/services.                          | **Authenticity management:** Implementation of signing of delivering.                                                                           | Sender component          |
 | Between stand-alone components/services.                          | **Authenticity management:** Verification of signature upon receipt.                                                                             | Receiver component          |
 | Between components/services, that are handled on different servers | **Integrity protection and confidentiality protection:** Communication of a message / message content / envelope via secured transport protocol, e.g. TLS | Sender/receiver component |
 
