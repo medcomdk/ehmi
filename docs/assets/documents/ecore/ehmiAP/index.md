@@ -24,3 +24,14 @@ Especially the ehmiAP **SHALL** conform to these basic functionalities
     - Dynamic Sender
     - Dynamic Receiver
 - SBDH (Standard Business Document Header)
+
+Furthermore, for being an ehmiAP supplier for the production pilot it is important that you conform to the following requirements (in danish):
+
+Følgende forudsætninger for en EHMI AP-leverandør er gældende:
+•	AP-leverandøren har allerede valgt et EU-godkendt AP og vil kunne implementere dette i drift for en organisation i sundhedsvæsenet. 
+•	AP-leverandøren har implementeret understøttelse for SBDH compliance  med PEPPOL. Der vil derfor ikke være MedCom-støttemidler til implementering af dette.
+•	AP’et skal operere på sundhedsdatanettet (SDN) med de godkendelser, det kræves at operere her.
+•	AP’et skal kommunikere med sundhedsvæsenets valgte SMP, uanset om dette er placeret på SDN eller på det åbne internet.
+•	AP-leverandøren skal være indstillet på at følge de regler for kommunikation i sundhedsvæsenet, som er angivet i Sundhedsdatastyrelsens  ”Målbillede for meddelelseskommunikation på sundhedsområdet”. Nogle regler er eksplicit udtrykt i målbilledet, andre præciseres efterfølgende i governance for afprøvningen (produktionspiloten).
+•	AP-leverandøren skal leve op til MedComs godkendelseskrav for et AP, dvs. at demonstrere at AP’et kan kommunikere med MedComs test-AP på SDN via MedComs SMP med logning af forsendelsesstatus. 
+
