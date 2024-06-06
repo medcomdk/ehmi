@@ -99,7 +99,7 @@ From the Architecture Vision, we know that security around this is necessary par
 
 ### Submissions in relation to the scenarios in [Specifications – security regarding message communication](./security-specification-of-ehmi-core.md#Specifications---security-regarding-message-communication)
 
-In the following, both sides of the sender and receiver ecosystems are assumed to have the same setup as the sending ecosystem. In practice, this is of course very different, and in that case must be combined. 
+In the following, both sides of the sender and receiver ecosystems are assumed to have the same setup as the sending ecosystem. In practice, Sender and Receiver ecosystems are potentially very different, and in that case the different scenarios must be combined accordingly. 
 
 | **Scenarios** | **Starting/Incoming submission** | **Final/outgoing submission** |
 |---|---|---|
