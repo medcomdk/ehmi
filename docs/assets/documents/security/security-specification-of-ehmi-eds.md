@@ -25,7 +25,7 @@
 
 - [Exhibition via service](#exhibition-via-service)
 
-- [Client security for EHMI Delivery Status – search](#client-security-for-ehmi-delivery-status---searching)
+- [Client security for EHMI Delivery Status – search](#client-security-for-ehmi-delivery-status---search)
 
 - [Security specifications regarding EHMI Addressing Service](#security-specifications-regarding-ehmi-addressing-service)
 
