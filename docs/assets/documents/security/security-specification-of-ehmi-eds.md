@@ -84,7 +84,7 @@ From the Architecture Vision, we know that security around this is necessary par
 <br/> 
 
 
-#### Client security for EHMI Delivery Status - reporting
+#### Client security for EHMI Delivery Status - Submission
 
 | **EHMI components**                                                         | **Subtask**                                                                                                                       | **Who**                                                                    |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -97,11 +97,11 @@ From the Architecture Vision, we know that security around this is necessary par
 <br/> 
 
 
-### Reports in relation to the scenarios in [section 4.](./security-specification-of-ehmi-core.md#Specifications---security-regarding-message-communication)
+### Submissions in relation to the scenarios in [Specifications – security regarding message communication](./security-specification-of-ehmi-core.md#Specifications---security-regarding-message-communication)
 
 In the following, both sides of the sender and receiver ecosystems are assumed to have the same setup as the sending ecosystem. In practice, this is of course very different, and in that case must be combined. 
 
-| **Scenarios** | **Starting/Incoming report** | **Final/outgoing report** |
+| **Scenarios** | **Starting/Incoming submission** | **Final/outgoing submission** |
 |---|---|---|
 | [All components stand-alone – implemented on different servers](./security-specification-of-ehmi-core.md#all-components-stand-alone---implemented-on-different-servers) <br/> [All components stand-alone – grouped together on the same server](./security-specification-of-ehmi-core.md#all-components-stand-alone---grouped-together-on-the-same-server) <br/> [All components stand-alone – sending system and MSH grouped together on the same server](./security-specification-of-ehmi-core.md#all-components-stand-alone---sending-system-and-msh-grouped-together-on-the-same-server) <br/> [All components stand-alone - MSH and AP grouped together on the same server](./security-specification-of-ehmi-core.md#all-components-stand-alone-msh-and-ap-grouped-together-on-the-same-server) <br/> <br/> <br/>  | Sending system  <br/> Sending MSH <br/>  Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/>  Receiving MSH <br/> | Sending MSH <br/> Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/>  Receiving MSH <br/>  Receiving system <br/> |
 | | | |
@@ -131,7 +131,7 @@ Since the service is exhibited and performed on a platform, that may have its ow
 <br/> 
 
 
-#### Client security for EHMI Delivery Status - searching
+#### Client security for EHMI Delivery Status - Search
 
 It will be based on an OAuth-secured REST-interface and SMART-on-FHIR or similar.
 
