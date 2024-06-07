@@ -24,11 +24,11 @@ Especially the ehmiAP **SHALL** conform to these basic functionalities
 - SBDH (Standard Business Document Header)
 
 
-Furthermore, for being an EHMI AP supplier for the production pilot it is important that you conform to the following requirements (in danish):
+Furthermore, for being an EHMI AP supplier for the production pilot it is important that you conform to the following requirements:
 
-- AP-leverandøren har allerede valgt et EU-godkendt AP og vil kunne implementere dette i drift for en organisation i sundhedsvæsenet.
-- AP-leverandøren har implementeret understøttelse for SBDH compliance  med PEPPOL. Der vil derfor ikke være MedCom-støttemidler til implementering af dette.
-- AP’et skal operere på sundhedsdatanettet (SDN) med de godkendelser, det kræves at operere her.
-- AP’et skal kommunikere med sundhedsvæsenets valgte SMP, uanset om dette er placeret på SDN eller på det åbne internet.
-- AP-leverandøren skal være indstillet på at følge de regler for kommunikation i sundhedsvæsenet, som er angivet i Sundhedsdatastyrelsens  ”Målbillede for meddelelseskommunikation på sundhedsområdet”. Nogle regler er eksplicit udtrykt i målbilledet, andre præciseres efterfølgende i governance for afprøvningen (produktionspiloten).
-- AP-leverandøren skal leve op til MedComs godkendelseskrav for et AP, dvs. at demonstrere at AP’et kan kommunikere med MedComs test-AP på SDN via MedComs SMP med logning af forsendelsesstatus. 
+- The AP supplier has already chosen an EU approved AP and must be able to implement it in operation for a organization in the healthcare area.
+- The AP supplier has implemented support for SBDH compliance with PEPPOL. Therefore, there will be no MedCom funding for implementing this.
+- The AP must operate on the health data network (danish: sundhedsdatanettet, SDN) with the necessary approvals required to operate here.
+- The AP must communicate with the healthcare area's chosen SMP, regardless if this is placed on SDN or on the open internet.
+- The AP supplier must be willing to follow the rules for communication in the healthcare area, which are stated in the Danish Health Data Authority's (danish: Sundhedsdatastyrelsen)  "Architectural Vision for message communication in the healthcare area" (danish: ”Målbillede for meddelelseskommunikation på sundhedsområdet”). Some rules are explicitly expressed in the Architectural Vision, others are clarified subsequently in governance for the production pilot (danish: produktionspiloten).
+- The AP supplier must conform to MedComs approval requirements for an AP, i.e. to demonstrate that the AP can communicate with MedComs test AP on SDN via MedComs SMP with delivery status logging. 
