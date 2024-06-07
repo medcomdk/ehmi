@@ -17,7 +17,7 @@
 
 - [General security definitions for components in the message chain](#general-security-definitions-for-components-in-the-message-chain)
 
-- [Security specifications regarding EHMI Delivery Status of messages](#security-specifications-regarding-EHMI-Delivery-Status-of-messages)
+- [Security specifications regarding EHMI Delivery Status of messages](#security-specifications-regarding-ehmi-delivery-status-of-messages)
 
 - [Submission to EHMI Delivery Service repository](#submission-to-ehmi-delivery-service-repository)
 
