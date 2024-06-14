@@ -46,7 +46,7 @@ The project has a number of deliverables of specifications, which can be seen be
 
 ### Project Time schedule
 
-![Revideret tidsplan](../../images/EHMI_revideret_tidsplan_1200x720.png)
+![EHMI_Pixi_time_schedule](../../images/EHMI_Pixi_time_schedule.jpg)
 
 <br/> 
 
