@@ -31,4 +31,4 @@ The EDS Server and EDS Clients are expected to implement the user stories outlin
     
 <br/> 
 
-![EHMI Delivery Status (EDS)](https://medcomdk.github.io/ehmi/assets/images/2_EHMI_Forsendelsesstatus_1315x551.png)
+![EHMI Delivery Status (EDS)](docs/assets/images/EHMI_Pixi_EDS.jpg)
