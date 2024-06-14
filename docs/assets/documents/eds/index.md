@@ -31,4 +31,4 @@ The EDS Server and EDS Clients are expected to implement the user stories outlin
     
 <br/> 
 
-![EHMI Delivery Status (EDS)](docs/assets/images/EHMI_Pixi_EDS.jpg)
+![EHMI Delivery Status (EDS)](../../images/EHMI_Pixi_EDS.jpg)
