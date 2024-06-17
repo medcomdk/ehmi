@@ -120,7 +120,7 @@ DDS Metadata
 </b></td><td>
 DDS Metadata-v1.0.0
 </td><td>
-<a href="" target="_blank">[To be updated]</a>
+<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/XDS%20Metadata%20for%20Document%20Sharing.%20Danish%20profile%20v.1.0.0.pdf" target="_blank">DK_profil_metadata/XDS%20Metadata%20for%20Document%20Sharing.%20Danish%20profile%20v.1.0.0.pdf</a>
 </td></tr>
 <tr><td><b>
 DDS_Metadata- ValueSets
