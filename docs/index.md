@@ -30,6 +30,7 @@ This is the homepage of the entire description and all the specifications of EHM
 
 - EHMI Specifications (published April 1, 2024)
   - EHMI Core
+    - [EHMI Core](/assets/documents/ecore/index.md)
     - [ehmiSBDH](/assets/documents/ecore/ehmiSBDH/index.md)
     - [ehmiSMP](/assets/documents/ecore/ehmiSMP/index.md)
   - EHMI Delivery Status (EDS)
