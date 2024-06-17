@@ -46,7 +46,7 @@ The project has a number of deliverables of specifications, which can be seen be
 
 ### Project Time schedule
 
-![EHMI Pixi time schedule](docs/assets/images/EHM_Pixi_timeschedule.jpg)
+![EHMI Pixi time schedule](../images/EHM_Pixi_timeschedule.jpg)
 
 <br/> 
 
