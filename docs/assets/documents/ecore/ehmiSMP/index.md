@@ -13,11 +13,11 @@
 ## ehmiSMP
 
 - [eDelivery SMP profile](#edelivery-smp-profile)
-- [SMP ServiceMetadata i generel eDelivery meddelelseskommunikation](#smp-servicemetadata-i-generel-edelivery-meddelelseskommunikation)
-- [Sammenhæng til SBDH](#sammenhæng-til-sbdh)
+- [SMP ServiceMetadata in general eDelivery message communication](#smp-servicemetadata-in-general-edelivery-message-communication)
+- [Connection to SBDH](#connection-to-sbdh)
 - [SMP DocumentIdentifier](#smpdocumentidentifier)
 - [SMP ProcessIdentifier](#smpprocessidentifier)
-- [SMP hos Digital Europe (EU)](#smp-hos-digital-europe-eu)
+- [SMP at Digital Europe (EU)](#smp-at-digital-europe-eu)
 
 <br/> 
 
@@ -89,5 +89,5 @@ By now, the value is of static character. This will change when communicating in
 
 <br/>
 
-<a href="https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/SMP" target="_blank">SMP at Digital Europe (EU)</a>
+<a href="https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/SMP+specifications" target="_blank">SMP at Digital Europe (EU)</a>
 
