@@ -1,4 +1,4 @@
-# Specificering af sikkerhed ifm meddelelsesflow i EHMI Core
+# Specification of security regarding message flow in EHMI Core 
 
 ***
 
@@ -10,275 +10,273 @@
    
 <br/> 
 
-![ehmicore-security](./media/ehmicore-security.png)
+![ehmicore-security](./media/ehmicore-security.jpg)
 
-## Indholdsfortegnelse
+## Table of content
 
-- [2.1 Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden)
+- [General security definitions regarding components in the delivery chain](#general-security-definitions-regarding-components-in-the-delivery-chain)
 
-- [3 Generelt omkring sikkerhed for komponenter i EHMI](#generelt-omkring-sikkerhed-for-komponenter-i-ehmi)
+- [General information about security for components in EHMI](#general-information-about-security-for-components-in-ehmi)
 
-- [4 Specifikationer - sikkerhed vedrørende meddelelseskommunikation](#specifikationer---sikkerhed-vedrørende-meddelelseskommunikation)
+- [Specifications – security regarding message communication](#specifications---security-regarding-message-communication)
 
-- [4.1 Decentralt vedrørende sikkerhed](#decentralt-vedrørende-sikkerhed)
+- [Decentralized regarding security](#decentralized-regarding-security)
 
-- [4.2 Alle komponenter stand-alone - implementeret på forskellige servere](#alle-komponenter-stand-alone---implementeret-på-forskellige-servere)
+- [All components stand-alone – implemented on different servers](#all-components-stand-alone---implemented-on-different-servers)
 
-- [4.3 Alle komponenter stand-alone - grupperet sammen på samme server](#alle-komponenter-stand-alone---grupperet-sammen-på-samme-server)
+- [All components stand-alone - grouped together on the same server](#all-components-stand-alone---grouped-together-on-the-same-server)
 
-- [4.4 Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](#alle-komponenter-stand-alone---afsendende-fagsystem-og-msh-grupperet-sammen-på-samme-server)
+- [All components stand-alone - sending system and MSH grouped together on the same server](#all-components-stand-alone---sending-system-and-msh-grouped-together-on-the-same-server)
 
-- [4.5 Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](#alle-komponenter-stand-alone-msh-og-ap-grupperet-sammen-på-samme-server)
+- [All components stand-alone, MSH and AP grouped together on the same server](#all-components-stand-alone-msh-and-ap-grouped-together-on-the-same-server)
 
-- [4.6 Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystem-stand-alone---mshap-sammenbygget---implementeret-på-forskellige-servere)
+- [Sending system stand-alone - MSH/AP build together - implemented on different servers](#sending-system-stand-alone---mshap-build-together---implemented-on-different-servers)
 
-- [4.7 Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystem-stand-alone---mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
+- [Sending system stand-alone - MSH/AP build together - all grouped together on the same server](#sending-system-stand-alone---mshap-build-together---all-grouped-together-on-the-same-server)
 
-- [4.8 Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone---implementeret-på-forskellige-servere)
+- [Sending system/MSH build together – AP stand-alone - implemented on different servers](#sending-systemmsh-build-together---ap-stand-alone---implemented-on-different-servers)
 
-- [4.9 Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--ap-stand-alone--alle-grupperet-sammen-på-samme-server)
+- [Sending system/MSH build together – AP stand-alone - all grouped together on the same server](#sending-systemmsh-build-together---ap-stand-alone---all-grouped-on-the-same-server)
 
-- [4.10 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget---implementeret-på-forskellige-servere)
+- [Sending system/MSH build together – MSH/AP build together - implemented on different servers](#sending-systemmsh-build-together---mshap-build-together---implemented-on-different-servers)
 
-- [4.11 Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](#afsendende-fagsystemmsh-sammenbygget--mshap-sammenbygget--alle-grupperet-sammen-på-samme-server)
+- [Sending system/MSH build together – MSH/AP build together - all grouped together on the same server](#sending-systemmsh-build-together---mshap-build-together---all-grouped-on-the-same-server)
 
-- [4.12 Alle komponenter sammenbyggede](#alle-komponenter-sammenbyggede)
+- [All components build together](#all-components-build-together)
 
-- [4.13 Modtagersiden](#modtagersiden)
-
-<br/> 
-
-
-## Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden
-
-Følgende definitioner for alle systemer/komponenter i EHMI er gældende:
-
--   Systemer/komponenter kan være en stand-alone applikation eller **sammenbygget** med en eller flere andre systemer/komponenter i meddelelsesflowet.
--   Systemer/komponenter kan være en stand-alone applikation **grupperet sammen** med en eller flere andre systemer/komponenter i meddelelsesflowet på samme server.
+- [Receiver](#Receiver)
 
 <br/> 
 
 
-### Generelt omkring sikkerhed for komponenter i EHMI
+## General security definitions regarding components in the delivery chain
 
-Det er muligt at indrapportere og tilgå data via et FHIR API. Web-services/RESTful-services, der udstilles via et sådant interface, skal, præcis ligesom øvrige nationale web-services på sundhedsområdet, overholde national arkitektur og nationale standarder.
+The following definitions regarding all systems/components in EHMI applies:
 
-Det betyder bl.a., at ved personhenførbare oplysninger:
-
-Der skal ske en stærk autentifikation af brugere (svarende til NIST niveau 3-4 eller NSIS niveau ”betydeligt”)
-
-1.  Der skal foretages adgangskontrol baseret på nationalt standardiseret information (attributter)
-2.  Samtykke/frabedelse og behandlingsrelation skal tjekkes op mod den nationale samtykkeservice og den nationale behandlingsrelationsservice
-3.  Oplysninger om sundhedspersoners adgang til persondata skal kunne ses af borgeren via MinLog
+-   Systems/components can be a stand-alone applications or **build-in** with one or more systems/components in the message flow.
+-   Systems/components can be a stand-alone application **grouped together** with one or more systems/components in the message flow on the same server.
 
 <br/> 
 
 
-## Specifikationer - sikkerhed vedrørende meddelelseskommunikation
+### General information about security for components in EHMI
 
-Først beskrives de generelle retningslinjerne er vedrørende sikkerhed i meddelelsesflowet i EHMI.
+It is possible to report and access data via a FHIR API. Web-services/RESTful-services, which are exposed via such interface, must, like other national web-services in the healthcare area, comply with national architecture and national standards.
 
-Dernæst beskrives det for de forskellige scenarier af **sammenbyggethed** og **gruppering**, jf. [Generelle sikkerhedsmæssige definitioner for komponenter i forsendelseskæden](#generelle-sikkerhedsmæssige-definitioner-for-komponenter-i-forsendelseskæden) , hvordan retningslinjerne udmøntes i de enkelte scenarier.
+This means, among other things, that in case of personal identifiable information:
+
+A strong authentication of users must take place (according to NIST niveau 3-4 or NSIS niveau “substantial”)
+
+1.  Access control must be carried out based on nationally standardized information (attributes)
+2.  Consent/rejection and treatment relation (dansk: behandlingsrelation) must be checked against the national consent service and the national treatment relation service (dansk: behandlingsrelationsservice)
+3.  Information about healthcare professionals’ access to personal data must be viewable for the citizen/patient via MinLog
 
 <br/> 
 
 
-### Decentralt vedrørende sikkerhed
+## Specifications – security regarding message communication
 
-Følgende tabel illustrerer generelt, hvordan retningslinjerne er vedrørende sikkerhed i meddelelsesflowet i EHMI.
+First, the general guidelines regarding security in the message flow in EHMI are described. Secondly, it is described for the different scenarios of **interconnections** and **grouping**, cf. [General security definitions regarding components in the delivery chain](#general-security-definitions-regarding-components-in-the-delivery-chain) how the guidelines is implemented in the individual scenarios.  
 
-| **EHMI Komponenter**                                              | **Delopgave**                                                                                                                                      | **Hvem**                   |
+<br/> 
+
+
+### Decentralized regarding security
+
+The following table illustrates in general, how the guidelines are regarding security in the message flow in EHMI.
+
+| **EHMI components**                                              | **Subtask**                                                                                                                                      | **Who**                   |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| Mellem stand-alone komponenter/services.                          | **Autenticitetshåndtering:** Implementering af signering af forsendelse.                                                                           | Afsenderkomponent          |
-| Mellem stand-alone komponenter/services.                          | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                                             | Modtagerkomponent          |
-| Mellem komponenter/services, der håndteres på forskellige servere | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse / meddelelsesindhold / kuvert via sikret transportprotokol, f.eks. TLS | Afsender/modtagerkomponent |
+| Between stand-alone components/services.                          | **Authenticity management:** Implementation of signing of delivering.                                                                           | Sender component          |
+| Between stand-alone components/services.                          | **Authenticity management:** Verification of signature upon receipt.                                                                             | Receiver component          |
+| Between components/services, that are handled on different servers | **Integrity protection and confidentiality protection:** Communication of a message / message content / envelope via secured transport protocol, e.g. TLS | Sender/receiver component |
 
 
-**Autenticitetshåndtering mellem C1 og C2 (jf. Målbilledets afsnit 6.1.1):**
+**Autenticity management between C1 and C2 (cf. section 6.1.1 in the Architectural Vision):**
 
-*På sundhedsområdet stilles krav om, at meddelelse og/eller konvolutten signeres i C1 og at denne signatur efterfølgende verificeres i C2. På denne måde sikres autentifikation af C1 i C2. Denne autentifikation vil være en del af den aftale, der indgås imellem AP’et og det system AP’et agerer på vegne af. Sikres ved* eksplicit signering mellem Afsendende fagsystem/MSH/AP (med tilhørende verifikation) på systembevisniveau (VOCES/FOCES/Niveau 3). Dette kan eksempelvis sikres via DGWS/IDWS eller lignende.
-
-
-**Integritetssikring mellem C1 og C2 (jf. Målbilledets afsnit 6.1.2):**
-
-*Sikres ud over den under autenticitet (afsnit 6.1.1) beskrevne konvolutsignering via de protokoller, der anvendes imellem AP’erne og de systemer AP’erne agerer på vegne af – f.eks. TLS (Transport Layer Security).*
+*In the health sector, there is a requirement that the message and/or the envelope is signed in C1, and that this signature is subsequently verified in C2. This way, the authentication of C1 is ensured in C2. This authentication will be a part of the agreement between the AP and the system, which the AP acts on behalf of. This is ensured by explicit signing between the sending system/MSH/AP (with associated verification) on system certificate level (VOCES/FOCES/Level 3). This can, for example, be ensured via DGWS/IDWS or similar.*
 
 
-**Fortrolighedssikring mellem C1 og C2 (jf. Målbilledets afsnit 6.1.4):**
+**Integrity protection between C1 and C2 (cf. section 6.1.2 in the Architectural Vision):**
 
-*Da alle meddelelser under sundhedsdomænet som udgangspunkt indeholder følsomme personoplysninger, skal kryptering anvendes, hvor det er muligt. Meddelelsen skal derfor krypteres imellem afsender og afsendende AP via MSH (C1 og C2) samt imellem modtagende AP og modtager via MSH (C3 og C4). Anvendelse af denne kryptering vil være en del af den aftale, der indgås imellem AP’et og det system AP’et agerer på vegne af. Sikres som via Integritetssikring.*
-
-*Ovenstående gælder også for al kommunikation mellem C3 og C4.*
-
-<br/> 
+*This is ensured, in addition to the envelope signing described under authenticity (section 6.1.1), via the protocols used between the Aps and the systems, which the Aps acts on behalf of, e.g. TLS (Transport Layer Security).*
 
 
-### Alle komponenter stand-alone - implementeret på forskellige servere
+**Confidentiality between C1 and C2 (cf. section 6.1.4 in the Architectural Vision):**
+
+*As all messages under the health domain basically contain sensitive personal data, the encryption must be used, when it is possible. Therefore, the message must be encrypted between sender and the sending AP via MSH (C1 and C2) as well as between the receiving AP and receiver via MSH (C3 and C4). The use of this encryption will be part of the agreement between the AP and the system, which the AP acts on behalf of. This is ensured as via the integrity protection.*
+
+*The above also applies to all communication between C3 and C4.*
 
 <br/> 
 
 
-![Alle komponenter stand-alone - implementeret på forskellige servere](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+### All components stand-alone – implemented on different servers
+
+<br/> 
 
 
-| **EHMI Komponenter**                              | **Delopgave**                                                                                                                 | **Hvem**                    |
+![All components stand-alone - implemented on different servers](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+
+
+| **EHMI components**                              | **Subtask**                                                                                                                 | **Who**                    |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| Afsendende fagsystem stand-alone                  | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem        |
-| MSH stand-alone                                   | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | MSH                         |
-| Afsendende fagsystem stand-alone MSH stand-alone  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem og MSH |
-| MSH stand-alone                                   | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | MSH                         |
-| AP stand-alone                                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                          |
-| MSH stand-alone AP stand-alone                    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP                   |
+| Sending system stand-alone                  | **Authenticity management:** Implementation of message signing                                                        | Sending system        |
+| MSH stand-alone                                   | **Authenticity management:** Verification of signing upon receipt.                                                        | MSH                         |
+| Sending system stand-alone MSH stand-alone  | **Integritetssikring og fortrolighedssikring:** Communication of a message / envelope via secured transport protocol, e.g. TLS | Sending system and MSH |
+| MSH stand-alone                                   | **Authenticity management:** Implementation of message signing                                                        | MSH                         |
+| AP stand-alone                                    | **Authenticity management:** Verification of signing upon receipt.                                                        | AP                          |
+| MSH stand-alone AP stand-alone                    | **Integrity protection and confidentiality protection:** Communication of a message / envelope via secured transport protocol, e.g. TLS | MSH and AP                   |
 
 <br/> 
 
 
-### Alle komponenter stand-alone - grupperet sammen på samme server
+### All components stand-alone - grouped together on the same server
 
 <br/> 
 
 
-![Alle komponenter stand-alone - grupperet sammen på samme server](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![All components stand-alone - grouped together on the same server](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 
-| **EHMI Komponenter**              | **Delopgave**                                                          | **Hvem**             |
+| **EHMI components**              | **Subtask**                                                          | **Who**             |
 |-----------------------------------|------------------------------------------------------------------------|----------------------|
-| Afsendende fagsystem stand-alone  | **Autenticitetshåndtering:** Implementering af signering af meddelelse | Afsendende fagsystem |
-| MSH stand-alone                   | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | MSH                  |
-| MSH stand-alone                   | **Autenticitetshåndtering:** Implementering af signering af meddelelse | MSH                  |
-| AP stand-alone                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | AP                   |
+| Sending system stand-alone  | **Authenticity management:** Implementation of message signing | Afsendende fagsystem |
+| MSH stand-alone                   | **Authenticity management:** Verification of signing upon receipt. | MSH                  |
+| MSH stand-alone                   | **Authenticity management:** Implementation of message signing | MSH                  |
+| AP stand-alone                    | **Authenticity management:** Verification of signing upon receipt. | AP                   |
 
 <br/> 
 
 
-### Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server
+### All components stand-alone - sending system and MSH grouped together on the same server
 
 <br/> 
 
 
-![Alle komponenter stand-alone - afsendende fagsystem og MSH grupperet sammen på samme server](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![All components stand-alone - sending system and MSH grouped together on the same server](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 
-| **EHMI Komponenter**              | **Delopgave**                                                                                                                 | **Hvem**             |
+| **EHMI components**              | **Subtask**                                                                                                                 | **Who**             |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| Afsendende fagsystem stand-alone  | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem |
-| MSH stand-alone                   | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | MSH                  |
-| MSH stand-alone                   | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | MSH                  |
-| AP stand-alone                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                   |
-| MSH stand-alone AP stand-alone    | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | MSH og AP            |
+| Sending system stand-alone  | **Authenticity management:** Implementation of message signing                                                        | Sending system |
+| MSH stand-alone                   | **Authenticity management:** Verification of signing upon receipt.                                                        | MSH                  |
+| MSH stand-alone                   | **Authenticity management:** Implementation of message signing                                                        | MSH                  |
+| AP stand-alone                    | **Authenticity management:** Verification of signing upon receipt.                                                        | AP                   |
+| MSH stand-alone AP stand-alone    | **Integrity protection and confidentiality protection:** Communication of a message / envelope via secured transport protocol, e.g. TLS | MSH and AP            |
 
 <br/> 
 
 
-### Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server
+### All components stand-alone, MSH and AP grouped together on the same server
 
-![Alle komponenter stand-alone, MSH og AP grupperet sammen på samme server](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![All components stand-alone, MSH and AP grouped together on the same server](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
 
-| **EHMI Komponenter**                              | **Delopgave**                                                                                                                 | **Hvem**                     |
+| **EHMI components**                              | **Subtask**                                                                                                                 | **Who**                     |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| Afsendende fagsystem stand-alone                  | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem         |
-| MSH stand-alone                                   | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | MSH                          |
-| Afsendende fagsystem stand-alone MSH stand-alone  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem og MSH  |
-| MSH stand-alone                                   | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | MSH                          |
-| AP stand-alone                                    | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                           |
+| Sending system stand-alone                  | **Authenticity management:** Implementation of message signing                                                        | Sending system         |
+| MSH stand-alone                                   | **Authenticity management:** Verification of signing upon receipt.                                                        | MSH                          |
+| Afsendende fagsystem stand-alone MSH stand-alone  | **Integrity protection and confidentiality protection:** Communication of a message / envelope via secured transport protocol, e.g. TLS | Sending system and MSH  |
+| MSH stand-alone                                   | **Authenticity management:** Implementation of message signing                                                        | MSH                          |
+| AP stand-alone                                    | **Authenticity management:** Verification of signing upon receipt.                                                        | AP                           |
 
 <br/> 
 
 
-### Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere
+### Sending system stand-alone - MSH/AP build together - implemented on different servers
 
-![Afsendende fagsystem stand-alone - MSH/AP sammenbygget - implementeret på forskellige servere](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
+![Sending system stand-alone - MSH/AP build together - implemented on different servers](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
-| **EHMI Komponenter**                    | **Delopgave**                                                                                                                 | **Hvem**                       |
+| **EHMI components**                    | **Subtask**                                                                                                                 | **Who**                       |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| Afsendende fagsystem stand-alone        | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem           |
-| MSH/AP                                  | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | MSH/AP                         |
-| Afsendende fagsystem stand-alone MSH/AP | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem og MSH/AP |
+| Sending system stand-alone        | **Authenticity management:** Implementation of message signing                                                        | Sending system           |
+| MSH/AP                                  | **Authenticity management:** Verification of signing upon receipt.                                                        | MSH/AP                         |
+| Sending system stand-alone MSH/AP | **Integrity protection and confidentiality protection:** Communication of a message / envelope via secured transport protocol, e.g. TLS | Sending system and MSH/AP |
 
 <br/> 
 
 
-### Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server
+### Sending system stand-alone - MSH/AP build together – all grouped together on the same server
 
-![Afsendende fagsystem stand-alone - MSH/AP sammenbygget – alle grupperet sammen på samme server](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
+![Sending system stand-alone - MSH/AP build together – all grouped together on the same server](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
-| **EHMI Komponenter**              | **Delopgave**                                                          | **Hvem**             |
+| **EHMI components**              | **Subtask**                                                          | **Who**             |
 |-----------------------------------|------------------------------------------------------------------------|----------------------|
-| Afsendende fagsystem stand-alone  | **Autenticitetshåndtering:** Implementering af signering af meddelelse | Afsendende fagsystem |
-| MSH/AP                            | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | MSH/AP               |
+| Sending system stand-alone  | **Authenticity management:** Implementation of message signing | Sending system |
+| MSH/AP                            | **Authenticity management:** Verification of signing upon receipt. | MSH/AP               |
 
 <br/> 
 
 
-### Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere
+### Sending system/MSH build together – AP stand-alone – implemented on different servers
 
 
-![Afsendende fagsystem/MSH sammenbygget – AP stand-alone - implementeret på forskellige servere](media/be1c6e9b30bae64a8f5738170ef00b20.png)
+![Sending system/MSH build together – AP stand-alone – implemented on different servers](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
-| **EHMI Komponenter**                      | **Delopgave**                                                                                                                 | **Hvem**                       |
+| **EHMI components**                      | **Subtask**                                                                                                                 | **Who**                       |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| Afsendende fagsystem/MSH                  | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem/MSH       |
-| AP Stand-alone                            | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | AP                             |
-| Afsendende fagsystem/MSH  AP Stand-alone  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og AP |
+| Sending system/MSH                  | **Authenticity management:** Implementation of message signing                                                        | Sending system/MSH       |
+| AP Stand-alone                            | **Authenticity management:** Verification of signing upon receipt.                                                        | AP                             |
+| Sending system/MSH  AP Stand-alone  | **Integrity protection and confidentiality protection:** Communication of a message / envelope via secured transport protocol, e.g. TLS | Sending system/MSH and AP |
 
 <br/> 
 
 
-### Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server
+### Sending system/MSH build together – AP stand-alone – all grouped together on the same server
 
 
-![Afsendende fagsystem/MSH sammenbygget – AP stand-alone – alle grupperet sammen på samme server](media/be1c6e9b30bae64a8f5738170ef00b20.png)
+![Sending system/MSH build together – AP stand-alone – all grouped together on the same server](media/be1c6e9b30bae64a8f5738170ef00b20.png)
 
-| **EHMI Komponenter**     | **Delopgave**                                                          | **Hvem**                 |
+| **EHMI components**     | **Subtask**                                                          | **Who**                 |
 |--------------------------|------------------------------------------------------------------------|--------------------------|
-| Afsendende fagsystem/MSH | **Autenticitetshåndtering:** Implementering af signering af meddelelse | Afsendende fagsystem/MSH |
-| AP Stand-alone           | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | AP                       |
+| Sending system/MSH | **Authenticity management:** Implementation of message signing | Sending system/MSH |
+| AP Stand-alone           | **Authenticity management:** Verification of signing upon receipt. | AP                       |
 
 <br/> 
 
 
-### Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere
+### Sending system/MSH build together – MSH/AP build together - implemented on different servers
 
-Vi har erfaret gennem samtaler med de deltagende parter, at et scenarie som dette kan være muligt. I så fald er det vigtigt at parter med et sådant setup aftaler, hvilken MSH, der er primær med udfyldelse af MSH forpligtelserne og hvilken MSH, der blot viderestiller informationer til næste led i kæden. Når dette er på plads, vil følgende sikkerhedsanvisninger være gældende.
+Through dialog with the participating parties, we have learned that this scenario is possible. In that case, it is important, that parties with this kind of setup agree on which MSH is the primary with fulfilling the MSH obligations, and which MSH simply forwards information to the next link in the chain. Once this is in place , the following security instructions will apply. 
 
 
-![Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget - implementeret på forskellige servere](media/dc36c10735cb86a5499e120b23a83c79.png)
+![Sending system/MSH build together – MSH/AP build together – implemented on different servers](media/dc36c10735cb86a5499e120b23a83c79.png)
 
-| **EHMI Komponenter**                | **Delopgave**                                                                                                                 | **Hvem**                           |
+| **EHMI components**                | **Subtask**                                                                                                                 | **Who**                           |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| Afsendende fagsystem/MSH            | **Autenticitetshåndtering:** Implementering af signering af meddelelse                                                        | Afsendende fagsystem/MSH           |
-| Afsendende MSH/AP                   | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse.                                                        | MSH/AP                             |
-| Afsendende fagsystem/MSH og MSH/AP  | **Integritetssikring og fortrolighedssikring:** Kommunikation af meddelelse/konvolut via sikret transportprotokol, f.eks. TLS | Afsendende fagsystem/MSH og MSH/AP |
+| Sending system/MSH            | **Authenticity management:** Implementation of message signing                                                        | Sending system/MSH           |
+| Sending MSH/AP                   | **Authenticity management:** Verification of signing upon receipt.                                                        | MSH/AP                             |
+| Sending system/MSH and MSH/AP  | **Integrity protection and confidentiality protection:** Communication of a message / envelope via secured transport protocol, e.g. TLS | Sending system/MSH and MSH/AP |
 
 <br/> 
 
 
-### Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server
+### Sending system/MSH build together – MSH/AP build together – all grouped together on the same server
 
-![Afsendende fagsystem/MSH sammenbygget – MSH/AP sammenbygget – alle grupperet sammen på samme server](media/dc36c10735cb86a5499e120b23a83c79.png)
+![Sending system/MSH build together – MSH/AP build together – all grouped together on the same server](media/dc36c10735cb86a5499e120b23a83c79.png)
 
-| **EHMI Komponenter**     | **Delopgave**                                                          | **Hvem**                 |
+| **EHMI components**     | **Subtask**                                                          | **Who**                 |
 |--------------------------|------------------------------------------------------------------------|--------------------------|
-| Afsendende fagsystem/MSH | **Autenticitetshåndtering:** Implementering af signering af meddelelse | Afsendende fagsystem/MSH |
-| Afsendende MSH/AP        | **Autenticitetshåndtering:** Verifikation af signering ved modtagelse. | MSH/AP                   |
+| Sending system/MSH | **Authenticity management:** Implementation of message signing | Sending system/MSH |
+| Sending MSH/AP        | **Authenticity management:** Verification of signing upon receipt. | MSH/AP                   |
 
 <br/> 
 
 
-### Alle komponenter sammenbyggede
+### All components build together
 
 
-![Alle komponenter sammenbyggede](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
+![All components build together](media/5d46ee72c0eb16cfc1d678185c7baa53.png)
 
-Da alle komponenter her er sammenbyggede, håndteres al sikkerhed internt i sammenbygningen, og der er derfor ikke behov for eksplicit at udtrykke noget om sikkerheden her.
+In this scenario, all components are built together, and therefore all security is handled internally in the assembly/sammenbygning, which means that there is no need to explicitly describe security here.
 
 <br/> 
 
 
-### Modtagersiden
+### Receiver
 
-Ovenstående er kun beskrevet, hvordan sikkerheden ser ud på afsendersiden. De tilsvarende mekanismer implementeres naturligvis også på modtagersider, hvor de så bare anvendes i den modsatte rækkefølge og med de tilsvarende aktører i modsat rækkefølge.
+The above only describes how security looks on the sender’s side. The corresponding mechanisms are, of course, also implemented on the recipient side. On the recipient side, the mechanisms are simply used in the opposite order with the corresponding actors/parties in opposite order. 
 
 <br/> 
 

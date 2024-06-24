@@ -19,7 +19,7 @@
 | ehmiSBDH | The EHMI Profile of Standard Business Document Header | [TBD] | EHMI |
 | EUA      | End User Application | [TBD] | EHMI |
 | GS1      | Originally "EAN International" now just GS1 | The organisation responsible for GLN numbers and the original SBDH specification. [Website](https://www.gs1.org/) | GS1 |
-| IHE      | Integrating the Healthcare Enterprise | International organisation som arbejder for at skabe interoperability i sundhedssystemer | EHMI |
+| IHE      | Integrating the Healthcare Enterprise | International organization which creates interoperability in health care systems | EHMI |
 | MSH      | Message Service Handler | The functionality who is responsible for wrapping messages into the ehmiSBDH. Can be a module in an EUA or AP, or it can be a stand-alone application | EHMI |
 | OASIS    | [TBD] | The Standardisation Organisation responsible for the specifications of AS4, SML, SMP, ebXML [Website](https://www.oasis-open.org/) | EHMI |
 | PEPPOL   | [TBD] | [TBD] | PEPPOL |
@@ -27,7 +27,7 @@
 | SBDH     | Standard Business Document Header | [TBD] | PEPPOL |
 | SMP      | Service Metadata Provider | [TBD] | eDelivery |
 | SML      | Service Metadata Locator | [TBD] | eDelivery |
-| 4-corner-model | eDelivery 4-corner-model | 1. Fagsystem Corner 1 sender en meddelelse gennem en servicehandling til Access Point Corner 2. <br/> 2. Access Point Corner 2 slår op i SML/DNS for at finde adressen på den SMP, som det modtagende fagsystems Corner 4 modtager-kapabiliteter er registreret i. <br/> 3. Access Point Corner 2 slår op i SMP for at teste, om det modtagende Fagsystem Corner 4 har modtager-kapabiliteter svarende til det, der skal sendes, samt at finde adressen på det Access Point Corner 3, som meddelelsen skal sendes til. <br/> 4. Access Point Corner 2 sender meddelelsen til Access Point Corner 3. <br/> 5. Access Point Corner 3 sender meddelelsen gennem en servicehandling til det modtagende Fagsystem Corner 4. | eDelivery |
+| 4-corner-model | eDelivery 4-corner-model | 1. Sender system Corner 1 sends a message through a Service Handler to Access Point Corner 2. <br/> 2. Access Point Corner 2 looks up in SML/DNS to find the address of the SMP in which the receiving system's Corner 4 receiver-capabilities are registered. <br/> 3. Access Point Corner 2 looks up in SMP to test whether the receiver system Corner 4 has receiver-capabilities corresponding to what is to be sent, as well as to find the address of the Access Point Corner 3 to which the message is to be sent. <br/> 4. Access Point Corner 2 sends the message to Access Point Corner 3. <br/> 5. Access Point Corner 3 sends the message through the Service Handler to the receiver system Corner 4. | eDelivery |
  
 
 

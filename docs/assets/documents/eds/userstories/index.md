@@ -1,4 +1,4 @@
-# EDS Userstories
+# EDS User stories
 
 ***
 
@@ -21,13 +21,13 @@
 
 <br/> 
 
-## EDS Userstories in general
+## EDS User stories in general
 
 
 
 <br/> 
 
-## EDS Userstories for EDS Client
+## EDS User stories for EDS Client
 
 <br/> 
 
@@ -38,7 +38,7 @@ EDS Clients can be either an EUA, a MSH or an AP.
 
 <br/> 
 
-## EDS Userstories for EDS Server
+## EDS User stories for EDS Server
 
 
 ## EHMI Delivery Status Sender User stories
