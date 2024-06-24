@@ -3,8 +3,6 @@
 ***
     **Disclaimer** 
     
-    **To be specified in Q2 2024 and through working groups 2024-2026**
-
     ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
     
 <br/> 
@@ -23,3 +21,9 @@ Examples of search services EAS support include:
 [TBT] En skitse over komponenterne i EHMI netværkets anvendelse af komponenten kan ses her:
 
 ![EHMI Addressing Service (EAS)](/ehmi/assets/images/3_EHMI_Sundhedsadresseringsservice_1315x551.png)
+
+<br/> 
+  
+**The whole specification for EHMI Addressing Service (EAS) can be found** 
+<a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eas/" target="_blank">here</a>
+    
