@@ -22,4 +22,13 @@ Examples of search services EAS support include:
 
 [TBT] En skitse over komponenterne i EHMI netværkets anvendelse af komponenten kan ses her:
 
+**The whole specification for EHMI Addressing Service (EAS) can be found** 
+<a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eas/" target="_blank">here</a>
+    
+<br/> 
+  
+## An outline of the components of the EHMI Delivery Status can be seen here:
+    
+<br/> 
+
 ![EHMI Addressing Service (EAS)](/ehmi/assets/images/3_EHMI_Sundhedsadresseringsservice_1315x551.png)
