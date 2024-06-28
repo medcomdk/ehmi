@@ -18,9 +18,9 @@ Examples of search services EAS support include:
 •	Search for general practitioners in a delimited geographical area (relevant for patients with no fixed general practitioner).
 •	Search for recipients capable of receiving specific types of messages – not just the overall message type (including version), but also more detailed searches concerning specific aspects of the message to be sent (relevant, e.g., in relation to referrals for X-ray examinations that require special equipment not offered by all X-ray departments.
 
-[TBT] EHMI anvender en komponent til at håndtere Sundhedsadressering.
+[TBT] EHMI uses a component to handle health care adressing.
 
-[TBT] En skitse over komponenterne i EHMI netværkets anvendelse af komponenten kan ses her:
+[TBT] An outline of the components in the EHMI network's use of the EHMI Adressing Service component can be seen here:
 
 **The whole specification for EHMI Addressing Service (EAS) can be found** 
 <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eas/" target="_blank">here</a>
@@ -31,4 +31,4 @@ Examples of search services EAS support include:
     
 <br/> 
 
-![EHMI Addressing Service (EAS)](/ehmi/assets/images/3_EHMI_Sundhedsadresseringsservice_1315x551.png)
+![EHMI Pixi - Addressing Service](docs/assets/images/EHMI_Pixi_-_Addressing_Service.png)
