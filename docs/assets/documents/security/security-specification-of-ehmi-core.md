@@ -36,11 +36,11 @@
 
 - [Sending system/MSH build together - AP stand-alone - implemented on different servers](#sending-systemmsh-build-together---ap-stand-alone---implemented-on-different-servers)
 
-- [Sending system/MSH build together - AP stand-alone - all grouped together on the same server](#sending-systemmsh-build-together---ap-stand-alone---all-grouped-on-the-same-server)
+- [Sending system/MSH build together - AP stand-alone - all grouped together on the same server](#sending-systemmsh-build-together---ap-stand-alone---all-grouped-together-on-the-same-server)
 
 - [Sending system/MSH build together - MSH/AP build together - implemented on different servers](#sending-systemmsh-build-together---mshap-build-together---implemented-on-different-servers)
 
-- [Sending system/MSH build together - MSH/AP build together - all grouped together on the same server](#sending-systemmsh-build-together---mshap-build-together---all-grouped-on-the-same-server)
+- [Sending system/MSH build together - MSH/AP build together - all grouped together on the same server](#sending-systemmsh-build-together---mshap-build-together---all-grouped-together-on-the-same-server)
 
 - [All components build together](#all-components-build-together)
 
