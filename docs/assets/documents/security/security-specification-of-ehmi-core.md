@@ -18,7 +18,7 @@
 
 - [General information about security for components in EHMI](#general-information-about-security-for-components-in-ehmi)
 
-- [Specifications – security regarding message communication](#specifications---security-regarding-message-communication)
+- [Specifications - security regarding message communication](#specifications---security-regarding-message-communication)
 
 - [Decentralized regarding security](#decentralized-regarding-security)
 
