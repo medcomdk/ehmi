@@ -22,7 +22,7 @@
 
 - [Decentralized regarding security](#decentralized-regarding-security)
 
-- [All components stand-alone – implemented on different servers](#all-components-stand-alone---implemented-on-different-servers)
+- [All components stand-alone - implemented on different servers](#all-components-stand-alone---implemented-on-different-servers)
 
 - [All components stand-alone - grouped together on the same server](#all-components-stand-alone---grouped-together-on-the-same-server)
 
@@ -74,7 +74,7 @@ A strong authentication of users must take place (according to NIST niveau 3-4 o
 <br/> 
 
 
-## Specifications – security regarding message communication
+## Specifications - security regarding message communication
 
 First, the general guidelines regarding security in the message flow in EHMI are described. Secondly, it is described for the different scenarios of **interconnections** and **grouping**, cf. [General security definitions regarding components in the delivery chain](#general-security-definitions-regarding-components-in-the-delivery-chain) how the guidelines is implemented in the individual scenarios.  
 
@@ -111,7 +111,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-### All components stand-alone – implemented on different servers
+### All components stand-alone - implemented on different servers
 
 <br/> 
 
