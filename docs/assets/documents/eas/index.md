@@ -14,7 +14,7 @@ When EAS receives a search request from a user system it in turn calls the relev
 Examples of search services EAS support include: 
 * Search for a patient’s general practitioner.
 * Search for general practitioners in a delimited geographical area (relevant for patients with no fixed general practitioner).
-* Search for recipients capable of receiving specific types of messages – not just the overall message type (including version), but also more detailed searches concerning specific aspects of the message to be sent (relevant, e.g., in relation to referrals for X-ray examinations that require special equipment not offered by all X-ray departments.)
+* Search for recipients capable of receiving specific types of messages – not just the overall message type (including version), but also more detailed searches concerning specific aspects of the message to be sent (relevant, e.g., in relation to referrals for X-ray examinations that require special equipment not offered by all X-ray departments).
 
 EHMI uses a component to handle health care adressing.
 
