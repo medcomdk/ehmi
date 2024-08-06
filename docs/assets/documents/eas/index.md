@@ -3,8 +3,8 @@
 ***
     **Disclaimer** 
     
-    ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
-    
+    **The menu items above marked with a star are yet not specified**
+     
 <br/> 
 
 When a user of EHMI wants to send a message, the correct recipient of the message needs to be found somehow unless the user happens to know it by heart. Such a search function already exists to varying degrees in the various user systems, and to make these searches easier, EAS provides useful standardized search services based on relevant authoritative sources (like for example the national register of organizations within the health domain).
