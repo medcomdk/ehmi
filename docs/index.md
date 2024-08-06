@@ -15,7 +15,7 @@ This is the homepage of the entire description and all the specifications of EHM
 
 <br/> 
 
-**For now, specifications published here at 01-04-2024 will focus on the Production pilot for EHMI and are therefore narrowed down to show only what is currently ready. By the end of Q2 2024 several more specifications and descriptions will be released on these sites and make the documentation more comprehensive.**
+**For now, specifications published here at 01-04-2024 will focus on the Production pilot for EHMI and are therefore narrowed down to show only what is currently ready. Later in 2024 several more specifications and descriptions will be released on these sites and make the documentation more comprehensive.**
    
 <br/> 
 
