@@ -19,30 +19,28 @@ This is the homepage of the entire description and all the specifications of EHM
 
 
 **Table of content for Production pilot for EHMI**
-- <a href="https://medcomdk.github.io/ehmi/" target="blank">1: EHMI Landingpage</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/" target="blank">2: EHMI Core</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/eds/" target="blank">3: EHMI Delivery Status</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/eas/" target="blank">4: EHMI Addressing Service*</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/eer/" target="blank">5: EHMI Endpoint Register*</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/egov/" target="blank">6: EHMI Governance*</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/security/" target="blank">7: EHMI Security</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/glossary/" target="blank">8: EHMI Glossary</a>
+- <a href="https://medcomdk.github.io/ehmi/" target="blank"> EHMI Landingpage</a>
+- <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/" target="blank"> EHMI Production Pilot Description</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/ehmi-core-description/" target="blank"> EHMI Core Description</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/ehmi-core-security-description/" target="blank"> EHMI Core Security Description</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/ehmi-delivery-status-description/" target="blank"> EHMI Delivery Status Description</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/ehmi-delivery-status-security-description/" target="blank"> EHMI Delivery Status Security Description</a>
+- <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/" target="blank"> EHMI Core</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSBDH/" target="blank"> ehmiSBDH</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSMP/" target="blank"> ehmiSMP</a>
+- <a href="https://medcomdk.github.io/ehmi/assets/documents/eds/" target="blank"> EHMI Delivery Status</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/eds/" target="blank"> EHMI Delivery Status</a>
+- <a href="https://medcomdk.github.io/ehmi/assets/documents/eas/" target="blank"> EHMI Addressing Service*</a>
+- <a href="https://medcomdk.github.io/ehmi/assets/documents/eer/" target="blank"> EHMI Endpoint Register*</a>
+- <a href="https://medcomdk.github.io/ehmi/assets/documents/egov/" target="blank"> EHMI Governance*</a>
+- <a href="https://medcomdk.github.io/ehmi/assets/documents/security/" target="blank"> EHMI Security</a>
+- <a href="https://medcomdk.github.io/ehmi/assets/documents/glossary/" target="blank"> EHMI Glossary</a>
+- <a href="https://medcomdk.github.io/ehmi/assets/ehmi_ecosystem.html" target="blank"> EHMI Ecosystem</a>
 
-- [EHMI Production Pilot Description](/assets/documents/production-pilot/index.md)
-  - [EHMI Core Description](/assets/documents/production-pilot/index.md#ehmi-core-description)
-  - [EHMI Core Security Description](/assets/documents/production-pilot/index.md#ehmi-core-security-description)
-  - [EHMI Delivery Status Description](/assets/documents/production-pilot/index.md#ehmi-delivery-status-description)
-  - [EHMI Delivery Status Security Description](/assets/documents/production-pilot/index.md#ehmi-delivery-status-security-description)
+
 
 - EHMI Specifications (published April 1, 2024)
-  - EHMI Core
-    - [EHMI Core](/assets/documents/ecore/index.md)
-    - [ehmiSBDH](/assets/documents/ecore/ehmiSBDH/index.md)
-    - [ehmiSMP](/assets/documents/ecore/ehmiSMP/index.md)
-  - EHMI Delivery Status (EDS)
-    - [EHMI Delivery Status (EDS)](/assets/documents/eds/index.md)
-  - EHMI Security
-    - [EHMI Security](/assets/documents/security/index.md)
+
 
 <br/> 
 
