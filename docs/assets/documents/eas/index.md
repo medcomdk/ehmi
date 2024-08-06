@@ -24,11 +24,3 @@ An outline of the components in the EHMI network's use of the EHMI Adressing Ser
 **The whole specification for EHMI Addressing Service (EAS) can be found** 
 <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eas/" target="_blank">here</a>
     
-<br/> 
-
-![EHMI Addressing Service (EAS)](/ehmi/assets/images/3_EHMI_Sundhedsadresseringsservice_1315x551.png)
-
-<br/> 
-  
-**The whole specification for EHMI Addressing Service (EAS) can be found** 
-<a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eas/" target="_blank">here</a>
