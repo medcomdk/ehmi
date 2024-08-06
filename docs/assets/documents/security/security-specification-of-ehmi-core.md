@@ -18,11 +18,11 @@
 
 - [General information about security for components in EHMI](#general-information-about-security-for-components-in-ehmi)
 
-- [Specifications – security regarding message communication](#specifications---security-regarding-message-communication)
+- [Specifications - security regarding message communication](#specifications---security-regarding-message-communication)
 
 - [Decentralized regarding security](#decentralized-regarding-security)
 
-- [All components stand-alone – implemented on different servers](#all-components-stand-alone---implemented-on-different-servers)
+- [All components stand-alone - implemented on different servers](#all-components-stand-alone---implemented-on-different-servers)
 
 - [All components stand-alone - grouped together on the same server](#all-components-stand-alone---grouped-together-on-the-same-server)
 
@@ -34,13 +34,13 @@
 
 - [Sending system stand-alone - MSH/AP build together - all grouped together on the same server](#sending-system-stand-alone---mshap-build-together---all-grouped-together-on-the-same-server)
 
-- [Sending system/MSH build together – AP stand-alone - implemented on different servers](#sending-systemmsh-build-together---ap-stand-alone---implemented-on-different-servers)
+- [Sending system/MSH build together - AP stand-alone - implemented on different servers](#sending-systemmsh-build-together---ap-stand-alone---implemented-on-different-servers)
 
-- [Sending system/MSH build together – AP stand-alone - all grouped together on the same server](#sending-systemmsh-build-together---ap-stand-alone---all-grouped-on-the-same-server)
+- [Sending system/MSH build together - AP stand-alone - all grouped together on the same server](#sending-systemmsh-build-together---ap-stand-alone---all-grouped-together-on-the-same-server)
 
-- [Sending system/MSH build together – MSH/AP build together - implemented on different servers](#sending-systemmsh-build-together---mshap-build-together---implemented-on-different-servers)
+- [Sending system/MSH build together - MSH/AP build together - implemented on different servers](#sending-systemmsh-build-together---mshap-build-together---implemented-on-different-servers)
 
-- [Sending system/MSH build together – MSH/AP build together - all grouped together on the same server](#sending-systemmsh-build-together---mshap-build-together---all-grouped-on-the-same-server)
+- [Sending system/MSH build together - MSH/AP build together - all grouped together on the same server](#sending-systemmsh-build-together---mshap-build-together---all-grouped-together-on-the-same-server)
 
 - [All components build together](#all-components-build-together)
 
@@ -74,7 +74,7 @@ A strong authentication of users must take place (according to NIST niveau 3-4 o
 <br/> 
 
 
-## Specifications – security regarding message communication
+## Specifications - security regarding message communication
 
 First, the general guidelines regarding security in the message flow in EHMI are described. Secondly, it is described for the different scenarios of **interconnections** and **grouping**, cf. [General security definitions regarding components in the delivery chain](#general-security-definitions-regarding-components-in-the-delivery-chain) how the guidelines is implemented in the individual scenarios.  
 
@@ -111,7 +111,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-### All components stand-alone – implemented on different servers
+### All components stand-alone - implemented on different servers
 
 <br/> 
 
@@ -197,9 +197,9 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-### Sending system stand-alone - MSH/AP build together – all grouped together on the same server
+### Sending system stand-alone - MSH/AP build together - all grouped together on the same server
 
-![Sending system stand-alone - MSH/AP build together – all grouped together on the same server](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
+![Sending system stand-alone - MSH/AP build together - all grouped together on the same server](media/584f59d0d6bb7e4f94aea46de8eb249c.png)
 
 | **EHMI components**              | **Subtask**                                                          | **Who**             |
 |-----------------------------------|------------------------------------------------------------------------|----------------------|
@@ -209,7 +209,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-### Sending system/MSH build together – AP stand-alone – implemented on different servers
+### Sending system/MSH build together - AP stand-alone - implemented on different servers
 
 
 ![Sending system/MSH build together – AP stand-alone – implemented on different servers](media/be1c6e9b30bae64a8f5738170ef00b20.png)
@@ -223,7 +223,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-### Sending system/MSH build together – AP stand-alone – all grouped together on the same server
+### Sending system/MSH build together - AP stand-alone - all grouped together on the same server
 
 
 ![Sending system/MSH build together – AP stand-alone – all grouped together on the same server](media/be1c6e9b30bae64a8f5738170ef00b20.png)
@@ -236,7 +236,7 @@ The following table illustrates in general, how the guidelines are regarding sec
 <br/> 
 
 
-### Sending system/MSH build together – MSH/AP build together - implemented on different servers
+### Sending system/MSH build together - MSH/AP build together - implemented on different servers
 
 Through dialog with the participating parties, we have learned that this scenario is possible. In that case, it is important, that parties with this kind of setup agree on which MSH is the primary with fulfilling the MSH obligations, and which MSH simply forwards information to the next link in the chain. Once this is in place , the following security instructions will apply. 
 
@@ -252,7 +252,7 @@ Through dialog with the participating parties, we have learned that this scenari
 <br/> 
 
 
-### Sending system/MSH build together – MSH/AP build together – all grouped together on the same server
+### Sending system/MSH build together - MSH/AP build together - all grouped together on the same server
 
 ![Sending system/MSH build together – MSH/AP build together – all grouped together on the same server](media/dc36c10735cb86a5499e120b23a83c79.png)
 
