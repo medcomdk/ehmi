@@ -19,7 +19,7 @@ Examples of search services EAS support include:
 EHMI uses a component to handle health care adressing.
 
 An outline of the components in the EHMI network's use of the EHMI Adressing Service can be seen here:
-![EHMI Pixi - Addressing Service](https://github.com/medcomdk/ehmi/blob/karina-review/docs/assets/images/EHMI%20Pixi%20-%20Addressing%20Service.png)
+![EHMI Pixi - Addressing Service](https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Addressing%20Service.png)
 
 **The whole specification for EHMI Addressing Service (EAS) can be found** 
 <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eas/" target="_blank">here</a>

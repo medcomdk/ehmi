@@ -57,7 +57,7 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 
 <br/> 
 
-![EHMI Core Message Delivery and Document Sharing](https://github.com/medcomdk/ehmi/blob/karina-review/docs/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png)
+![EHMI Core Message Delivery and Document Sharing](https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png)
 
 <br/> 
 
