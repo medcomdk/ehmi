@@ -13,6 +13,10 @@ This is the homepage of the entire description and all the specifications of EHM
 
 <br/> 
 
+The production pilot for EHMI involves only one new FHIR standard, HomeCareObservation, with a limited set of participants. More specific, the HomeCareObservation will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI. Testing of the EHMI architecture and configuration of the involved components with various message flows will be carried out in operation in parts of Q1 and Q2 2026. The pilot will also test document sharing of sent messages and subsequent exposure of the message in the national infrastructure for both healthcare professionals and citizens for the benefit of the citizens/patients safety. Further test of collecting delivery status of messages (Track’n’Trace) at selected points along the delivery path will be carried out and subsequently exposing the delivery status via a service to both healthcare professionals and citizens, allowing them to follow the status of a message in close to real-time.
+
+The dispatch of the standard must be done via the new underlying eDelivery infrastructure, which is carried out on the Health Data Network, Sundhedsdatanettet, and there must also be a test of EHMI functionalities such as document sharing and Delivery status (Track’n’Trace).
+
 **For now, specifications published here at 01-04-2024 will focus on the Production pilot for EHMI and are therefore narrowed down to show only what is currently ready. Later in 2024 several more specifications and descriptions will be released on these sites and make the documentation more comprehensive.**
    
 <br/> 
