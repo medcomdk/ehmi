@@ -15,11 +15,9 @@
 
 ### Introduction
 
-In MedCom13, MedCom has a joint testing project ’Kommunale prøvesvar på ny infrastruktur’('HomeCareObservations on new infrastructure'), where MedCom's two central modernization tracks are connected: FHIR and EHMI, where both the message communication and the infrastructure are modernized. The modernization is due to the need to improve the quality of e.g. security, transparency, robustness and efficient, international digital message communication. Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">here</a>
+In MedCom13, MedCom has a joint testing project ’Kommunale prøvesvar på ny infrastruktur’('HomeCareObservations on new infrastructure'), where MedCom's two central modernization tracks are connected: FHIR and EHMI, where both the message communication and the infrastructure are modernized. The modernization is due to the need to improve the quality of e.g. security, transparency, robustness and efficient, international digital message communication. Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">here</a>.
 
-In the project, a test will be carried out in operation in parts of Q1 and Q2 2026.
-
-In the test, the new FHIR standard for municipal test responses, HomeCareObservation, will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI.
+In the project, a test will be carried out in operation in parts of Q1 and Q2 2026. In the test, the new FHIR standard for municipal test responses, HomeCareObservation, will be sent from municipal emergency services (EOJ) to general medical practices (LPS) via EHMI.
 
 The dispatch of the standard must be done via the new underlying eDelivery infrastructure, which is carried out on the *Health Data Network*, **Sundhedsdatanettet**, and there must also be a test of EHMI functionalities such as document sharing and Delivery status (Track'n'Trace).
 
@@ -28,7 +26,7 @@ The project has a number of deliverables of specifications, which can be seen be
 <br/> 
 
 
-**Table of contents**
+**Table of content**
 
 - [Project Time schedule](#project-time-schedule)
 - [EHMI Core Description](#ehmi-core-description)
@@ -37,7 +35,7 @@ The project has a number of deliverables of specifications, which can be seen be
     - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
 - [EHMI Production Pilot specification schema](#ehmi-production-pilot-specification-schema)
 - [Changes that EHMI causes on MedCom FHIR IGs and FHIR Profiles (by 2024.04.01)](#changes-that-ehmi-causes-on-medcom-fhir-igs-and-fhir-profiles-by-20240401)
-- [Relevante Links](#relevante-links)
+- [Relevant Links](#relevant-links)
 
 <br/> 
 
