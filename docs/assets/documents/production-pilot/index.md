@@ -15,11 +15,16 @@
 
 ### Introduction
 
-In MedCom13, MedCom has a joint testing project ’Kommunale prøvesvar på ny infrastruktur’('HomeCareObservations on new infrastructure'), where MedCom's two central modernization tracks are connected: FHIR and EHMI, where both the message communication and the infrastructure are modernized. The modernization is due to the need to improve the quality of e.g. security, transparency, robustness and efficient, international digital message communication. Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">here</a>.
+*The production pilot for EHMI involves a new FHIR standard for municipal test responses, HomeCareObservation, which is sent via the new underlying EHMI infrastructure on the Health Data Network (DA: Sundhedsdatanettet, SDN). In the production pilot, a test will be carried out in operation in parts of Q1 and Q2 2026 with a limited set of participants, where the HomeCareObservation will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI.* 
 
-In the project, a test will be carried out in operation in parts of Q1 and Q2 2026. In the test, the new FHIR standard for municipal test responses, HomeCareObservation, will be sent from municipal emergency services (EOJ) to general medical practices (LPS) via EHMI.
+*In the production pilot, the following EHMI functionalities and services (and more) will be tested:*
+- *document sharing of sent messages and subsequent exposure of the messages in the national infrastructure for both healthcare professionals and citizens for the benefit of the citizens/patients safety.*
+- *collecting delivery status of messages (Track’n’Trace) at selected points along the delivery path and subsequently exposing the delivery status via a service to both healthcare professionals and citizens, allowing them to follow the status of a message in close to real-time.*
+- *addressing via the EHMI Addressing Service*
+- *the EHMI Endpoint Register, a central and independent organizational register of endpoints related to the national SOR*
 
-The dispatch of the standard must be done via the new underlying eDelivery infrastructure, which is carried out on the *Health Data Network*, **Sundhedsdatanettet**, and there must also be a test of EHMI functionalities such as document sharing and Delivery status (Track'n'Trace).
+*The testing of the EHMI architecture and configuration of the involved components with various message flows will be carried out in operation in parts of Q1 and Q2 2026.* 
+Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">here</a>.
 
 The project has a number of deliverables of specifications, which can be seen below in [EHMI Production Pilot specification schema](#ehmi-production-pilot-specification-schema)
 
