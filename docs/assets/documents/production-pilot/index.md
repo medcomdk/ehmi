@@ -15,7 +15,7 @@
 
 ### Introduction
 
-*The production pilot for EHMI involves a new FHIR standard for municipal test responses, HomeCareObservation, which is sent via the new underlying EHMI infrastructure on the Health Data Network (DA: Sundhedsdatanettet, SDN). In the production pilot, a test will be carried out in operation in parts of Q1 and Q2 2026 with a limited set of participants, where the HomeCareObservation will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI.* 
+*The production pilot for EHMI involves a new FHIR standard for municipal test responses, HomeCareObservation, which is sent via the new underlying EHMI infrastructure on the Health Data Network (DA: Sundhedsdatanettet, SDN). In the production pilot, a test will be carried out in operation in parts of Q1 and Q2 2026 with a limited set of participants, where the HomeCareObservation will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI. The HomeCareObservation is based on MedCom's existing standard for laboratory responses, and aims to ensure digital and structured exchange of municipal test responses.* 
 
 *In the production pilot, the following EHMI functionalities and services (and more) will be tested:*
 - *document sharing of sent messages and subsequent exposure of the messages in the national infrastructure for both healthcare professionals and citizens for the benefit of the citizens/patients safety.*
@@ -66,7 +66,7 @@ EHMI Core is defined as
     - eDelivery Access Points (AP)
     - eDelivery SML and SMP
 
-EHMI Core is further described [here](../ecore/index.md)
+EHMI Core specification is further described [here](../ecore/index.md)
 
 <br/> 
 
