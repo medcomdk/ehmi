@@ -17,9 +17,7 @@ This is the homepage of the entire technical description and all the specificati
 
 <br/>
 
-*EHMI, which stands for Enhanced Healthcare Messaging Infrastructure, is built on eDelivery, which is the core of future message communication. But EHMI involves several additional elements and services compared to eDelivery, such as support of message sharing, improved handling of addressing via a health addressing service (EHMI Addressing Service, EAS) and delivery status (EHMI Delivery Status, EDS) (also called Track'n'Trace).*  
-
-
+*EHMI (Enhanced Healthcare Messaging Infrastructure) is built on eDelivery, which is the core of future message communication. But EHMI involves several additional elements and services compared to eDelivery, such as support of message sharing, improved handling of addressing via a health addressing service (EHMI Addressing Service, EAS) and delivery status (EHMI Delivery Status, EDS) (also called Track'n'Trace). 'The Architectural Vision' (DA: Målbilledet for meddelelseskommunikation på sundhedsområdet) forms the framework and guideline for testing EHMI. 'The Architectural Vision' can be read <a href="https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-referencearkitektur-og-standarder/referencearkitekturer" target="blank"> here</a>.*
 
 <br/> 
 
