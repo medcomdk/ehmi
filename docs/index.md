@@ -11,6 +11,8 @@
 
 This is the homepage of the entire description and all the specifications of EHMI. Some may be described here, while others will be linked to from here. For instance, all HL7 FHIR Specifications is to be found in their respective Implementation Guides (IG) following the standard for publishing by HL7. Other specifications may be shared with our partners in the Danish Health Data Authority and therefore have a format that suits them as well.
 
+To learn about the EHMI project as seen from a project perspective in Danish, please visit <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="blank"> Kommunale prøvesvar på ny infrastruktur (opens in a new window)</a>
+
 <br/> 
 
 *The production pilot for EHMI involves a new FHIR standard, HomeCareObservation, with a limited set of participants. In the pilot, the HomeCareObservation will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI. Testing of the EHMI architecture and configuration of the involved components with various message flows will be carried out in operation in parts of Q1 and Q2 2026. The pilot will also test document sharing of sent messages and subsequent exposure of the messages in the national infrastructure for both healthcare professionals and citizens for the benefit of the citizens/patients safety. Further test of collecting delivery status of messages (Track’n’Trace) at selected points along the delivery path will be carried out and subsequently exposing the delivery status via a service to both healthcare professionals and citizens, allowing them to follow the status of a message in close to real-time.*
