@@ -38,7 +38,7 @@ EHMI Core is defined as
 
 EHMI Core specifies 
 
-- ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see here](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiAP/)
+- ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see here](http://127.0.0.1:4000/assets/documents/ecore/ehmiAP/)
 - ehmiSBDH, the envelope that is used between the MSHs
 - how ehmiSBDH in addition to its primary purpose of carrying metadata for eDelivery Messaging can carry the metadata used for:
     - Reliable Messaging embedded in ehmiSBDH BusinessScopes
@@ -57,7 +57,7 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 
 <br/> 
 
-![EHMI Core Message Delivery and Document Sharing](https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png)
+![EHMI Core Message Delivery and Document Sharing](http://127.0.0.1:4000/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png)
 
 <br/> 
 
@@ -67,8 +67,8 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 
 EHMI Core specifies two profiles, 1 for ehmiSBDH and 1 for ehmiSMP:
 
-- [EHMI Profile of SBDH (ehmiSBDH)](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSBDH/)
-- [EHMI Profile of Service Metadata Publisher (ehmiSMP)](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSMP/)
+- [EHMI Profile of SBDH (ehmiSBDH)](http://127.0.0.1:4000/assets/documents/ecore/ehmiSBDH/)
+- [EHMI Profile of Service Metadata Publisher (ehmiSMP)](http://127.0.0.1:4000/assets/documents/ecore/ehmiSMP/)
 
 <br/> 
 

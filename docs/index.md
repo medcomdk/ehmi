@@ -25,24 +25,24 @@ This is the homepage of the entire description and all the specifications of EHM
 
 
 **Table of content for Production pilot for EHMI**
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/" target="blank"> EHMI Production Pilot Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/ehmi-core-description/" target="blank"> EHMI Core Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/ehmi-core-security-description/" target="blank"> EHMI Core Security Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/ehmi-delivery-status-description/" target="blank"> EHMI Delivery Status Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/ehmi-delivery-status-security-description/" target="blank"> EHMI Delivery Status Security Description</a>
+- <a href="http://127.0.0.1:4000/assets/documents/production-pilot/" target="blank"> EHMI Production Pilot Description</a>
+   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/ehmi-core-description/" target="blank"> EHMI Core Description</a>
+   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/ehmi-core-security-description/" target="blank"> EHMI Core Security Description</a>
+   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/ehmi-delivery-status-description/" target="blank"> EHMI Delivery Status Description</a>
+   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/ehmi-delivery-status-security-description/" target="blank"> EHMI Delivery Status Security Description</a>
 
 **Table of content for EHMI Specifications (published April 1, 2024)**
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/" target="blank"> EHMI Core</a> 
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSBDH/" target="blank"> ehmiSBDH</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSMP/" target="blank"> ehmiSMP</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/eds/" target="blank"> EHMI Delivery Status</a> 
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/eds/" target="blank"> EHMI Delivery Status</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/eas/" target="blank"> EHMI Addressing Service*</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/eer/" target="blank"> EHMI Endpoint Register*</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/egov/" target="blank"> EHMI Governance*</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/security/" target="blank"> EHMI Security</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/glossary/" target="blank"> EHMI Glossary</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/ehmi_ecosystem.html" target="blank"> EHMI Ecosystem</a>
+- <a href="http://127.0.0.1:4000/assets/documents/ecore/" target="blank"> EHMI Core</a> 
+   - <a href="http://127.0.0.1:4000/assets/documents/ecore/ehmiSBDH/" target="blank"> ehmiSBDH</a>
+   - <a href="http://127.0.0.1:4000/assets/documents/ecore/ehmiSMP/" target="blank"> ehmiSMP</a>
+- <a href="http://127.0.0.1:4000/assets/documents/eds/" target="blank"> EHMI Delivery Status</a> 
+   - <a href="http://127.0.0.1:4000/assets/documents/eds/" target="blank"> EHMI Delivery Status</a>
+- <a href="http://127.0.0.1:4000/assets/documents/eas/" target="blank"> EHMI Addressing Service*</a>
+- <a href="http://127.0.0.1:4000/assets/documents/eer/" target="blank"> EHMI Endpoint Register*</a>
+- <a href="http://127.0.0.1:4000/assets/documents/egov/" target="blank"> EHMI Governance*</a>
+- <a href="http://127.0.0.1:4000/assets/documents/security/" target="blank"> EHMI Security</a>
+- <a href="http://127.0.0.1:4000/assets/documents/glossary/" target="blank"> EHMI Glossary</a>
+- <a href="http://127.0.0.1:4000/assets/ehmi_ecosystem.html" target="blank"> EHMI Ecosystem</a>
 
 
 

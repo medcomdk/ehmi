@@ -44,7 +44,7 @@ The project has a number of deliverables of specifications, which can be seen be
 
 ### Project Time schedule
 
-![EHMI Pixi time schedule](https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20tidslinje.png)
+![EHMI Pixi time schedule](http://127.0.0.1:4000/assets/images/EHMI%20Pixi%20-%20tidslinje.png)
 
 <br/> 
 

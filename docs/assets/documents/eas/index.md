@@ -17,7 +17,7 @@ Examples of search services EAS support include:
 * Search for recipients capable of receiving specific types of messages – not just the overall message type (including version), but also more detailed searches concerning specific aspects of the message to be sent (relevant, e.g., in relation to referrals for X-ray examinations that require special equipment not offered by all X-ray departments).
 
 An outline of the components in the EHMI network's use of the EHMI Adressing Service can be seen here:
-<img src="https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Addressing%20Service.png" alt="EHMI Addressing Service (EAS) (DA)" width="100%">
+<img src="http://127.0.0.1:4000/assets/images/EHMI%20Pixi%20-%20Addressing%20Service.png" alt="EHMI Addressing Service (EAS) (DA)" width="100%">
 
 **The whole specification for EHMI Addressing Service (EAS) can be found** 
 <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eas/" target="_blank">here</a>

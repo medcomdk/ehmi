@@ -7,20 +7,20 @@ theme: jekyll-theme-minimal
 version: "Version 0.9.0"
 fhir_version: "EHMI"
 releasenote: https://github.com/medcomdk/ehmi/releases
-thisurl: https://medcomdk.github.io/ehmi/
-menuurl_item1: https://medcomdk.github.io/ehmi/
+thisurl: http://127.0.0.1:4000/
+menuurl_item1: http://127.0.0.1:4000/
 menutxt_item1: EHMI Landingpage
-menuurl_item2: https://medcomdk.github.io/ehmi/assets/documents/ecore/
+menuurl_item2: http://127.0.0.1:4000/assets/documents/ecore/
 menutxt_item2: EHMI Core
-menuurl_item3: https://medcomdk.github.io/ehmi/assets/documents/eds/
+menuurl_item3: http://127.0.0.1:4000/assets/documents/eds/
 menutxt_item3: EHMI Delivery Status
-menuurl_item4: https://medcomdk.github.io/ehmi/assets/documents/eas/
+menuurl_item4: http://127.0.0.1:4000/assets/documents/eas/
 menutxt_item4: EHMI Addressing Service*
-menuurl_item5: https://medcomdk.github.io/ehmi/assets/documents/eer/
+menuurl_item5: http://127.0.0.1:4000/assets/documents/eer/
 menutxt_item5: EHMI Endpoint Register*
-menuurl_item6: https://medcomdk.github.io/ehmi/assets/documents/egov/
+menuurl_item6: http://127.0.0.1:4000/assets/documents/egov/
 menutxt_item6: EHMI Governance*
-menuurl_item7: https://medcomdk.github.io/ehmi/assets/documents/security/
+menuurl_item7: http://127.0.0.1:4000/assets/documents/security/
 menutxt_item7: EHMI Security*
-menuurl_item8: https://medcomdk.github.io/ehmi/assets/documents/glossary/
+menuurl_item8: http://127.0.0.1:4000/assets/documents/glossary/
 menutxt_item8: EHMI Glossary
