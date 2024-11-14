@@ -5,9 +5,7 @@
     **Disclaimer** 
     
     **The menu items above marked with a star are yet not specified**
-    
-    ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
-    
+       
 <br/> 
 
 
@@ -59,7 +57,7 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 
 <br/> 
 
-![EHMI Core Message Delivery and Document Sharing](/ehmi/assets/images/1_EHMI_Meddelelsesforsendelse_og_dokumentdeling_1315x563.png)
+![EHMI Core Message Delivery and Document Sharing](https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png)
 
 <br/> 
 
