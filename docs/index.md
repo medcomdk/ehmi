@@ -11,6 +11,8 @@
 
 This is the homepage of the entire technical description and all the specifications of EHMI. Some may be described here, while others will be linked to from here. For instance, all HL7 FHIR Specifications is to be found in their respective Implementation Guides (IG) following the standard for publishing by HL7. Other specifications may be shared with our partners in the Danish Health Data Authority and therefore have a format that suits them as well.
 
+To learn about the EHMI project as seen from a project perspective in Danish, please visit <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="blank"> Kommunale prøvesvar på ny infrastruktur (opens in a new window)</a>
+
 <br/> 
 
 *In MedCom13, MedCom has a joint testing project ’Kommunale prøvesvar på ny infrastruktur’('HomeCareObservations on new infrastructure'), where MedCom's two central modernization tracks; FHIR and EHMI, are connected and both the message communication and the infrastructure are modernized and tested in interaction. The modernization is due to the need to improve the quality of e.g. security, transparency, robustness and efficient, international digital message communication. The MedCom modernization is described further in MedCom13 <a href="https://medcom.dk/modernisering/" target="_blank">here</a>.*
