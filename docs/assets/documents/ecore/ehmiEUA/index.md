@@ -1,10 +1,8 @@
 # EHMI End User Application Responsibility Specification (EUA)
 
-## Introduction
-
 In MedCom13, MedCom has a joint testing project 'Municipal test responses on new infrastructure', where MedCom's two central modernization tracks are linked: FHIR and EHMI, where both message communication and the infrastructure are modernized. The modernization is due to the need for quality improvement in, among other things, security, transparency, robustness and efficient, international digital message communication. The project will conduct an operational test from March 1 to May 31, 2025. In the test, the new FHIR standard for municipal test responses must be sent from municipal emergency functions (EOJ) to general medical practices (LPS) via the new infrastructure EHMI (Enhanced Healthcare Messaging Infrastructure). The standard must be sent via eDelivery, and EHMI functionalities such as document sharing and shipment status (Track'n'Trace) must also be tested.
 
-This document describes the required EHMI tasks and responsibilities for the End User Application . Relevant links can be found at the end of the document.
+This page describes the required EHMI tasks and responsibilities for the End User Application . Relevant links can be found at the end of the document.
 
 Background information - illustration and explanation of components
 
@@ -15,7 +13,6 @@ There are 3 components involved in sending/receiving a message:
 
 These components can be combined in different ways by the suppliers. Regardless of the combination, the suppliers must comply with the responsibility specification.
 
-<image src="">
 <figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
 <a href="./media/Billede1.png" target="_blank"> <img src="./media/Billede1.png" alt="" style="width:60%; height:auto; margin-left:5%; margin-right:35%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
 <figcaption text-align="left"><b>Figure 1: The 3 components involved in sending/receiving a message (Figure must be translated to english!!!)</b></figcaption>
