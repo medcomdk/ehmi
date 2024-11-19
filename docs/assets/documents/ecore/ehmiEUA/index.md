@@ -26,9 +26,9 @@ These components can be combined in different ways by the suppliers. Regardless 
 
 The following prerequisites for the End User Application apply:
 
--	The End User Application is a component that is assumed to be relevant to the clinical users in a healthcare domain. It can be a stand-alone application, integrated with MSH, integrated with an EHMI AP or integrated with both (both MSH and EHMI AP)
--	The End User Application must be able to generate MedCom messages or data content corresponding to a MedCom message. It must be able to pass on a MedCom message or the data content of a MedCom message via an interface to MSH.
--	The End User Application must be able to provide MSH with sufficient metadata to be able to create an SBDH envelope for both primary recipient and secondary recipient in the form of XDS metadata for document sharing via an interface to MSH.
+-  The End User Application is a component that is assumed to be relevant to the clinical users in a healthcare domain. It can be a stand-alone application, integrated with MSH, integrated with an EHMI AP or integrated with both (both MSH and EHMI AP)
+-  The End User Application must be able to generate MedCom messages or data content corresponding to a MedCom message. It must be able to pass on a MedCom message or the data content of a MedCom message via an interface to MSH.
+-  The End User Application must be able to provide MSH with sufficient metadata to be able to create an SBDH envelope for both primary recipient and secondary recipient in the form of XDS metadata for document sharing via an interface to MSH.
 
 <!--
 EHMI Komponent	Delopgave	Hvem	Optionel ift. afprøvningen af EHMI
@@ -39,7 +39,7 @@ Forsendelsesstatus: Visningsskærmbillede	Implementering i fagsystem	Fagsystemet
 
 As an additional task, the End User Application (EUA) must be able to communicate with the EHMI Delivery Status repository (track’n’trace).
 
-The EHMI Delivery Status repository has a reporting API that the End User Application (EUA) must communicate via. It will most likely be based on an OAuth-secured REST interface and SMART-on-FHIR. The repository and its interface are currently under specification. 
+The EHMI Delivery Status repository has a reporting API that the End User Application (EUA) must communicate via. It is based on an OAuth-secured REST interface and SMART-on-FHIR. 
 
 For the collection of EHMI Delivery Status, it is required that, cf. section 6.3.1 of the Architectural Vision, explicit signing is made between the EHMI Delivery Status “client” and the “server” (with associated verification) at system evidence level (VOCES/FOCES/Level 3).
 
