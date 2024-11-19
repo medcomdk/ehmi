@@ -15,16 +15,13 @@ There are 3 components involved in sending/receiving a message:
 
 These components can be combined in different ways by the suppliers. Regardless of the combination, the suppliers must comply with the responsibility specification.
 
-## Prerequisites for the End User Application
+## EHMI Delivery Status - EUA responsability description:
 
 The following prerequisites for the End User Application  apply:
 
 -	The End User Application  is a component that is assumed to be relevant to the clinical users in a healthcare domain. It can be a stand-alone application, integrated with MSH, integrated with an EHMI AP or integrated with both (both MSH and EHMI AP)
 -	The End User Application  must be able to generate MedCom messages or data content corresponding to a MedCom message. It must be able to pass on a MedCom message or the data content of a MedCom message via an interface to MSH.
 -	The End User Application  must be able to provide MSH with sufficient metadata to be able to create an SBDH envelope for both primary recipient and secondary recipient in the form of XDS metadata for document sharing via an interface to MSH.
-
-
-## EHMI Delivery Status - EUA responsability description:
 
 EHMI Komponent	Delopgave	Hvem	Optionel ift. afprøvningen af EHMI
 Forsendelsesstatus: Indrapporterings-API	Implementering i fagsystem	Fagsystemet	
@@ -38,6 +35,7 @@ The EHMI Delivery Status repository has a reporting API that the End User Applic
 For the collection of EHMI Delivery Status, it is required that, cf. section 6.3.1 of the target image, explicit signing is made between the EHMI Delivery Status “client” and the “server” (with associated verification) at system evidence level (VOCES/FOCES/Level 3).
 
 In addition, in this context, there is a requirement that the collection is carried out via an asynchronous decoupling mechanism (queue) to ensure that no EHMI Delivery Status data is lost.
+
 In the test, the display of shipment status is expected to be done via a central solution, but there is a possibility that the business system can implement a local display in the business system. Access to the display will be subject to the same security requirements as for reporting, see 6.3.3 in the MB.
 
 ## Decentralized regarding EHMI component: EHMI Addressing Service
