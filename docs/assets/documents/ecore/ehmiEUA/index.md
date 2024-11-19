@@ -17,22 +17,24 @@ These components can be combined in different ways by the suppliers. Regardless 
 
 ## EHMI Delivery Status - EUA responsability description:
 
-The following prerequisites for the End User Application  apply:
+The following prerequisites for the End User Application apply:
 
--	The End User Application  is a component that is assumed to be relevant to the clinical users in a healthcare domain. It can be a stand-alone application, integrated with MSH, integrated with an EHMI AP or integrated with both (both MSH and EHMI AP)
--	The End User Application  must be able to generate MedCom messages or data content corresponding to a MedCom message. It must be able to pass on a MedCom message or the data content of a MedCom message via an interface to MSH.
--	The End User Application  must be able to provide MSH with sufficient metadata to be able to create an SBDH envelope for both primary recipient and secondary recipient in the form of XDS metadata for document sharing via an interface to MSH.
+-	The End User Application is a component that is assumed to be relevant to the clinical users in a healthcare domain. It can be a stand-alone application, integrated with MSH, integrated with an EHMI AP or integrated with both (both MSH and EHMI AP)
+-	The End User Application must be able to generate MedCom messages or data content corresponding to a MedCom message. It must be able to pass on a MedCom message or the data content of a MedCom message via an interface to MSH.
+-	The End User Application must be able to provide MSH with sufficient metadata to be able to create an SBDH envelope for both primary recipient and secondary recipient in the form of XDS metadata for document sharing via an interface to MSH.
 
+<!--
 EHMI Komponent	Delopgave	Hvem	Optionel ift. afprøvningen af EHMI
 Forsendelsesstatus: Indrapporterings-API	Implementering i fagsystem	Fagsystemet	
 Forsendelsesstatus: Visnings-API	Implementering i fagsystem	Fagsystemet	Optionel – mulighed
 Forsendelsesstatus: Visningsskærmbillede	Implementering i fagsystem	Fagsystemet	Optionel – mulighed
+-->
 
 As an additional task, the End User Application (EUA) must be able to communicate with the EHMI Delivery Status repository (track’n’trace).
 
-The EHMI Delivery Status repository has a reporting API that the End User Application (EUA) must communicate via. It will most likely be based on an OAuth-secured REST interface and SMART-on-FHIR. The repository and its interface are currently under specification. It will most likely be based on IHE BALP. There will be MedCom support funds for implementing the interface for this repository.
+The EHMI Delivery Status repository has a reporting API that the End User Application (EUA) must communicate via. It will most likely be based on an OAuth-secured REST interface and SMART-on-FHIR. The repository and its interface are currently under specification. 
 
-For the collection of EHMI Delivery Status, it is required that, cf. section 6.3.1 of the target image, explicit signing is made between the EHMI Delivery Status “client” and the “server” (with associated verification) at system evidence level (VOCES/FOCES/Level 3).
+For the collection of EHMI Delivery Status, it is required that, cf. section 6.3.1 of the Architectural Vision, explicit signing is made between the EHMI Delivery Status “client” and the “server” (with associated verification) at system evidence level (VOCES/FOCES/Level 3).
 
 In addition, in this context, there is a requirement that the collection is carried out via an asynchronous decoupling mechanism (queue) to ensure that no EHMI Delivery Status data is lost.
 
@@ -40,10 +42,12 @@ In the test, the display of shipment status is expected to be done via a central
 
 ## EHMI Addressing Service - EUA responsability description:
 
+<!--
 EHMI Komponent	Delopgave	Hvem
 Sundheds-adresseringsservice: API for anvendere	Integration til Sundheds-adresseringsservice	Fagsystemet
+-->
 
-The professional system must be able to integrate with the EHMI Health Addressing Service. The EHMI Health Addressing Service will offer a search functionality that in the first version can retrieve shipping data for your own general practitioner. The EHMI Health Addressing Service is currently being specified.
+The End User Application must be able to integrate with the EHMI Addressing Service (EAS). The EHMI Addressing Service (EAS) will offer a search functionality that in the first version can retrieve shipping data for your own general practitioner. The EHMI Addressing Service (EAS) is currently being specified.
 
 ## Relevante links:
 
