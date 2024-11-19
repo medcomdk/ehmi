@@ -13,7 +13,7 @@ The following prerequisites for the Message Service Handler (MSH) apply:
 -   MSH must be subject to high uptime requirements in line with other central critical components in the healthcare system, and like these, it must also comply with common requirements for the operation of critical systems such as logging and backup.
 
 
-## EHMI Delivery Status - MSH responsability description:
+## EHMI Delivery Status - MSH responsibility description:
 
 As an additional task, EHMI MSH must be able to communicate with the EHMI Delivery Status (EDS) repository (track’n’trace).
 

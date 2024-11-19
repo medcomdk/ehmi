@@ -18,7 +18,7 @@ These components can be combined in different ways by the suppliers. Regardless 
 <figcaption text-align="left"><b>Figure 1: The 3 components involved in sending/receiving a message (Figure must be translated to english!!!)</b></figcaption>
 </figure>
 
-## EHMI Delivery Status - EUA responsability description:
+## EHMI Delivery Status - EUA responsibility description:
 
 The following prerequisites for the End User Application apply:
 
@@ -36,7 +36,7 @@ In addition, in this context, there is a requirement that the collection is carr
 
 In the test, the display of shipment status is expected to be done via a central solution, but there is a possibility that the business system can implement a local display in the business system. Access to the display will be subject to the same security requirements as for reporting, see 6.3.3 in the MB.
 
-## EHMI Addressing Service - EUA responsability description:
+## EHMI Addressing Service - EUA responsibility description:
 
 The End User Application must be able to integrate with the EHMI Addressing Service (EAS). The EHMI Addressing Service (EAS) will offer a search functionality that in the first version can retrieve shipping data for your own general practitioner. The EHMI Addressing Service (EAS) is currently being specified.
 
