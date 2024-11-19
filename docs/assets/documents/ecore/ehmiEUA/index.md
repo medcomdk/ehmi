@@ -44,14 +44,14 @@ The End User Application must be able to integrate with the EHMI Addressing Serv
 
 *_Danish:_*
 
--  Målbillede for meddelelseskommunikation på sundhedsområdet (https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf)
--  SDN (https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/)
+- [Målbillede for meddelelseskommunikation på sundhedsområdet](https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf)
+- [SDN](https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/)
 
 *_English:_*
 
--  EU eDelivery (https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery) 
--  EU AP specifikationer (https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications)
--  EU PEPPOL SBDH envelope (https://docs.peppol.eu/edelivery/envelope/Peppol-EDN-Business-Message-Envelope-2.0.0-2023-03-13.pdf)
+- [EU eDelivery](https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery) 
+- [EU AP specifikationer](https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications)
+- [EU PEPPOL SBDH envelope](https://docs.peppol.eu/edelivery/envelope/Peppol-EDN-Business-Message-Envelope-2.0.0-2023-03-13.pdf)
 
 
 <!--
