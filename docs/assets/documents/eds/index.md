@@ -5,9 +5,7 @@
     **Disclaimer** 
     
     **The menu items above marked with a star are yet not specified**
-    
-    ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
-    
+       
 <br/> 
 
 ## EHMI Delivery Status is defined as 
@@ -18,7 +16,7 @@
     
 <br/> 
   
-The EDS Server and EDS Clients are expected to implement the user stories outlined [here:](./userstories/index.md)
+The EDS Server and EDS Clients are expected to implement the user stories outlined [here](./userstories/index.md)
 
 <br/> 
   

@@ -5,9 +5,7 @@
     **Disclaimer** 
     
     **The menu items above marked with a star are yet not specified**
-
-    ***Shifts of languages between English and Danish will occur in this version - that will change completely to English in the next upcoming version***
-   
+    
 <br/> 
 
 ## EHMI Production Pilot Description
@@ -17,20 +15,23 @@
 
 ### Introduction
 
-In MedCom13, MedCom has a joint testing project ’Kommunale prøvesvar på ny infrastruktur’('HomeCareObservations on new infrastructure'), where MedCom's two central modernization tracks are connected: FHIR and EHMI, where both the message communication and the infrastructure are modernized. The modernization is due to the need to improve the quality of e.g. security, transparency, robustness and efficient, international digital message communication. Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">here</a>
+*The production pilot for EHMI involves a new FHIR standard for municipal test responses, HomeCareObservation, which is sent via the new underlying EHMI infrastructure on the Health Data Network (DA: Sundhedsdatanettet, SDN). In the production pilot, a test will be carried out in operation in parts of Q1 and Q2 2026 with a limited set of participants, where the HomeCareObservation will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI. The HomeCareObservation is based on MedCom's existing standard for laboratory responses, and aims to ensure digital and structured exchange of municipal test responses.* 
 
-In the project, a test will be carried out in operation in parts of Q1 and Q2 2026.
+*In the production pilot, the following EHMI functionalities and services (and more) will be tested:*
+- *document sharing of sent messages and subsequent exposure of the messages in the national infrastructure for both healthcare professionals and citizens for the benefit of the citizens/patients safety.*
+- *collecting delivery status of messages (Track’n’Trace) at selected points along the delivery path and subsequently exposing the delivery status via a service to both healthcare professionals and citizens, allowing them to follow the status of a message in close to real-time.*
+- *addressing via the EHMI Addressing Service*
+- *the EHMI Endpoint Register, a central and independent organizational register of endpoints related to the national SOR*
 
-In the test, the new FHIR standard for municipal test responses, HomeCareObservation, will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI.
-
-The dispatch of the standard must be done via the new underlying eDelivery infrastructure, which is carried out on the *Health Data Network*, **Sundhedsdatanettet**, and there must also be a test of EHMI functionalities such as document sharing and Delivery status (Track'n'Trace).
+*The testing of the EHMI architecture and configuration of the involved components with various message flows will be carried out in operation in parts of Q1 and Q2 2026.* 
+Overall the EHMI Production Pilot is described in the Project Description as part of MedCom13 <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">here</a>.
 
 The project has a number of deliverables of specifications, which can be seen below in [EHMI Production Pilot specification schema](#ehmi-production-pilot-specification-schema)
 
 <br/> 
 
 
-**Table of contents**
+**Table of content**
 
 - [Project Time schedule](#project-time-schedule)
 - [EHMI Core Description](#ehmi-core-description)
@@ -39,14 +40,14 @@ The project has a number of deliverables of specifications, which can be seen be
     - [EHMI Delivery Status Security Description](#ehmi-delivery-status-security-description)
 - [EHMI Production Pilot specification schema](#ehmi-production-pilot-specification-schema)
 - [Changes that EHMI causes on MedCom FHIR IGs and FHIR Profiles (by 2024.04.01)](#changes-that-ehmi-causes-on-medcom-fhir-igs-and-fhir-profiles-by-20240401)
-- [Relevante Links](#relevante-links)
+- [Relevant Links](#relevant-links)
 
 <br/> 
 
 
 ### Project Time schedule
 
-![EHMI Pixi time schedule](../images/EHM_Pixi_timeschedule.jpg)
+![EHMI Pixi time schedule](https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20tidslinje.png)
 
 <br/> 
 
@@ -65,7 +66,7 @@ EHMI Core is defined as
     - eDelivery Access Points (AP)
     - eDelivery SML and SMP
 
-EHMI Core is further described [here](../ecore/index.md)
+EHMI Core specification is further described [here](../ecore/index.md)
 
 <br/> 
 
@@ -139,11 +140,11 @@ EHMI Delivery Status Security is defined as
 
 <bold><i>Note! All links opens in a new window.</i></bold>
 
-- Dansk:
+- Danish:
     - MedCom: <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="_blank">MedCom13 projektbesksrivelse af ’Kommunale prøvesvar på ny infrastruktur’</a>
     - SDS: <a href="https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/referenceaktitektur-og-it-standarder/referencearkitektur/maalbillede-for-meddelelseskommunikation.pdf" target="_blank">Målbillede for meddelelseskommunikation på sundhedsområdet</a>
     - MedCom: <a href="https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/" target="_blank">Sundhedsdatanettet (SDN)</a>
-- Engelsk:
+- English:
     - <a href="" target="_blank"></a>
     - Digital Europe, eDelivery <a href="https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eDelivery" target="_blank">eDelivery</a>
     - Digital Europe, eDelivery <a href="https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/Access+Point+specifications" target="_blank">AP specifikationer</a>
