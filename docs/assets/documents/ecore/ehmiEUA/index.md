@@ -38,16 +38,12 @@ In addition, in this context, there is a requirement that the collection is carr
 
 In the test, the display of shipment status is expected to be done via a central solution, but there is a possibility that the business system can implement a local display in the business system. Access to the display will be subject to the same security requirements as for reporting, see 6.3.3 in the MB.
 
-## Decentralized regarding EHMI component: EHMI Addressing Service
+## EHMI Addressing Service - EUA responsability description:
 
 EHMI Komponent	Delopgave	Hvem
 Sundheds-adresseringsservice: API for anvendere	Integration til Sundheds-adresseringsservice	Fagsystemet
 
-### EHMI Addressing Service - Short description:
-
 The professional system must be able to integrate with the EHMI Health Addressing Service. The EHMI Health Addressing Service will offer a search functionality that in the first version can retrieve shipping data for your own general practitioner. The EHMI Health Addressing Service is currently being specified.
-
-There will be MedCom support funds for implementing the interface to the EHMI Health Addressing Service.
 
 ## Relevante links:
 
