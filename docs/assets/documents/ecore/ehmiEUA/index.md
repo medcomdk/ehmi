@@ -15,6 +15,13 @@ There are 3 components involved in sending/receiving a message:
 
 These components can be combined in different ways by the suppliers. Regardless of the combination, the suppliers must comply with the responsibility specification.
 
+<image src="">
+<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
+<a href="./media/Billede1.png" target="_blank"> <img src="./media/Billede1.png" alt="" style="width:80%; height:auto; margin-left:5%; margin-right:15%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
+<figcaption text-align="left"><b>Figure 1: The 3 components involved in sending/receiving a message </b></figcaption>
+</figure>
+
+
 ## EHMI Delivery Status - EUA responsability description:
 
 The following prerequisites for the End User Application apply:
