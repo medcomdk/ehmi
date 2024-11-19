@@ -39,9 +39,9 @@ EHMI Core is defined as
 EHMI Core specifies 
 
 - The responsabilities for 
-    - End User Applications (EUA)
-    - Message Service Handlers (MSH)
-    - eDelivery Access Points (AP)
+    - End User Applications (EUA) [see here](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiEUA/)
+    - Message Service Handlers (MSH) [see here](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiMSH/)
+    - eDelivery Access Points (AP) [see here](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiAP/)
 - ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see here](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiAP/)
 - ehmiSBDH, the envelope that is used between the MSHs
 - how ehmiSBDH in addition to its primary purpose of carrying metadata for eDelivery Messaging can carry the metadata used for:
