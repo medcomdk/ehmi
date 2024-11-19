@@ -26,5 +26,5 @@ Furthermore, in this context, there is a requirement that the collection is carr
 
 ## EHMI MSH's responsibility for communicating with the XDS infrastructure
 
-In the EHMI production pilot, EHMI MSH must be able to handle XDS Metadata formatted as the FHIR DocumentReference resource. MedCom is profiling the FHIR DocumentReference resource. The MSH must be able to create the MedCom FHIR DocumentReference profile with the correct data. EHMI MSH must be able to insert the extra metadata in the MedCom FHIR DocumentReference resource into the designated BusinessScope/Scope in the SBDH envelope.
+EHMI MSH must be able to handle XDS Metadata formatted as the FHIR DocumentReference resource. MedCom is profiling the FHIR DocumentReference resource. The MSH must be able to create the MedCom FHIR DocumentReference profile with the correct data. EHMI MSH must be able to insert the extra metadata in the MedCom FHIR DocumentReference resource into the designated BusinessScope/Scope in the SBDH envelope.
 
