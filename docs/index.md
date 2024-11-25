@@ -33,10 +33,10 @@ To learn about the EHMI project as seen from a project perspective in Danish, pl
 
 **Table of content for Production pilot for EHMI**
 - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/" target="blank"> EHMI Production Pilot Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-core-description" target="blank"> EHMI Core Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-core-security-description" target="blank"> EHMI Core Security Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-delivery-status-description" target="blank"> EHMI Delivery Status Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-delivery-status-security-description" target="blank"> EHMI Delivery Status Security Description</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-core-description"> EHMI Core Description</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-core-security-description"> EHMI Core Security Description</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-delivery-status-description"> EHMI Delivery Status Description</a>
+   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-delivery-status-security-description"> EHMI Delivery Status Security Description</a>
 
 **Table of content for EHMI Specifications (published April 1, 2024)**
 - <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/" target="blank"> EHMI Core</a> 
