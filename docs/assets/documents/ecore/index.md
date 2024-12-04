@@ -60,7 +60,7 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 <br/> 
 
 <figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" alt="EHMI Core Message Delivery and Document Sharing" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
+<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" alt="EHMI Core Message Delivery and Document Sharing" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig1"></a>
 <figcaption text-align="left"><b>Figure 1: EHMI Layers  </b></figcaption>
 </figure>
 
@@ -70,13 +70,13 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 ### Layers
 
 It is important to note that while the overall architecture seems to indicate a flow between the components in the architecture, there are also logical flows between components not directly connected to each other.
-- EUs (End User) communicate logically with EUs (End User)
-- EUAs communicate logically with EUAs
-- MSHs communicate logically with MSHs
-- APs communicate logically with APs
+- EUs (End Users) communicate logically with EUs (End Users) through the content in the messages
+- EUAs communicate logically with EUAs through the structure of the messages
+- MSHs communicate logically with MSHs through the metadata content in the ehmiSBDH envelopes
+- APs communicate logically with APs through the metadata content in the AS4 envelopes
 
 <figure>
-<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
+<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig2"></a>
 <figcaption text-align="left"><b>Figure 1: EHMI Layers  </b></figcaption>
 </figure>
 
