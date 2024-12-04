@@ -59,7 +59,11 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 
 <br/> 
 
-![EHMI Core Message Delivery and Document Sharing](https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png)
+<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
+<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" alt="EHMI Core Message Delivery and Document Sharing" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
+<figcaption text-align="left"><b>Figure 1: EHMI Layers  </b></figcaption>
+</figure>
+
 
 <br/> 
 
@@ -71,8 +75,8 @@ It is important to note that while the overall architecture seems to indicate a 
 - MSHs communicate logically with MSHs
 - APs communicate logically with APs
 
-<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:5%; margin-right:15%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
+<figure>
+<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
 <figcaption text-align="left"><b>Figure 1: EHMI Layers  </b></figcaption>
 </figure>
 
