@@ -9,7 +9,7 @@
 <br/> 
 
 
-**Table of contents**
+**Table of contents** ([CHG]: Fjernes når siden ikke indeholder mere end den gør?)
 - [EHMI Core Description](#ehmi-core-description)
     - [EHMI Core Message Delivery and Document Sharing](#ehmi-core-message-delivery-and-document-sharing)
     - [EHMI Core Specifications](#ehmi-core-specifications)
@@ -21,6 +21,8 @@
 <br/> 
 
 ## EHMI Core Description
+
+([CHG]: Det er ikke særlig klart hvad der menes præcis med 'EHMI Core'. Er det processerne for meddelelsesforsendelse eller infrastrukturen som understøtter det? Sæt lidt flere ord på. Måske kunne man starte med grafikken og forklare koncepterne ud fra den.)
 
 EHMI Core is defined as 
 - the primary message delivering from a sender system to a receiver system concerning 
@@ -36,11 +38,12 @@ EHMI Core is defined as
 
 <br/> 
 
-EHMI Core specifies 
+
+EHMI Core specifies ([CHG]: Der er noget mismatch mellem denne liste som har to 'specifikationer' (ehmiAP og ehmiSBDH) og nedenstående 'EHMI Core specifications' afsnit. Kan det konsolideres i et afsnit?)
 
 - ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see here](http://127.0.0.1:4000/assets/documents/ecore/ehmiAP/)
 - ehmiSBDH, the envelope that is used between the MSHs
-- how ehmiSBDH in addition to its primary purpose of carrying metadata for eDelivery Messaging can carry the metadata used for:
+- how ehmiSBDH in addition to its primary purpose of carrying metadata for eDelivery Messaging can carry the metadata used for: ([CHG] Bør formål ikke beskrives som en del af ehmiSBDH? Dvs. skulle man ikke flytte punktet og underpunkterne til ehmiSBDH spec'en?)
     - Reliable Messaging embedded in ehmiSBDH BusinessScopes
     - XDS Document Sharing through the FHIR DocumentReference profile for each messagetype and how it is embedded in an ehmiSBDH BusinessScope
     - EHMI Delivery Status embedded in ehmiSBDH BusinessScopes
@@ -53,7 +56,7 @@ EHMI Core specifies
 
 The graphic shows and explains in plain text how the primary flow of a MedCom Message is from the Sender to the Receiver.
 
-In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Receiver's MSH to Sender's MSH and FHIR Acknowledgements will be sent from the Receiver's EUA to the Original Sender's EUA.
+In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Receiver's MSH to Sender's MSH and FHIR Acknowledgements will be sent from the Receiver's EUA to the Original Sender's EUA. ([CHG] Har vi ikke en figur som illustrerer at der er tre slags kvitteringer i spil?)
 
 <br/> 
 
@@ -62,10 +65,11 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 <br/> 
 
 ### EHMI Core specifications
+([CHG]: Til hver af de nævnte spec's bør der tilføjes et par om hvor i flowet spec'en er i spil)
 
 <br/> 
 
-EHMI Core specifies two profiles, 1 for ehmiSBDH and 1 for ehmiSMP:
+EHMI Core specifies two profiles, one for ehmiSBDH and one for ehmiSMP: ([CHG]: Tilføj ehmiAP? Se ovenstående kommentar.)
 
 - [EHMI Profile of SBDH (ehmiSBDH)](http://127.0.0.1:4000/assets/documents/ecore/ehmiSBDH/)
 - [EHMI Profile of Service Metadata Publisher (ehmiSMP)](http://127.0.0.1:4000/assets/documents/ecore/ehmiSMP/)
@@ -115,14 +119,14 @@ PEPPOL Business Message Envelope (SBDH) 1.2
 <a href="https://github.com/OpenPEPPOL/documentation/blob/master/TransportInfrastructure/PEPPOL-EDN-Business-Message-Envelope-1.2-2019-02-01.pdf" target="_blank">PEPPOL-EDN-Business-Message-Envelope-1.2-2019-02-01.pdf</a>
 </td></tr>
 <tr><td><b>
-DDS Metadata
+XDS Metadata
 </b></td><td>
-DDS Metadata-v1.0.0
+XDS Metadata-v1.0.0
 </td><td>
-<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/XDS%20Metadata%20for%20Document%20Sharing.%20Danish%20profile%20v.1.0.0.pdf" target="_blank">DK_profil_metadata/XDS%20Metadata%20for%20Document%20Sharing.%20Danish%20profile%20v.1.0.0.pdf</a>
+<a href="https://svn.medcom.dk/svn/releases/Standarder/IHE/DK_profil_metadata/XDS%20Metadata%20for%20Document%20Sharing.%20Danish%20profile%20v.1.0.0.pdf" target="_blank">XDS Metadata for Document Sharing Danish profile v.1.0.0.pdf</a>
 </td></tr>
 <tr><td><b>
-DDS_Metadata- ValueSets
+XDS_Metadata- ValueSets
 </b></td><td>
 DK-IHE_Metadata-Common_Code_systems-Value_sets
 </td><td>

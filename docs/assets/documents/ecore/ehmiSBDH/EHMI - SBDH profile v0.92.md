@@ -1,3 +1,5 @@
+([CHG]: Denne side bliver der ikke linket til fra sitet, er den stadig relevante eller skal den slettes?)
+
 ![Et billede som indeholder grafiske elementer og teksten EHMI - Enhanced Healthcare messaging Infrastructure](media/4d424a9672e7fd7a0acba0a3c656ca0a.png)
 
 XYZ

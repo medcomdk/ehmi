@@ -1,3 +1,5 @@
+([CHG]: Denne side bliver der ikke linket til fra sitet, er den stadig relevante eller skal den slettes?)
+
 # Exchange Header Envelope (XHE) Version 1.0
 
 ## 1.1 Overview

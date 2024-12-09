@@ -10,6 +10,7 @@
 
 ## ehmiSMP
 
+([CHG]: Fjernes denne indholdsfortegnelse når siden ikke indeholder mere end den gør? Eller start med teksten fra nedenstående 'eDelivery SMP profile' afsnit?)
 - [eDelivery SMP profile](#edelivery-smp-profile)
 - [SMP ServiceMetadata in general eDelivery message communication](#smp-servicemetadata-in-general-edelivery-message-communication)
 - [Connection to SBDH](#connection-to-sbdh)
@@ -18,6 +19,8 @@
 - [SMP at Digital Europe (EU)](#smp-at-digital-europe-eu)
 
 <br/> 
+
+([CHG]: Tilføj to linjer om hvad en SMP er)
 
 EHMIs SMP, ehmiSMP, follows the generel eDelivery SMP functionality.
 
@@ -38,10 +41,11 @@ The eDelivery SMP profile is an open specification for publishing service metada
 <br/>
 
 ### Connection to SBDH
+([CHG]: Jeg forstår ikke rigtig det her og de næste to afsnit :-(. Tilføj en forklaring af hvad DOCUMENTID and PROCESSID er og hvad de benyttes til?)
 
 <br/>
 
-In the eDelivery communication, the SBDH Scope structure with the two types, DOCUMENTID and PROCESSID, forms (in addition to the values in the elements Sender and Receiver) a direct connection to the SMP DocumentIdentifier and ProcessIdentifier in the ServiceMetadata structure. In the following, these two types of elements in SMP are described. 
+In the eDelivery communication, the SBDH Scope structure with the two types, DOCUMENTID and PROCESSID, forms (in addition to the values in the elements Sender and Receiver) a direct connection to the SMP DocumentIdentifier and ProcessIdentifier in the ServiceMetadata structure.  In the following, these two types of elements in SMP are described. 
 
 In PEPPOL, the scopes of DOCUMENTID and PROCESSID are permanently defined scopes, which ensure a unique relation to SBDH. DOCUMENTID and PROCESSID is used in EHMI with the same precision as in PEPPOL, which ensure a certain uniformity in how the values across of PEPPOL and EHMI is expressed. DOCUMENTID and PROCESSID is used by the APs together with the recipient’s ReceiverId to look up the recipient’s eDelivery address in SMP with a unique response as result. 
 
@@ -51,7 +55,7 @@ In PEPPOL, the scopes of DOCUMENTID and PROCESSID are permanently defined scopes
 
 <br/>
 
-The value in DocumentIdentifier is identical to the corresponding ehmiSBDH-registration for BusinessScope/Scope[DOCUMENTID]:
+The value in DocumentIdentifier is identical to the corresponding ehmiSBDH-registration for BusinessScope/Scope[DOCUMENTID]: ([CHG]: Hvad betyder "BusinessScope/Scope[DOCUMENTID]" notationen?)
 
     SMP ServiceInformation/DocumentIdentifier
     
@@ -60,9 +64,9 @@ The value in DocumentIdentifier is identical to the corresponding ehmiSBDH-regis
     urn:dk:healthcare:prod:messaging:oasis:ebxml:schema:xsd:sbdhreceiptacknowledgement\#urn:oasis:ebxml:sbdhreceiptacknowledgement:ebbp-signals-2.0
 
 
-The values are taken from MedComs standard catalog and are represented here by the values they have in MedCom messages. See bookmark: [DKEDEL_DT_CodeList]
+The values are taken from MedComs standard catalog and are represented here by the values they have in MedCom messages. See bookmark: [DKEDEL_DT_CodeList] ([CHG]: Reference mangler)
 
-Regarding the originally intended, double ”##” and ”::” are removed from the construction of InstanceIdentifier, as the current configuration of SMP from CEF cannot handle these, so that the values can be retrieved again. This means that SBDH's DOCUMENTID must be changed accordingly.
+Regarding the originally intended ([CHG]: Det vil sige værdier fra MedComs standardkatalog?), double ”##” and ”::” are removed from the construction of InstanceIdentifier, as the current configuration of SMP from CEF cannot handle these, so that the values can be retrieved again. This means that SBDH's DOCUMENTID must be changed accordingly.
 
 <br/>
 
@@ -70,7 +74,7 @@ Regarding the originally intended, double ”##” and ”::” are removed from
 
 <br/>
 
-The value in ProcessIdentifier is identical with the corresponding ehmiSBDH-registration for BusinessScope/Scope[DOCUMENTID]:
+The value in ProcessIdentifier is identical with the corresponding ehmiSBDH-registration for BusinessScope/Scope[DOCUMENTID]: ([CHG]: Ditto. Hvad betyder "BusinessScope/Scope[DOCUMENTID]" notationen?)
 
 The value is obtained from the following: 
 
@@ -79,7 +83,7 @@ The value is obtained from the following:
     sdn-emergence
 
 
-By now, the value is of static character. This will change when communicating in and out of the healthcare area. The term “sdn-emergence” stands for the ”emergence” of a message on the health domain/health data network “sdn”. 
+By now, the value is of static character. This will change when communicating in and out of the healthcare sector. The term “sdn-emergence” stands for the ”emergence” of a message on the health domain/health data network “sdn”. 
 
 <br/>
 
@@ -87,5 +91,5 @@ By now, the value is of static character. This will change when communicating in
 
 <br/>
 
-<a href="https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/SMP+specifications" target="_blank">SMP at Digital Europe (EU)</a>
+<a href="https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/SMP+specifications" target="_blank">SMP at Digital Europe (EU)</a> ([CHG]: Flyt linket op til 'eDelivery SMP profile' afsnittet, som handler om profilen.)
 

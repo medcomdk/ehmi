@@ -6,7 +6,7 @@ google_analytics:
 theme: jekyll-theme-minimal
 version: "Version 0.9.0"
 fhir_version: "EHMI"
-releasenote: https://github.com/medcomdk/ehmi/releases
+releasenote: https://github.com/medcomdk/ehmi/releases # [CHG]: Releasenoten er på dansk, men bør være på engelsk for at være konsistent
 thisurl: http://127.0.0.1:4000/
 menuurl_item1: http://127.0.0.1:4000/
 menutxt_item1: EHMI Landingpage

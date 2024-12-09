@@ -1,0 +1,1 @@
+([CHG]: Billederne i denne mappe bliver kun linket til fra 'EHMI - SBDH profile v0.92.md' som er erstattet af FHIR IG'en. Slet mappen?)
