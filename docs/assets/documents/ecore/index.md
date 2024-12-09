@@ -2,9 +2,7 @@
 
 ***
 
-    **Disclaimer** 
-    
-    **The menu items above marked with a star are yet not specified**
+    **Disclaimer - The menu items above marked with a star are yet not specified**
        
 <br/> 
 
@@ -38,10 +36,13 @@ EHMI Core is defined as
 
 <br/> 
 
-
 EHMI Core specifies ([CHG]: Der er noget mismatch mellem denne liste som har to 'specifikationer' (ehmiAP og ehmiSBDH) og nedenstående 'EHMI Core specifications' afsnit. Kan det konsolideres i et afsnit?)
 
-- ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see here](http://127.0.0.1:4000/assets/documents/ecore/ehmiAP/)
+- The responsabilities for 
+    - End User Applications (EUA) [see here](http://127.0.0.1:4000/assets/documents/ecore/ehmiEUA/)
+    - Message Service Handlers (MSH) [see here](http://127.0.0.1:4000/assets/documents/ecore/ehmiMSH/)
+    - eDelivery Access Points (AP) [see here](http://127.0.0.1:4000/assets/documents/ecore/ehmiAP/)
+- ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see here](https://medcomdk.github.io/assets/documents/ecore/ehmiAP/)
 - ehmiSBDH, the envelope that is used between the MSHs
 - how ehmiSBDH in addition to its primary purpose of carrying metadata for eDelivery Messaging can carry the metadata used for: ([CHG] Bør formål ikke beskrives som en del af ehmiSBDH? Dvs. skulle man ikke flytte punktet og underpunkterne til ehmiSBDH spec'en?)
     - Reliable Messaging embedded in ehmiSBDH BusinessScopes
@@ -60,9 +61,26 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 
 <br/> 
 
-![EHMI Core Message Delivery and Document Sharing](http://127.0.0.1:4000/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png)
+<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
+<a href="http://127.0.0.1:4000/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="http://127.0.0.1:4000/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" alt="EHMI Core Message Delivery and Document Sharing" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig1"></a>
+<figcaption text-align="left"><b>Figure 1: EHMI Layers  </b></figcaption>
+</figure>
+
 
 <br/> 
+
+### Layers
+
+It is important to note that while the overall architecture seems to indicate a flow between the components in the architecture, there are also logical flows between components not directly connected to each other.
+- EUs (End Users) communicate logically with EUs (End Users) through the content in the messages
+- EUAs communicate logically with EUAs through the structure of the messages
+- MSHs communicate logically with MSHs through the metadata content in the ehmiSBDH envelopes
+- APs communicate logically with APs through the metadata content in the AS4 envelopes
+
+<figure>
+<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig2"></a>
+<figcaption text-align="left"><b>Figure 1: EHMI Layers  </b></figcaption>
+</figure>
 
 ### EHMI Core specifications
 ([CHG]: Til hver af de nævnte spec's bør der tilføjes et par om hvor i flowet spec'en er i spil)

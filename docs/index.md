@@ -2,35 +2,40 @@
 
 ***
 
-    **Disclaimer** 
-    
-    **The menu items above marked with a star are yet not specified**
+    **Disclaimer - The menu items above marked with a star are yet not specified**
        
 <br/> 
 
 [CHG]: Har vi en generel beskrivelse af EHMI som vi kan linke til, hvor læsere som ikke kender til EHMI kan få en indflyvning?
 
-This is the homepage of the entire description and all the specifications of EHMI. Some specifications will be described here, while others will be linked to from here. For instance, all HL7 FHIR Specifications are to be found in their respective Implementation Guides (IG) following the standard for publishing by HL7. Other specifications may be shared with our partners in the Danish Health Data Authority and therefore have a format that suits them as well.
+This is the homepage of the entire technical description and all the specifications of EHMI. Some specifications will be described here, while others will be linked to from here. For instance, all HL7 FHIR Specifications are to be found in their respective Implementation Guides (IG) following the standard for publishing by HL7. Other specifications may be shared with our partners in the Danish Health Data Authority and therefore have a format that suits them as well.
+
+To learn about the EHMI project as seen from a project perspective in Danish, please visit <a href="https://medcom.dk/projekter/kommunale-proevesvar-paa-ny-infrastruktur/" target="blank"> Kommunale prøvesvar på ny infrastruktur (opens in a new window)</a>
 
 <br/> 
 
-*The production pilot for EHMI involves a new FHIR standard, HomeCareObservation, with a limited set of participants. In the pilot, the HomeCareObservation will be sent from municipal emergency services (EOJ) to general medical practice (LPS) via EHMI. Testing of the EHMI architecture and configuration of the involved components with various message flows will be carried out in operation in parts of Q1 and Q2 2026. The pilot will also test document sharing of sent messages and subsequent exposure of the messages in the national infrastructure for both healthcare professionals and citizens for the benefit of the citizens/patients safety. Further test of collecting delivery status of messages (Track’n’Trace) at selected points along the delivery path will be carried out and subsequently exposing the delivery status via a service to both healthcare professionals and citizens, allowing them to follow the status of a message in close to real-time.*
+*In MedCom13, MedCom has a joint testing project ’Kommunale prøvesvar på ny infrastruktur’('HomeCareObservations on new infrastructure'), where MedCom's two central modernization tracks; FHIR and EHMI, are connected and both the message communication and the infrastructure are modernized and tested in interaction. The modernization is due to the need to improve the quality of e.g. security, transparency, robustness and efficient, international digital message communication. The MedCom modernization is described further in MedCom13 <a href="https://medcom.dk/modernisering/" target="_blank">here</a>.*
 
-*The dispatch of the standard ([CHG]: Hvad menes der med 'dispatch of the standard'?) must be done via the new underlying eDelivery infrastructure, which is carried out on the Health Data Network, Sundhedsdatanettet, and there must also be a test of EHMI functionalities such as document sharing and Delivery status (Track’n’Trace).*
+<br/>
 
-<br/> 
+*EHMI (Enhanced Healthcare Messaging Infrastructure) is built on eDelivery, which is the core of future message communication. But EHMI involves several additional elements and services compared to eDelivery, such as support of message sharing, improved handling of addressing via a health addressing service (EHMI Addressing Service, EAS) and delivery status (EHMI Delivery Status, EDS) (also called Track'n'Trace). 'The Architectural Vision' (DA: Målbilledet for meddelelseskommunikation på sundhedsområdet) forms the framework and guideline for testing EHMI. 'The Architectural Vision' can be read <a href="https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-referencearkitektur-og-standarder/referencearkitekturer" target="blank"> here</a>.*
 
-**For now, specifications published here at 01-04-2024 ([CHG]: opdater dato) will focus on the Production pilot for EHMI and are therefore narrowed down to show only what is currently ready. Later in 2024 ([CHG]: 2025?) several more specifications and descriptions will be released on these sites and make the documentation more comprehensive.**
+<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
+<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-OverallArchitecture.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/ehmi-OverallArchitecture.png" alt="EHMI Overall Architecture" style="width:80%; height:auto; margin-left:5%; margin-right:15%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
+<figcaption text-align="left"><b>Figure 1: EHMI Overall Architecture  </b></figcaption>
+</figure>
+
+*For now, specifications published here at 01-04-2024 ([CHG]: opdater dato) will focus on the Production pilot for EHMI and are therefore narrowed down to show only what is currently ready. Later in 2024 ([CHG]: 2025?) several more specifications and descriptions will be released on these sites and make the documentation more comprehensive.**
    
 <br/> 
 
 
 **Table of content for Production pilot for EHMI**
-- <a href="http://127.0.0.1:4000/assets/documents/production-pilot/" target="blank"> EHMI Production Pilot Description</a> ([CHG]: Nedenstående 4 links er døde)
-   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/ehmi-core-description/" target="blank"> EHMI Core Description</a>
-   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/ehmi-core-security-description/" target="blank"> EHMI Core Security Description</a>
-   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/ehmi-delivery-status-description/" target="blank"> EHMI Delivery Status Description</a>
-   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/ehmi-delivery-status-security-description/" target="blank"> EHMI Delivery Status Security Description</a>
+- <a href="http://127.0.0.1:4000/assets/documents/production-pilot/" target="blank"> EHMI Production Pilot Description</a>
+   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/#ehmi-core-description"> EHMI Core Description</a>
+   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/#ehmi-core-security-description"> EHMI Core Security Description</a>
+   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/#ehmi-delivery-status-description"> EHMI Delivery Status Description</a>
+   - <a href="http://127.0.0.1:4000/assets/documents/production-pilot/#ehmi-delivery-status-security-description"> EHMI Delivery Status Security Description</a>
 
 **Table of content for EHMI Specifications (published April 1, 2024)**
 - <a href="http://127.0.0.1:4000/assets/documents/ecore/" target="blank"> EHMI Core</a> 
