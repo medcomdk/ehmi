@@ -12,7 +12,7 @@ An ehmiAP **SHALL** be conformant with the EU general requirements for an eDeliv
 
 The general specifications are outlined here:
 - <a href="https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/Access+Point+specifications" target="_blank">Access Point specifications</a>
-- <a href="https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eDelivery+AS4+-+1.15" target="_blank">eDelivery AS4 - 1.15</a> ([CHG]: AS4 spec'en står til at blive opdateret til en version 2.0, som løfter sikkerheden. Er der planer for ibrugtagning af 2.0?)
+- <a href="https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eDelivery+AS4+-+1.15" target="_blank">eDelivery AS4 - 1.15</a> ([CHG]: AS4 spec'en er blevet opdateret til en version 2.0 her d. 5/12, som løfter sikkerheden. Er der planer for ibrugtagning af 2.0?)
 
 These requirements basically mean that the ehmiAP **SHALL** be on the list of <a href="https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eDelivery+AS4+conformant+solutions" target="_blank">EU eDelivery AS4 conformant solutions</a>. And on this list **EHMI** require the participating solutions to have been EU eDelivery AS4 conformance tested within the last 3 years.
 

@@ -25,7 +25,7 @@ To learn about the EHMI project as seen from a project perspective in Danish, pl
 <figcaption text-align="left"><b>Figure 1: EHMI Overall Architecture  </b></figcaption>
 </figure>
 
-*For now, specifications published here at 01-04-2024 ([CHG]: opdater dato) will focus on the Production pilot for EHMI and are therefore narrowed down to show only what is currently ready. Later in 2024 ([CHG]: 2025?) several more specifications and descriptions will be released on these sites and make the documentation more comprehensive.**
+*For now, specifications published here at 01-04-2024 (\[CHG]: opdater dato) will focus on the Production pilot for EHMI and are therefore narrowed down to show only what is currently ready. Later in 2024 (\[CHG]: 2025?) several more specifications and descriptions will be released on these sites and make the documentation more comprehensive.**
    
 <br/> 
 

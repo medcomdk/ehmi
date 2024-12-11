@@ -1,3 +1,5 @@
+([CHG]: Denne side bliver der ikke linket til fra sitet, er den stadig relevante eller skal den slettes?)
+
 # Reliable Messaging using ehmiSBDHEnvelope
 
 **Table of contents**

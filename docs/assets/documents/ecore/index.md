@@ -36,7 +36,7 @@ EHMI Core is defined as
 
 <br/> 
 
-EHMI Core specifies ([CHG]: Der er noget mismatch mellem denne liste som har to 'specifikationer' (ehmiAP og ehmiSBDH) og nedenstående 'EHMI Core specifications' afsnit. Kan det konsolideres i et afsnit?)
+EHMI Core specifies
 
 - The responsabilities for 
     - End User Applications (EUA) [see here](http://127.0.0.1:4000/assets/documents/ecore/ehmiEUA/)
@@ -62,7 +62,7 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 <br/> 
 
 <figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="http://127.0.0.1:4000/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="http://127.0.0.1:4000/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" alt="EHMI Core Message Delivery and Document Sharing" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig1"></a>
+<a href="http://127.0.0.1:4000/assets/images/ehmi-Layers.png" target="_blank"> <img src="http://127.0.0.1:4000/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" alt="EHMI Core Message Delivery and Document Sharing" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig1"></a>
 <figcaption text-align="left"><b>Figure 1: EHMI Layers  </b></figcaption>
 </figure>
 
@@ -78,9 +78,12 @@ It is important to note that while the overall architecture seems to indicate a 
 - APs communicate logically with APs through the metadata content in the AS4 envelopes
 
 <figure>
-<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig2"></a>
+<a href="http://127.0.0.1:4000/assets/images/ehmi-Layers.png" target="_blank"> <img src="http://127.0.0.1:4000/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig2"></a>
 <figcaption text-align="left"><b>Figure 1: EHMI Layers  </b></figcaption>
 </figure>
+
+([CHG]: Kan vi lave en general beskrivelse af fejlhåndtering på de forskellige lag? Det kan nemt blive en kompleks affære :-\ )
+
 
 ### EHMI Core specifications
 ([CHG]: Til hver af de nævnte spec's bør der tilføjes et par om hvor i flowet spec'en er i spil)
