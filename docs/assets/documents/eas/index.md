@@ -1,9 +1,7 @@
 # EHMI Addressing Service (EAS)
 
 ***
-    **Disclaimer** 
-    
-    **The menu items above marked with a star are yet not specified**
+    **Disclaimer - The menu items above marked with a star are yet not specified**
      
 <br/> 
 
