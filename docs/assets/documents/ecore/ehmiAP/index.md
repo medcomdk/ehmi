@@ -26,7 +26,7 @@ Especially the ehmiAP **SHALL** conform to these basic functionalities
 
 Furthermore, for being an EHMI AP supplier for the production pilot it is important that you conform to the following requirements:
 
-- The AP supplier has already chosen an EU approved AP and has already implemented it in operation for a organization in the healthcare area.
+- The AP supplier has already chosen an EU approved AP and has implemented it in operation for a organization in the healthcare area.
 - The AP supplier has implemented support for SBDH compliance with PEPPOL. Therefore, there will be no MedCom funding for implementing this.
 - The AP must operate on the health data network (danish: sundhedsdatanettet, SDN) with the necessary approvals required to operate here.
 - The AP must communicate with the healthcare area's chosen SMP, regardless if this is placed on SDN or on the open internet.
