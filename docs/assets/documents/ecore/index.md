@@ -77,7 +77,7 @@ It is important to note that while the overall architecture seems to indicate a 
 
 <figure>
 <a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig2"></a>
-<figcaption text-align="left"><b>Figure 1: EHMI Layers  </b></figcaption>
+<figcaption text-align="left"><b>Figure 2: EHMI Layers  </b></figcaption>
 </figure>
 
 ### EHMI Core specifications
