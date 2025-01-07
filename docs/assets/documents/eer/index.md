@@ -4,7 +4,7 @@
 
     **Disclaimer** 
     
-    **To be specified in Q2 2024**
+    **To be specified in Q1 2025**
 
 <br/> 
 
