@@ -1,4 +1,6 @@
-# EHMI Delivery Status - Sender User stories
+# EHMI Delivery Status - Sender (EUA) User stories
+
+## The following Sender (EUA) User stories have been identified
 
 **Sender (EUA) User Story.1**
 
