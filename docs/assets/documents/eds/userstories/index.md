@@ -1,6 +1,6 @@
-# EDS User stories
+# EHMI Delivery Status - User stories
 
-# EHMI Delivery Status User stories
+## The following User stories have been identified
 
 - [EDS Client User Stories](component.md)
 - [Sender User Stories](sender.md)
