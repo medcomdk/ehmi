@@ -1,6 +1,6 @@
-# EHMI Delivery Status - Receiver User stories
+# EHMI Delivery Status - Receiver (EUA) User stories
 
-<br/>
+## The following Receiver (EUA) User stories have been identified
 
 **Receiver (EUA) User Story.1**
 
