@@ -14,7 +14,7 @@ In general EDS clients can be either an EUA, a MSH or an AP and throughout the d
 
 In FHIR this kind of software is called a Device, which is a term that in fact covers a lot of different types of software and other patient support devices as well. EDS implements a EDS Client as a Device, which will be found in EER's set of profiled FHIR resources.
 
-**What is registred in EDS**
+## What is registred in EDS
 
 Registration is made on certain message-events happening in a message's journay from the sender EUA to the receiver EUA.
 - whenever a messaged is created and sent from the sender's EUA to it is being received and has been sent from another EDS Client until it's received in the receivers EUA, the kind of event is being recorded as type and subtypes
@@ -29,9 +29,19 @@ Registration is made on certain message-events happening in a message's journay 
   - envelope type and version
   - message details relevant for statistical analysis like a category of a CareCommunication Message 
 
+The EDS Server and EDS Clients are expected to implement the user stories outlined [here](./userstories/index.md)
+
 <br/> 
   
-The EDS Server and EDS Clients are expected to implement the user stories outlined [here](./userstories/index.md)
+## Querying EDS
+
+Besides EDS registrations, EDS also supports querying the registrations on the EDS Server.
+
+Access for these queries is limited to delivery status registrations for messages which include registrations created by the EDS Client. That is, an EDS Client can access all registrations for a given message it has been involved in transferring from one EDS Client to another.
+
+Senders EUA and receivers EUA can access all registrations around messages they have beden involved in as a sender or a receiver defined by their SOR-ID
+
+Patients can access all registrations of messages which they have been the subject for.
 
 <br/> 
   
