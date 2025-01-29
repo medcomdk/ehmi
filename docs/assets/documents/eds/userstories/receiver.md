@@ -1,15 +1,43 @@
-# EDS Receiver Userstories
+# EHMI Delivery Status - Receiver User stories
 
-# EHMI Delivery Status User stories
+<br/>
 
-- [EHMI Delivery Status Sender User stories](#ehmi-delivery-status-sender-user-stories)
-- [EHMI Delivery Status Receiver User stories](#ehmi-delivery-status-receiver-user-stories)
-    
-<br/> 
+**Receiver (EUA) User Story.1**
 
-**Receiver** in the role of EDS Client
+    i. As a Receiver
+    ii. Do I want to be able to follow the status of a shipment in relation to where it is in the flow?
+    iii. When I am the recipient of a message regarding a patient from a sender
 
-    
+**Receiver (EUA) User Story.2**
+
+    i. As a Receiver
+    ii. Do I want to be able to ask a technician to find my shipment?
+    iii. When I have become aware that I am the recipient of a notification regarding a patient, but have not yet received the notification
+
+**Receiver (EUA) User Story.3**
+
+    i. As a Receiver
+    ii. I want to be able to get an overview of the status of all my shipments in terms of where they are in the flow in a given time period for the shipment (day, week, month)
+    iii. When I need to get a quick overview of my (potentially) received messages regarding my patients
+
+**Receiver (EUA) User Story.4**
+
+    i. As a Receiver
+    ii. I want to be able to get an overview of the status of all my shipments for a given message type in relation to where they are in the flow in a given time period for the shipment (day, week, month)
+    iii. When I need to get a quick overview of my (potentially) received messages for the given message type regarding my patients
+
+**Receiver (EUA) User Story.5**
+
+    i. As a Receiver
+    ii. I want to be able to get an overview of the status of all my shipments for a given citizen/patient in relation to where they are in the flow in a given time period for the shipment (day, week, month)
+    iii. When I need to get a quick overview of my (potentially) received messages regarding the given citizen/patient
+
+**Receiver (EUA) User Story.6**
+
+    i. As a Receiver
+    ii. Do I want to be able to follow up on the shipping status of a message (either myself or through a support function)?
+    iii. When a sending party informs me that a message should have been sent but I have not yet received it    
+
 <br/> 
 
 Modtager (MODT)
