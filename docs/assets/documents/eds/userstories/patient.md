@@ -1,14 +1,51 @@
-# EDS Patient Userstories
+# EHMI Delivery Status - Patient User stories
 
-# EHMI Delivery Status User stories
+## The following Patient User stories have been identified
 
-- [EHMI Delivery Status Sender User stories](#ehmi-delivery-status-sender-user-stories)
-- [EHMI Delivery Status Receiver User stories](#ehmi-delivery-status-receiver-user-stories)
-    
-<br/> 
+**Patient  User Story.1**
 
-**Patient** in the role of EDS Client
-    
+    i. As a Patient
+    ii. Do I want to be able to follow the status of a shipment in relation to where it is in the flow?
+    iii. When a message is sent regarding me as a patient
+
+**Patient  User Story.2**
+
+    i. As a Patient
+    ii. Do I want to be able to contact a support function and ask them to find my shipment?
+    iii. When I know that a clinician should have sent a message regarding me as a patient to a recipient, but the recipient has not yet received it
+
+**Patient  User Story.3**
+
+    i. As a Patient
+    ii. I want to be able to get an overview of the status of all my shipments in terms of where they are in the flow in a given time period for the shipment (day, week, month)
+    iii. When I need to get a quick overview of all messages sent regarding me as a patient
+
+**Patient  User Story.4**
+
+    i. As a Patient
+    ii. I want to ensure that only AFS, MODT and REL besides me can follow the status of shipments on messages concerning me by “encrypting” personal identification
+    iii. When a message is sent regarding me as a patient
+
+**Patient  User Story.5**
+
+    i. As a Patient
+    ii. I want to be able to see if a message has been sent/is in progress
+    iii. When I have been informed that this should happen/has happened.
+
+**Patient  User Story.6**
+
+    i. As a Patient
+    ii. I want to be able to see if a message has been received
+    iii. When I have been informed that the message should have been sent
+
+**Patient  User Story.7**
+
+    i. As a Patient
+    ii. Do I wish to be able to give another citizen (e.g. relative) permission to view the dispatch status of communications regarding my medical condition via power of attorney?
+    iii. When I as a patient need to be supported by a REL or want to share this with a REL
+
+
+
 <br/> 
 
 Patient (PAT)
