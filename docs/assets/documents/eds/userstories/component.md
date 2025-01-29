@@ -1,19 +1,8 @@
-# EDS Komponent Userstories
-
-# EHMI Delivery Status User stories
-
-<!--
-- [EHMI Delivery Status Sender User stories](#ehmi-delivery-status-sender-user-stories)
-- [EHMI Delivery Status Receiver User stories](#ehmi-delivery-status-receiver-user-stories)
--->
+# EHMI Delivery Status - EDS Clients User stories
 
 <br/> 
 
-**EDS Clients**
-    
-<br/> 
-
-EDS Clients in the message flow (COMP)
+**EDS Clients in the message flow (COMP)**
     
 <br/> 
 
