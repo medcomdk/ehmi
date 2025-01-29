@@ -1,11 +1,5 @@
 # EDS Receiver Userstories
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-       
-<br/> 
-
 # EHMI Delivery Status User stories
 
 - [EHMI Delivery Status Sender User stories](#ehmi-delivery-status-sender-user-stories)

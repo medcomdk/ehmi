@@ -1,11 +1,5 @@
 # ehmiSMP (EHMI Service Metadata Provider) – konfiguration
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-       
-<br/> 
-
 ## ehmiSMP
     
 <br/> 

@@ -1,11 +1,5 @@
 # EHMI Delivery Status (EDS)
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-       
-<br/> 
-
 ## EHMI Delivery Status is defined as 
 - The EDS Server component implemented as a FHIR server that will host the registered data coming in from the clients at each station of EUAs, MSHs and APs in the primary and secondary messaging flow. The server will expose two FHIR APIs for the client to registrate their status:
     - <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/StructureDefinition-EdsBasicDeliveryStatus.html" target="_blank">EdsBasicDeliveryStatus</a> for registrations of message status without patient data, eg. Acknowledgments (opens in a new window)

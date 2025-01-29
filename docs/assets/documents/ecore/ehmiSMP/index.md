@@ -1,11 +1,5 @@
 # EHMI Service Metadata Provider – ehmiSMP configuration
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-       
-<br/> 
-
 ## ehmiSMP
 
 - [eDelivery SMP profile](#edelivery-smp-profile)

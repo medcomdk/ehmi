@@ -1,11 +1,5 @@
 # EHMI Ecosystem
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-       
-<br/> 
-
 ## EHMI Ecosystem sites
 
 - <a href="https://medcomdk.github.io/ehmi/" target="blank">1: EHMI Landingpage</a>

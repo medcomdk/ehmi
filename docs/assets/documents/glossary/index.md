@@ -1,12 +1,5 @@
 # Acronyms and glossary
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-       
-<br/> 
-
-
 | Acronym | Acronym for | Description |  Domain | Relevate links |
 | --- | --- | --- | --- | --- |
 | AP       | Access Point | The eDelivery component responsible for exchanging data between Corner 2 and 3 in the 4 Corner model | eDelivery | [TBD] |
