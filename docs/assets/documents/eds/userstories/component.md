@@ -2,30 +2,32 @@
 
 # EHMI Delivery Status User stories
 
+<!--
 - [EHMI Delivery Status Sender User stories](#ehmi-delivery-status-sender-user-stories)
 - [EHMI Delivery Status Receiver User stories](#ehmi-delivery-status-receiver-user-stories)
+-->
+
+<br/> 
+
+**EDS Clients**
     
 <br/> 
 
-**Komponent** in the role of EDS Client
+EDS Clients in the message flow (COMP)
     
 <br/> 
 
-Komponent i meddelelsesflowet (KOMP)
-    
-<br/> 
+**COMP.1**
+- i. As a COMP
+- ii.  I wish to be able to register a delivery status
+- iii.  When I have received an incoming message or envelope
 
-**KOMP.1**
-- i. Som en KOMP
-- ii.  Ønsker jeg at kunne indrapportere forsendelsers status 
-- iii.  Når jeg har modtaget en Indgående meddelelse eller kuvert
+**COMP.2**
+- i. As a COMP
+- ii.  I wish to be able to register a delivery status
+- iii. When I have sent an outcoming message or envelope
 
-**KOMP.2**
-- i. Som en KOMP
-- ii.  Ønsker jeg at kunne indrapportere forsendelsers status 
-- iii.  Når jeg har sendt en udgående meddelelse eller kuvert
-
-**KOMP.3**
-- i. Som en KOMP
-- ii.  Ønsker jeg at kunne sikre at jeg indrapporterer forsendelsers status 
-- iii.  Når forsendelsesstatuskomponenten ikke er tilgængelig
+**COMP.3**
+- i.   As a COMP
+- ii.  I wish to be able to register a delivery status
+- iii. Even when the EDS Server is not online
