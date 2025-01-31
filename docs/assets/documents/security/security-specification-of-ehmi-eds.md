@@ -59,3 +59,6 @@ From the Architecture Vision, we know that the service, who exhibit EHMI Deliver
 
 Since the service is exhibited and performed on a platform, that may have its own and more strict security politics than the general security politics in the healthcare area, these must also be observed if necessary.
 
+### The specific technical details
+
+After having crunched the general description of the security mdel in "Sikkerhedsarkitektur EHMI services/Security architechture regarding EHMI central services" the nitty gritty technical details can also be found in English in the EDS IG<a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/security-EDS-english.html" target="_blank">EDS IG (opens in a new window)</a>
