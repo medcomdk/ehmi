@@ -24,7 +24,7 @@ A strong authentication of users must take place (equivalent to NIST level 3-4 o
 2.  Consent/rejection and treatment relation (dansk: behandlingsrelation) must be checked against the national consent service and the national treatment relation service (dansk: behandlingsrelationservice)
 3.  Information about healthcare professionals’ access to personal data must be viewable by the citizen via MinLog. 
 
-The general and specific security about this is described in: <a href="./media/Sikkerhedsarkitektur EHMI services v098.pdf" target="_blank">Sikkerhedsarkitektur EHMI services v 0.5/Security architechture regarding EHMI central services v 0.98 (opens in new window)</a>
+The general and specific security about this is described in: <a href="./media/Sikkerhedsarkitektur EHMI services v098.pdf" target="_blank">Sikkerhedsarkitektur EHMI services v 0.98/Security architechture regarding EHMI central services v 0.98 (opens in new window)</a>
 
 Be aware that the document is written in Danish and that most part of the document is describing, how the general security model is working as the document later will be a more general model throughout national healthcare services based on rest. However there is an appendix, "Appendiks: Anvendelse af sikkerhedsmodellen i EHMI services", where the focus is on the EHMI services described here. There is also translations in English of the appendix sub-chapters, these are placed in a security tab in the specific IG's. Links will be provided in the sub-sides here as well.
 
