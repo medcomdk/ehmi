@@ -4,9 +4,9 @@
 
 - [Security specifications regarding EHMI Delivery Status of messages](#security-specifications-regarding-ehmi-delivery-status-of-messages)
 
-- [Submission calls to EHMI Delivery Status repository](#submission-to-ehmi-delivery-service-repository)
+- [Registration calls  to EHMI Delivery Status repository](#submission-to-ehmi-delivery-service-repository)
 
-- [Client security for Submission calls to EHMI Delivery Status repository](#client-security-for-ehmi-delivery-status---submission)
+- [Client security for Registration calls  to EHMI Delivery Status repository](#client-security-for-ehmi-delivery-status---submission)
 
 - [Exhibition via service](#exhibition-via-service)
 
@@ -23,7 +23,7 @@ Security in relation to delivery status is divided into these different steps:
 
 <br/> 
 
-### Submission calls to EHMI Delivery Status repository
+### Registration calls  to EHMI Delivery Status repository
 
 From the Architecture Vision, we know that security around this is necessary partly so that the users will consider the service based on the collected data to be trustworthy, and partly because personal data is collected, since unique citizen identification (most often the CPR number) is part of the collected information: 
 
@@ -35,12 +35,12 @@ From the Architecture Vision, we know that security around this is necessary par
 
 <br/> 
 
-#### Client security for Submission calls to EHMI Delivery Status repository
+#### Client security for Registration calls  to EHMI Delivery Status repository
 
 | **EHMI components**                                                         | **Subtask**                                                                                                                       | **Who**                                                                    |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | EHMI Delivery Status-component                                                 | **Authenticity:** A component, that stores EHMI Delivery Status for messages must authenticate itself when accessing the repository.  | Sending system (Sending system/MSH/AP)                             |
-| Sending system (Sending system/MSH/AP)                              | **Authenticity management:** Implementation of signing Submission calls                                                           | Sending system (Sending system/MSH/AP)                             |
+| Sending system (Sending system/MSH/AP)                              | **Authenticity management:** Implementation of signing Registration calls                                                            | Sending system (Sending system/MSH/AP)                             |
 | EHMI Delivery Status-component                                                 | **Authenticity management:** Verification of signature upon receipt.                                                              | EHMI Delivery Statuscomponent                                                 |
 | Sending system (Sending system/MSH/AP) EHMI Delivery Status-component | **Integrity protection and confidentiality protection:** Communication via secured transport protocol, e.g. TLS                              | Sending system (Sending system/MSH/AP) EHMI Delivery Status-component |
 | Sending system (Sending system/MSH/AP) EHMI Delivery Status-component | **Availability:** Implementation of queue mechanism to handle that a connection may be down                                  | Sending system (Sending system/MSH/AP) EHMI Delivery Status-component |
