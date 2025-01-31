@@ -14,7 +14,6 @@
 
 <br/> 
 
-
 ## Security specifications regarding EHMI Delivery Status of messages
 
 Security in relation to delivery status is divided into these different steps: 
