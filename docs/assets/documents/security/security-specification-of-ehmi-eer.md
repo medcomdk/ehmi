@@ -10,7 +10,7 @@
 
 - [Security specifications regarding EHMI Delivery Status of messages](#security-specifications-regarding-ehmi-delivery-status-of-messages)
 
-- [Submission to EHMI Delivery Status repository](#submission-to-ehmi-delivery-service-repository)
+- [Submission calls to EHMI Delivery Status repository](#submission-to-ehmi-delivery-service-repository)
 
 - [Client security for EHMI Delivery Status - submission](#client-security-for-ehmi-delivery-status---submission)
 

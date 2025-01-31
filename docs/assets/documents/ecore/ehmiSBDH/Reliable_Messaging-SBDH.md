@@ -91,7 +91,7 @@ The shipping pattern is like Scenario #3.
 
 If the content of the Message content part is changed, the ehmiSBDHEnvelope is considered a completely new ehmiSBDHEnvelope and consequently change of both EnvelopeIdentifier, MessageIdentifier and timestamp **SHALL** be made if relevant.
 
-Resubmissions **SHALL** always be done manually.
+ReSubmission calls **SHALL** always be done manually.
 
 ## 2 VansEnvelope Reliable Messaging Elements
 
