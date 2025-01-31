@@ -52,18 +52,18 @@ EHMI Core Security is defined as
 
 EHMI Delivery Status Security is defined as
 - the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](../eds/index.md)
-- Specific technical details of EHMI Delivery Status Security Description can be found in the <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/security-EDS-english.html" target="_blank">EDS IG (opens in a new window)</a>
+- Specific technical details of EHMI Delivery Status Security Description can be found in the <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eds/security-english.html" target="_blank">EDS IG (opens in a new window)</a>
 
 ## EHMI Addressing Service Security
 
 EHMI Addressing Service Security is defined as
 - the needed security implementation to serve EHMI Addressing Service as described in [EHMI Addressing Service Description](../eas/index.md)
-- Specific technical details of EHMI Addressing Service Security Description can be found in the <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eas/security-EAS-english.html" target="_blank">EAS IG (opens in a new window)</a>
+- Specific technical details of EHMI Addressing Service Security Description can be found in the <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eas/security-english.html" target="_blank">EAS IG (opens in a new window)</a>
 
 ## EHMI Endpoint Register Security
 
 EHMI Endpoint Register Security is defined as
 - the needed security implementation to serve EHMI Endpoint Register as described in [EHMI Endpoint Register Description](../ees/index.md)
-- Specific technical details of EHMI Endpoint Register Security Description can be found in the <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eer/security-EER-english.html" target="_blank">EER IG (opens in a new window)</a>
+- Specific technical details of EHMI Endpoint Register Security Description can be found in the <a href="https://build.fhir.org/ig/medcomdk/dk-ehmi-eer/security-english.html" target="_blank">EER IG (opens in a new window)</a>
 
 <br/> 
