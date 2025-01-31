@@ -1,5 +1,7 @@
 # Specification of security regarding EHMI Addressing Service
 
+**OUTDATED**
+
 ## Table of context
 - [Security specifications regarding EHMI Addressing Service](#security-specifications-regarding-ehmi-addressing-service)
 
