@@ -1,5 +1,32 @@
 # EHMI Security 
 
+## General information regarding security for components in EHMI
+
+It is possible to report and access data via a FHIR API. Web-services/RESTful-services, that are exposed via an interface, must, like other national web-services on the health area, comply with national architecture and national standards.
+
+This means, among other things, that in case of personally identifiable information:
+
+A strong authentication of users must take place (equivalent to NIST level 3-4 or NSIS level “significant”).
+
+1.  Access control must be carried out based on national standardized information (attributes).
+2.  Consent/rejection and treatment relation (dansk: behandlingsrelation) must be checked against the national consent service and the national treatment relation service (dansk: behandlingsrelationservice)
+3.  Information about healthcare professionals’ access to personal data must be viewable by the citizen via MinLog. 
+
+The general and specific security about this is described in: <a href="../security/media/Sikkerhedsarkitektur EHMI services v098.pdf" target="_blank">Security architecture EHMI support services v05 (opens in new window)</a>
+
+<br/> 
+
+
+## General security definitions for components in the message chain
+
+Following definitions for all systems/components in EHMI apply: 
+
+-   Systems/components can be a stand-alone application or **build together** with one or more systems/components in the message flow.
+-   Systems/components can be a stand-alone application or **grouped together** with one or more systems/components in the message flow on the same server. 
+
+<br/> 
+
+
 ## EHMI Core Security Description
 
 EHMI Core Security is defined as
