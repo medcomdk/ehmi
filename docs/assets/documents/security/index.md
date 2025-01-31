@@ -4,6 +4,14 @@
 
 - [General security definitions for components in the message chain](#general-security-definitions-for-components-in-the-message-chain)
 
+- [EHMI Core Security](#ehmi-core-security)
+
+- [EHMI Delivery Status Security](#ehmi-delivery-status-security)
+
+- [EHMI Addressing Service Security](#ehmi-addressing-service-security)
+
+- [EHMI Endpoint Register Security](#ehmi-endpoint-register-security)
+
 ## General information regarding security for components in EHMI
 
 It is possible to report and access data via a FHIR API. Web-services/RESTful-services, that are exposed via an interface, must, like other national web-services on the health area, comply with national architecture and national standards.
@@ -20,7 +28,6 @@ The general and specific security about this is described in: <a href="../securi
 
 <br/> 
 
-
 ## General security definitions for components in the message chain
 
 Following definitions for all systems/components in EHMI apply: 
@@ -30,8 +37,7 @@ Following definitions for all systems/components in EHMI apply:
 
 <br/> 
 
-
-## EHMI Core Security Description
+## EHMI Core Security
 
 EHMI Core Security is defined as
 - the needed security implementation to serve message delivering as described in [EHMI Core Description](../ecore/index.md#ehmi-core-description)
@@ -42,7 +48,7 @@ EHMI Core Security is defined as
 
 <br/> 
 
-## EHMI Delivery Status Security Description
+## EHMI Delivery Status Security
 
 EHMI Delivery Status Security is defined as
 - the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](../eds/index.md#ehmi-delivery-status-description)
@@ -57,7 +63,14 @@ EHMI Delivery Status Security is handled as described in chapter 1-4 in:
 <b><i>This specification has been updated with security specifications pointed out in the FAPI 2.0 specification.</i></b>
 - If you want to read more about FAPI <a href="https://medium.com/@hidebike712/fapi2-explained-8602e52596e5" target="_blank">click here</a> 
 
+In the document EUAs, MSHs and APs are named "stations" or EDS Clients in the message flow.
 
-In the document EUAs, MSHs and APs are named "stations" in the message flow.
+## EHMI Addressing Service Security
+
+- [EHMI Addressing Service Security Description](security-specification-of-ehmi-eas.md)
+
+## EHMI Endpoint Register Security
+
+- [EHMI Endpoint Register Security Description](security-specification-of-ehmi-eer.md)
 
 <br/> 
