@@ -47,7 +47,7 @@ From the Architecture Vision, we know that security around this is necessary par
 
 <br/> 
 
-### Exhibition via service
+### Search and Lookup via services
 
 From the Architecture Vision, we know that the service, who exhibit EHMI Delivery Status on messages, must comply to the same security requirements and rules as other services in the health area, cf. the Architecture Vision’s principle PT6. Therefore, several of the same already existing security mechanisms from other services should be used:
 
