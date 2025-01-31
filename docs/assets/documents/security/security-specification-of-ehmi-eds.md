@@ -1,4 +1,4 @@
-# Specification of security regarding central EHMI services 
+# Specification of security regarding central EHMI Delivery Status
 
 ## Table of context
 
@@ -6,7 +6,7 @@
 
 - [Submission calls to EHMI Delivery Status repository](#submission-to-ehmi-delivery-service-repository)
 
-- [Client security for EHMI Delivery Status - submission](#client-security-for-ehmi-delivery-status---submission)
+- [Client security for Submission calls to EHMI Delivery Status repository](#client-security-for-ehmi-delivery-status---submission)
 
 - [Exhibition via service](#exhibition-via-service)
 
@@ -35,7 +35,7 @@ From the Architecture Vision, we know that security around this is necessary par
 
 <br/> 
 
-#### Client security for EHMI Delivery Status - Submission
+#### Client security for Submission calls to EHMI Delivery Status repository
 
 | **EHMI components**                                                         | **Subtask**                                                                                                                       | **Who**                                                                    |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -46,26 +46,6 @@ From the Architecture Vision, we know that security around this is necessary par
 | Sending system (Sending system/MSH/AP) EHMI Delivery Status-component | **Availability:** Implementation of queue mechanism to handle that a connection may be down                                  | Sending system (Sending system/MSH/AP) EHMI Delivery Status-component |
 
 <br/> 
-
-
-### Submission calls in relation to the scenarios in [Specifications – security regarding message communication](./security-specification-of-ehmi-core.md#Specifications---security-regarding-message-communication)
-
-In the following, both sides of the sender and receiver ecosystems are assumed to have the same setup as the sending ecosystem. In practice, Sender and Receiver ecosystems are potentially very different, and in that case the different scenarios must be combined accordingly. 
-
-| **Scenarios** | **Starting/Incoming submission** | **Final/outgoing submission** |
-|---|---|---|
-| [All components stand-alone – implemented on different servers](./security-specification-of-ehmi-core.md#all-components-stand-alone---implemented-on-different-servers) <br/> [All components stand-alone – grouped together on the same server](./security-specification-of-ehmi-core.md#all-components-stand-alone---grouped-together-on-the-same-server) <br/> [All components stand-alone – sending system and MSH grouped together on the same server](./security-specification-of-ehmi-core.md#all-components-stand-alone---sending-system-and-msh-grouped-together-on-the-same-server) <br/> [All components stand-alone - MSH and AP grouped together on the same server](./security-specification-of-ehmi-core.md#all-components-stand-alone-msh-and-ap-grouped-together-on-the-same-server) <br/> <br/> <br/>  | Sending system  <br/> Sending MSH <br/>  Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/>  Receiving MSH <br/> | Sending MSH <br/> Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/>  Receiving MSH <br/>  Receiving system <br/> |
-| | | |
-| [Sending system stand-alone - MSH/AP build together - implemented on different servers](./security-specification-of-ehmi-core.md#sending-system-stand-alone---mshap-build-together---implemented-on-different-servers) <br/> [Sending system stand-alone - MSH/AP build together - all grouped on the same server](./security-specification-of-ehmi-core.md#sending-system-stand-alone---mshap-build-together---all-grouped-on-the-same-server) <br/> <br/> <br/> | Sending system <br/> Sending MSH/AP <br/> ------------------------------------------- <br/> Receiving MSH/AP <br/> | Sending MSH/AP <br/>  ------------------------------------------- <br/> Receiving MSH/AP <br/> Receiving system <br/> |
-| | | |
-| [Sending system/MSH build together - AP stand-alone - implemented on different servers](./security-specification-of-ehmi-core.md#sending-systemmsh-build-together--ap-stand-alone---implemented-on-different-servers) <br/> [Sending system/MSH build together - AP stand-alone - all grouped together on the same server](./security-specification-of-ehmi-core.md#sending-systemmsh-build-together---ap-stand-alone--all-grouped-together-on-the-same-server) <br/><br/> | Sending system/MSH <br/> Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/> | Sending AP <br/> ------------------------------------------- <br/> Receiving AP <br/> Receiving system/MSH <br/> |
-| | | |
-| [Sending system/MSH build together – MSH/AP build together - implemented on different servers](./security-specification-of-ehmi-core.md#sending-systemmsh-build-together---mshap-build-together---implemented-on-different-servers) <br/> [Sending system/MSH build together – MSH/AP build together - all grouped on the same server](./security-specification-of-ehmi-core.md#sending-systemmsh-build-together---mshap-build-together--all-grouped-on-the-same-server) <br/> <br/> | Sending system/MSH <br/> Sending AP/MSH <br/> ------------------------------------------- <br/> Receiving AP/MSH <br/> | Sending AP/MSH <br/> ------------------------------------------- <br/> Receiving AP/MSH <br/> Receiving system/MSH <br/> |
-| | | |
-| [All components build together](./security-specification-of-ehmi-core.md#all-components-build-together) <br/> | Sending system/MSH/AP <br/> | Receiving system/MSH/AP <br/> |
-
-<br/> 
-
 
 ### Exhibition via service
 
@@ -78,25 +58,4 @@ From the Architecture Vision, we know that the service, who exhibit EHMI Deliver
 -   **Confidentiality:** The service must actively use the identification of the user (system, healthcare professional or citizen) as well as the search parameters, that are part of the call for the service.
 
 Since the service is exhibited and performed on a platform, that may have its own and more strict security politics than the general security politics in the healthcare area, these must also be observed if necessary.
-
-<br/> 
-
-
-#### Client security for EHMI Delivery Status - Search
-
-It will be based on an OAuth-secured REST-interface and SMART-on-FHIR or similar.
-
-For the collection of EHMI Delivery Status, explicit signature between the EHMI Delivery Status “client” and “server” (with associated verification) on system credentials level (VOCES/FOCES/Niveau 3) is required, cf. section 6.3.1 in the Architecture Vision.
-
-To search for EHMI Delivery Status, it is required to use identification on system credentials level (VOCES/FOCES/Niveau 3) between the EHMI Delivery Status “client” and “server”.
-
-To search for EHMI Delivery Status, it is further required to use identification on user credentials level (MOCES/MitID/Niveau 4) for a citizen’s own access as well as a healthcare professional’s specific access via the citizen’s/patient’s record. 
-
-| **EHMI components**                                                 | **Subtask**                                                                                                                 | **Who**                                                             |
-|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| Sending system (Sending system/MSH/AP)                      | **Authenticity management:** Implementation of signing Submission calls calls                                                      | Sending system (Sending system/MSH/AP)                      |
-| Receiving component                                                 | **Authenticity management:** Verification of signing upon receiving.                                                        | Receiving component                                                 |
-| Sending system (Sending system/MSH/AP) Receiving component | **Integrity protection and confidentiality protection:** Communication of message/envelope via secured transport protocol, e.g. TLS | Sending system (Sending system/MSH/AP) Receiving component |
-
-<br/> 
 
