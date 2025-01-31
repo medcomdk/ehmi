@@ -1,10 +1,5 @@
 # Specification of security regarding central EHMI services 
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-    
-<br/> 
 
 
 ## Table of context

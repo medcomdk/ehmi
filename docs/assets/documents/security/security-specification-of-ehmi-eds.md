@@ -1,17 +1,6 @@
 # Specification of security regarding central EHMI services 
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-    
-<br/> 
-
-
 ## Table of context
-
-- [General information regarding security for components in EHMI](#general-information-regarding-security-for-components-in-ehmi)
-
-- [General security definitions for components in the message chain](#general-security-definitions-for-components-in-the-message-chain)
 
 - [Security specifications regarding EHMI Delivery Status of messages](#security-specifications-regarding-ehmi-delivery-status-of-messages)
 
@@ -22,10 +11,6 @@
 - [Exhibition via service](#exhibition-via-service)
 
 - [Client security for EHMI Delivery Status – search](#client-security-for-ehmi-delivery-status---search)
-
-- [Security specifications regarding EHMI Addressing Service](#security-specifications-regarding-ehmi-addressing-service)
-
-- [Decentral regarding EHMI Addressing Service](#decentral-regarding-ehmi-addressing-service)
 
 <br/> 
 

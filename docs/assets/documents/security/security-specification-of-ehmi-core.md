@@ -1,10 +1,5 @@
 # Specification of security regarding message flow in EHMI Core 
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-    
-<br/> 
 
 ![ehmicore-security](./media/ehmicore-security.jpg)
 

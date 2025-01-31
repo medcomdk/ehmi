@@ -1,10 +1,5 @@
 # EHMI Standard Business Document Header (ehmiSBDH)
 
-***
-
-    **Disclaimer - The menu items above marked with a star are yet not specified**
-    
-<br/> 
 
 The EHMI Standard Business Document Header (ehmiSBDH) is a customized version of the PEPPOL SBDH.
 
