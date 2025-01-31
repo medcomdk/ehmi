@@ -24,7 +24,7 @@ A strong authentication of users must take place (equivalent to NIST level 3-4 o
 2.  Consent/rejection and treatment relation (dansk: behandlingsrelation) must be checked against the national consent service and the national treatment relation service (dansk: behandlingsrelationservice)
 3.  Information about healthcare professionals’ access to personal data must be viewable by the citizen via MinLog. 
 
-The general and specific security about this is described in: <a href="../security/media/Sikkerhedsarkitektur EHMI services v098.pdf" target="_blank">Security architecture EHMI support services v05 (opens in new window)</a>
+The general and specific security about this is described in: <a href="./media/Sikkerhedsarkitektur EHMI services v098.pdf" target="_blank">Sikkerhedsarkitektur EHMI services v 0.5/Security architechture regarding EHMI central services v 0.98 (opens in new window)</a>
 
 <br/> 
 
@@ -46,24 +46,12 @@ EHMI Core Security is defined as
 
 - [EHMI Core Security Description](security-specification-of-ehmi-core.md)
 
-<br/> 
-
 ## EHMI Delivery Status Security
 
 EHMI Delivery Status Security is defined as
 - the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](../eds/index.md#ehmi-delivery-status-description)
 
 - [EHMI Delivery Status Security Description](security-specification-of-ehmi-eds.md)
-
-### EHMI Delivery Status Security Description
-
-EHMI Delivery Status Security is handled as described in chapter 1-4 in:
-- <a href="./media/Sikkerhedsarkitektur EHMI services v098.pdf" target="_blank">Sikkerhedsarkitektur EHMI services v 0.5/Security architechture regarding EHMI central services v 0.98 (opens in new window)</a>
-
-<b><i>This specification has been updated with security specifications pointed out in the FAPI 2.0 specification.</i></b>
-- If you want to read more about FAPI <a href="https://medium.com/@hidebike712/fapi2-explained-8602e52596e5" target="_blank">click here</a> 
-
-In the document EUAs, MSHs and APs are named "stations" or EDS Clients in the message flow.
 
 ## EHMI Addressing Service Security
 
