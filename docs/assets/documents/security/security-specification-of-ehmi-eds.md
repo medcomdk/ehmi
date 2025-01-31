@@ -1,12 +1,12 @@
-# Specification of security regarding central EHMI Delivery Status
+# Specification of security regarding EHMI Delivery Status
 
 ## Table of context
 
 - [Security specifications regarding EHMI Delivery Status of messages](#security-specifications-regarding-ehmi-delivery-status-of-messages)
 
-- [Registration calls  to EHMI Delivery Status repository](#submission-to-ehmi-delivery-service-repository)
+- [Registration calls  to EHMI Delivery Status repository](#registration-calls--to-ehmi-delivery-status-repository)
 
-- [Client security for Registration calls  to EHMI Delivery Status repository](#client-security-for-ehmi-delivery-status---submission)
+- [Client security for Registration calls  to EHMI Delivery Status repository](#client-security-for-registration-calls--to-ehmi-delivery-status-repository)
 
 - [Search and lookup via service](#search-and-lookup-via-services)
 

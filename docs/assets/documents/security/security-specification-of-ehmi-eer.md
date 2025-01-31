@@ -1,4 +1,4 @@
-# Specification of security regarding central EHMI services 
+# Specification of security regarding EHMI services 
 
 
 
