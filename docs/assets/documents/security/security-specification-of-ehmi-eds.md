@@ -1,5 +1,7 @@
 # Specification of security regarding EHMI Delivery Status
 
+**OUTDATED**
+
 ## Table of context
 
 - [Security specifications regarding EHMI Delivery Status of messages](#security-specifications-regarding-ehmi-delivery-status-of-messages)
