@@ -1,5 +1,9 @@
 # EHMI Security 
 
+- [General information regarding security for components in EHMI](#general-information-regarding-security-for-components-in-ehmi)
+
+- [General security definitions for components in the message chain](#general-security-definitions-for-components-in-the-message-chain)
+
 ## General information regarding security for components in EHMI
 
 It is possible to report and access data via a FHIR API. Web-services/RESTful-services, that are exposed via an interface, must, like other national web-services on the health area, comply with national architecture and national standards.
