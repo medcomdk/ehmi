@@ -23,7 +23,6 @@ Security in relation to delivery status is divided into these different steps:
 
 <br/> 
 
-
 ### Submission to EHMI Delivery Status repository
 
 From the Architecture Vision, we know that security around this is necessary partly so that the users will consider the service based on the collected data to be trustworthy, and partly because personal data is collected, since unique citizen identification (most often the CPR number) is part of the collected information: 
@@ -35,7 +34,6 @@ From the Architecture Vision, we know that security around this is necessary par
 -   **Confidentiality:** When the collected EHMI Delivery Status is communicated to the repository, it is secured either via explicit encryption or implicit encryption in the underlying infrastructure level.
 
 <br/> 
-
 
 #### Client security for EHMI Delivery Status - Submission
 
