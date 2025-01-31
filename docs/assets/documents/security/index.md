@@ -49,16 +49,19 @@ EHMI Core Security is defined as
 ## EHMI Delivery Status Security
 
 EHMI Delivery Status Security is defined as
-- the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](../eds/index.md#ehmi-delivery-status-description)
-
-- [EHMI Delivery Status Security Description](security-specification-of-ehmi-eds.md)
+- the needed security implementation to serve EHMI Delivery Status as described in [EHMI Delivery Status Description](../eds/index.md)
+- [Specific EHMI Delivery Status Security Description](security-specification-of-ehmi-eds.md)
 
 ## EHMI Addressing Service Security
 
-- [EHMI Addressing Service Security Description](security-specification-of-ehmi-eas.md)
+EHMI Addressing Service Security is defined as
+- the needed security implementation to serve EHMI Addressing Service as described in [EHMI Addressing Service Description](../eas/index.md)
+- [Specific EHMI Addressing Service Security Description](security-specification-of-ehmi-eas.md)
 
 ## EHMI Endpoint Register Security
 
-- [EHMI Endpoint Register Security Description](security-specification-of-ehmi-eer.md)
+EHMI Endpoint Register Security is defined as
+- the needed security implementation to serve EHMI Endpoint Register as described in [EHMI Endpoint Register Description](../ees/index.md)
+- [Specific EHMI Endpoint Register Security Description](security-specification-of-ehmi-eer.md)
 
 <br/> 
