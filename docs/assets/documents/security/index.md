@@ -21,7 +21,7 @@ EHMI Delivery Status Security is defined as
 ### EHMI Delivery Status Security Description
 
 EHMI Delivery Status Security is handled as described in chapter 1-4 in:
-- <a href="./media/Sikkerhedsarkitektur EHMI services v098.pdf" target="_blank">Sikkerhedsarkitektur EHMI services v 0.5/Security architechture regarding EHMI central services v 0.5 (opens in new window)</a>
+- <a href="./media/Sikkerhedsarkitektur EHMI services v098.pdf" target="_blank">Sikkerhedsarkitektur EHMI services v 0.5/Security architechture regarding EHMI central services v 0.98 (opens in new window)</a>
 
 <b><i>This specification has been updated with security specifications pointed out in the FAPI 2.0 specification.</i></b>
 - If you want to read more about FAPI <a href="https://medium.com/@hidebike712/fapi2-explained-8602e52596e5" target="_blank">click here</a> 
