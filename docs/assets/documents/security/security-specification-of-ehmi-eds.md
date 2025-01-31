@@ -18,8 +18,8 @@
 
 Security in relation to delivery status is divided into these different steps: 
 
-1. EHMI Delivery Status is collected and saved in a repository.
-2. EHMI Delivery Status is retrieved by users via displayed services.
+1. EHMI Delivery Status is collected and posted to a repository.
+2. EHMI Delivery Status is retrieved by users via search and lookup services.
 
 <br/> 
 
