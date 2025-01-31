@@ -1,6 +1,6 @@
 # Specification of security regarding EHMI services 
 
-
+**OUTDATED**
 
 ## Table of context
 
