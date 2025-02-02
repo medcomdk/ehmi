@@ -3,7 +3,7 @@
 
 The EHMI Standard Business Document Header (ehmiSBDH) is a customized version of the PEPPOL SBDH, which again is an extension of the original GS1 SBDH.
 
-It is developed to serve as an envelope in message and document exchanges, the version for PEPPOL especially focused for wrapping the message/document and handling the metadata realted to it in an eDelivery environment.
+It is developed to serve as an envelope in message and document exchanges, the version for PEPPOL especially for wrapping the message/document and handling the metadata realted to it in an eDelivery environment.
 
 In relation to EHMI Core:
 
