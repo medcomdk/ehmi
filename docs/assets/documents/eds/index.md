@@ -49,7 +49,10 @@ Patients can access all registrations of messages which they have been the subje
     
 <br/> 
 
-![EHMI Delivery Status (EDS)](../../images/EHMI_Pixi_EDS.jpg)
+<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
+<a href="https://medcomdk.github.io/ehmi/assets/images/EHMI_Pixi_EDS.jpg" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/EHMI_Pixi_EDS.jpg" alt="EHMI Delivery Status (EDS)" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig1"></a>
+<figcaption text-align="left"><b>Figure 1: EHMI Delivery Status (EDS) </b></figcaption>
+</figure>
 
 <br/> 
   
