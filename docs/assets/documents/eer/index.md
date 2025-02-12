@@ -29,8 +29,6 @@ EER will in the first version serve the following purposes:
 <figcaption text-align="left"><b>Figure 1: EHMI Endpoint Register (EER) </b></figcaption>
 </figure>
 
-![EHMI Delivery Status (EDS)](/ehmi/assets/images/ehmi-eas-and-eer.png )
-
 <br/> 
   
 **The whole specification for EHMI Endpoint Register (EER) can be found** 
