@@ -24,6 +24,12 @@ EER will in the first version serve the following purposes:
     
 <br/> 
 
+
+<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
+<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-eas-and-eer.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/ehmi-eas-and-eer.png" alt="EHMI Endpoint Register (EER)" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig1"></a>
+<figcaption text-align="left"><b>Figure 1: EHMI Endpoint Register (EER) </b></figcaption>
+</figure>
+
 ![EHMI Delivery Status (EDS)](/ehmi/assets/images/ehmi-eas-and-eer.png )
 
 <br/> 
