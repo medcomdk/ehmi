@@ -7,20 +7,20 @@ theme: jekyll-theme-minimal
 version: "Version 1.0.0"
 fhir_version: "EHMI"
 releasenote: https://github.com/medcomdk/ehmi/releases
-thisurl: https://medcomdk.github.io/ehmi/
-menuurl_item1: https://medcomdk.github.io/ehmi/
+thisurl: https://ehmi.dk/
+menuurl_item1: https://ehmi.dk/
 menutxt_item1: EHMI Landingpage
-menuurl_item2: https://medcomdk.github.io/ehmi/assets/documents/ecore/
+menuurl_item2: https://ehmi.dk/assets/documents/ecore/
 menutxt_item2: EHMI Core
-menuurl_item3: https://medcomdk.github.io/ehmi/assets/documents/eds/
+menuurl_item3: https://ehmi.dk/assets/documents/eds/
 menutxt_item3: EHMI Delivery Status
-menuurl_item4: https://medcomdk.github.io/ehmi/assets/documents/eas/
+menuurl_item4: https://ehmi.dk/assets/documents/eas/
 menutxt_item4: EHMI Addressing Service
-menuurl_item5: https://medcomdk.github.io/ehmi/assets/documents/eer/
+menuurl_item5: https://ehmi.dk/assets/documents/eer/
 menutxt_item5: EHMI Endpoint Register
-menuurl_item6: https://medcomdk.github.io/ehmi/assets/documents/egov/
+menuurl_item6: https://ehmi.dk/assets/documents/egov/
 menutxt_item6: EHMI Governance*
-menuurl_item7: https://medcomdk.github.io/ehmi/assets/documents/security/
+menuurl_item7: https://ehmi.dk/assets/documents/security/
 menutxt_item7: EHMI Security
-menuurl_item8: https://medcomdk.github.io/ehmi/assets/documents/glossary/
+menuurl_item8: https://ehmi.dk/assets/documents/glossary/
 menutxt_item8: EHMI Glossary
