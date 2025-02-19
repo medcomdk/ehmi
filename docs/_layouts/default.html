@@ -91,10 +91,10 @@
     <div class="wrapper">
       <!--header-->
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="EHMI Logo"  class="responsive"/>
+          <img src="{{site.logo | relative_url}}" alt="EHMI Logo"  class="responsive"/><div align="right" width="100%"><strong>{{ site.version }}</strong></div>
         {% endif %}
       <!-- <strong> -->
-        <div align="right" width="100%"><strong>{{ site.version }}</strong></div>
+        
         <div class="topnav" id="myTopnav">
             {% if site.menuurl_item1 %}
               <a href="{{ site.menuurl_item1 }}" class="active">{{ site.menutxt_item1 }}</a>
