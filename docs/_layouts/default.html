@@ -89,11 +89,11 @@
   </head>
   <body>
     <div class="wrapper">
-        <!--header-->
+      <p align=""right"><strong>{{ site.version }}</strong></p>
+      <!--header-->
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="EHMI Logo"  class="responsive"/>
         {% endif %}
-        <p align=""right"><strong>{{ site.version }}</strong></p>
       <!-- <strong> -->
         <div class="topnav" id="myTopnav">
             {% if site.menuurl_item1 %}
