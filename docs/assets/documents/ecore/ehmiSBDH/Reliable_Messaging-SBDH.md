@@ -15,7 +15,7 @@
 
 
 
-Reliable Messaging in ehmiSBDH-envelope follows the principles laid out in [Reliable Messaging in general](/assets/documents/020_Governance-for-Reliable-Messaging-in-general.md)
+Reliable Messaging in ehmiSBDH-envelope follows the principles laid out in <a href="https://medcomdk.github.io/MedCom-FHIR-Communication/assets/documents/020_Governance-for-Reliable-Messaging-in-general.html" target="_blank"> Reliable Messaging in general (opens on a new page)</a>
 
 The Reliable Messaging Model and how the flow is laid out using ehmiSBDH-envelope is shown in <a href="#Fig1">Figure 1</a>. 
 
@@ -25,7 +25,7 @@ The Reliable Messaging Model and how the flow is laid out using ehmiSBDH-envelop
 </figure>
 <br>
 
-When Reliable Messaging is implemented, the Receiver **SHALL** check the incoming EnvelopeIdentifier and Message/MetaInformation/Identifier (hereafter MessageIdentifier) against a cache of previously received ehmiSBDH-envelopes. The correct action to take depends on what is received:
+When Reliable Messaging is implemented, the Receiver **SHALL** check the incoming /MetaInformation/Identifier (hereafter MessageIdentifier) against a cache of previously received ehmiSBDH-envelopes. The correct action to take depends on what is received:
 
 | Case                                                            | Description                |
 |:----------------------------------------------------------------|:---------------------------|
