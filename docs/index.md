@@ -13,7 +13,7 @@ To learn about the EHMI project as seen from a project perspective in Danish, pl
 *EHMI (Enhanced Healthcare Messaging Infrastructure) is built on eDelivery, which is the core of future message communication. But EHMI involves several additional elements and services compared to eDelivery, such as support of message sharing, improved handling of addressing via a health addressing service (EHMI Addressing Service, EAS) and delivery status (EHMI Delivery Status, EDS) (also called Track'n'Trace). 'The Architectural Vision' (DA: Målbilledet for meddelelseskommunikation på sundhedsområdet) forms the framework and guideline for testing EHMI. 'The Architectural Vision' can be read <a href="https://sundhedsdatastyrelsen.dk/da/rammer-og-retningslinjer/om-referencearkitektur-og-standarder/referencearkitekturer" target="blank"> here</a>.*
 
 <figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-OverallArchitecture.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/ehmi-OverallArchitecture.png" alt="EHMI Overall Architecture" style="width:80%; height:auto; margin-left:5%; margin-right:15%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
+<a href="https://ehmi.dk/assets/images/ehmi-OverallArchitecture.png" target="_blank"> <img src="https://ehmi.dk/assets/images/ehmi-OverallArchitecture.png" alt="EHMI Overall Architecture" style="width:80%; height:auto; margin-left:5%; margin-right:15%; margin-top:5%; margin-bottom:5%;" id="Fig1"></a>
 <figcaption text-align="left"><b>Figure 1: EHMI Overall Architecture  </b></figcaption>
 </figure>
 
@@ -23,24 +23,24 @@ To learn about the EHMI project as seen from a project perspective in Danish, pl
 
 
 **Table of content for Production pilot for EHMI**
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/" target="blank"> EHMI Production Pilot Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-core-description"> EHMI Core Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-core-security-description"> EHMI Core Security Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-delivery-status-description"> EHMI Delivery Status Description</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/production-pilot/#ehmi-delivery-status-security-description"> EHMI Delivery Status Security Description</a>
+- <a href="https://ehmi.dk/assets/documents/production-pilot/" target="blank"> EHMI Production Pilot Description</a>
+   - <a href="https://ehmi.dk/assets/documents/production-pilot/#ehmi-core-description"> EHMI Core Description</a>
+   - <a href="https://ehmi.dk/assets/documents/production-pilot/#ehmi-core-security-description"> EHMI Core Security Description</a>
+   - <a href="https://ehmi.dk/assets/documents/production-pilot/#ehmi-delivery-status-description"> EHMI Delivery Status Description</a>
+   - <a href="https://ehmi.dk/assets/documents/production-pilot/#ehmi-delivery-status-security-description"> EHMI Delivery Status Security Description</a>
 
 **Table of content for EHMI Specifications (published April 1, 2024)**
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/" target="blank"> EHMI Core</a> 
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSBDH/" target="blank"> ehmiSBDH</a>
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSMP/" target="blank"> ehmiSMP</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/eds/" target="blank"> EHMI Delivery Status</a> 
-   - <a href="https://medcomdk.github.io/ehmi/assets/documents/eds/" target="blank"> EHMI Delivery Status</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/eas/" target="blank"> EHMI Addressing Service*</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/eer/" target="blank"> EHMI Endpoint Register*</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/egov/" target="blank"> EHMI Governance*</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/security/" target="blank"> EHMI Security</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/documents/glossary/" target="blank"> EHMI Glossary</a>
-- <a href="https://medcomdk.github.io/ehmi/assets/ehmi_ecosystem.html" target="blank"> EHMI Ecosystem</a>
+- <a href="https://ehmi.dk/assets/documents/ecore/" target="blank"> EHMI Core</a> 
+   - <a href="https://ehmi.dk/assets/documents/ecore/ehmiSBDH/" target="blank"> ehmiSBDH</a>
+   - <a href="https://ehmi.dk/assets/documents/ecore/ehmiSMP/" target="blank"> ehmiSMP</a>
+- <a href="https://ehmi.dk/assets/documents/eds/" target="blank"> EHMI Delivery Status</a> 
+   - <a href="https://ehmi.dk/assets/documents/eds/" target="blank"> EHMI Delivery Status</a>
+- <a href="https://ehmi.dk/assets/documents/eas/" target="blank"> EHMI Addressing Service*</a>
+- <a href="https://ehmi.dk/assets/documents/eer/" target="blank"> EHMI Endpoint Register*</a>
+- <a href="https://ehmi.dk/assets/documents/egov/" target="blank"> EHMI Governance*</a>
+- <a href="https://ehmi.dk/assets/documents/security/" target="blank"> EHMI Security</a>
+- <a href="https://ehmi.dk/assets/documents/glossary/" target="blank"> EHMI Glossary</a>
+- <a href="https://ehmi.dk/assets/ehmi_ecosystem.html" target="blank"> EHMI Ecosystem</a>
 
 
 

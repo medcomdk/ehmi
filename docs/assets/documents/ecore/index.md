@@ -30,10 +30,10 @@ EHMI Core is defined as
 EHMI Core specifies 
 
 - The responsabilities for 
-    - End User Applications (EUA) [see here](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiEUA/)
-    - Message Service Handlers (MSH) [see here](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiMSH/)
-    - eDelivery Access Points (AP) [see here](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiAP/)
-- ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see here](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiAP/)
+    - End User Applications (EUA) [see here](https://ehmi.dk/assets/documents/ecore/ehmiEUA/)
+    - Message Service Handlers (MSH) [see here](https://ehmi.dk/assets/documents/ecore/ehmiMSH/)
+    - eDelivery Access Points (AP) [see here](https://ehmi.dk/assets/documents/ecore/ehmiAP/)
+- ehmiAP, how the AP **SHALL** conform to EU eDelivery Requirements, [see here](https://ehmi.dk/assets/documents/ecore/ehmiAP/)
 - ehmiSBDH, the envelope that is used between the MSHs
 - how ehmiSBDH in addition to its primary purpose of carrying metadata for eDelivery Messaging can carry the metadata used for:
     - Reliable Messaging embedded in ehmiSBDH BusinessScopes
@@ -53,7 +53,7 @@ In addition to the primary flow, ehmiEnvelopeReceipt will be sent from the Recei
 <br/> 
 
 <figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" alt="EHMI Core Message Delivery and Document Sharing" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig1"></a>
+<a href="https://ehmi.dk/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" target="_blank"> <img src="https://ehmi.dk/assets/images/EHMI%20Pixi%20-%20Message%20delivery.png" alt="EHMI Core Message Delivery and Document Sharing" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig1"></a>
 <figcaption text-align="left"><b>Figure 1: EHMI Core Messaging and Document sharing  </b></figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ It is important to note that while the overall architecture seems to indicate a 
 - APs communicate logically with APs through the metadata content in the AS4 envelopes
 
 <figure>
-<a href="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://medcomdk.github.io/ehmi/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig2"></a>
+<a href="https://ehmi.dk/assets/images/ehmi-Layers.png" target="_blank"> <img src="https://ehmi.dk/assets/images/ehmi-Layers.png" alt="EHMI Layers" style="width:80%; height:auto; margin-left:1%; margin-right:19%; margin-top:5px; margin-bottom:5px;" id="Fig2"></a>
 <figcaption text-align="left"><b>Figure 2: EHMI Layers  </b></figcaption>
 </figure>
 
@@ -79,8 +79,8 @@ It is important to note that while the overall architecture seems to indicate a 
 
 EHMI Core specifies two profiles, 1 for ehmiSBDH and 1 for ehmiSMP:
 
-- [EHMI Profile of SBDH (ehmiSBDH)](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSBDH/)
-- [EHMI Profile of Service Metadata Publisher (ehmiSMP)](https://medcomdk.github.io/ehmi/assets/documents/ecore/ehmiSMP/)
+- [EHMI Profile of SBDH (ehmiSBDH)](https://ehmi.dk/assets/documents/ecore/ehmiSBDH/)
+- [EHMI Profile of Service Metadata Publisher (ehmiSMP)](https://ehmi.dk/assets/documents/ecore/ehmiSMP/)
 
 <br/> 
 

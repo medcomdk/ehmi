@@ -20,7 +20,7 @@ Reliable Messaging in ehmiSBDH-envelope follows the principles laid out in [Reli
 The Reliable Messaging Model and how the flow is laid out using ehmiSBDH-envelope is shown in <a href="#Fig1">Figure 1</a>. 
 
 <figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="../images/reliable-messaging-ehmiSBDH" target="_blank"> <img src="../images/reliable-messaging-ehmiSBDH.png" alt="reliable messaging principle" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig1"></a>
+<a href="https://ehmi.dk/assets/images/reliable-messaging-ehmiSBDH" target="_blank"> <img src="https://ehmi.dk/assets/images/reliable-messaging-ehmiSBDH.png" alt="reliable messaging principle" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig1"></a>
 <figcaption text-align="left"><b>Figure 1: Reliable Messaging - ehmiSBDH-envelope </b></figcaption>
 </figure>
 <br>
@@ -100,7 +100,7 @@ ReRegistration calls  **SHALL** always be done manually.
 A VansEnvelope consists of the following elements (see <a href="#Fig2">Figure 2</a>.):
 
 <figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="../images/vansenvelope_schema-reliable.png" target="_blank"> <img src="../images/vansenvelope_schema-reliable.png" alt="vansenvelope_schema-reliable" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig2"></a>
+<a href="https://ehmi.dk/assets/images/vansenvelope_schema-reliable.png" target="_blank"> <img src="https://ehmi.dk/assets/images/vansenvelope_schema-reliable.png" alt="vansenvelope_schema-reliable" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig2"></a>
 <figcaption text-align="left"><b>Figure 2: Reliable Messaging - reliable ehmiSBDH-envelope tables </b></figcaption>
 </figure>
 <br>
@@ -108,7 +108,7 @@ A VansEnvelope consists of the following elements (see <a href="#Fig2">Figure 2<
 A VansEnvelope's Reliable Messaging part can be found in the ehmiSBDH-envelope/Message/MetaInformation/Transport/Type-element, which is shown in <a href="#Fig3">Figure 3</a>.:
 
 <figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="../images/vansenvelope_schema-reliable-type.png" target="_blank"> <img src="../images/vansenvelope_schema-reliable-type.png" alt="vansenvelope_schema-reliable" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig3"></a>
+<a href="https://ehmi.dk/assets/images/vansenvelope_schema-reliable-type.png" target="_blank"> <img src="https://ehmi.dk/assets/images/vansenvelope_schema-reliable-type.png" alt="vansenvelope_schema-reliable" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig3"></a>
 <figcaption text-align="left"><b>Figure 3: Reliable Messaging - reliable ehmiSBDH-envelope type </b></figcaption>
 </figure>
 <br>
@@ -124,7 +124,7 @@ When "reliable", the receiver of the ehmiSBDH-envelope **SHALL** send a ehmiSBDH
 A ehmiSBDH-envelopeAcknowledgement consists of the following elements (see <a href="#Fig4">Figure 4</a>.):
 
 <figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="../images/vansenvelope_schema-acknowledgement.png" target="_blank"> <img src="../images/vansenvelope_schema-acknowledgement.png" alt="vansenvelope_schema-acknowledgement" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig4"></a>
+<a href="https://ehmi.dk/assets/images/vansenvelope_schema-acknowledgement.png" target="_blank"> <img src="https://ehmi.dk/assets/images/vansenvelope_schema-acknowledgement.png" alt="vansenvelope_schema-acknowledgement" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig4"></a>
 <figcaption text-align="left"><b>Figure 4: Reliable Messaging - reliable ehmiSBDH-envelope acknowledgement </b></figcaption>
 </figure>
 <br>

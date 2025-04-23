@@ -17,7 +17,7 @@ An outline of the components in the EHMI network's use of the EHMI Adressing Ser
 
 <br/>
 
-<img src="https://medcomdk.github.io/ehmi/assets/images/EHMI%20Pixi%20-%20Addressing%20Service.png" alt="EHMI Addressing Service (EAS) (DA)" width="100%">
+<img src="https://ehmi.dk/assets/images/EHMI%20Pixi%20-%20Addressing%20Service.png" alt="EHMI Addressing Service (EAS) (DA)" width="100%">
 
 <br/>
 
