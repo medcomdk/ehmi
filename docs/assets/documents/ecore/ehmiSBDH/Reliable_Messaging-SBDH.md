@@ -31,7 +31,7 @@ When Reliable Messaging is implemented, the Receiver **SHALL** check the incomin
 |:----------------------------------------------------------------|:---------------------------|
 | Both EnvelopeIdentifier and MessageIdentifier have not been received       | This is the normal case, and the message **SHALL** be processed            |
 | Both EnvelopeIdentifier and MessageIdentifier have already been received   | The original ehmiSBDH-envelope server may either reprocess the message, or reject the message|
-| MessageIdentifier has already been received, but EnvelopeIdentifier is new | The original ehmiSBDH-envelopeAcknowledgement has been lost (failed to return to the request issuer) and thus the previously received Message in a ehmiSBDH-envelope has been resubmitted with a new EnvelopeIdentifier for processing again. The original ehmiSBDH-envelopeAcknowledgement **SHALL** be resent|
+| MessageIdentifier has already been received, but EnvelopeIdentifier is new | The original ehmiSBDH-envelopeAcknowledgement has been lost (failed to return to the request issuer) and thus the previously received Message in a ehmiSBDH-envelope has been resubmitted with a new EnvelopeIdentifier for processing again. The original content of the ehmiSBDH-envelopeAcknowledgement **SHALL** be resent though with new identifier and timestamp|
 | The EnvelopeIdentifier has already been received, but the MessageIdentifier is new | This is an error - EnvelopeIdentifier values **SHALL** never be reused. Receiver **MAY** return a Negative ehmiSBDH-envelopeAcknowledgement|
 
 ## 1 Different Reliable Messaging scenarios using ehmiSBDH-envelope
@@ -54,7 +54,7 @@ The Receiving System **SHALL** always send a positive ehmiSBDH-envelopeAcknowled
 
 Duplication of an unchanged ehmiSBDH-envelope can be done in one of the following ways:
 
-- An error may have occurred in the flow from the Sending System to the Receiving System with subsequent duplication of a ehmiSBDH-envelope in scenario 1a.
+- An error may have occurred in the flow from the Sending System to the Receiving System with subsequent duplication of a ehmiSBDH-envelope in scenario 1.
 - The Sending System may inadvertently send a duplicate of ehmiSBDH-envelope
 
 The ehmiSBDH-envelopes are completely identical and as a consequence, the ehmiSBDH-envelope with request for positive ehmiSBDH-envelopeAcknowledgement arrives at the Receiving System more than once.
@@ -77,7 +77,7 @@ The Sending System **SHALL** form a new ehmiSBDH-envelope with a new ID and time
 
 Since there has been no change in the Message content section, the rest of the ehmiSBDH-envelope **SHALL** remain identical.
 
-The ehmiSBDH-envelope **SHALL** be sent and ehmiSBDH-envelopeAcknowledged as a completely new ehmiSBDH-envelope according to Scenario #1 or # 1b.
+The ehmiSBDH-envelope **SHALL** be sent and ehmiSBDH-envelopeAcknowledged as a completely new ehmiSBDH-envelope according to Scenario #1.
 
 Re-dispatches **SHALL** always be done manually and **SHOULD** be in accordance with the normal response time for the specific ehmiSBDH-envelope flow.
 
@@ -89,47 +89,7 @@ The shipping pattern is like Scenario #3.
 
 ### 1.5 Scenario #5 - (Re-) Sending Modified Message 
 
-If the content of the Message content part is changed, the ehmiSBDH-envelope is considered a completely new ehmiSBDH-envelope and consequently change of both EnvelopeIdentifier, MessageIdentifier and timestamp **SHALL** be made if relevant.
+If the content of the Message content part is changed, the ehmiSBDH-envelope is considered a completely new ehmiSBDH-envelope and consequently change of both EnvelopeIdentifier, MessageIdentifier and timestamp **SHALL** be made.
 
-ReRegistration calls  **SHALL** always be done manually.
+Re-Sending calls  **SHALL** always be done manually.
 
-## 2 VansEnvelope Reliable Messaging Elements
-
-### 2.2 VansEnvelope Reliable Messaging Message Elements
-
-A VansEnvelope consists of the following elements (see <a href="#Fig2">Figure 2</a>.):
-
-<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="https://ehmi.dk/assets/images/vansenvelope_schema-reliable.png" target="_blank"> <img src="https://ehmi.dk/assets/images/vansenvelope_schema-reliable.png" alt="vansenvelope_schema-reliable" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig2"></a>
-<figcaption text-align="left"><b>Figure 2: Reliable Messaging - reliable ehmiSBDH-envelope tables </b></figcaption>
-</figure>
-<br>
-
-A VansEnvelope's Reliable Messaging part can be found in the ehmiSBDH-envelope/Message/MetaInformation/Transport/Type-element, which is shown in <a href="#Fig3">Figure 3</a>.:
-
-<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="https://ehmi.dk/assets/images/vansenvelope_schema-reliable-type.png" target="_blank"> <img src="https://ehmi.dk/assets/images/vansenvelope_schema-reliable-type.png" alt="vansenvelope_schema-reliable" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig3"></a>
-<figcaption text-align="left"><b>Figure 3: Reliable Messaging - reliable ehmiSBDH-envelope type </b></figcaption>
-</figure>
-<br>
-
-Reliable Messaging in ehmiSBDH-envelope is the default mode but can explicitly be turned on and off by setting the ehmiSBDH-envelope/Message/MetaInformation/Transport/Type-element to "reliable" or "unreliable".
-
-In FHIR Messaging, this element **SHALL** be "reliable" or left in default mode.
-
-### 2.3 VansEnvelope ehmiSBDH-envelopeAcknowledgement Reliable Messaging Elements
-
-When "reliable", the receiver of the ehmiSBDH-envelope **SHALL** send a ehmiSBDH-envelopeAcknowledgement return to the original Sender.
-
-A ehmiSBDH-envelopeAcknowledgement consists of the following elements (see <a href="#Fig4">Figure 4</a>.):
-
-<figure style="margin-left: 0px; margin-right: 0px; width: 100%;">
-<a href="https://ehmi.dk/assets/images/vansenvelope_schema-acknowledgement.png" target="_blank"> <img src="https://ehmi.dk/assets/images/vansenvelope_schema-acknowledgement.png" alt="vansenvelope_schema-acknowledgement" style="width:auto; margin-left:0px; margin-right:0px;" id="Fig4"></a>
-<figcaption text-align="left"><b>Figure 4: Reliable Messaging - reliable ehmiSBDH-envelope acknowledgement </b></figcaption>
-</figure>
-<br>
-
-| Links for Reliable Messaging|
-|:---|
-|[Reliable Messaging in general](020_Governance-for-Reliable-Messaging-in-general.md)|
-|[Reliable Messaging in MedCom FHIR Messaging](043_Reliable_Messaging-FHIR.md)|
