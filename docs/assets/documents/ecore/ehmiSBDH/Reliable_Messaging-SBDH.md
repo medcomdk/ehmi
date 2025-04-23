@@ -25,7 +25,7 @@ The Reliable Messaging Model and how the flow is laid out using ehmiSBDH-envelop
 </figure>
 <br>
 
-When Reliable Messaging is implemented, the Receiver **SHALL** check the incoming /MetaInformation/Identifier (hereafter MessageIdentifier) against a cache of previously received ehmiSBDH-envelopes. The correct action to take depends on what is received:
+When Reliable Messaging is implemented, the Receiver **SHALL** check the incoming StandardBusinessDocumentHeader/DocumentIdentification/InstanceIdentifier (hereafter EnvelopeIdentifier) and the StandardBusinessDocumentHeader/BusinessScope/Scope/Type[MESSAGEIDENTIFIER] (hereafter MessageIdentifier) against a cache of previously received ehmiSBDH-envelopes. The correct action to take depends on what is received:
 
 | Case                                                            | Description                |
 |:----------------------------------------------------------------|:---------------------------|
