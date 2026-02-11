@@ -3,7 +3,7 @@
 An eDelivery AP for EHMI is in the following called ehmiAP
 
 
-![EHMI Meddelelsesforsendelse og dokumentdeling](/ehmi/assets/images/1_EHMI_Meddelelsesforsendelse_og_dokumentdeling_1315x563.png)
+![EHMI Meddelelsesforsendelse og dokumentdeling](../images/1_EHMI_Meddelelsesforsendelse_og_dokumentdeling_1315x563.png)
 
 ## Requirements for ehmiAPs
 
