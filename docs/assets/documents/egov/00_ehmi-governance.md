@@ -55,7 +55,16 @@ Et lukket og sikret net til udveksling af sundhedsdata.
 EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af EUA og MSH eller en sammenbygning af MSH og AP.
 </details>
 
+# Trin 1 - Indgå tilslutningsaftale for eDelivery sundhedsdomænet
 
+Aftalen giver den tilsluttede part adgang til eDelivery-sundhedsdomænet med det formål at sende og modtage meddelelser i henhold til den eller de rolle(r), som parten varetager i EHMI-økosystemet (Enhanced Healthcare Messaging Infrastructure).
+
+[Tilslutningsaftale](tilslutningsaftale_edelivery.docx)
+
+Tilslutningsaftalen skal udfyldes og underskrives. Herefter sendes tilslutningsaftalen elektronisk til MedCom på medcom@medcom.dk.
+Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den tilsluttede part som bekræftelse på tilslutningen.
+
+# Trin 2 - Indgå tilslutningsaftaler til benyttede infrastrukturkomponenter i henhold til aktørens rolle
 
 # EHMI Governance domain level
 
