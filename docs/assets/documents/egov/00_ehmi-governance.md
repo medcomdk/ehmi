@@ -16,6 +16,11 @@ I det følgende beskrives de aftalemæssige og tekniske trin for tilslutning til
 
 Beskrivelsen indledes med en kort introduktion til eDelivery Sundhedsdomænet i relation til de forskellige roller, en aktør kan have.
 
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/medcomdk/ehmi/edit/main/docs/assets/documents/egov/EHMIokosystemet.png "Logo Title Text 2"
+
 # Roller i eDelivery Sundhedsdomænet
 Tag stilling til hvilken rolle eller roller du ønsker at varetage i eDelivery domænet.
 Figuren nedenfor illustrerer, hvordan en klinisk besked sendes fra en afsenderorganisation (f.eks. en kommune) til en modtagerorganisation (f.eks. en praktiserende læge) via eDelivery Sundhedsdomænet. Beskedens fysiske vej går gennem afsender-økosystemet, over sundhedsdatanettet og op gennem modtager-økosystemet.
