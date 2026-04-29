@@ -55,6 +55,21 @@ Et lukket og sikret net til udveksling af sundhedsdata.
 EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af EUA og MSH eller en sammenbygning af MSH og AP.
 </details>
 
+
+# Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet
+
+eDelivery-sundhedsdomænet anviser en række tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende, afhængigt af den rolle, parten varetager. Tabellen nedenfor oplister infrastrukturkomponenterne, deres systemforvalter samt de roller i eDelivery-sundhedsdomænet, der skal benytte komponenterne.
+
+| Infrastruktur-komponent | Beskrivelse | Ansvarlig part | Anvender rolle |
+|------------------------|------------|----------------|----------------|
+| EER | EHMI Endpoint Register<br><br>Opslag efter endpoint ID (adresse i form af GLN-nummer) for modtager af meddelelse. | MedCom | EUA - anvendelse ikke påkrævet. |
+| EAS | EHMI Addressing Service<br><br>Opslag efter korrekt modtager af en meddelelse | Sundhedsdatastyrelsen via den Nationale Service Platform (NSP) | EUA - anvendelse ikke påkrævet. |
+| EDS | EHMI Delivery Status<br><br>eDelivery Sundhedsdomænets ”track-and-trace”-system | MedCom | 1) EUA<br>2) MSH<br>3) AP |
+| Keycloak | Sikkerhedskomponent og udsteder de OpenID-adgangsbilletter, som anvendes ved adgang til EDS og EER. | Sundhedsdatastyrelsen via den Nationale Service Platform (NSP) | 1) EUA<br>2) MSH<br>3) AP |
+| EMR | EHMI Meddelelses Registrering<br><br>Service til arkivering af kliniske meddelelser sendt via eDelivery Sundhedsdomænet. | Sundhedsdatastyrelsen via den Nationale Service Platform (NSP) | MSH |
+| SMP | Service Metadata Publisher | Erhvervsstyrelsen | AP |
+| SDN | Sundhedsdatanettet<br><br>Et sikkert og lukket netværk, der forbinder IT-systemer i den danske sundhedssektor | MedCom | AP |
+
 # Trin 1 - Indgå tilslutningsaftale for eDelivery sundhedsdomænet
 
 Aftalen giver den tilsluttede part adgang til eDelivery-sundhedsdomænet med det formål at sende og modtage meddelelser i henhold til den eller de rolle(r), som parten varetager i EHMI-økosystemet (Enhanced Healthcare Messaging Infrastructure).
@@ -64,7 +79,17 @@ Aftalen giver den tilsluttede part adgang til eDelivery-sundhedsdomænet med det
 Tilslutningsaftalen skal udfyldes og underskrives. Herefter sendes tilslutningsaftalen elektronisk til MedCom på medcom@medcom.dk.
 Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den tilsluttede part som bekræftelse på tilslutningen.
 
-# Trin 2 - Indgå tilslutningsaftaler til benyttede infrastrukturkomponenter i henhold til aktørens rolle
+# Trin 2 - Indgå tilslutningsaftaler til benyttede infrastrukturkomponenter
+
+
+
+
+
+
+
+
+
+
 
 # EHMI Governance domain level
 
