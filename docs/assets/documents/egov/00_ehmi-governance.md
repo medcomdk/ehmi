@@ -21,7 +21,7 @@ Beskrivelsen indledes med en kort introduktion til eDelivery Sundhedsdomænet me
 (Klik på pilen ud for hver introduktion.)
 
 <details>
-  <summary><strong><em>Introduktion til eDelivery Sundhedsdomænet med fokus på de forskellige roller.</em></strong></summary>
+  <summary><strong>Introduktion til eDelivery Sundhedsdomænet med fokus på de forskellige roller.</strong></summary>
 
 Tag stilling til hvilken rolle eller roller du ønsker at varetage i eDelivery domænet.
 Figuren nedenfor illustrerer, hvordan en klinisk besked sendes fra en afsenderorganisation (f.eks. en kommune) til en modtagerorganisation (f.eks. en praktiserende læge) via eDelivery Sundhedsdomænet. Beskedens fysiske vej går gennem afsender-økosystemet, over sundhedsdatanettet og op gennem modtager-økosystemet.
@@ -63,9 +63,8 @@ EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af
 
 </details>
 
-<a id="infrastrukturkomponenter"></a>
 <details>
-  <summary><strong><em>Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet.</em>em></strong></summary>
+  <summary><strong>Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet.</strong></summary>
 
 eDelivery-sundhedsdomænet anviser en række tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende, afhængigt af den rolle, parten varetager. Tabellen nedenfor oplister infrastrukturkomponenterne, deres systemforvalter samt de roller i eDelivery-sundhedsdomænet, der skal benytte komponenterne.
 
@@ -96,29 +95,89 @@ Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den til
 </details>
 
 <details>
-  <summary>Trin 2 - Indgå tilslutningsaftaler til benyttede infrastrukturkomponenter</summary>
+    <summary>Trin 2 - Sikre at databehandler aftaler er på plads</summary>
 
-I afsnittet ([Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet](#infrastrukturkomponenter) de tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende, afhængigt af den rolle, parten varetager. Det fremgår desunden hvem der er ansvarlig for den enkelte infrastrukturkomponent. Nedenfor beskriver hvordan der indgåes en aftale med hver af de tre ansvarlige aftaleparter.
+Som det fremgår af figuren for EHMI-økosystemet, så findes der 5 roller i EHMI-økosystemet. 
+1) Afsender- eller modtagerorganisation.
+2) EUA (End-User-Application - også omtalt fagsystem/klinisk system) 
+3) MSH (Message-Service-Handler)
+4) AP (Access-Point)
+5) SDN (Sundheds-Data-Nettet)
+
+En afsender- eller modtagerorganisation er i sidste ende den dataansvarlige og skal sikre, at der er etableret de nødvendige databehandleraftaler gennem hele kæden af øvrige roller i EHMI-økosystemet. Dette kan håndteres som en traditionel kæde-databehandler-model, hvor afsender- eller modtagerorganisationen indgår en databehandleraftale med EUA samt sikrer, at EUA har indgået en underdatabehandleraftale med MSH, og at MSH tilsvarende har indgået en underdatabehandleraftale med AP, osv. Alternativt kan afsender- eller modtagerorganisationen indgå databehandleraftaler direkte med flere led i kæden.
+Det er op til den enkelte part selv at vælge databehandlermodel i samarbejde med sine underleverandører.
+Ved tilslutning til eDelivery Sundhedsdomænet vil parten blive spurgt, om der foreligger gyldige databehandleraftaler med de relevante parter i overensstemmelse med gældende databeskyttelseslovgivning – eller alternativt, hvad parten har af planer for at sikre dette.
+
+eDelivery-domænet har udarbejdet et generisk eksempel på formuleringer, der kan indgå i en databehandleraftale. Vær opmærksom på, at en databehandleraftale kan formuleres på mange forskellige måder og ofte allerede er dækket af eksisterende databehandleraftaler med underleverandører.
+6)  
+Såfremt den tilsluttede part behandler personoplysninger i rollen som databehandler, er parten forpligtet til at sikre, at der foreligger en gyldig databehandleraftale med den relevante dataansvarlige i overensstemmelse med gældende databeskyttelseslovgivning.
+Parten er endvidere forpligtet til at sikre, at der er indgået tilsvarende databehandleraftaler med eventuelle underleverandører (underdatabehandlere), som parten anvender i forbindelse med behandlingen af personoplysninger.
 
 
-Adgang til Keycloak, EAS og EMR – som hostes på den Nationale Service Platform
+
+En afsender- og modtagerorganisation er ansvarlig for kæden af databehandleraftaler til de underliggende systemer i EHMI-økosystemet - dvs. EUA, MSH og AP.
+
+En End-User-Application (EUA) er ansvarlig for kæden af databehandleraftaler til de underliggende systemer i EHMI-økosystemet - dvs. MSH og AP.
+
+En Message-Servie-Handler (MSH) er ansvarlig for kæden af databehandleraftaler til de underliggende systemer i EHMI-økosystemet - dvs. MSH og AP.
+
+
+</details>
+
+<details>
+  <summary>Trin 3 - Indgå tilslutningsaftaler til benyttede infrastrukturkomponenter</summary>
+
+Ovenfor (jf. Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet) beskrives de tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende afhængigt af den rolle, parten varetager.
+
+Det fremgår desunden at infrastrukturkomponenterne systemforvaltes  hos tre forskellige organisationer:
+1) Sundhedsdatastyrelsen via den Nationale Service Platform (NSP) er systemforvalter på Keycloak, EAS og EMR.
+2) MedCom er systemforvalter på EER, EDS og SDN
+3) Erhvervsstyrelsen er systemforvalter på SMP
+
+Nedenfor beskriver hvordan der indgåes en aftale med hver af de tre systemforvaltere.
+
+<details>
+  <summary><strong>Adgang Keycloak, EAS og EMR – SDS/NSP er systemforvalter</strong></summary>
 
 Keycloak, EAS og EMR driftes på Den Nationale Serviceplatform (NSP). Anvenderen skal dels indgå en central aftale med Sundhedsdatastyrelsen (SDS) for at få adgang til NSP og dels whitelistes til de services, der ønskes anvendt.
 
-Adgang til NSP:
+<strong>Adgang til NSP</strong>
 Vejledning vedrørende indgåelse af den centrale aftale med SDS om adgang til NSP findes her: https://www.nspop.dk/spaces/Web3/pages/29987467/Aftaler+for+Anvenderleverandør+og+Serviceaftager 
 
-Whitelistning til Keycloak
+<strong>Whitelistning til Keycloak</strong>
 Adgang til Keycloak Authorization Server forudsætter, at anvenderapplikationen registreres (whitelistes) i Keycloak via metadata, som blandt andet indeholder applikationens certifikat. Til denne whitelistning anvendes et MitID Erhverv systemcertifikat.
-Whitelistning til EAS
+
+<strong>Whitelistning til EAS</strong>
 Adgang til EAS forudsætter to ting. 
 1) En gyldig adgangsbillet (access token) udstedt af NSP Keycloak, som gælder i en periode og man anvendes hen over flere opslag.
 2) Anvenderapplikationen registreres/whitelistes til NSP Keycloak. Til denne whitelistning anvendes et MitId Erhverv Systemcertifikat
-Whitelistning til EMR
+
+<strong>Whitelistning til EMR</strong>
 EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddelelser fra andre Access Points. Whitelistning af Access Points sker via et centralt register hos Erhvervsstyrelsen (SMP).
 
+</details>
+
+<details>
+  <summary><strong>Adgang EER, EDS og SDN – MedCom er systemejer</strong></summary>
+
+<strong>Adgang til EER</strong>
+?
+
+<strong>Adgang til EDS</strong>
+?
+
+<strong>Adgang til SDN</strong>
+SDN er et sikret netværk til datakommunikation i den danske sundhedssektor for både offentlige og private parter. SDN binder lokale, sikrede net sammen i en fælles infrastruktur – og gør det muligt for de tilsluttede parter både at udstille egne services og indgå aftaler om netværksmæssig adgang til andres services. 
+
+Ved tilslutning til SDN skal indgås både en tilslutningsaftale om brug af SDN samt en databehandleraftale.
+Vejled vedrørende dette findes her: https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/startpakke/
+</details>
+
+<details>
+  <summary><strong>Adgang SMP – SDS/NSP er systemforvalter</strong></summary>
 
 
+</details>
 </details>
 
 
