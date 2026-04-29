@@ -101,6 +101,22 @@ Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den til
 I afsnittet ([Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet](#infrastrukturkomponenter) de tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende, afhængigt af den rolle, parten varetager. Det fremgår desunden hvem der er ansvarlig for den enkelte infrastrukturkomponent. Nedenfor beskriver hvordan der indgåes en aftale med hver af de tre ansvarlige aftaleparter.
 
 
+Adgang til Keycloak, EAS og EMR – som hostes på den Nationale Service Platform
+
+Keycloak, EAS og EMR driftes på Den Nationale Serviceplatform (NSP). Anvenderen skal dels indgå en central aftale med Sundhedsdatastyrelsen (SDS) for at få adgang til NSP og dels whitelistes til de services, der ønskes anvendt.
+
+Adgang til NSP:
+Vejledning vedrørende indgåelse af den centrale aftale med SDS om adgang til NSP findes her: https://www.nspop.dk/spaces/Web3/pages/29987467/Aftaler+for+Anvenderleverandør+og+Serviceaftager 
+
+Whitelistning til Keycloak
+Adgang til Keycloak Authorization Server forudsætter, at anvenderapplikationen registreres (whitelistes) i Keycloak via metadata, som blandt andet indeholder applikationens certifikat. Til denne whitelistning anvendes et MitID Erhverv systemcertifikat.
+Whitelistning til EAS
+Adgang til EAS forudsætter to ting. 
+1) En gyldig adgangsbillet (access token) udstedt af NSP Keycloak, som gælder i en periode og man anvendes hen over flere opslag.
+2) Anvenderapplikationen registreres/whitelistes til NSP Keycloak. Til denne whitelistning anvendes et MitId Erhverv Systemcertifikat
+Whitelistning til EMR
+EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddelelser fra andre Access Points. Whitelistning af Access Points sker via et centralt register hos Erhvervsstyrelsen (SMP).
+
 
 
 </details>
