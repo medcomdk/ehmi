@@ -14,9 +14,15 @@ Hvis en aktør ønsker at tilslutte sig eDelivery Sundhedsdomænet, er første s
 
 I det følgende beskrives de aftalemæssige og tekniske trin for tilslutning til eDelivery Sundhedsdomænet.
 
-Beskrivelsen indledes med en kort introduktion til eDelivery Sundhedsdomænet i relation til de forskellige roller, en aktør kan have.
+Beskrivelsen indledes med en kort introduktion til eDelivery Sundhedsdomænet med fokus på de forskellige roller, en aktør kan have. Herefter følger en kort introduktion til de infrastrukturkomponenter, der indgår i eDelivery Sundhedsdomænet.
 
-# Roller i eDelivery Sundhedsdomænet
+# Introduktion til eDelivery Sundhedsdomænet, med fokus på roller og infrastruktur komponenter.
+
+(Klik på pilen ud for hver introduktion.)
+
+<details>
+  <summary><strong><em>Introduktion til eDelivery Sundhedsdomænet med fokus på de forskellige roller.</em></strong></summary>
+
 Tag stilling til hvilken rolle eller roller du ønsker at varetage i eDelivery domænet.
 Figuren nedenfor illustrerer, hvordan en klinisk besked sendes fra en afsenderorganisation (f.eks. en kommune) til en modtagerorganisation (f.eks. en praktiserende læge) via eDelivery Sundhedsdomænet. Beskedens fysiske vej går gennem afsender-økosystemet, over sundhedsdatanettet og op gennem modtager-økosystemet.
 
@@ -55,8 +61,11 @@ Et lukket og sikret net til udveksling af sundhedsdata.
 EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af EUA og MSH eller en sammenbygning af MSH og AP.
 </details>
 
+</details>
 
-# Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet
+<a id="infrastrukturkomponenter"></a>
+<details>
+  <summary><strong><em>Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet.</em>em></strong></summary>
 
 eDelivery-sundhedsdomænet anviser en række tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende, afhængigt af den rolle, parten varetager. Tabellen nedenfor oplister infrastrukturkomponenterne, deres systemforvalter samt de roller i eDelivery-sundhedsdomænet, der skal benytte komponenterne.
 
@@ -70,7 +79,12 @@ eDelivery-sundhedsdomænet anviser en række tekniske infrastrukturkomponenter, 
 | SMP | Service Metadata Publisher | Erhvervsstyrelsen | AP |
 | SDN | Sundhedsdatanettet<br><br>Et sikkert og lukket netværk, der forbinder IT-systemer i den danske sundhedssektor | MedCom | AP |
 
-# Trin 1 - Indgå tilslutningsaftale for eDelivery sundhedsdomænet
+</details>
+
+# Trin for tilslutning til eDelivery Sundhedsdomænet
+
+<details>
+  <summary>Trin 1 - Indgå tilslutningsaftale for eDelivery sundhedsdomænet</summary>
 
 Aftalen giver den tilsluttede part adgang til eDelivery-sundhedsdomænet med det formål at sende og modtage meddelelser i henhold til den eller de rolle(r), som parten varetager i EHMI-økosystemet (Enhanced Healthcare Messaging Infrastructure).
 
@@ -79,7 +93,17 @@ Aftalen giver den tilsluttede part adgang til eDelivery-sundhedsdomænet med det
 Tilslutningsaftalen skal udfyldes og underskrives. Herefter sendes tilslutningsaftalen elektronisk til MedCom på medcom@medcom.dk.
 Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den tilsluttede part som bekræftelse på tilslutningen.
 
-# Trin 2 - Indgå tilslutningsaftaler til benyttede infrastrukturkomponenter
+</details>
+
+<details>
+  <summary>Trin 2 - Indgå tilslutningsaftaler til benyttede infrastrukturkomponenter</summary>
+
+I afsnittet ([Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet](#infrastrukturkomponenter) de tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende, afhængigt af den rolle, parten varetager. Det fremgår desunden hvem der er ansvarlig for den enkelte infrastrukturkomponent. Nedenfor beskriver hvordan der indgåes en aftale med hver af de tre ansvarlige aftaleparter.
+
+
+
+
+</details>
 
 
 
