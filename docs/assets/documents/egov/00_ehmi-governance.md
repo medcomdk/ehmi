@@ -180,7 +180,7 @@ Vejledning vedrørende dette findes her: https://medcom.dk/systemforvaltning/sun
 </details>
 
 <details>
-    <summary>Trin 4 - Test</summary>
+    <summary>Trin 4 - Test og certificering</summary>
 
 I nedenstående tabel fremgår en blanding af krav og testmuligheder opdelt på de forskellige integrationskomponenter. Det fremgår desuden, hvilke roller i EHMI-økosystemet de enkelte krav og test er relevante for.
 
