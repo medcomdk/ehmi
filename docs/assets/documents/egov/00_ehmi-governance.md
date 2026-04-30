@@ -222,7 +222,7 @@ Den tilsluttede part skal informere afsenderen om fejlscenarier, såsom meddelel
 
 Den tilsluttede part indgår i eDelivery sundhedsdomænets fælles supportflow som skitseret på figuren.
 
-<img src="Supportflow.png" alt="Økosystem" width="500">
+<img src="Supportflow2.png" alt="Økosystem" width="800">
 
 Den tilsluttede part fastlægger selv sit supportniveau i forhold til egne kunder, dvs. aktører, der er placeret over den tilsluttede part i EHMI-økosystemet.
 
