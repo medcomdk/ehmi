@@ -159,7 +159,8 @@ EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddele
   <summary><strong>Adgang EER, EDS og SDN – MedCom er systemejer</strong></summary>
 
 <strong>Adgang til EER</strong>
-?
+
+<em>Medcom laver en vejledning til hvilke metadata der skal leveres</em>
 
 <strong>Adgang til EDS</strong>
 ?
