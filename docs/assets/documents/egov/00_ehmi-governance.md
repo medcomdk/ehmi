@@ -61,6 +61,8 @@ Et lukket og sikret net til udveksling af sundhedsdata.
 EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af EUA og MSH eller en sammenbygning af MSH og AP.
 </details>
 
+Anvendte protokoller og standarder i eDelivery Sundhedsdomænet findes her: https://ehmi.dk
+
 </details>
 
 <details>
@@ -77,6 +79,8 @@ eDelivery-sundhedsdomænet anviser en række tekniske infrastrukturkomponenter, 
 | EMR | EHMI Meddelelses Registrering<br><br>Service til arkivering af kliniske meddelelser sendt via eDelivery Sundhedsdomænet. | Sundhedsdatastyrelsen via den Nationale Service Platform (NSP) | MSH |
 | SMP | Service Metadata Publisher | Erhvervsstyrelsen | AP |
 | SDN | Sundhedsdatanettet<br><br>Et sikkert og lukket netværk, der forbinder IT-systemer i den danske sundhedssektor | MedCom | AP |
+
+Snitflader til flere at EHMI-infrastrukturkomponenterne findes her: https://ehmi.dk
 
 </details>
 
@@ -119,7 +123,7 @@ Eksemplet tager udgangspunkt i en standard skabelon for databehandleraftaler, hv
 </details>
 
 <details>
-  <summary>Trin 3 - Indgå tilslutningsaftaler til benyttede infrastrukturkomponenter</summary>
+  <summary>Trin 3 - Indgå tilslutningsaftaler til benyttede EHMI-infrastrukturkomponenter</summary>
 
 Ovenfor (jf. Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet) beskrives de tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende afhængigt af den rolle, parten varetager.
 
@@ -216,9 +220,11 @@ Den tilsluttede part skal endvidere stille testgrænseflader (testsnitflader) ti
 
 Den tilsluttede part skal informere afsenderen om fejlscenarier, såsom meddelelser med semantiske eller adresseringsfejl, der ikke kan leveres til modtageren.
 
-Den tilsluttede part indgår i eDelivery sundhedsdomænets fælles supportflow som skitseret på Figur 1.
+Den tilsluttede part indgår i eDelivery sundhedsdomænets fælles supportflow som skitseret på figuren.
 
-Den tilsluttede part fastlægger selv sit supportniveau i forhold til egne kunder, dvs. aktører, der er placeret over den tilsluttede part i EHMI-økosystemet (jf. Figur 2).
+<img src="Supportflow.png" alt="Økosystem" width="500">
+
+Den tilsluttede part fastlægger selv sit supportniveau i forhold til egne kunder, dvs. aktører, der er placeret over den tilsluttede part i EHMI-økosystemet.
 
 Den tilsluttede part er forpligtet til at modtage, håndtere og medvirke til udredning af supporthenvendelser fra aktører, der er placeret under eller parallelt med den pågældende part i EHMI-økosystemet.
 1) En EUA er forpligtet til at udrede supporthenvendelser fra den underliggende MSH samt fra de EUA’er, som der sendes kliniske meddelelser til og modtages kliniske meddelelser fra.
@@ -250,51 +256,20 @@ MedCom EHMI support håndterer supporthenvendelser vedrørende EDS, EER, SDN og 
 MedCom EHMI support og NSP Support kan efter behov eskalere supporthenvendelser videre til de relevante systemforvaltere (Product Owners) og systemleverandører.
 
 </details>
+
+<details>
+    <summary>Trin 7 - Etabler produktionsmiljø</summary>
+
+I det produktion miljø som den tilsluttede part etablere skal det sikres, at meddelelser ikke går tabt i perioden fra de er modtaget og kvitteret for af Partens løsning, og indtil meddelelsen er videreformidlet til modtager, og modtageren har kvitteret for modtagelsen.
+
+Parten skal etablere og opretholde tekniske og organisatoriske mekanismer, der sikrer, at meddelelser i dette forløb håndteres på en måde, så de kan spores, genoptages og reetableres ved fejl eller nedbrud. Dette omfatter som minimum:
+1)	vedvarende lagring og sporbarhed af meddelelser samt tilhørende kvitteringer, indtil de er færdigbehandlet.
+2)	mekanismer, der sikrer, at en meddelelse først betragtes som endeligt afleveret, når modtagerens kvittering er modtaget og registreret,
+3)	automatisk genoptagelse af videreformidling efter nedbrud, herunder genforsøg og håndtering af midlertidige fejltilstande,
+4)	procedurer for reetablering, så meddelelser, der er modtaget, ikke bortfalder eller efterlades ubehandlede.
+
+Såfremt der konstateres forhold, der medfører risiko for tab af meddelelser, skal Parten uden unødig forsinkelse iværksætte afhjælpende foranstaltninger.
+
 </details>
 
-
-
-
-
-
-
-
-# EHMI Governance domain level
-
-## Strategi og udvikling
-
-### Strategi
-
-### Roadmap
-
-### EU
-
-### Interessenthåndtering
-
-## Brugersupport og -dialog
-
-### Support
-
-### Dialog via brugergrupper
-
-### Dokumentation
-
-### Tilslutningsaftaler
-
-### Tilslutningsbistand
-
-## Systemforvaltning
-
-### Change management
-
-### Incident management
-
-### Service management
-
-### Standarder
-
-### Administration af certifikater
-
-### Administration af centrale komponenter
-
-### Leverandørstyring (drift/udvikling)
+</details>
