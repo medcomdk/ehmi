@@ -95,7 +95,7 @@ Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den til
 </details>
 
 <details>
-    <summary>Trin 2 - Sikre at databehandler aftaler er på plads</summary>
+    <summary>Trin 2 - Sikre at nødvendige databehandleraftaler er på plads</summary>
 
 Som det fremgår af figuren for EHMI-økosystemet, så findes der 5 roller i EHMI-økosystemet. 
 1) Afsender- eller modtagerorganisation.
@@ -106,22 +106,16 @@ Som det fremgår af figuren for EHMI-økosystemet, så findes der 5 roller i EHM
 
 En afsender- eller modtagerorganisation er i sidste ende den dataansvarlige og skal sikre, at der er etableret de nødvendige databehandleraftaler gennem hele kæden af øvrige roller i EHMI-økosystemet. Dette kan håndteres som en traditionel kæde-databehandler-model, hvor afsender- eller modtagerorganisationen indgår en databehandleraftale med EUA samt sikrer, at EUA har indgået en underdatabehandleraftale med MSH, og at MSH tilsvarende har indgået en underdatabehandleraftale med AP, osv. Alternativt kan afsender- eller modtagerorganisationen indgå databehandleraftaler direkte med flere led i kæden.
 Det er op til den enkelte part selv at vælge databehandlermodel i samarbejde med sine underleverandører.
-Ved tilslutning til eDelivery Sundhedsdomænet vil parten blive spurgt, om der foreligger gyldige databehandleraftaler med de relevante parter i overensstemmelse med gældende databeskyttelseslovgivning – eller alternativt, hvad parten har af planer for at sikre dette.
+Ved tilslutning til eDelivery Sundhedsdomænet vil den tilsluttede part blive spurgt, om der foreligger gyldige databehandleraftaler med de relevante parter i overensstemmelse med gældende databeskyttelseslovgivning – eller alternativt, hvad den tilslutede parten har af planer for at sikre dette.
 
-eDelivery-domænet har udarbejdet et generisk eksempel på formuleringer, der kan indgå i en databehandleraftale. Vær opmærksom på, at en databehandleraftale kan formuleres på mange forskellige måder og ofte allerede er dækket af eksisterende databehandleraftaler med underleverandører.
-6)  
-Såfremt den tilsluttede part behandler personoplysninger i rollen som databehandler, er parten forpligtet til at sikre, at der foreligger en gyldig databehandleraftale med den relevante dataansvarlige i overensstemmelse med gældende databeskyttelseslovgivning.
-Parten er endvidere forpligtet til at sikre, at der er indgået tilsvarende databehandleraftaler med eventuelle underleverandører (underdatabehandlere), som parten anvender i forbindelse med behandlingen af personoplysninger.
+eDelivery-sundhedsdomænet har udarbejdet et eksempel på en databehandleraftale mellem en kommune og et access point, som kan anvendes til inspiration. Vær opmærksom på:
+1) at en databehandleraftale altid er kontekstafhængig, og at eksemplet derfor ikke kan anvendes direkte.
+2) at en databehandleraftale kan formuleres på mange forskellige måder, og at databehandlerforholdet muligvis allerede er dækket af eksisterende databehandleraftaler med underleverandører.
+3) at eksemplet viser en databehandleraftale fra en kommune direkte til et access point. Dette kunne alternativt være håndteret via underdatabehandleraftaler fra kommunens leverandør af fagsystem til MSH og AP.
 
+Eksemplet tager udgangspunkt i en standard skabelon for databehandleraftaler, hvor en stor del af teksten stammer fra skabelonen. De dele af teksten, der specifikt vedrører eDelivery-sundhedsdomænet, er markeret med gult.
 
-
-En afsender- og modtagerorganisation er ansvarlig for kæden af databehandleraftaler til de underliggende systemer i EHMI-økosystemet - dvs. EUA, MSH og AP.
-
-En End-User-Application (EUA) er ansvarlig for kæden af databehandleraftaler til de underliggende systemer i EHMI-økosystemet - dvs. MSH og AP.
-
-En Message-Servie-Handler (MSH) er ansvarlig for kæden af databehandleraftaler til de underliggende systemer i EHMI-økosystemet - dvs. MSH og AP.
-
-
+[Eksempel på databehandler aftale](databehandleraftale_eksempel.docx)
 </details>
 
 <details>
