@@ -273,3 +273,11 @@ Såfremt der konstateres forhold, der medfører risiko for tab af meddelelser, s
 </details>
 
 </details>
+
+# Kontakt ved spørgsmål om tilslutning
+
+MedCom
+
+Mail: medcom@medcom.dk 
+
+Telefon: (+45) xxxx xxxx
