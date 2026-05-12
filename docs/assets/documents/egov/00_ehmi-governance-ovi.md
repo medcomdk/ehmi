@@ -37,7 +37,6 @@ Når der er behov for at sende en klinisk meddelelse til en anden organisation, 
 Det kliniske system sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 <br/>
 </details>
-<details>
   <summary>Message Service Handler (MSH)</summary>
 
 MSH er ansvarlig for klargøring og afsendelse af kliniske meddelelser fra EUA til en udpeget modtager. Klargøringen indebærer at indpakke den kliniske meddelelse i den digitale konvolut (ehmiSBDH), der bruges til udveksling af kliniske meddelelser indenfor eDelivery Sundhedsdomænet. MSH håndterer succes- eller fejl-kvitteringer fra modtageren (ehmiSBDH Acknowledgement). Ved fejl gensendes den kliniske meddelelse. Efter succesfuld afsendelse sendes en kopi af meddelelsen til EMR, en tjeneste til arkivering af kliniske meddelelser sendt via eDelivery Sundhedsdomænet.
@@ -46,6 +45,7 @@ MSH sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afs
 MSH overlader den fysiske afsendelse og modtagelse af beskeder og kvitteringer til Accesspoint.
 <br/>
 </details>
+
 <details>
   <summary>Accesspoint (AP)</summary>
 
@@ -54,6 +54,7 @@ Når AP modtager en besked fra en anden AP via Sundhedsdatanettet, står AP for 
 AP sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 <br/>
 </details>
+
 <details>
   <summary>Sundhedsdatanettet (SDN)</summary>
 
@@ -65,6 +66,7 @@ Anvendte protokoller og standarder i eDelivery Sundhedsdomænet findes her: http
 
 <br/>
 </details>
+
 <details>
   <summary><strong>Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet.</strong></summary>
 
@@ -98,6 +100,7 @@ Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den til
 
 <br/>
 </details>
+
 <details>
     <summary>Trin 2 - Sikre at nødvendige databehandleraftaler er på plads</summary>
 
@@ -155,7 +158,8 @@ EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddele
 
 <br/>
 </details>
-<details>
+
+  <details>
   <summary><strong>Adgang EER, EDS og SDN – MedCom er systemejer</strong></summary>
 
 <strong>Adgang til EER</strong>
@@ -172,13 +176,15 @@ Ved tilslutning til SDN skal indgås både en tilslutningsaftale om brug af SDN 
 Vejledning vedrørende dette findes her: https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/startpakke/
 <br/>
 </details>
-<details>
+
+  <details>
   <summary><strong>Adgang SMP – SDS/NSP er systemforvalter</strong></summary>
 
 </details>
 
 <br/>
 </details>
+
 <details>
     <summary>Trin 4 - Test og certificering</summary>
 
@@ -199,6 +205,7 @@ I nedenstående tabel fremgår en blanding af krav og testmuligheder opdelt på 
 Den tilsluttede part skal certificeres af MedCom, før partens løsning kan tilsluttes eDelivery-sundhedsdomænet. Certificeringen baseres på en testprotokol udviklet af MedCom. Den til enhver tid gældende testprotokol fremgår af www.medcom.dk.
 <br/>
 </details>
+
 <details>
     <summary>Trin 5 - Etabler testmiljø</summary>
 
@@ -216,6 +223,7 @@ Den tilsluttede part skal endvidere stille testgrænseflader (testsnitflader) ti
 
 <br/>
 </details>
+
 <details>
     <summary>Trin 6 - Etabler supportorganisation</summary>
 
@@ -264,6 +272,7 @@ MedCom EHMI support og NSP Support kan efter behov eskalere supporthenvendelser 
 
 <br/>
 </details>
+
 <details>
     <summary>Trin 7 - Etabler produktionsmiljø</summary>
 
