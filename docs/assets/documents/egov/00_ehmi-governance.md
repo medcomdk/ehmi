@@ -1,4 +1,5 @@
 # Startpakke for eDelivery Sundhedsdomænet – pilotprojekt
+
 eDelivery Sundhedsdomænet har til formål at etablere, udvikle og drive en infrastruktur til udveksling af kliniske meddelelser inden for sundhedssektoren samt til og fra andre domæner uden for sundhedsområdet.
 
 Denne startpakke er etableret i forbindelse med eDelivery-pilotprojektet til deltagerne heri. Samtidig er startpakken udformet med henblik på, at den – efter nødvendige tilpasninger – kan videreføres, når eDelivery Sundhedsdomænet overgår til normal drift.
@@ -10,8 +11,11 @@ Hvis en aktør ønsker at tilslutte sig eDelivery Sundhedsdomænet, er første s
 2) Hvilken rolle forventer aktøren at have:
 
     1) Organisation, der skal sende og modtage kliniske meddelelser via eDelivery Sundhedsdomænet
+
     2) End User Application (EUA) – leverandør af fagsystem/klinisk system
+
     3) Message Service Handler (MSH)
+
     4) Access Point (AP)
 
 3) Hvad er de praktiske trin frem mod tilslutning til eDelivery Sundhedsdomænet – både aftalemæssigt og teknisk?
@@ -40,7 +44,7 @@ Det kliniske fagsystem (eller andre fagsystemer), som afsender- og modtagerorgan
 Når der er behov for at sende en klinisk meddelelse til en anden organisation, sikrer det kliniske system, at meddelelsen opsættes i det relevante kliniske format (f.eks. en HomeCareObservation) og fremfinder den ønskede modtager. Meddelelsen og modtageren overdrages herefter til MSH. Det kliniske system kan også modtage kliniske meddelelser fra andre sundhedsorganisationer via MSH.
 Det kliniske system sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 </details>
-<br>
+
 <details>
   <summary>Message Service Handler (MSH)</summary>
 
@@ -49,7 +53,7 @@ MSH modtager også kliniske meddelelser fra andre sundhedsorganisationer, udpakk
 MSH sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 MSH overlader den fysiske afsendelse og modtagelse af beskeder og kvitteringer til Accesspoint.
 </details>
-<br>
+
 <details>
   <summary>Accesspoint (AP)</summary>
 
@@ -57,7 +61,7 @@ AP håndterer den fysiske digitale udveksling af kliniske meddelelser sendt via 
 Når AP modtager en besked fra en anden AP via Sundhedsdatanettet, står AP for dekryptering og udpakning, før beskeden leveres op til MSH. 
 AP sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 </details>
-<br>
+
 <details>
   <summary>Sundhedsdatanettet (SDN)</summary>
 
@@ -68,7 +72,7 @@ EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af
 Anvendte protokoller og standarder i eDelivery Sundhedsdomænet findes her: https://ehmi.dk
 
 </details>
-<br>
+
 <details>
   <summary><strong>Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet.</strong></summary>
 
