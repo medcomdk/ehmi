@@ -37,6 +37,8 @@ Når der er behov for at sende en klinisk meddelelse til en anden organisation, 
 Det kliniske system sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 <br>
 </details>
+
+<details>
   <summary>Message Service Handler (MSH)</summary>
 
 MSH er ansvarlig for klargøring og afsendelse af kliniske meddelelser fra EUA til en udpeget modtager. Klargøringen indebærer at indpakke den kliniske meddelelse i den digitale konvolut (ehmiSBDH), der bruges til udveksling af kliniske meddelelser indenfor eDelivery Sundhedsdomænet. MSH håndterer succes- eller fejl-kvitteringer fra modtageren (ehmiSBDH Acknowledgement). Ved fejl gensendes den kliniske meddelelse. Efter succesfuld afsendelse sendes en kopi af meddelelsen til EMR, en tjeneste til arkivering af kliniske meddelelser sendt via eDelivery Sundhedsdomænet.
@@ -125,6 +127,7 @@ Eksemplet tager udgangspunkt i en standard skabelon for databehandleraftaler, hv
 [Eksempel på databehandleraftale](Databehandleraftale_eksempel.docx)
 <br>
 </details>
+
 <details>
   <summary>Trin 3 - Indgå tilslutningsaftaler til benyttede EHMI-infrastrukturkomponenter</summary>
 
@@ -159,7 +162,7 @@ EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddele
 <br>
 </details>
 
-  <details>
+<details>
   <summary><strong>Adgang EER, EDS og SDN – MedCom er systemejer</strong></summary>
 
 <strong>Adgang til EER</strong>
@@ -177,7 +180,7 @@ Vejledning vedrørende dette findes her: https://medcom.dk/systemforvaltning/sun
 <br>
 </details>
 
-  <details>
+<details>
   <summary><strong>Adgang SMP – SDS/NSP er systemforvalter</strong></summary>
 
 </details>
