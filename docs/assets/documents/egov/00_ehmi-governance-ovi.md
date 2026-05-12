@@ -35,6 +35,7 @@ Figuren nedenfor illustrerer, hvordan en klinisk besked sendes fra en afsenderor
 Det kliniske fagsystem (eller andre fagsystemer), som afsender- og modtagerorganisationen anvender til at registrere og behandle en borgers (patientens) sundhedsoplysninger. 
 Når der er behov for at sende en klinisk meddelelse til en anden organisation, sikrer det kliniske system, at meddelelsen opsættes i det relevante kliniske format (f.eks. en HomeCareObservation) og fremfinder den ønskede modtager. Meddelelsen og modtageren overdrages herefter til MSH. Det kliniske system kan også modtage kliniske meddelelser fra andre sundhedsorganisationer via MSH.
 Det kliniske system sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
+<br>
 </details>
 
 <details>
@@ -183,7 +184,6 @@ Vejledning vedrørende dette findes her: https://medcom.dk/systemforvaltning/sun
   <summary><strong>Adgang SMP – SDS/NSP er systemforvalter</strong></summary>
 
 </details>
-
 </details>
 
 <details>
