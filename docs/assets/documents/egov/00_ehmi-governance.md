@@ -61,7 +61,7 @@ AP håndterer den fysiske digitale udveksling af kliniske meddelelser sendt via 
 Når AP modtager en besked fra en anden AP via Sundhedsdatanettet, står AP for dekryptering og udpakning, før beskeden leveres op til MSH. 
 AP sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 </details>
- 
+
 <details>
   <summary>Sundhedsdatanettet (SDN)</summary>
 
