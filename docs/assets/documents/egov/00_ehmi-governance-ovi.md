@@ -35,15 +35,17 @@ Figuren nedenfor illustrerer, hvordan en klinisk besked sendes fra en afsenderor
 Det kliniske fagsystem (eller andre fagsystemer), som afsender- og modtagerorganisationen anvender til at registrere og behandle en borgers (patientens) sundhedsoplysninger. 
 Når der er behov for at sende en klinisk meddelelse til en anden organisation, sikrer det kliniske system, at meddelelsen opsættes i det relevante kliniske format (f.eks. en HomeCareObservation) og fremfinder den ønskede modtager. Meddelelsen og modtageren overdrages herefter til MSH. Det kliniske system kan også modtage kliniske meddelelser fra andre sundhedsorganisationer via MSH.
 Det kliniske system sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
-<br/>
+<br>
 </details>
+
+<details>
   <summary>Message Service Handler (MSH)</summary>
 
 MSH er ansvarlig for klargøring og afsendelse af kliniske meddelelser fra EUA til en udpeget modtager. Klargøringen indebærer at indpakke den kliniske meddelelse i den digitale konvolut (ehmiSBDH), der bruges til udveksling af kliniske meddelelser indenfor eDelivery Sundhedsdomænet. MSH håndterer succes- eller fejl-kvitteringer fra modtageren (ehmiSBDH Acknowledgement). Ved fejl gensendes den kliniske meddelelse. Efter succesfuld afsendelse sendes en kopi af meddelelsen til EMR, en tjeneste til arkivering af kliniske meddelelser sendt via eDelivery Sundhedsdomænet.
 MSH modtager også kliniske meddelelser fra andre sundhedsorganisationer, udpakker dem fra den digitale konvolut (ehmiSBDH), returnerer en kvittering (ehmiSBDH Acknowledgement) til afsenderen og sender den udpakkede kliniske meddelelse op til EUA.
 MSH sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 MSH overlader den fysiske afsendelse og modtagelse af beskeder og kvitteringer til Accesspoint.
-<br/>
+<br>
 </details>
 
 <details>
@@ -52,7 +54,7 @@ MSH overlader den fysiske afsendelse og modtagelse af beskeder og kvitteringer t
 AP håndterer den fysiske digitale udveksling af kliniske meddelelser sendt via eDelivery Sundhedsdomænet. Den digitale adresse på modtageren hentes via Erhversstyrelsens SMP-service. Meddelelser og kvitteringer indpakkes og krypteres i henhold til EU’s eDelivery protokol og sendes derefter til modtagerens AP via Sundhedsdatanettet. 
 Når AP modtager en besked fra en anden AP via Sundhedsdatanettet, står AP for dekryptering og udpakning, før beskeden leveres op til MSH. 
 AP sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
-<br/>
+<br>
 </details>
 
 <details>
@@ -64,7 +66,7 @@ EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af
 
 Anvendte protokoller og standarder i eDelivery Sundhedsdomænet findes her: https://ehmi.dk
 
-<br/>
+<br>
 </details>
 
 <details>
@@ -98,7 +100,7 @@ Aftalen giver den tilsluttede part adgang til eDelivery-sundhedsdomænet med det
 Tilslutningsaftalen skal udfyldes og underskrives. Herefter sendes tilslutningsaftalen elektronisk til MedCom på medcom@medcom.dk.
 Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den tilsluttede part som bekræftelse på tilslutningen.
 
-<br/>
+<br>
 </details>
 
 <details>
@@ -123,8 +125,9 @@ eDelivery-sundhedsdomænet har udarbejdet et eksempel på en databehandleraftale
 Eksemplet tager udgangspunkt i en standard skabelon for databehandleraftaler, hvor en stor del af teksten stammer fra skabelonen. De dele af teksten, der specifikt vedrører eDelivery-sundhedsdomænet, er markeret med gult.
 
 [Eksempel på databehandleraftale](Databehandleraftale_eksempel.docx)
-<br/>
+<br>
 </details>
+
 <details>
   <summary>Trin 3 - Indgå tilslutningsaftaler til benyttede EHMI-infrastrukturkomponenter</summary>
 
@@ -156,10 +159,10 @@ Adgang til EAS forudsætter to ting.
 <strong>Whitelistning til EMR</strong>
 EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddelelser fra andre Access Points. Whitelistning af Access Points sker via et centralt register hos Erhvervsstyrelsen (SMP).
 
-<br/>
+<br>
 </details>
 
-  <details>
+<details>
   <summary><strong>Adgang EER, EDS og SDN – MedCom er systemejer</strong></summary>
 
 <strong>Adgang til EER</strong>
@@ -174,15 +177,12 @@ SDN er et sikret netværk til datakommunikation i den danske sundhedssektor for 
 
 Ved tilslutning til SDN skal indgås både en tilslutningsaftale om brug af SDN samt en databehandleraftale.
 Vejledning vedrørende dette findes her: https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/startpakke/
-<br/>
+<br>
 </details>
 
-  <details>
+<details>
   <summary><strong>Adgang SMP – SDS/NSP er systemforvalter</strong></summary>
 
-</details>
-
-<br/>
 </details>
 
 <details>
@@ -203,7 +203,7 @@ I nedenstående tabel fremgår en blanding af krav og testmuligheder opdelt på 
 | 9 | <strong>EER integrationstest</strong><br><br>MedCom stiller en test EER-service til rådighed. Det forventes at EUA tester deres løsning op imod test EER-servicen før produktionssætning. |  | X | (hvis den benyttes) |
 
 Den tilsluttede part skal certificeres af MedCom, før partens løsning kan tilsluttes eDelivery-sundhedsdomænet. Certificeringen baseres på en testprotokol udviklet af MedCom. Den til enhver tid gældende testprotokol fremgår af www.medcom.dk.
-<br/>
+<br>
 </details>
 
 <details>
@@ -221,7 +221,7 @@ Testmiljøet bør desuden være integreret med de underliggende testmiljøer hos
 
 Den tilsluttede part skal endvidere stille testgrænseflader (testsnitflader) til rådighed i testmiljøet, som partens kunder kan anvende til egne testformål, herunder integrationstest og validering forud for idriftsættelse i produktionsmiljøet.
 
-<br/>
+<br>
 </details>
 
 <details>
@@ -270,7 +270,7 @@ MedCom EHMI support håndterer supporthenvendelser vedrørende EDS, EER, SDN og 
 
 MedCom EHMI support og NSP Support kan efter behov eskalere supporthenvendelser videre til de relevante systemforvaltere (Product Owners) og systemleverandører.
 
-<br/>
+<br>
 </details>
 
 <details>
