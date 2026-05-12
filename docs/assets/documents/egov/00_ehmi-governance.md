@@ -9,13 +9,10 @@ Hvis en aktør ønsker at tilslutte sig eDelivery Sundhedsdomænet, er første s
 
 2) Hvilken rolle forventer aktøren at have:
 
-    1) Organisation, der skal sende og modtage kliniske meddelelser via eDelivery Sundhedsdomænet
-    
-    2) End User Application (EUA) – leverandør af fagsystem/klinisk system
-    
-    3) Message Service Handler (MSH)
-    
-    4) Access Point (AP)
+    1) Organisation, der skal sende og modtage kliniske meddelelser via eDelivery Sundhedsdomænet<br/>
+    2) End User Application (EUA) – leverandør af fagsystem/klinisk system<br/>
+    3) Message Service Handler (MSH)<br/>
+    4) Access Point (AP)<br/>
 
 3) Hvad er de praktiske trin frem mod tilslutning til eDelivery Sundhedsdomænet – både aftalemæssigt og teknisk?
 
