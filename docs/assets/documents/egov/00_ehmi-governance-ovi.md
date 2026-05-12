@@ -36,7 +36,7 @@ Det kliniske fagsystem (eller andre fagsystemer), som afsender- og modtagerorgan
 Når der er behov for at sende en klinisk meddelelse til en anden organisation, sikrer det kliniske system, at meddelelsen opsættes i det relevante kliniske format (f.eks. en HomeCareObservation) og fremfinder den ønskede modtager. Meddelelsen og modtageren overdrages herefter til MSH. Det kliniske system kan også modtage kliniske meddelelser fra andre sundhedsorganisationer via MSH.
 Det kliniske system sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 </details>
-</br>
+<br/>
 <details>
   <summary>Message Service Handler (MSH)</summary>
 
@@ -45,7 +45,7 @@ MSH modtager også kliniske meddelelser fra andre sundhedsorganisationer, udpakk
 MSH sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 MSH overlader den fysiske afsendelse og modtagelse af beskeder og kvitteringer til Accesspoint.
 </details>
-</br>
+<br/>
 <details>
   <summary>Accesspoint (AP)</summary>
 
@@ -53,7 +53,7 @@ AP håndterer den fysiske digitale udveksling af kliniske meddelelser sendt via 
 Når AP modtager en besked fra en anden AP via Sundhedsdatanettet, står AP for dekryptering og udpakning, før beskeden leveres op til MSH. 
 AP sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 </details>
-</br>
+<br/>
 <details>
   <summary>Sundhedsdatanettet (SDN)</summary>
 
@@ -64,7 +64,7 @@ EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af
 Anvendte protokoller og standarder i eDelivery Sundhedsdomænet findes her: https://ehmi.dk
 
 </details>
-</br>
+<br/>
 <details>
   <summary><strong>Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet.</strong></summary>
 
@@ -97,7 +97,7 @@ Tilslutningsaftalen skal udfyldes og underskrives. Herefter sendes tilslutningsa
 Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den tilsluttede part som bekræftelse på tilslutningen.
 
 </details>
-</br>
+<br/>
 <details>
     <summary>Trin 2 - Sikre at nødvendige databehandleraftaler er på plads</summary>
 
@@ -121,7 +121,7 @@ Eksemplet tager udgangspunkt i en standard skabelon for databehandleraftaler, hv
 
 [Eksempel på databehandleraftale](Databehandleraftale_eksempel.docx)
 </details>
-</br>
+<br/>
 <details>
   <summary>Trin 3 - Indgå tilslutningsaftaler til benyttede EHMI-infrastrukturkomponenter</summary>
 
@@ -154,7 +154,7 @@ Adgang til EAS forudsætter to ting.
 EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddelelser fra andre Access Points. Whitelistning af Access Points sker via et centralt register hos Erhvervsstyrelsen (SMP).
 
 </details>
-</br>
+<br/>
 <details>
   <summary><strong>Adgang EER, EDS og SDN – MedCom er systemejer</strong></summary>
 
@@ -171,14 +171,14 @@ SDN er et sikret netværk til datakommunikation i den danske sundhedssektor for 
 Ved tilslutning til SDN skal indgås både en tilslutningsaftale om brug af SDN samt en databehandleraftale.
 Vejledning vedrørende dette findes her: https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/startpakke/
 </details>
-</br>
+<br/>
 <details>
   <summary><strong>Adgang SMP – SDS/NSP er systemforvalter</strong></summary>
 
 </details>
 
 </details>
-</br>
+<br/>
 <details>
     <summary>Trin 4 - Test og certificering</summary>
 
@@ -198,7 +198,7 @@ I nedenstående tabel fremgår en blanding af krav og testmuligheder opdelt på 
 
 Den tilsluttede part skal certificeres af MedCom, før partens løsning kan tilsluttes eDelivery-sundhedsdomænet. Certificeringen baseres på en testprotokol udviklet af MedCom. Den til enhver tid gældende testprotokol fremgår af www.medcom.dk.
 </details>
-</br>
+<br/>
 <details>
     <summary>Trin 5 - Etabler testmiljø</summary>
 
@@ -215,7 +215,7 @@ Testmiljøet bør desuden være integreret med de underliggende testmiljøer hos
 Den tilsluttede part skal endvidere stille testgrænseflader (testsnitflader) til rådighed i testmiljøet, som partens kunder kan anvende til egne testformål, herunder integrationstest og validering forud for idriftsættelse i produktionsmiljøet.
 
 </details>
-</br>
+<br/>
 <details>
     <summary>Trin 6 - Etabler supportorganisation</summary>
 
@@ -263,7 +263,7 @@ MedCom EHMI support håndterer supporthenvendelser vedrørende EDS, EER, SDN og 
 MedCom EHMI support og NSP Support kan efter behov eskalere supporthenvendelser videre til de relevante systemforvaltere (Product Owners) og systemleverandører.
 
 </details>
-</br>
+<br/>
 <details>
     <summary>Trin 7 - Etabler produktionsmiljø</summary>
 
