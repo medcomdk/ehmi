@@ -36,7 +36,7 @@ Det kliniske fagsystem (eller andre fagsystemer), som afsender- og modtagerorgan
 Når der er behov for at sende en klinisk meddelelse til en anden organisation, sikrer det kliniske system, at meddelelsen opsættes i det relevante kliniske format (f.eks. en HomeCareObservation) og fremfinder den ønskede modtager. Meddelelsen og modtageren overdrages herefter til MSH. Det kliniske system kan også modtage kliniske meddelelser fra andre sundhedsorganisationer via MSH.
 Det kliniske system sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 </details>
-
+</br>
 <details>
   <summary>Message Service Handler (MSH)</summary>
 
@@ -45,7 +45,7 @@ MSH modtager også kliniske meddelelser fra andre sundhedsorganisationer, udpakk
 MSH sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 MSH overlader den fysiske afsendelse og modtagelse af beskeder og kvitteringer til Accesspoint.
 </details>
-
+</br>
 <details>
   <summary>Accesspoint (AP)</summary>
 
@@ -53,7 +53,7 @@ AP håndterer den fysiske digitale udveksling af kliniske meddelelser sendt via 
 Når AP modtager en besked fra en anden AP via Sundhedsdatanettet, står AP for dekryptering og udpakning, før beskeden leveres op til MSH. 
 AP sikrer, at afsendte og modtagne meddelelser kan spores ved at registrere afsendelse og modtagelse i EDS-servicen (EHMI Delivery Status), som er eDelivery Sundhedsdomænets “track-and-trace”-system.
 </details>
-
+</br>
 <details>
   <summary>Sundhedsdatanettet (SDN)</summary>
 
@@ -64,7 +64,7 @@ EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af
 Anvendte protokoller og standarder i eDelivery Sundhedsdomænet findes her: https://ehmi.dk
 
 </details>
-
+</br>
 <details>
   <summary><strong>Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet.</strong></summary>
 
@@ -97,7 +97,7 @@ Tilslutningsaftalen skal udfyldes og underskrives. Herefter sendes tilslutningsa
 Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den tilsluttede part som bekræftelse på tilslutningen.
 
 </details>
-
+</br>
 <details>
     <summary>Trin 2 - Sikre at nødvendige databehandleraftaler er på plads</summary>
 
@@ -121,7 +121,7 @@ Eksemplet tager udgangspunkt i en standard skabelon for databehandleraftaler, hv
 
 [Eksempel på databehandleraftale](Databehandleraftale_eksempel.docx)
 </details>
-
+</br>
 <details>
   <summary>Trin 3 - Indgå tilslutningsaftaler til benyttede EHMI-infrastrukturkomponenter</summary>
 
@@ -154,7 +154,7 @@ Adgang til EAS forudsætter to ting.
 EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddelelser fra andre Access Points. Whitelistning af Access Points sker via et centralt register hos Erhvervsstyrelsen (SMP).
 
 </details>
-
+</br>
 <details>
   <summary><strong>Adgang EER, EDS og SDN – MedCom er systemejer</strong></summary>
 
@@ -171,14 +171,14 @@ SDN er et sikret netværk til datakommunikation i den danske sundhedssektor for 
 Ved tilslutning til SDN skal indgås både en tilslutningsaftale om brug af SDN samt en databehandleraftale.
 Vejledning vedrørende dette findes her: https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/startpakke/
 </details>
-
+</br>
 <details>
   <summary><strong>Adgang SMP – SDS/NSP er systemforvalter</strong></summary>
 
 </details>
 
 </details>
-
+</br>
 <details>
     <summary>Trin 4 - Test og certificering</summary>
 
@@ -198,7 +198,7 @@ I nedenstående tabel fremgår en blanding af krav og testmuligheder opdelt på 
 
 Den tilsluttede part skal certificeres af MedCom, før partens løsning kan tilsluttes eDelivery-sundhedsdomænet. Certificeringen baseres på en testprotokol udviklet af MedCom. Den til enhver tid gældende testprotokol fremgår af www.medcom.dk.
 </details>
-
+</br>
 <details>
     <summary>Trin 5 - Etabler testmiljø</summary>
 
@@ -215,7 +215,7 @@ Testmiljøet bør desuden være integreret med de underliggende testmiljøer hos
 Den tilsluttede part skal endvidere stille testgrænseflader (testsnitflader) til rådighed i testmiljøet, som partens kunder kan anvende til egne testformål, herunder integrationstest og validering forud for idriftsættelse i produktionsmiljøet.
 
 </details>
-
+</br>
 <details>
     <summary>Trin 6 - Etabler supportorganisation</summary>
 
@@ -228,8 +228,11 @@ Den tilsluttede part indgår i eDelivery sundhedsdomænets fælles supportflow s
 Den tilsluttede part fastlægger selv sit supportniveau i forhold til egne kunder, dvs. aktører, der er placeret over den tilsluttede part i EHMI-økosystemet.
 
 Den tilsluttede part er forpligtet til at modtage, håndtere og medvirke til udredning af supporthenvendelser fra aktører, der er placeret under eller parallelt med den pågældende part i EHMI-økosystemet.
+
 1) En EUA er forpligtet til at udrede supporthenvendelser fra den underliggende MSH samt fra de EUA’er, som der sendes kliniske meddelelser til og modtages kliniske meddelelser fra.
+
 2) En MSH er forpligtet til at udrede supporthenvendelser fra den underliggende AP samt fra de MSH’er, som der sendes ehmiSBDH-meddelelser til og modtages ehmiSBDH-meddelelser fra.
+
 3) En AP er forpligtet til at udrede supporthenvendelser fra de AP’er, som der sendes AS4-meddelelser til og modtages AS4-meddelelser fra.
 
 Hvis en tilsluttet part har sammenbyggede EUA-, MSH- og/eller AP-komponenter, er parten forpligtet til at håndtere det samlede supportansvar, som de enkelte komponenter hver især er ansvarlige for.
@@ -237,12 +240,15 @@ Hvis en tilsluttet part har sammenbyggede EUA-, MSH- og/eller AP-komponenter, er
 Den tilsluttede part skal etablere og opretholde en bemandet supportfunktion med dertilhørende kontaktkanaler i form af telefonnummer og e-mailadresse, som kan anvendes til indmelding af supporthenvendelser.
 
 Supportfunktionen skal være tilgængelig på hverdage med følgende servicemål:
+
 1) Kvittering for modtagelse:
 Modtagelse af en supporthenvendelse skal kvitteres inden for to (2) timer på hverdage inden for normal arbejdstid. Supporthenvendelser, der modtages lørdag, søndag eller på helligdage, skal kvitteres inden for to (2) timer på førstkommende hverdag.
+
 2) Opstart af udredning:
 Udredning og fejlsøgning af supporthenvendelsen skal påbegyndes af kvalificeret personale inden for to (2) timer på hverdage regnet fra tidspunktet for kvittering af henvendelsen.
 
 Supporthenvendelser håndteres i overensstemmelse med følgende principper:
+
 1.	Lokal afhjælpning:
 Supporthenvendelsen skal i videst muligt omfang løses lokalt af den tilsluttede part, såfremt årsagen til problemet kan henføres til den tilsluttede part eget ansvarsområde.
 
@@ -257,16 +263,20 @@ MedCom EHMI support håndterer supporthenvendelser vedrørende EDS, EER, SDN og 
 MedCom EHMI support og NSP Support kan efter behov eskalere supporthenvendelser videre til de relevante systemforvaltere (Product Owners) og systemleverandører.
 
 </details>
-
+</br>
 <details>
     <summary>Trin 7 - Etabler produktionsmiljø</summary>
 
 I det produktion miljø som den tilsluttede part etablere skal det sikres, at meddelelser ikke går tabt i perioden fra de er modtaget og kvitteret for af Partens løsning, og indtil meddelelsen er videreformidlet til modtager, og modtageren har kvitteret for modtagelsen.
 
 Parten skal etablere og opretholde tekniske og organisatoriske mekanismer, der sikrer, at meddelelser i dette forløb håndteres på en måde, så de kan spores, genoptages og reetableres ved fejl eller nedbrud. Dette omfatter som minimum:
+
 1)	vedvarende lagring og sporbarhed af meddelelser samt tilhørende kvitteringer, indtil de er færdigbehandlet.
+
 2)	mekanismer, der sikrer, at en meddelelse først betragtes som endeligt afleveret, når modtagerens kvittering er modtaget og registreret,
+
 3)	automatisk genoptagelse af videreformidling efter nedbrud, herunder genforsøg og håndtering af midlertidige fejltilstande,
+
 4)	procedurer for reetablering, så meddelelser, der er modtaget, ikke bortfalder eller efterlades ubehandlede.
 
 Såfremt der konstateres forhold, der medfører risiko for tab af meddelelser, skal Parten uden unødig forsinkelse iværksætte afhjælpende foranstaltninger.
@@ -279,6 +289,6 @@ Såfremt der konstateres forhold, der medfører risiko for tab af meddelelser, s
 
 MedCom
 
-Mail: medcom@medcom.dk 
+Mail: ehmi@medcom.dk 
 
 Telefon: (+45) xxxx xxxx
