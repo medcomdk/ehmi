@@ -86,7 +86,7 @@ eDelivery-sundhedsdomænet anviser en række tekniske infrastrukturkomponenter, 
 <tr>
 <th>Infrastruktur-komponent</th>
 <th>Beskrivelse</th>
-<th>Ansvarlig part</th>
+<th>Systemforvalter</th>
 <th>Anvender rolle</th>
 </tr>
 </thead>
@@ -94,44 +94,46 @@ eDelivery-sundhedsdomænet anviser en række tekniske infrastrukturkomponenter, 
 <tr>
 <td>EER</td>
 <td>EHMI Endpoint Register<br><br>Opslag efter endpoint ID (adresse i form af GLN-nummer) for modtager af meddelelse.</td>
-<td>MedCom</td>
+<td>Digital Sundhed Danmark (i 2026: Med-Com)</td>
 <td>EUA - anvendelse ikke påkrævet.</td>
 </tr>
 <tr>
 <td>EAS</td>
 <td>EHMI Addressing Service<br><br>Opslag efter korrekt modtager af en meddelelse</td>
-<td>Sundhedsdatastyrelsen via den Nationale Service Platform (NSP)</td>
-<td>EUA - anvendelse ikke påkrævet.</td>
+<td>Digital Sundhed Danmark (i 2026: SDS) via NSP</td>
+<td>EUA</td>
 </tr>
 <tr>
 <td>EDS</td>
 <td>EHMI Delivery Status<br><br>eDelivery Sundhedsdomænets "track-and-trace"-system</td>
-<td>MedCom</td>
+<td>Digital Sundhed Danmark (i 2026: Med-Com)</td>
 <td>1) EUA<br>2) MSH<br>3) AP</td>
 </tr>
 <tr>
 <td>Keycloak</td>
 <td>Sikkerhedskomponent og udsteder de OpenID-adgangsbilletter, som anvendes ved adgang til EDS og EER.</td>
-<td>Sundhedsdatastyrelsen via den Nationale Service Platform (NSP)</td>
+<td>Digital Sundhed Danmark (i 2026: SDS) via NSP</td>
 <td>1) EUA<br>2) MSH<br>3) AP</td>
 </tr>
 <tr>
 <td>EMR</td>
-<td>EHMI Meddelelses Registrering<br><br>Service til arkivering af kliniske meddelelser sendt via eDelivery Sundhedsdomænet.</td>
-<td>Sundhedsdatastyrelsen via den Nationale Service Platform (NSP)</td>
+<td>Service til deling af kliniske meddelelser sendt via EHMI. Delingen sker via NSP’s dokumentde-lingsinfrastruktur</td>
+<td>Digital Sundhed Danmark (i 2026: SDS) via NSP</td>
 <td>MSH</td>
 </tr>
 <tr>
-<td>SMP</td>
-<td>Service Metadata Publisher</td>
-<td>Erhvervsstyrelsen</td>
+<td>SMP/SML</td>
+<td>Service Metadata Publisher/Service Metadata Locator
+SML fungerer som en central adresse-bog. SMP indehol-der en organisations metadata. SML bru-ges til at pege på den rigtige SMP, mens SMP indeholder de konkrete metadata for organisationens understøttede doku-menttyper samt or-ganisationens endpo-int-adresse.
+</td>
+<td>Digital Sundhed Danmark (i 2026: Med-Com)</td>
 <td>AP</td>
 </tr>
 <tr>
 <td>SDN</td>
-<td>Sundhedsdatanettet<br><br>Et sikkert og lukket netværk, der forbinder IT-systemer i den danske sundhedssektor</td>
-<td>MedCom</td>
-<td>AP</td>
+<td>Sundhedsdatanettet<br><br>Et sikkert og lukket netværk, der forbinder IT-systemer i den danske sundhedssektor. Alle ”klient til ser-vice” forbindelser via SDN skal regi-streres i SDN-aftalesystemet </td>
+<td>Digital Sundhed Danmark (i 2026: Med-Com)</td>
+<td>1) EUA<br>2) MSH<br>3) AP</td>
 </tr>
 </tbody>
 </table>
@@ -149,8 +151,9 @@ Aftalen giver den tilsluttede part adgang til eDelivery-sundhedsdomænet med det
 
 [Tilslutningsaftale](tilslutningsaftale_edelivery.docx)
 
-Tilslutningsaftalen skal udfyldes og underskrives. Herefter sendes tilslutningsaftalen elektronisk til MedCom på medcom@medcom.dk.
-Efter modtagelse underskriver MedCom en kopi og tilbagesender kopien til den tilsluttede part som bekræftelse på tilslutningen.
+Tilslutningsaftalen skal udfyldes og underskrives. Herefter sendes tilslutningsaftalen elektronisk til Digital Sundhed Danmark (i 2026: MedCom) på ehmi@medcom.dk.
+
+Efter modtagelse underskriver Digital Sundhed Danmark (i 2026: MedCom) en kopi og tilbagesender kopien til den tilsluttede part som bekræftelse på tilslutningen.
 
 <br>
 </details>
