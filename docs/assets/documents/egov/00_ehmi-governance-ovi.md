@@ -204,7 +204,7 @@ Det fremgår desunden at infrastrukturkomponenterne systemforvaltes hos to forsk
 Nedenfor beskriver hvordan der indgåes en aftale med hver af de tre systemforvaltere.
 
 <details>
-  <summary><strong>Adgang Keycloak, EAS og EMR – SDS/NSP er systemforvalter</strong></summary>
+  <summary><strong>Adgang Keycloak, EAS og EMR – NSP er systemforvalter</strong></summary>
 
 Keycloak, EAS og EMR driftes på Den Nationale Serviceplatform (NSP). Anvenderen skal dels indgå en central aftale med Sundhedsdatastyrelsen (SDS) for at få adgang til NSP og dels whitelistes til de services, der ønskes anvendt.
 
@@ -212,23 +212,20 @@ Keycloak, EAS og EMR driftes på Den Nationale Serviceplatform (NSP). Anvenderen
 Vejledning vedrørende indgåelse af den centrale aftale med SDS om adgang til NSP findes her: https://www.nspop.dk/spaces/Web3/pages/29987467/Aftaler+for+Anvenderleverandør+og+Serviceaftager
 
 <br><br><strong>Whitelistning til Keycloak</strong><br>
-Adgang til Keycloak Authorization Server forudsætter, at anvenderapplikationen registreres (whitelistes) i Keycloak via metadata, som blandt andet indeholder applikationens certifikat. Til denne whitelistning anvendes et MitID Erhverv systemcertifikat.
+Adgang til Keycloak Authorization Server forudsætter, at anvenderapplikationen tilsluttes til Keycloak via metadata, som blandt andet indeholder applikationens certifikat. Til denne tilslutning anvendes et MitID Erhverv systemcertifikat.
+Anvenderen anmoder om tilslutning af anvenderapplikationen til Keycloak ved oprettelse af supportsag på nspop.dk. Der skal vedhæftes en json-fil med anvendersystemets metadata til sagen.
 
 <br><br><strong>Whitelistning til EAS</strong><br>
-Adgang til EAS forudsætter to ting.
-<ol>
-<li>En gyldig adgangsbillet (access token) udstedt af NSP Keycloak, som gælder i en periode og man anvendes hen over flere opslag.</li>
-<li>Anvenderapplikationen registreres/whitelistes til NSP Keycloak. Til denne whitelistning anvendes et MitId Erhverv Systemcertifikat</li>
-</ol>
+En anvenderapplikation kan opnå adgang til EAS med en gyldig adgangsbillet (access token) udstedt af NSP Keycloak. Adgangsbilletten gælder i en periode og kan anvendes hen over flere opslag.
+For at kunne få udstedt en adgangsbillet i NSP Keycloak, er det en forudsætning at anvenderapplikationen er tilsluttet til NSP Keycloak.
 
-<strong>Whitelistning til EMR</strong><br>
-EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddelelser fra andre Access Points. Whitelistning af Access Points sker via et centralt register hos Erhvervsstyrelsen (SMP).
-
+<strong>Whitelistning til EMR</strong><br>EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddelelser fra andre Access Points.
+Der kræves ikke en særskilt tilslutningsaftale for den MSH, der skal arkivere en kopi af meddelelsen i EMR. Det skal dog sikres, at det Access Point, som MSH'en er tilsluttet, har en gyldig SDN-aftale med EMR registreret via SDN-aftalesystemet.
 <br>
 </details>
 
 <details>
-  <summary><strong>Adgang EER, EDS og SDN – MedCom er systemejer</strong></summary>
+  <summary><strong>Adgang EER, EDS og SDN – Digital Sundhed Danmark (2026: MedCom) er systemforvalter</strong></summary>
 
 <strong>Adgang til EER</strong><br>
 <em>Medcom laver en vejledning til hvilke metadata der skal leveres</em>
