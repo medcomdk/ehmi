@@ -173,7 +173,7 @@ Som det fremgår af figuren for EHMI-økosystemet, så findes der 5 roller i EHM
 
 En afsender- eller modtagerorganisation er i sidste ende den dataansvarlige og skal sikre, at der er etableret de nødvendige databehandleraftaler gennem hele kæden af øvrige roller i EHMI-økosystemet. Dette kan håndteres som en traditionel kæde-databehandler-model, hvor afsender- eller modtagerorganisationen indgår en databehandleraftale med EUA samt sikrer, at EUA har indgået en underdatabehandleraftale med MSH, og at MSH tilsvarende har indgået en underdatabehandleraftale med AP, osv. Alternativt kan afsender- eller modtagerorganisationen indgå databehandleraftaler direkte med flere led i kæden.
 Det er op til den enkelte part selv at vælge databehandlermodel i samarbejde med sine underleverandører.
-Ved tilslutning til eDelivery Sundhedsdomænet vil den tilsluttede part blive spurgt, om der foreligger gyldige databehandleraftaler med de relevante parter i overensstemmelse med gældende databeskyttelseslovgivning – eller alternativt, hvad den tilslutede parten har af planer for at sikre dette.
+Ved tilslutning til eDelivery Sundhedsdomænet vil den tilsluttede part blive spurgt, om der foreligger gyldige databehandleraftaler med de relevante parter i overensstemmelse med gældende databeskyttelseslovgivning – eller alternativt, hvad den tilsluttede part har af planer for at sikre dette.
 
 eDelivery-sundhedsdomænet har udarbejdet et eksempel på en databehandleraftale mellem en kommune og et access point, som kan anvendes til inspiration. Vær opmærksom på:
 
@@ -194,12 +194,11 @@ Eksemplet tager udgangspunkt i en standard skabelon for databehandleraftaler, hv
 
 Ovenfor (jf. Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet) beskrives de tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende afhængigt af den rolle, parten varetager.
 
-Det fremgår desunden at infrastrukturkomponenterne systemforvaltes hos tre forskellige organisationer:
+Det fremgår desunden at infrastrukturkomponenterne systemforvaltes hos to forskellige organisationer:
 
 <ol>
-<li>Sundhedsdatastyrelsen via den Nationale Service Platform (NSP) er systemforvalter på Keycloak, EAS og EMR.</li>
-<li>MedCom er systemforvalter på EER, EDS og SDN</li>
-<li>Erhvervsstyrelsen er systemforvalter på SMP</li>
+<li>Den Nationale Service Platform (NSP) er systemforvalter på Keycloak, EAS og EMR.</li>
+<li>Digital Sundhed Danmark (2026: MedCom) er systemforvalter på EER, EDS, SDN og SMP/SML</li>
 </ol>
 
 Nedenfor beskriver hvordan der indgåes en aftale med hver af de tre systemforvaltere.
