@@ -228,21 +228,30 @@ Der kræves ikke en særskilt tilslutningsaftale for den MSH, der skal arkivere 
   <summary><strong>Adgang EER, EDS og SDN – Digital Sundhed Danmark (2026: MedCom) er systemforvalter</strong></summary>
 
 <strong>Adgang til EER</strong><br>
-<em>Medcom laver en vejledning til hvilke metadata der skal leveres</em>
+En anvenderapplikation kan opnå adgang til EER med en gyldig adgangsbillet (access token) udstedt af NSP Keycloak. Adgangsbilletten gælder i en periode og kan anvendes hen over flere opslag.
+For at kunne få udstedt en adgangsbillet i NSP Keycloak, er det en forudsætning at anvenderapplikationen er tilsluttet til NSP Keycloak.
 
 <br><br><strong>Adgang til EDS</strong><br>
-?
+En anvenderapplikation kan opnå adgang til EDS med en gyldig adgangsbillet (access token) udstedt af NSP Keycloak. Adgangsbilletten gælder i en periode og kan anvendes hen over flere opslag.
+For at kunne få udstedt en adgangsbillet i NSP Keycloak, er det en forudsætning at anvenderapplikationen er tilsluttet til NSP Keycloak.
 
 <br><br><strong>Adgang til SDN</strong><br>
 SDN er et sikret netværk til datakommunikation i den danske sundhedssektor for både offentlige og private parter. SDN binder lokale, sikrede net sammen i en fælles infrastruktur – og gør det muligt for de tilsluttede parter både at udstille egne services og indgå aftaler om netværksmæssig adgang til andres services.
 
 Ved tilslutning til SDN skal indgås både en tilslutningsaftale om brug af SDN samt en databehandleraftale.
 Vejledning vedrørende dette findes her: https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/startpakke/
-<br>
+
+<strong>SDN-aftalesystemet</strong><br>
+Alle ”klient til service” forbindelser via SDN skal registreres og godkendes via SDN-aftalesystemet.<br>
+En ny AP skal registreres som en service på SDN-aftalesystemet. Derudover fungerer en AP som klient til andre AP'er samt til Keycloak og EDS og skal derfor anmode om adgang til dis-se services via SDN-aftalesystemet. EMR udstilles som en AP. Ved etablering af en ny AP skal det derfor sikres, at EMR er omfattet af de AP'er, hvortil der anmodes om adgang.<br>
+En ny MSH fungerer som klient til Keycloak og EDS og skal derfor anmode om adgang til disse services via SDN-aftalesystemet. Adgang mellem MSH og AP behøver ikke at gå via SDN. Hvis forbindelsen etableres via SDN, skal der dog ligeledes indsendes en anmodning om adgang gennem SDN-aftalesystemet.<br>
+En ny EUA fungerer som klient til Keycloak, EDS og eventuelt EAS og EER og skal derfor anmode om adgang til disse services via SDN-aftalesystemet. Adgang mellem EUA og MSH behøver ikke at gå via SDN. Hvis forbindelsen etableres via SDN, skal der tilsvarende ind-sendes en anmodning om adgang gennem SDN's aftalesystem.
+For alle ovennævnte anmodninger via SDN-aftalesystemet gælder, at de relevante serviceejere skal godkende anmodningerne, før SDN kan åbne den ønskede adgang.<br>
 </details>
 
 <details>
-  <summary><strong>Adgang SMP – SDS/NSP er systemforvalter</strong></summary>
+  <summary><strong>Adgang SMP/SML – Digital Sundhed Danmark (2026: MedCom) er systemforvalter</strong></summary>
+Digital Sundhed Danmark (2026: MedCom) håndtere oprettelse i SML/SMP når en ny AP indgår en EHMI-tilslutnngsaftale.
 
 </details>
 </details>
