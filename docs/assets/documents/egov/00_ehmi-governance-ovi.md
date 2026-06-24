@@ -209,19 +209,19 @@ Keycloak, EAS og EMR driftes på Den Nationale Serviceplatform (NSP). Anvenderen
 <strong>Adgang til NSP</strong><br>
 Vejledning vedrørende indgåelse af den centrale aftale med SDS om adgang til NSP findes her: https://www.nspop.dk/spaces/Web3/pages/29987467/Aftaler+for+Anvenderleverandør+og+Serviceaftager
 
-<strong>Whitelistning til Keycloak</strong><br>
+<strong>Adgang til Keycloak</strong><br>
 Adgang til Keycloak Authorization Server forudsætter, at anvenderapplikationen tilsluttes til Keycloak via metadata, som blandt andet indeholder applikationens certifikat. Til denne tilslutning anvendes et MitID Erhverv systemcertifikat.
 Anvenderen anmoder om tilslutning af anvenderapplikationen til Keycloak ved oprettelse af supportsag på nspop.dk. Der skal vedhæftes en json-fil med anvendersystemets metadata til sagen.
 
 Om en anvenderapplikation må få adgang til en service (her EER, EDS, EAS) autoriseres centralt i Keycloak. Den kaldende anvenderapplikation skal derfor være forhånds-konfigureret i Keycloak til at kunne få udstedt et access token til den pågældende service .
 Servicen vedligeholder ikke en særskilt whitelist over tilladte anvenderapplikation, men skal ved hvert kald validere det modtagne access token, herunder issuer, audience, scope/permissions, udløbstid og sender-binding i overensstemmelse med FAPI 2.0-sikkerhedsprofilen.
 
-<strong>Whitelistning til EAS</strong><br>
+<strong>Adgang til EAS</strong><br>
 Whitelistningen er forhåndskonfigureret i KeyCloak - se længere oppe.<br>
 En anvenderapplikation kan opnå adgang til EAS med en gyldig adgangsbillet (access token) udstedt af NSP Keycloak. Adgangsbilletten gælder i en periode og kan anvendes hen over flere opslag.
 For at kunne få udstedt en adgangsbillet i NSP Keycloak, er det en forudsætning at anvenderapplikationen er tilsluttet til NSP Keycloak.
 
-<strong>Whitelistning til EMR</strong><br>
+<strong>Adgang til EMR</strong><br>
 EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddelelser fra andre Access Points.
 Der kræves ikke en særskilt tilslutningsaftale for den MSH, der skal arkivere en kopi af meddelelsen i EMR. Det skal dog sikres, at det Access Point, som MSH'en er tilsluttet, har en gyldig SDN-aftale med EMR registreret via SDN-aftalesystemet.
 
@@ -265,180 +265,34 @@ SMI: der mangler noget udretning her i forhold processen for oprettelse af addre
 <details>
     <summary>Trin 4 - Test og certificering</summary>
 
-I nedenstående tabel fremgår en blanding af krav og testmuligheder opdelt på de forskellige integrationskomponenter. Det fremgår desuden, hvilke roller i EHMI-økosystemet de enkelte krav og test er relevante for.
+Den tilsluttede part skal certificeres af Digital Sundhed Danmark (i 2026: MedCom), før partens løsning kan tilsluttes EHMI. Certificeringen baseres på testprotokoller udviklet af Digital Sundhed Dan-mark (i 2026: MedCom). De til enhver tid gældende testprotokoller fremgår af ehmi.dk/assets/documents/test/.
 
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Krav til produkter, test og testintegrationer</th>
-<th>AP</th>
-<th>MSH</th>
-<th>EUA</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><strong>Godkendte AP-produkter og brug af SMP/SML</strong><br><br>eDelivery Sundhedsområdet følger det fælles offentlige eDelivery retningslinjer på dette område. Disse retningslinjer kommer blandt andet ind på:<br><br>at det anvendte AP-produkt skal figurere på EU's liste over "eDelivery AS4 v1.x conformant products". Desuden skal AP-produktet:<br>- Have bestået conformance testen indenfor seneste 3 år.<br>- Overholde "(eDel AS4 1.15) eDelivery AS4 Profile v1.15"<br>- Overholde "(eDel AS4 1.15) AS4 Four Corner Topology Profile Enhancement"<br>- Overholde "(eDel AS4 1.15) AS4 SBDH Profile Enhancement"<br><br><a href="https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/721846393/eDelivery+AS4+v1.x+conformant+products">*eDelivery AS4 v1.x conformant products</a></td>
-<td>X</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong>EDS integrationstest</strong><br><br>MedCom stiller en test EDS-service til rådighed.<br><br>MedCom udstiller desuden en testplatform, der kan anvendes til test af, om EDS-klienten kan generere valide AuditEvents.</td>
-<td>X</td>
-<td>X</td>
-<td>X</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong>FAPI 2.0-sikkerhedsprofilen</strong><br><br>Keycloak fungerer som en sikkerhedskomponent og udsteder de OpenID-adgangsbilletter, der anvendes ved adgang til EDS. Overholdelse af FAPI 2.0-sikkerhedsprofilen testes indirekte i forbindelse med EDS- og EAS-integrationstesten.</td>
-<td>X</td>
-<td>X</td>
-<td>X</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong>Accesspoint tilslutningstest</strong><br><br>Da der stilles krav om godkendte AP-produkter, forventes det, at et AP overholder gældende krav til protokoller og formater.<br><br>Formålet med AP-tilslutningstesten er at sikre, at et AP er korrekt konfigureret til at kunne sende og modtage meddelelser via en test-AP i eDelivery Sundhedsdomænet, som MedCom stiller til rådighed. I forbindelse med integrationstesten testes desuden integration til SMP-servicen.</td>
-<td>X</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong>MSH test</strong><br><br>MedCom udstiller en testplatform, der kan anvendes til test af, om en MSH overholder de nødvendige protokoller og formater for en MSH-service.<br>Tilslutningstesten dækker følgende hovedområder:<br><br>
+Til testformål er følgende etableret:
 <ol>
-<li>Overholdelse af ehmiSBDH-profilen.</li>
-<li>Succesfuld levering af meddelelser til en MSH-modtager.</li>
-<li>Succesfuld modtagelse af meddelelser fra en MSH-afsender.</li>
-<li>Håndtering af kvitteringer.</li>
-<li>Håndtering af semantiske fejl.</li>
-</ol></td>
-<td></td>
-<td>X</td>
-<td></td>
-</tr>
-<tr>
-<td>6</td>
-<td><strong>EMR tilslutningstest</strong><br><br>Efter succesfuld levering af en meddelelse til en modtager-MSH skal afsender-MSH uploade meddelelsen til EMR-servicen.<br><br>EMR testes indirekte via MSH test. Der er i princippet ikke forskel på afsendelse af en meddelelse til EMR og afsendelse af en meddelelse enhver anden MSH.<br><br>Det forventes dog at Afsender-MSH har afprøvet og sikret korrekt afsendelse af meddelelser til EMR på NSP-testsystemer før produktionssætning.</td>
-<td></td>
-<td>X (kun afsender MSH)</td>
-<td></td>
-</tr>
-<tr>
-<td>7</td>
-<td><strong>Overholdelse af format for kliniske meddelelser (eksempelvis "HomeCareObservation")</strong><br><br>En EUA skal certificeres i forhold til de kliniske meddelelser, som systemet understøtter, og må kun sende/modtage kliniske meddelelser, som det kliniske system er godkendt til.<br>MedCom forestår denne certificering, og efter gennemført certificering vil den tilsluttede parts løsning fremgå af MedComs godkendelsesoversigt.</td>
-<td></td>
-<td></td>
-<td>X</td>
-</tr>
-<tr>
-<td>8</td>
-<td><strong>EAS integrationstest</strong><br><br>Sundhedsdatastyrelsen stiller en test EAS-service til rådighed på NSP-testsystemerne. Det forventes, at EUA tester deres løsning op imod EAS på NSP-testsystemerne før produktionssætning.</td>
-<td></td>
-<td></td>
-<td>X</td>
-</tr>
-<tr>
-<td>9</td>
-<td><strong>EER integrationstest</strong><br><br>MedCom stiller en test EER-service til rådighed. Det forventes at EUA tester deres løsning op imod test EER-servicen før produktionssætning.</td>
-<td></td>
-<td>X</td>
-<td>(hvis den benyttes)</td>
-</tr>
-</tbody>
-</table>
+<li>Digital Sundhed Danmark (i 2026: MedCom) og NSP har etableret testmiljøer for følgende EHMI-services: EAS, EMR, SMP/SML, Keycloak, EER og EDS.</li>
 
-Den tilsluttede part skal certificeres af MedCom, før partens løsning kan tilsluttes eDelivery-sundhedsdomænet. Certificeringen baseres på en testprotokol udviklet af MedCom. Den til enhver tid gældende testprotokol fremgår af www.medcom.dk.
-<br>
+<li>Digital Sundhed Danmark (i 2026: MedCom) har desuden etableret en test-AP og en test-MSH (NB. Test-MSH er ikke tilgængelig i pilotprojektet), som tilsluttede parter med rollen AP og MSH kan an-vende til at sende og modtage meddelelser via deres egen test-AP eller test-MSH.</li>
+
+<li>Digital Sundhed Danmark (i 2026: MedCom) stiller endvidere testplatform til rådighed, som kan anvendes til at teste overholdelse af gældende standarder og profiler.</li>
+</ol>
 </details>
 
 <details>
     <summary>Trin 5 - Etabler testmiljø</summary>
-
-MedCom, Sundhedsdatastyrelsen og Erhvervsstyrelsen har etableret testmiljøer for følgende infrastrukturkomponenter: EAS, EMR, SMP, Keycloak, EER og EDS.
-
-MedCom har desuden etableret en test-AP og en test-MSH, som tilsluttede parter med rollen AP og MSH kan anvende til at sende og modtage meddelelser via deres egen test-AP eller test-MSH.
-
-MedCom stiller endvidere testplatform til rådighed, som kan anvendes til at teste overholdelse af gældende standarder og profiler.
-
-Den tilsluttede part skal etablere og vedligeholde et testmiljø med de produkter, som parten ønsker at tilslutte eDelivery-sundhedsdomænet. Testmiljøet skal integrere de relevante testmiljøer og services hos MedCom, Sundhedsdatastyrelsen og Erhvervsstyrelsen.
-
-Testmiljøet bør desuden være integreret med de underliggende testmiljøer hos de aktører i EHMI-økosystemet, som den tilsluttede part er afhængig af, således at end-to-end-test af funktionalitet og integration kan gennemføres.
-
-Den tilsluttede part skal endvidere stille testgrænseflader (testsnitflader) til rådighed i testmiljøet, som partens kunder kan anvende til egne testformål, herunder integrationstest og validering forud for idriftsættelse i produktionsmiljøet.
-
-<br>
+Det er ikke tilladt at teste i EHMI’s produktionsmiljøer. Al test i forbindelse med tilslutning, opsætning af nye kunder samt ændringer i software foranlediget af egne behov eller krav fra EHMI skal gennemføres i testmiljøer og med anvendelse af testdata.<br>
+Krav til testmiljø fremgår af tilslutningsaftalen.
 </details>
 
 <details>
     <summary>Trin 6 - Etabler supportorganisation</summary>
-
-Den tilsluttede part skal informere afsenderen om fejlscenarier, såsom meddelelser med semantiske eller adresseringsfejl, der ikke kan leveres til modtageren.
-
-Den tilsluttede part indgår i eDelivery sundhedsdomænets fælles supportflow som skitseret på figuren.
-
-<img src="Supportflow2.png" alt="Supportflow" width="800">
-
-Den tilsluttede part fastlægger selv sit supportniveau i forhold til egne kunder, dvs. aktører, der er placeret over den tilsluttede part i EHMI-økosystemet.
-
-Den tilsluttede part er forpligtet til at modtage, håndtere og medvirke til udredning af supporthenvendelser fra aktører, der er placeret under eller parallelt med den pågældende part i EHMI-økosystemet.
-
-<ol>
-<li>En EUA er forpligtet til at udrede supporthenvendelser fra den underliggende MSH samt fra de EUA'er, som der sendes kliniske meddelelser til og modtages kliniske meddelelser fra.</li>
-<li>En MSH er forpligtet til at udrede supporthenvendelser fra den underliggende AP samt fra de MSH'er, som der sendes ehmiSBDH-meddelelser til og modtages ehmiSBDH-meddelelser fra.</li>
-<li>En AP er forpligtet til at udrede supporthenvendelser fra de AP'er, som der sendes AS4-meddelelser til og modtages AS4-meddelelser fra.</li>
-</ol>
-
-Hvis en tilsluttet part har sammenbyggede EUA-, MSH- og/eller AP-komponenter, er parten forpligtet til at håndtere det samlede supportansvar, som de enkelte komponenter hver især er ansvarlige for.
-
-Den tilsluttede part skal etablere og opretholde en bemandet supportfunktion med dertilhørende kontaktkanaler i form af telefonnummer og e-mailadresse, som kan anvendes til indmelding af supporthenvendelser.
-
-Supportfunktionen skal være tilgængelig på hverdage med følgende servicemål:
-
-<ol>
-<li><strong>Kvittering for modtagelse:</strong><br>
-Modtagelse af en supporthenvendelse skal kvitteres inden for to (2) timer på hverdage inden for normal arbejdstid. Supporthenvendelser, der modtages lørdag, søndag eller på helligdage, skal kvitteres inden for to (2) timer på førstkommende hverdag.</li>
-<li><strong>Opstart af udredning:</strong><br>
-Udredning og fejlsøgning af supporthenvendelsen skal påbegyndes af kvalificeret personale inden for to (2) timer på hverdage regnet fra tidspunktet for kvittering af henvendelsen.</li>
-</ol>
-
-Supporthenvendelser håndteres i overensstemmelse med følgende principper:
-
-<ol>
-<li><strong>Lokal afhjælpning:</strong><br>
-Supporthenvendelsen skal i videst muligt omfang løses lokalt af den tilsluttede part, såfremt årsagen til problemet kan henføres til den tilsluttede part eget ansvarsområde.</li>
-<li><strong>Koordineret udredning:</strong><br>
-Såfremt problemet involverer eller mistænkes at involvere en underliggende eller paralleltliggende aktør i EHMI-økosystemet, skal den tilsluttede part aktivt inddrage den relevante aktør i den videre udredning og fejlsøgning.</li>
-<li><strong>Eskaleringspligt:</strong><br>
-Kan supporthenvendelsen ikke løses lokalt eller gennem koordination med relevante aktører, er den tilsluttede part forpligtet til rettidigt at eskalere henvendelsen til enten MedCom EHMI Support eller NSP Support, afhængigt af problemets karakter og ansvarsplacering.</li>
-</ol>
-
-MedCom EHMI support håndterer supporthenvendelser vedrørende EDS, EER, SDN og SMP. NSP Support håndterer supporthenvendelser vedrørende EAS, EMR og Keycloak.
-
-MedCom EHMI support og NSP Support kan efter behov eskalere supporthenvendelser videre til de relevante systemforvaltere (Product Owners) og systemleverandører.
-
-<br>
+Den tilsluttede part skal etablere og opretholde en bemandet supportfunktion med dertilhøren-de kontaktkanaler i form af telefonnummer og e-mailadresse, som kan anvendes til indmelding af supporthenvendelser.<br>
+Krav til supportfunktionen fremgår af tilslutningsaftalen.
 </details>
 
 <details>
     <summary>Trin 7 - Etabler produktionsmiljø</summary>
-
-I det produktion miljø som den tilsluttede part etablere skal det sikres, at meddelelser ikke går tabt i perioden fra de er modtaget og kvitteret for af Partens løsning, og indtil meddelelsen er videreformidlet til modtager, og modtageren har kvitteret for modtagelsen.
-
-Parten skal etablere og opretholde tekniske og organisatoriske mekanismer, der sikrer, at meddelelser i dette forløb håndteres på en måde, så de kan spores, genoptages og reetableres ved fejl eller nedbrud. Dette omfatter som minimum:
-
-<ol>
-<li>vedvarende lagring og sporbarhed af meddelelser samt tilhørende kvitteringer, indtil de er færdigbehandlet.</li>
-<li>mekanismer, der sikrer, at en meddelelse først betragtes som endeligt afleveret, når modtagerens kvittering er modtaget og registreret,</li>
-<li>automatisk genoptagelse af videreformidling efter nedbrud, herunder genforsøg og håndtering af midlertidige fejltilstande,</li>
-<li>procedurer for reetablering, så meddelelser, der er modtaget, ikke bortfalder eller efterlades ubehandlede.</li>
-</ol>
-
-Såfremt der konstateres forhold, der medfører risiko for tab af meddelelser, skal Parten uden unødig forsinkelse iværksætte afhjælpende foranstaltninger.
-
+I det produktion miljø som den tilsluttede part etablere skal det sikres, at meddelelser ikke går tabt i perioden fra de er modtaget og kvitteret for af Partens løsning, og indtil meddelelsen er videreformidlet til modtager, og modtageren har kvitteret for modtagelsen.<br>
+Krav til produktionsmiljø fremgår af tilslutningsaftalen.
 </details>
 
 <h2>Kontakt ved spørgsmål om tilslutning</h2>
