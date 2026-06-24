@@ -140,7 +140,7 @@ SML fungerer som en central adresse-bog. SMP indehol-der en organisations metada
 
 </details>
 
-<h2>Trin for tilslutning til eDelivery Sundhedsdomænet</h2>
+<h2>Trin for tilslutning til EHMI</h2>
 
 <details>
   <summary>Trin 1 - Indgå tilslutningsaftale til EHMI</summary>
