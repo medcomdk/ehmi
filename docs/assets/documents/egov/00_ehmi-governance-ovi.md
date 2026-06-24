@@ -1,13 +1,13 @@
-<h1>Startpakke for eDelivery Sundhedsdomænet – pilotprojekt</h1>
+<h1>Startpakke for EHMI – pilotprojekt</h1>
 
-eDelivery Sundhedsdomænet har til formål at etablere, udvikle og drive en infrastruktur til udveksling af kliniske meddelelser inden for sundhedssektoren samt til og fra andre domæner uden for sundhedsområdet.
+EHMI (Enhanced Healthca-re Messaging Infra-structure) har til formål at etablere, udvikle og drive en infrastruktur til udveksling af kliniske meddelelser inden for sundhedssektoren samt til og fra andre domæner uden for sundhedsområdet.
 
 Denne startpakke er etableret i forbindelse med eDelivery-pilotprojektet til deltagerne heri. Samtidig er startpakken udformet med henblik på, at den – efter nødvendige tilpasninger – kan videreføres, når eDelivery Sundhedsdomænet overgår til normal drift.
 
-Hvis en aktør ønsker at tilslutte sig eDelivery Sundhedsdomænet, er første skridt at tage kontakt til MedCom. Nogle af de indledende spørgsmål, der kan drøftes, er:
+Hvis en aktør ønsker at tilslutte sig EHMI, er første skridt at tage kontakt til MedCom. Nogle af de indledende spørgsmål, der kan drøftes, er:
 
 <ol>
-<li>Hvad skal eDelivery Sundhedsdomænet anvendes til?</li>
+<li>Hvad skal EHMI tilslutningen anvendes til?</li>
 <li>Hvilken rolle forventer aktøren at have:
   <ol>
     <li>Organisation, der skal sende og modtage kliniske meddelelser via eDelivery Sundhedsdomænet</li>
@@ -16,21 +16,21 @@ Hvis en aktør ønsker at tilslutte sig eDelivery Sundhedsdomænet, er første s
     <li>Access Point (AP)</li>
   </ol>
 </li>
-<li>Hvad er de praktiske trin frem mod tilslutning til eDelivery Sundhedsdomænet – både aftalemæssigt og teknisk?</li>
+<li>Hvad er de praktiske trin frem mod tilslutning til EHMI – både aftalemæssigt og teknisk?</li>
 </ol>
 
-I det følgende beskrives de aftalemæssige og tekniske trin for tilslutning til eDelivery Sundhedsdomænet.
+I det følgende beskrives de aftalemæssige og tekniske trin for tilslutning til EHMI.
 
-Beskrivelsen indledes med en kort introduktion til eDelivery Sundhedsdomænet med fokus på de forskellige roller, en aktør kan have. Herefter følger en kort introduktion til de infrastrukturkomponenter, der indgår i eDelivery Sundhedsdomænet.
+Beskrivelsen indledes med en kort introduktion til EHMI med fokus på de forskellige roller, en aktør kan have. Herefter følger en kort introduktion til de infrastrukturkomponenter, der indgår i eDelivery Sundhedsdomænet.
 
-<h2>Introduktion til eDelivery Sundhedsdomænet, med fokus på roller og infrastruktur komponenter.</h2>
+<h2>Introduktion til EHMI, med fokus på roller og infrastruktur komponenter.</h2>
 
 (Klik på pilen ud for hver introduktion.)
 
 <details>
-  <summary><strong>Introduktion til eDelivery Sundhedsdomænet med fokus på de forskellige roller.</strong></summary>
+  <summary><strong>Introduktion til EHMI med fokus på de forskellige roller.</strong></summary>
 
-Tag stilling til hvilken rolle eller roller du ønsker at varetage i eDelivery domænet.
+Tag stilling til hvilken rolle eller roller du ønsker at varetage i EHMI.
 Figuren nedenfor illustrerer, hvordan en klinisk besked sendes fra en afsenderorganisation (f.eks. en kommune) til en modtagerorganisation (f.eks. en praktiserende læge) via eDelivery Sundhedsdomænet. Beskedens fysiske vej går gennem afsender-økosystemet, over sundhedsdatanettet og op gennem modtager-økosystemet.
 
 <img src="EHMIokosystemet.png" alt="Økosystem" width="500">
@@ -71,15 +71,15 @@ Et lukket og sikret net til udveksling af sundhedsdata.
 EUA, MSH og AP kan kombineres på forskellige måder, f.eks. en sammenbygning af EUA og MSH eller en sammenbygning af MSH og AP.
 </details>
 
-Anvendte protokoller og standarder i eDelivery Sundhedsdomænet findes her: https://ehmi.dk
+Anvendte protokoller og standarder i EHMI findes her: https://ehmi.dk
 
 <br>
 </details>
 
 <details>
-  <summary><strong>Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet.</strong></summary>
+  <summary><strong>Introduktion til de services som indgår i EHMI.</strong></summary>
 
-eDelivery-sundhedsdomænet anviser en række tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende, afhængigt af den rolle, parten varetager. Tabellen nedenfor oplister infrastrukturkomponenterne, deres systemforvalter samt de roller i eDelivery-sundhedsdomænet, der skal benytte komponenterne.
+EHMI anviser en række tekniske service, som den tilsluttede part skal integrere til og anvende, afhængigt af den rolle, parten varetager. Tabellen nedenfor oplister services, deres systemforvalter samt de roller i EHMI-økosystemet, der skal benytte den enkelte service.
 
 <table>
 <thead>
@@ -117,13 +117,13 @@ eDelivery-sundhedsdomænet anviser en række tekniske infrastrukturkomponenter, 
 </tr>
 <tr>
 <td>EMR</td>
-<td>Service til deling af kliniske meddelelser sendt via EHMI. Delingen sker via NSP’s dokumentde-lingsinfrastruktur</td>
+<td>EHMI Meddelelses Registrering<br><br>Service til deling af kliniske meddelelser sendt via EHMI. Delingen sker via NSP’s dokumentde-lingsinfrastruktur</td>
 <td>Digital Sundhed Danmark (i 2026: SDS) via NSP</td>
 <td>MSH</td>
 </tr>
 <tr>
 <td>SMP/SML</td>
-<td>Service Metadata Publisher/Service Metadata Locator
+<td>Service Metadata Publisher/Service Metadata Locator<br><br>
 SML fungerer som en central adresse-bog. SMP indehol-der en organisations metadata. SML bru-ges til at pege på den rigtige SMP, mens SMP indeholder de konkrete metadata for organisationens understøttede doku-menttyper samt or-ganisationens endpo-int-adresse.
 </td>
 <td>Digital Sundhed Danmark (i 2026: Med-Com)</td>
@@ -138,16 +138,14 @@ SML fungerer som en central adresse-bog. SMP indehol-der en organisations metada
 </tbody>
 </table>
 
-Snitflader til flere at EHMI-infrastrukturkomponenterne findes her: https://ehmi.dk
-
 </details>
 
 <h2>Trin for tilslutning til eDelivery Sundhedsdomænet</h2>
 
 <details>
-  <summary>Trin 1 - Indgå tilslutningsaftale for eDelivery sundhedsdomænet</summary>
+  <summary>Trin 1 - Indgå tilslutningsaftale til EHMI</summary>
 
-Aftalen giver den tilsluttede part adgang til eDelivery-sundhedsdomænet med det formål at sende og modtage meddelelser i henhold til den eller de rolle(r), som parten varetager i EHMI-økosystemet (Enhanced Healthcare Messaging Infrastructure).
+Aftalen giver den tilsluttede part adgang til EHMI med det formål at sende og modtage meddelelser i henhold til den eller de rolle(r), som parten varetager i EHMI-økosystemet (Enhanced Healthcare Messaging Infrastructure).
 
 [Tilslutningsaftale](tilslutningsaftale_edelivery.docx)
 
@@ -173,9 +171,9 @@ Som det fremgår af figuren for EHMI-økosystemet, så findes der 5 roller i EHM
 
 En afsender- eller modtagerorganisation er i sidste ende den dataansvarlige og skal sikre, at der er etableret de nødvendige databehandleraftaler gennem hele kæden af øvrige roller i EHMI-økosystemet. Dette kan håndteres som en traditionel kæde-databehandler-model, hvor afsender- eller modtagerorganisationen indgår en databehandleraftale med EUA samt sikrer, at EUA har indgået en underdatabehandleraftale med MSH, og at MSH tilsvarende har indgået en underdatabehandleraftale med AP, osv. Alternativt kan afsender- eller modtagerorganisationen indgå databehandleraftaler direkte med flere led i kæden.
 Det er op til den enkelte part selv at vælge databehandlermodel i samarbejde med sine underleverandører.
-Ved tilslutning til eDelivery Sundhedsdomænet vil den tilsluttede part blive spurgt, om der foreligger gyldige databehandleraftaler med de relevante parter i overensstemmelse med gældende databeskyttelseslovgivning – eller alternativt, hvad den tilsluttede part har af planer for at sikre dette.
+Ved tilslutning til EHMI vil den tilsluttede part blive spurgt, om der foreligger gyldige databehandleraftaler med de relevante parter i overensstemmelse med gældende databeskyttelseslovgivning – eller alternativt, hvad den tilsluttede part har af planer for at sikre dette.
 
-eDelivery-sundhedsdomænet har udarbejdet et eksempel på en databehandleraftale mellem en kommune og et access point, som kan anvendes til inspiration. Vær opmærksom på:
+EHMI har udarbejdet et eksempel på en databehandleraftale mellem en kommune og et access point, som kan anvendes til inspiration. Vær opmærksom på:
 
 <ol>
 <li>at en databehandleraftale altid er kontekstafhængig, og at eksemplet derfor ikke kan anvendes direkte.</li>
@@ -190,9 +188,9 @@ Eksemplet tager udgangspunkt i en standard skabelon for databehandleraftaler, hv
 </details>
 
 <details>
-  <summary>Trin 3 - Indgå tilslutningsaftaler til benyttede EHMI-infrastrukturkomponenter</summary>
+  <summary>Trin 3 - Indgå tilslutningsaftaler til benyttede EHMI-services</summary>
 
-Ovenfor (jf. Introduktion til de Infrastruktur-komponenter som indgår i eDelivery Sundhedsdomænet) beskrives de tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende afhængigt af den rolle, parten varetager.
+Ovenfor (jf. Introduktion til de Infrastruktur-komponenter som indgår i EHMI) beskrives de tekniske infrastrukturkomponenter, som den tilsluttede part skal integrere til og anvende afhængigt af den rolle, parten varetager.
 
 Det fremgår desunden at infrastrukturkomponenterne systemforvaltes hos to forskellige organisationer:
 
@@ -214,6 +212,9 @@ Vejledning vedrørende indgåelse af den centrale aftale med SDS om adgang til N
 <br><br><strong>Whitelistning til Keycloak</strong><br>
 Adgang til Keycloak Authorization Server forudsætter, at anvenderapplikationen tilsluttes til Keycloak via metadata, som blandt andet indeholder applikationens certifikat. Til denne tilslutning anvendes et MitID Erhverv systemcertifikat.
 Anvenderen anmoder om tilslutning af anvenderapplikationen til Keycloak ved oprettelse af supportsag på nspop.dk. Der skal vedhæftes en json-fil med anvendersystemets metadata til sagen.
+
+Om en anvenderapplikation må få adgang til en service (her EER, EDS, EAS) autoriseres centralt i Keycloak. Den kaldende anvenderapplikation skal derfor være forhåndskonfigureret i Keycloak til at kunne få udstedt et access token til den pågældende service .
+Servicen vedligeholder ikke en særskilt whitelist over tilladte anvenderapplikation, men skal ved hvert kald validere det modtagne access token, herunder issuer, audience, scope/permissions, udløbstid og sender-binding i overensstemmelse med FAPI 2.0-sikkerhedsprofilen.
 
 <br><br><strong>Whitelistning til EAS</strong><br>
 En anvenderapplikation kan opnå adgang til EAS med en gyldig adgangsbillet (access token) udstedt af NSP Keycloak. Adgangsbilletten gælder i en periode og kan anvendes hen over flere opslag.
