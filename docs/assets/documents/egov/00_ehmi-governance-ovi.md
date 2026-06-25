@@ -219,10 +219,11 @@ SML fungerer som en central adressebog. SMP indeholder en organisations metadata
 <p>
 Som led i tilslutningsprocessen til EHMI skal EUA, MSH og AP registreres i EER.
 Formålet med registreringen er:</p>
+<p><ol>
 <li>at beskrive de tekniske komponenter og de meddelelser, der understøttes,</li>
 <li>at understøtte EHMI Delivery Status (EDS), hvor komponenternes identitet anvendes ved registrering af forsendelsesstatus, og</li>
-<li></ol>at danne grundlag for publicering af de nødvendige metadata til SMP.</li>
-</ol>
+<li>at danne grundlag for publicering af de nødvendige metadata til SMP.</li>
+</ol></p>
 
 <p>SMP anvendes af AP til at finde de tekniske oplysninger, der er nødvendige for at levere en meddelelse til den rette modtager. Dette omfatter blandt andet modtagerens endpoint-adresse, oplysninger om hvilke meddelelsestyper modtageren understøtter, samt de certifikater og transportoplysninger, der er nødvendige for sikker kommunikation. De metadata, der publiceres til SMP, etableres på baggrund af registreringerne i EER.</p>
 
@@ -340,10 +341,7 @@ For alle ovennævnte anmodninger via SDN-aftalesystemet gælder, at de relevante
 </ol>
 
 <p><strong>SMP/SML</strong><br>
-Digital Sundhed Danmark (2026: MedCom) håndterer oprettelse i SML/SMP når en ny AP indgår en EHMI-tilslutningsaftale.</p>
-
-<p><em>SMI: der mangler noget udretning her i forhold til processen for oprettelse af adresseringsmetadata og publicering af disse til EER og SMP/SML. Herunder hvilke metadata der er behov for for den enkelte service.</em></p>
-
+Adgang til at kommunikere med SMP håndteres indirekte gennem registreringen i EER. Der etableres således ikke en særskilt registrering eller whitelisting af Access Points i SMP. I stedet registreres de nødvendige metadata i EER, herunder Access Pointets certifikat til mTLS-baseret kommunikation med SMP samt oplysninger om, at Access Pointet er EU-certificeret. Disse metadata overføres automatisk fra EER til SMP via National Health Registrys (NHR) PORS-grænseflade og danner grundlag for, at Access Pointet kan autentificeres og anvende SMP.</p>
 </details>
 
 </details>
