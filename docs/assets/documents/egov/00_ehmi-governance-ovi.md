@@ -206,7 +206,7 @@ Nedenfor beskriver hvordan der indgåes en aftale med hver af de tre systemforva
 
 Keycloak, EAS og EMR driftes på Den Nationale Serviceplatform (NSP). Anvenderen skal dels indgå en central aftale med Sundhedsdatastyrelsen (SDS) for at få adgang til NSP og dels whitelistes til de services, der ønskes anvendt.
 
-<strong>Adgang til NSP</strong><br>
+<br><strong>Adgang til NSP</strong><br>
 Vejledning vedrørende indgåelse af den centrale aftale med SDS om adgang til NSP findes her: https://www.nspop.dk/spaces/Web3/pages/29987467/Aftaler+for+Anvenderleverandør+og+Serviceaftager
 
 <strong>Adgang til Keycloak</strong><br>
@@ -216,12 +216,12 @@ Anvenderen anmoder om tilslutning af anvenderapplikationen til Keycloak ved opre
 Om en anvenderapplikation må få adgang til en service (her EER, EDS, EAS) autoriseres centralt i Keycloak. Den kaldende anvenderapplikation skal derfor være forhånds-konfigureret i Keycloak til at kunne få udstedt et access token til den pågældende service .
 Servicen vedligeholder ikke en særskilt whitelist over tilladte anvenderapplikation, men skal ved hvert kald validere det modtagne access token, herunder issuer, audience, scope/permissions, udløbstid og sender-binding i overensstemmelse med FAPI 2.0-sikkerhedsprofilen.
 
-<strong>Adgang til EAS</strong><br>
+<br><strong>Adgang til EAS</strong><br>
 Whitelistningen er forhåndskonfigureret i KeyCloak - se længere oppe.<br>
 En anvenderapplikation kan opnå adgang til EAS med en gyldig adgangsbillet (access token) udstedt af NSP Keycloak. Adgangsbilletten gælder i en periode og kan anvendes hen over flere opslag.
 For at kunne få udstedt en adgangsbillet i NSP Keycloak, er det en forudsætning at anvenderapplikationen er tilsluttet til NSP Keycloak.
 
-<strong>Adgang til EMR</strong><br>
+<br><strong>Adgang til EMR</strong><br>
 EMR fungerer som Access Point i eDelivery-infrastrukturen og kan modtage meddelelser fra andre Access Points.
 Der kræves ikke en særskilt tilslutningsaftale for den MSH, der skal arkivere en kopi af meddelelsen i EMR. Det skal dog sikres, at det Access Point, som MSH'en er tilsluttet, har en gyldig SDN-aftale med EMR registreret via SDN-aftalesystemet.
 
@@ -230,7 +230,7 @@ Der kræves ikke en særskilt tilslutningsaftale for den MSH, der skal arkivere 
 <details>
   <summary><strong>Adgang EER, EDS og SDN – Digital Sundhed Danmark (2026: MedCom) er systemforvalter</strong></summary>
 
-<strong>Adgang til EER</strong><br>
+<br><strong>Adgang til EER</strong><br>
 Whitelistningen er forhåndskonfigureret i KeyCloak - se længere oppe.<br>
 En anvenderapplikation kan opnå adgang til EER med en gyldig adgangsbillet (access token) udstedt af NSP Keycloak. Adgangsbilletten gælder i en periode og kan anvendes hen over flere opslag.
 For at kunne få udstedt en adgangsbillet i NSP Keycloak, er det en forudsætning at anvenderapplikationen er tilsluttet til NSP Keycloak.
@@ -255,7 +255,7 @@ Alle ”klient til service” forbindelser via SDN skal registreres og godkendes
 For alle ovennævnte anmodninger via SDN-aftalesystemet gælder, at de relevante serviceejere skal godkende anmodningerne, før SDN kan åbne den ønskede adgang.</li>
 </ol>
 
-<strong>SMP/SML</strong><br>
+<br><strong>SMP/SML</strong><br>
 Digital Sundhed Danmark (2026: MedCom) håndtere oprettelse oprettelse i SML/SMP når en ny AP indgår en EHMI-tilslutnngsaftale.
 SMI: der mangler noget udretning her i forhold processen for oprettelse af addreseringsmetadata og publisering af disse til EER og SMP/SML. Herunder hvilke metadata der er behov for for den enkelte service.
 
