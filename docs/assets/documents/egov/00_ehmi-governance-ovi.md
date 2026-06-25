@@ -216,6 +216,16 @@ SML fungerer som en central adressebog. SMP indeholder en organisations metadata
 
 <p>Efter modtagelse underskriver Digital Sundhed Danmark (i 2026: MedCom) en kopi og tilbagesender kopien til den tilsluttede part som bekræftelse på tilslutningen.</p>
 
+<p>
+Som led i tilslutningsprocessen til EHMI skal EUA, MSH og AP registreres i EER.
+Formålet med registreringen er:</p>
+<li>at beskrive de tekniske komponenter og de meddelelser, der understøttes,</li>
+<li>at understøtte EHMI Delivery Status (EDS), hvor komponenternes identitet anvendes ved registrering af forsendelsesstatus, og</li>
+<li></ol>at danne grundlag for publicering af de nødvendige metadata til SMP.</li>
+</ol>
+
+<p>SMP anvendes af AP til at finde de tekniske oplysninger, der er nødvendige for at levere en meddelelse til den rette modtager. Dette omfatter blandt andet modtagerens endpoint-adresse, oplysninger om hvilke meddelelsestyper modtageren understøtter, samt de certifikater og transportoplysninger, der er nødvendige for sikker kommunikation. De metadata, der publiceres til SMP, etableres på baggrund af registreringerne i EER.</p>
+
 </details>
 
 <br>
