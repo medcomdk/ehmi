@@ -235,18 +235,18 @@ Whitelistningen er forhåndskonfigureret i KeyCloak - se længere oppe.<br>
 En anvenderapplikation kan opnå adgang til EER med en gyldig adgangsbillet (access token) udstedt af NSP Keycloak. Adgangsbilletten gælder i en periode og kan anvendes hen over flere opslag.
 For at kunne få udstedt en adgangsbillet i NSP Keycloak, er det en forudsætning at anvenderapplikationen er tilsluttet til NSP Keycloak.
 
-<strong>Adgang til EDS</strong><br>
+<br><strong>Adgang til EDS</strong><br>
 Whitelistningen er forhåndskonfigureret i KeyCloak - se længere oppe.<br>
 En anvenderapplikation kan opnå adgang til EDS med en gyldig adgangsbillet (access token) udstedt af NSP Keycloak. Adgangsbilletten gælder i en periode og kan anvendes hen over flere opslag.
 For at kunne få udstedt en adgangsbillet i NSP Keycloak, er det en forudsætning at anvenderapplikationen er tilsluttet til NSP Keycloak.
 
-<strong>Adgang til SDN</strong><br>
+<br><strong>Adgang til SDN</strong><br>
 SDN er et sikret netværk til datakommunikation i den danske sundhedssektor for både offentlige og private parter. SDN binder lokale, sikrede net sammen i en fælles infrastruktur – og gør det muligt for de tilsluttede parter både at udstille egne services og indgå aftaler om netværksmæssig adgang til andres services.
 
 Ved tilslutning til SDN indgås både en tilslutningsaftale om brug af SDN samt en databehandleraftale.
 Vejledning vedrørende dette findes her: https://medcom.dk/systemforvaltning/sundhedsdatanettet-sdn/startpakke/
 
-<strong>SDN-aftalesystemet</strong><br>
+<br><strong>SDN-aftalesystemet</strong><br>
 Alle ”klient til service” forbindelser via SDN skal registreres og godkendes via SDN-aftalesystemet.<br>
 <ol>
 <li>En ny AP skal registreres som en service på SDN-aftalesystemet. Derudover fungerer en AP som klient til andre AP'er samt til Keycloak og EDS og skal derfor anmode om adgang til disse services via SDN-aftalesystemet. EMR udstilles som en AP. Ved etablering af en ny AP skal det derfor sikres, at EMR er omfattet af de AP'er, hvortil der anmodes om adgang.</li>
